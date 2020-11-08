@@ -234,31 +234,23 @@ $(document).ready(function() {
 
     class ShopProducts extends Component  {
     state = {
-        collapseID: ''
-    }
+        items: {
+            default: '1',
+        },
+        products: []
+    };
 
 
-    state = {
-        value: 0
-    }
-
-    state = {
-            items: {
-                default: '1',
-            }
-        };
-
-
-        togglePills = (type, tab) => e => {
-            e.preventDefault();
-            if (this.state.items[type] !== tab) {
-                let items = { ...this.state.items };
-                items[type] = tab;
-                this.setState({
-                    items
-                });
-            }
-        };
+    togglePills = (type, tab) => e => {
+        e.preventDefault();
+        if (this.state.items[type] !== tab) {
+            let items = { ...this.state.items };
+            items[type] = tab;
+            this.setState({
+                items
+            });
+        }
+    };
 
 
     decrease = () => {
@@ -269,9 +261,30 @@ $(document).ready(function() {
         this.setState ({value: this.state.value + 1 })
     }
 
-
-
-
+    componentDidMount(props) {
+        // fetch('https://reqres.in/api/products/')
+        //   .then(response => response.json())
+        //   .then(products => this.setState({products: products.data}));
+         const data = {
+            "status": "ok",
+            "products": [
+                {
+                    "title":"super product 1",
+                    "price":"11.99"
+                },
+                {
+                    "title":"super product 2",
+                    "price":"34.99"
+                },
+                {
+                    "title":"super product 3",
+                    "price":"456.99"
+                },
+            ]
+         };
+         console.log(data);
+         this.setState({products: data.products});
+    }
 
     render() {
         return (
@@ -432,6 +445,11 @@ $(document).ready(function() {
                                 В нашому магазині представлений широкий вибір професійної косметики для волосся: шампуні для домашнього догляду та для професіного використання.
                             </p>
                             <MDBRow className='p-0 m-2 ml-0 border-0 products'>
+                                {this.state.products.map((product) => (
+                                <MDBCol lg='6' md='6' xl='4' className='pb-5 p-2' data-filter='davines'>
+                                    <Item1 product={product} color="green"/>
+                                </MDBCol>
+                                ))}
                                 <MDBCol lg='6' md='6' xl='4' className='pb-5 p-2' data-filter='davines'>
                                     <Item1 />
                                 </MDBCol>

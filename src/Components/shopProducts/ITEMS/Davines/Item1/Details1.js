@@ -21,21 +21,14 @@ import Item9 from '../../Davines/Item9/Item9';
 
 class Details1 extends React.Component {
     state = {
-        collapseID: ''
-    }
-
-    state = {
-        value: 0
-    }
-
-    state = {
         items: {
             default: '1',
+        },
+        product:{
+            title:'',
+            price:'',
         }
     };
-
-
-
 
     togglePills = (type, tab) => e => {
         e.preventDefault();
@@ -48,7 +41,20 @@ class Details1 extends React.Component {
         }
     };
 
-
+    componentDidMount(props) {
+        // fetch('https://reqres.in/api/products/')
+        //   .then(response => response.json())
+        //   .then(products => this.setState({products: products.data}));
+         const data = {
+            "status": "ok",
+            "product": {
+                    "title":"super product 1",
+                    "price":"11.99"
+                },
+         };
+         this.setState({product: data.product});
+    }
+    
     render() {
         return (
             <div>
@@ -63,7 +69,7 @@ class Details1 extends React.Component {
                             </MDBCol>
                             <MDBCol sm='6' md='6' lg='6' xl='7' className='p-2 m-0'>
                                 <div className='p-2'>
-                                    <h3 className='font-weight-normal'>Шампунь для себорегуляції Davines OI Shampoo, 280 мл</h3>
+                                    <h3 className='font-weight-normal'>{this.state.product.title}</h3>
                                     <p className='font-weight-bold py-1 m-0 grey-text'>Артикул:<span className='font-weight-normal'>1001</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Вид товару: <span className='font-weight-normal'>Шампунь</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Виробник: <span className='font-weight-normal'>Davines</span></p>
@@ -76,7 +82,7 @@ class Details1 extends React.Component {
                                     <p className='font-weight-bold py-1 m-0'>Тип шкіри: <span className='font-weight-normal'>Для сухого та ламкого волосся, для усіх типів</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Опис: <span className='font-weight-normal'>Молочно-гладкий шампунь ідеально підходить для всіх типів волосся. Обогащенний харчовим маслом Roucou, є ідеальним шампунем для щоденного входу за м'якими, блищащими та пишними волосами. Антиоксидантне дію і стійкий парфюм.</span></p>
                                     <p className='bg-white p-0 green-text py-1 m-0'><span className='font-weight-bold'><i className="fas fa-check green-text font-weight-bold p-2"></i>В наявності</span></p>
-                                    <p className='font-weight-bold py-1 m-0 price'>Ціна: <span className='font-weight-bold py-1 m-0'>538 грн</span></p>
+                                    <p className='font-weight-bold py-1 m-0 price'>Ціна: <span className='font-weight-bold py-1 m-0'>{this.state.product.price} грн</span></p>
                                     <div className='d-inline-flex flex-wrap text-center w-100 py-4 m-0'>
                                         <button className='float-left m-0 item-to-cart white-text border-0 z-depth-1 mr-5'>В КОРЗИНУ</button>
                                         <button className='float-left m-0 item-to-cart white-text border-0 z-depth-1'>КУПИТИ</button>

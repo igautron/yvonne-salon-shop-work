@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d836fc53-d6dc-4d94-bd8e-e498905b435d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/CATEGORIES/Categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/CATEGORIES/Categories.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/COPYRIGHT/Copyright.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/COPYRIGHT/Copyright.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/INFO/Info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/INFO/Info.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/LABEL/Label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/LABEL/Label.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/NAV/PRODUCTS/Products.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/PRODUCTION/Production.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../choice-shop-app/src/Components/PRODUCTION/Production.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/ABOUT/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/FOOTER/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/FOOTER/Footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/CONTACTS/Contacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/CONTACTS/Contacts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/MAIN/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/MAIN/Main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/Nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/Nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/PRODUCTS/Products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/NAV/PRODUCTS/Products.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/SLIDE/Slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/SLIDE/Slide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1i6HfyQBtpWNbMM1ieKFqu1LNJB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yvonne-salon-shop-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DANIT\PROJECTS\yvonne-salon-shop\views" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d836fc53-d6dc-4d94-bd8e-e498905b435d" name="Default Changelist" comment="" />
+      <created>1601221228382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601221228382</updated>
+      <workItem from="1601221239287" duration="1462000" />
+      <workItem from="1601224431910" duration="1793000" />
+      <workItem from="1601226258334" duration="1066000" />
+      <workItem from="1601239196383" duration="1797000" />
+      <workItem from="1601241041425" duration="1791000" />
+      <workItem from="1601242848484" duration="1792000" />
+      <workItem from="1601244666582" duration="1577000" />
+      <workItem from="1601248552103" duration="1275000" />
+      <workItem from="1601250374176" duration="1655000" />
+      <workItem from="1601252822939" duration="1792000" />
+      <workItem from="1601254632413" duration="632000" />
+      <workItem from="1601292829816" duration="1792000" />
+      <workItem from="1601294638026" duration="1831000" />
+      <workItem from="1601296495612" duration="1801000" />
+      <workItem from="1601298485768" duration="1793000" />
+      <workItem from="1601300297271" duration="1792000" />
+      <workItem from="1601302102907" duration="1798000" />
+      <workItem from="1601303916503" duration="1799000" />
+      <workItem from="1601305733716" duration="1799000" />
+      <workItem from="1601307552471" duration="1770000" />
+      <workItem from="1601314580898" duration="1791000" />
+      <workItem from="1601316397109" duration="1797000" />
+      <workItem from="1601318212597" duration="57000" />
+      <workItem from="1601322014810" duration="1796000" />
+      <workItem from="1601323826747" duration="1642000" />
+      <workItem from="1601330815490" duration="773000" />
+      <workItem from="1601422302807" duration="1791000" />
+      <workItem from="1601424106832" duration="1808000" />
+      <workItem from="1601425930502" duration="1780000" />
+      <workItem from="1601427774766" duration="2128000" />
+      <workItem from="1601430187641" duration="1794000" />
+      <workItem from="1601431997418" duration="298000" />
+      <workItem from="1601576223677" duration="1152000" />
+      <workItem from="1601578698129" duration="8000" />
+      <workItem from="1601578978570" duration="512000" />
+      <workItem from="1601579677499" duration="18000" />
+      <workItem from="1601588378981" duration="16000" />
+      <workItem from="1602028188315" duration="1320000" />
+      <workItem from="1602029719642" duration="599000" />
+      <workItem from="1602031527325" duration="606000" />
+      <workItem from="1602033356596" duration="599000" />
+      <workItem from="1602035183157" duration="658000" />
+      <workItem from="1602038537664" duration="357000" />
+      <workItem from="1602270159596" duration="1373000" />
+      <workItem from="1602282956702" duration="26000" />
+      <workItem from="1602445643267" duration="127000" />
+      <workItem from="1602498479926" duration="97000" />
+      <workItem from="1602498608419" duration="612000" />
+      <workItem from="1602500029847" duration="1038000" />
+      <workItem from="1602501406101" duration="425000" />
+      <workItem from="1602501845398" duration="369000" />
+      <workItem from="1602563196500" duration="684000" />
+      <workItem from="1602563930658" duration="217000" />
+      <workItem from="1602564164607" duration="336000" />
+      <workItem from="1602566469787" duration="617000" />
+      <workItem from="1602567780999" duration="599000" />
+      <workItem from="1602603156889" duration="872000" />
+      <workItem from="1602605019614" duration="1088000" />
+      <workItem from="1602606844238" duration="2234000" />
+      <workItem from="1602610837216" duration="66000" />
+      <workItem from="1602613720116" duration="1795000" />
+      <workItem from="1602615541908" duration="1621000" />
+      <workItem from="1602617360375" duration="1791000" />
+      <workItem from="1602619194499" duration="489000" />
+      <workItem from="1602799249168" duration="599000" />
+      <workItem from="1602801062745" duration="45000" />
+      <workItem from="1602801216658" duration="618000" />
+      <workItem from="1602802870278" duration="599000" />
+      <workItem from="1602804727746" duration="31000" />
+      <workItem from="1604243731541" duration="2166000" />
+      <workItem from="1604245972470" duration="1707000" />
+      <workItem from="1604249686671" duration="1789000" />
+      <workItem from="1604251506993" duration="1789000" />
+      <workItem from="1604253311441" duration="2150000" />
+      <workItem from="1604255501941" duration="1555000" />
+      <workItem from="1604258554891" duration="1792000" />
+      <workItem from="1604260364100" duration="1791000" />
+      <workItem from="1604262171600" duration="1789000" />
+      <workItem from="1604263994401" duration="1728000" />
+      <workItem from="1604265803594" duration="1839000" />
+      <workItem from="1604267709365" duration="2197000" />
+      <workItem from="1604269921923" duration="1797000" />
+      <workItem from="1604271745993" duration="173000" />
+      <workItem from="1604316995495" duration="2154000" />
+      <workItem from="1604319643024" duration="1938000" />
+      <workItem from="1604324124686" duration="1792000" />
+      <workItem from="1604325929301" duration="1796000" />
+      <workItem from="1604327740600" duration="978000" />
+      <workItem from="1604334341166" duration="861000" />
+      <workItem from="1604336341358" duration="1793000" />
+      <workItem from="1604338148770" duration="1801000" />
+      <workItem from="1604339965382" duration="1746000" />
+      <workItem from="1604341788080" duration="1793000" />
+      <workItem from="1604343595711" duration="1798000" />
+      <workItem from="1604345410091" duration="1793000" />
+      <workItem from="1604347233409" duration="1896000" />
+      <workItem from="1604350741731" duration="1809000" />
+      <workItem from="1604406411101" duration="1789000" />
+      <workItem from="1604408217348" duration="1792000" />
+      <workItem from="1604410023927" duration="2044000" />
+      <workItem from="1604412342937" duration="1793000" />
+      <workItem from="1604414150898" duration="1794000" />
+      <workItem from="1604416019395" duration="1793000" />
+      <workItem from="1604417828513" duration="1795000" />
+      <workItem from="1604419717277" duration="1588000" />
+      <workItem from="1604421525302" duration="1295000" />
+      <workItem from="1604425614871" duration="1794000" />
+      <workItem from="1604427424945" duration="1795000" />
+      <workItem from="1604429321772" duration="1793000" />
+      <workItem from="1604431130285" duration="1789000" />
+      <workItem from="1604432940272" duration="1597000" />
+      <workItem from="1604478793347" duration="1838000" />
+      <workItem from="1604537330815" duration="6000" />
+      <workItem from="1604645500983" duration="3000" />
+      <workItem from="1604654916650" duration="600000" />
+      <workItem from="1604742564372" duration="1789000" />
+      <workItem from="1604744371983" duration="1793000" />
+      <workItem from="1604746179975" duration="1655000" />
+      <workItem from="1604750886600" duration="1393000" />
+      <workItem from="1604757082690" duration="1793000" />
+      <workItem from="1604758892375" duration="1795000" />
+      <workItem from="1604760714789" duration="1664000" />
+      <workItem from="1604822552150" duration="1787000" />
+      <workItem from="1604824356564" duration="1286000" />
+      <workItem from="1604826164454" duration="1592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601225135610">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601225135610" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604827112756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827112756" />
+    <state x="99" y="108" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604427686694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="99" y="108" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1604427686694" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604759700435">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604759700435" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604824220291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604824220291" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

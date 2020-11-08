@@ -1,0 +1,35 @@
+.registration {
+    top: 0;
+    margin: 100px auto auto 30%;
+    justify-content: center !important;
+    z-index: 4;
+    width: 370px;
+    position: absolute;
+    display: block;
+}
+
+.form-reg {
+    width: 270px !important;
+    height: 35px !important;
+}
+
+.form-aut {
+    width: 127px !important;
+    height: 35px !important;
+}
+
+.form-text {
+    font-size: 0.8rem !important;
+}
+
+.btn-block {
+    color: purple;
+    border: 2px solid purple;
+    width: 100%!important;
+    margin-right: 0px;
+}
+
+.btn-reg {
+    color: purple;
+    border: 2px solid purple;
+}

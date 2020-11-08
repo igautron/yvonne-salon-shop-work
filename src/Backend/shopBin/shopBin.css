@@ -1,0 +1,92 @@
+.bin-container{
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 100%;
+}
+
+
+input.input-autoriz {
+    height: 32px !important;
+    width: 100% !important;
+}
+
+.bin-block {
+    height: 100%;
+    padding-bottom: 100%;
+}
+
+.btn-bin {
+    width: 210px;
+    float: right;
+}
+
+.order-item {
+    line-height: 1.5rem;
+}
+
+.bin-lable {
+    font-size: 0.9rem;
+}
+
+.order-price {
+   font-size: 20px;
+   font-weight: normal;
+    float: right;
+}
+
+.btn-x {
+    width: 2rem;
+    height: 3rem;
+}
+
+i.fas.fa-times {
+    transform: translateX(-4);
+    font-size: 1.5rem;
+}
+
+
+.input-q {
+    width: 3rem;
+    border-radius: 3px;
+    border: 2px solid dimgrey;
+}
+
+.input-q::placeholder {
+    font-size: 3rem;
+}
+
+.btn-close {
+   transform: translateX(-48px) !important;
+
+}
+
+@media (max-width: 576px) {
+    .order-item {
+        font-size: 0.8rem !important;
+    }
+
+    .btn-x {
+        width: 1.5rem;
+        height: 2rem;
+    }
+
+    .input-q {
+        width: 2rem !important;
+        border-radius: 3px;
+        border: 2px solid dimgrey;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .btn-x {
+        width: 1.5rem;
+        height: 2rem;
+    }
+
+    .input-q {
+        width: 2rem !important;
+        border-radius: 3px;
+        border: 2px solid dimgrey;
+    }
+}

@@ -1,0 +1,474 @@
+.navbar-bg {
+    background-color: rgb(66,0,58) !important;
+}
+
+.shop-bg-nav {
+    background-color: #21001c;
+}
+
+
+p.adr {
+    font-size: 15px;
+    font-weight: 100 !important;
+    line-height: 15px !important;
+}
+
+div {
+    margin: 0 auto;
+    align-content: center;
+}
+
+a {
+    z-index: 200;
+    display: block;
+    position: relative;
+}
+
+img.flower {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    width: 165px;
+    height: 135px;
+    transform: translate(-195px, -30px);
+    margin: 30px;
+}
+
+.shop-logo {
+    font-size: 65px;
+}
+
+
+.shop-logo-div {
+    padding: 65px 65px 30px;
+}
+
+.shop-logo-img {
+    font-size: 75px;
+    font-weight: 400;
+    height: 85px;
+    letter-spacing: 6px;
+    width: 330px;
+}
+
+.shop-logo-text {
+    font-size: 21px;
+    font-weight: 200;
+    font-stretch: 30px;
+    letter-spacing: 3px;
+    width: 21rem !important;
+    text-align: center;
+}
+
+.btn-like {
+    background-color: #fccccc !important;
+    color: #7f249c !important;
+}
+
+.btn-bk {
+    background-color: #fffdc4 !important;
+    color: #7f249c !important;
+    text-shadow: 1px 0px 0px ;
+}
+
+
+@media (max-width: 576px) {
+    .shop-nav-first {
+        display: none;
+    }
+
+    .shop-nav-second {
+        background-color: rgb(66,0,58) !important;
+        border: 0px;
+        height: 35px;
+    }
+
+
+    button.navbar.navbar-light.navbar-toggler {
+        color: white !important;
+        padding-bottom: 10px !important;
+    }
+
+
+
+    #navbarCollapse1 {
+        background-color: #a372a9 !important;
+        z-index: 100;
+
+    }
+
+    .shop-logo-img {
+        font-weight: 400;
+        height: 55px;
+        letter-spacing: 6px;
+        padding-left: 3rem;
+    }
+
+    .shop-logo-text {
+        font-size: 0.75rem;
+        margin-left: 2.8rem;
+        padding-left: 3rem;
+    }
+
+    img.flower {
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        transform: translate(-105px, -17px);
+        margin: 30px;
+    }
+
+    .shop-logo {
+        font-size: 2.4rem;
+    }
+
+    .shop-bg-nav, .shop-logo-div{
+        height: 110px;
+    }
+
+    .nav-text {
+        font-size: 1rem;
+        padding-right: 15px !important;
+    }
+
+    .btn-bk, #text {
+        font-size: 0.6rem !important;
+        height: 2.6rem !important;
+        width: 60px !important;
+    }
+
+    .btn-like, #text {
+        font-size: 0.3rem !important;
+        height: 2.6rem !important;
+        width: 45px !important;
+    }
+
+    i.fa.fa-heart {
+        font-size: 0.8rem!important;
+    }
+
+    .fb-icon {
+        font-size: 15px !important;
+        transform: translateY(-3px);
+    }
+
+    .insta-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .email-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .tgl-item {
+        font-size: 10px !important;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .shop-nav-first {
+        display: none;
+    }
+
+    .shop-nav-second  {
+        display: block;
+        background-color: rgb(66,0,58) !important;
+        border: 0px;
+        height: 37px;
+    }
+
+    img.flower {
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        transform: translate(-105px, -17px);
+        margin: 30px;
+    }
+
+    .shop-logo {
+        font-size: 2.5rem;
+    }
+
+    .shop-logo-text {
+        font-size: 0.75rem;
+        margin-left: 2.8rem;
+        padding-left: 22px;
+    }
+
+    .nav-text {
+        font-size: 1rem !important;
+        padding-right: 15px !important;
+    }
+
+    .nav-icon {
+        font-size: 1rem;
+    }
+
+    button.navbar.navbar-light.navbar-toggler {
+        color: white !important;
+        padding-bottom: 10px !important;
+    }
+
+
+    #navbarCollapse1 {
+        background-color: #a372a9 !important;
+        z-index: 100;
+
+    }
+
+    .shop-logo-img {
+        font-weight: 400;
+        height: 55px;
+        letter-spacing: 6px;
+        padding-left: 20px;
+    }
+
+    .btn-bk, #text {
+        font-size: 0.6rem !important;
+        height: 2.7rem !important;
+    }
+
+    .btn-like, #text {
+        height: 2.7rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    i.fa.fa-heart {
+        font-size: 0.7rem !important;
+    }
+
+    .fb-icon {
+        font-size: 15px !important;
+        transform: translateY(-3px);
+    }
+
+    .insta-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .email-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .tgl-item {
+        font-size: 15px !important;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .shop-nav-first {
+        display: none;
+    }
+
+    .shop-nav-second {
+        display: block;
+        background-color: rgb(66,0,58) !important;
+        border: 0px;
+        height: 50px;
+    }
+
+
+    img.flower {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        transform: translate(-105px, -17px);
+        margin: 30px;
+    }
+
+
+    .shop-logo {
+        font-size: 3.2rem;
+    }
+
+    .shop-logo-text {
+        font-size: 1rem;
+        margin-left: 2.8rem;
+        padding-left: 100px !important;
+    }
+
+    .nav-icon {
+        font-size: 1.2rem;
+    }
+
+    button.navbar.navbar-light.navbar-toggler {
+        color: white !important;
+        padding-bottom: 10px !important;
+    }
+
+
+    #navbarCollapse1 {
+        z-index: 100;
+
+    }
+
+    .shop-logo-img {
+        font-weight: 400;
+        height: 70px;
+        letter-spacing: 6px;
+        padding-left: 70px;
+    }
+
+    .btn-bk, #text {
+        font-size: 0.7rem !important;
+    }
+
+    .btn-like, #text {
+        font-size: 0.7rem !important;
+    }
+
+    .fb-icon {
+        font-size: 15px !important;
+        transform: translateY(-3px);
+    }
+
+    .insta-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .email-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .nav-text {
+        font-size: 10rem !important;
+        padding-right: 15px !important;
+    }
+
+    .tgl-item {
+        font-size: 15px !important;
+    }
+
+    .heart-icon {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    img.flower {
+        z-index: 100;
+        display: block;
+        position: absolute;
+        width: 145px;
+        height: 115px;
+        transform: translate(-147px, -21px);
+        margin: 30px;
+    }
+
+    .nav-text {
+        font-size: 0.8rem;
+    }
+
+    .shop-nav-second {
+        display: none;
+    }
+
+    .shop-logo-img {
+        font-size: 75px;
+        font-weight: 400;
+        height: 85px;
+        letter-spacing: 6px;
+        width: 330px;
+    }
+
+    .shop-logo-text {
+        width: 100% !important;
+    }
+
+    .btn-bk, #text {
+        font-size: 1rem !important;
+    }
+
+    .btn-like, #text {
+        font-size: 1rem !important;
+    }
+
+    .fb-icon {
+        font-size: 15px !important;
+        transform: translateY(-3px);
+    }
+
+    .insta-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .email-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .heart-icon {
+        font-size: 19px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    img.flower {
+        z-index: 100;
+        display: block;
+        position: absolute;
+        width: 145px;
+        height: 115px;
+        transform: translate(-155px, -21px);
+        margin: 30px;
+    }
+
+    .shop-nav-second {
+        display: none;
+    }
+
+    .shop-logo-img {
+        font-size: 75px;
+        font-weight: 400;
+        height: 85px;
+        letter-spacing: 6px;
+        width: 330px;
+    }
+
+    .shop-logo-text {
+        width: 100% !important;
+    }
+
+    .btn-bk, #text {
+        font-size: 1rem !important;
+    }
+
+    .btn-like, #text {
+        font-size: 1rem !important;
+    }
+
+    .fb-icon {
+        font-size: 15px !important;
+        transform: translateY(-3px);
+    }
+
+    .insta-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .email-icon {
+        font-size: 17px !important;
+        transform: translateY(-2px);
+    }
+
+    .heart-icon {
+        font-size: 19px;
+    }
+
+}

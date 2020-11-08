@@ -1,0 +1,610 @@
+.prod-name {
+    color: #000000;
+    letter-spacing: normal;
+}
+
+.prod-describe {
+    letter-spacing: normal;
+}
+
+.prod-price {
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.prod-btn {
+    border-radius: 3px;
+    background-color: #a74eb6;
+    width: 225px !important;
+    height: 41px;
+    text-decoration: none;
+    outline: none;
+}
+
+.prod-btn {
+    background-color: #a74eb6 !important;
+}
+
+.shop-filters-block {
+    display: inline-flex !important;
+}
+
+.shop-items {
+    top: 0 !important;
+}
+
+.shop-item-name {
+    color: #212121;
+
+}
+
+.shop-item-describe {
+    font-size: 0.9rem !important;
+}
+
+.shop-item-price {
+    color: #212121 !important;
+}
+
+
+.scroll {
+    height: 250px !important;
+}
+
+/*filters*/
+
+.shop-filters {
+    width: 260px !important;
+}
+
+
+
+
+
+/*productsDescription*/
+
+.item-img {
+    width: 200px;
+    height: 250px;
+}
+
+.item-present {
+    width: 150px;
+}
+
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.number-input {
+    margin-bottom: 3rem;
+}
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+    color: white !important;
+}
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: white !important;
+}
+.number-input input[type=number] {
+    text-align: center;
+}
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+}
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+}
+.number-input.number-input button.minus {
+    padding-left: 10px;
+
+}
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: rgba(0, 0, 0, 0.54) !important;
+}
+.number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #feebff;
+}
+
+.item-btn-Like {
+    color: #aa66cc !important;
+    outline: none !important;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+.item-quantity {
+    width: 150px;
+    height: 37px;
+    border-radius: 2px solid #aa66cc !important;
+    border: 1px solid #aa66cc !important;
+}
+
+.item-large, .item-to-cart {
+    width: 160px;
+}
+
+.minus, .plus, .quantity {
+    width: 33% !important;
+    height: 2rem !important;
+    padding: 0.5rem !important;
+    color: white !important;
+    border-right: 1px solid #aa66cc !important;
+}
+
+.plus {
+    border-right: 0px solid #aa66cc !important;
+}
+
+.minus, .plus {
+    background-color: white !important;
+}
+
+.item-large-block {
+    border: 1px solid #aa66cc !important;
+    width: 95%;
+}
+
+
+
+
+.item-to-cart {
+    border-radius: 3px !important;
+    height: 38px !important;
+    background-color: #aa66cc !important;
+}
+
+.item-pills {
+    background-color: #aa66cc !important;
+}
+
+.prod-btn-like {
+    background-color: #e8d2d8;
+    border: 0px !important;
+    border-radius: 3px;
+    width: 50px;
+    height: 40px;
+}
+
+.item-btn-buy {
+    border: 0px !important;
+    border-radius: 3px;
+    background-color: #aa66cc !important;
+    width: 153px;
+    height: 41px;
+    text-decoration: none;
+    outline: none;
+}
+
+.item-payment-img {
+    width: 85px;
+    height: 45px;
+}
+
+
+@media (max-width: 576px) {
+    span.shop-prod-item {
+        font-size: 0.5rem !important;
+    }
+
+    .dd-text {
+        height: 5rem !important;
+    }
+
+    .shop-filters, .shop-filters-prod {
+        width: 180px !important;
+    }
+
+    /*filters*/
+
+    .search-input {
+        width: 9rem !important;
+        height: 1.8rem !important;
+    }
+
+    .form-check-input {
+        width: 1rem !important;
+        height: 1rem !important;
+        padding-left: 9px !important;
+    }
+
+
+    .shop-filters-block {
+        display: inline-flex !important;
+    }
+
+    .form-check-label {
+        font-size: 0.8rem !important;
+        margin-left: 9px !important;
+    }
+
+    .form-check {
+        margin: 0px 0px 1px 10px !important;
+    }
+
+    .shop-item-name {
+        color: #212121;
+    }
+
+    .shop-items-text {
+        font-size: 0.8rem !important;
+        margin-bottom: 25px !important;
+
+     }
+
+    .shop-item-describe {
+        font-size: 0.7rem !important;
+    }
+
+    .shop-item-price {
+        color: #212121 !important;
+        font-size: 1rem !important;
+    }
+
+    .scroll {
+        height: 250px !important;
+    }
+
+    .multi-range {
+        width: 80px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .text-left, .text-right {
+        font-size: 0.7rem !important;
+    }
+
+    .item-btn-buy {
+        font-size: 0.7rem;
+        width: 100px;
+        height: 35px;
+    }
+
+    .prod-btn-like {
+        height: 35px;
+    }
+
+    .item-large-block {
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .shop-filters {
+        width: 150px !important;
+    }
+
+    .shop-items {
+        width: 370px !important;
+        padding-right: 0px !important;
+    }
+
+    .item-quantity-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-quantity {
+        height: 35px;
+    }
+
+    .minus, .quantity, .plus {
+        height: 30px !important;
+    }
+
+    .item-to-cart {
+        font-size: 0.8rem;
+    }
+
+    td {
+        padding-left: 0px !important;
+    }
+
+    .discription-link {
+        font-size: 0.8rem !important;
+    }
+
+    .prod-name {
+        font-size:  0.8rem;
+        height: 3.5rem;
+    }
+
+    .prod-describe {
+        font-size:  0.8rem;
+        height: 3.5rem;
+    }
+
+    .prod-price {
+        font-size:  0.8rem;
+    }
+
+    .prod-btn {
+        font-size:  0.8rem;
+    }
+
+    .prod-img {
+        height: 339px;
+    }
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    span.shop-prod-item {
+        font-size: 0.6rem !important;
+    }
+
+    .dd-text {
+        height: 5rem !important;
+    }
+
+    .search-input {
+        width: 10rem !important;
+        height: 1.8rem !important;
+    }
+
+    .shop-filters {
+        width: 150px !important;
+    }
+
+    .shop-items {
+        width: 300px !important;
+        padding-right: 0px !important;
+    }
+
+    .item-quantity-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a.nav-link {
+        font-size: 0.5rem !important;
+    }
+
+    p.shop-item-name {
+        font-size: 1rem;
+    }
+
+    .item-btn-buy {
+        font-size: 0.8rem;
+    }
+
+    i.fa.fa-heart {
+        font-size: 1rem !important;
+    }
+
+    input#checkbox1.form-control {
+        width: 0.8rem !important;
+        height: 0.8rem !important;
+        float: left !important;
+    }
+
+    .form-control, .checked-item  {
+        width: 1rem !important;
+        height: 1rem !important;
+        padding-left: 10px !important;
+    }
+
+    .form-check {
+        padding-left: 2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    .form-check-label {
+        margin-left: 21px !important;
+    }
+
+    .shop-item-price {
+        font-size: 1.5rem !important;
+    }
+
+    .prod-name {
+        height: 3.5rem;
+    }
+
+    .prod-describe {
+        height: 4.5rem;
+    }
+
+    .prod-price {
+        height: ;
+    }
+
+    .prod-btn {
+        height: ;
+    }
+
+    .prod-img {
+        height: 260px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+   .form-control, .checked-item {
+       width: 1rem !important;
+       height: 1rem !important;
+       padding-right: 5px !important;
+   }
+
+    span.text-span {
+        font-size: 0.8rem !important;
+    }
+
+    span.shop-prod-item {
+        font-size: 0.8rem !important;
+    }
+
+    .dd-text {
+        height: 8rem !important;
+    }
+
+    .search-input {
+        width: 11rem !important;
+        height: 1.8rem !important;
+    }
+
+    a.nav-link {
+        font-size: 0.65rem !important;
+    }
+
+    .form-control, .checked-item  {
+        width: 1rem !important;
+        height: 1rem !important;
+        padding-left: 15px !important;
+    }
+
+    .form-check {
+        padding-left: 2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    .form-check-label {
+        margin-left: 25px !important;
+    }
+
+    .shop-item-price {
+        font-size: 1.5rem !important;
+    }
+
+    .shop-item-name {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .item-btn-buy {
+        font-size: 0.65rem;
+        width: 100px;
+    }
+
+    .form-control, .checked-item  {
+        width: 1rem !important;
+        height: 1rem !important;
+        padding-left: 15px !important;
+    }
+
+    .form-check {
+        padding-left: 2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    .form-check-label {
+        margin-left: 25px !important;
+    }
+
+    .shop-item-price {
+        font-size: 1.5rem !important;
+    }
+
+    .prod-name {
+        height: 4.5rem;
+    }
+
+    .prod-describe {
+        height: 6rem;
+    }
+
+    .prod-price {
+        height: ;
+    }
+
+    .prod-btn {
+        height: ;
+    }
+
+    .prod-img {
+        height: 375px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    .item-btn-buy {
+        font-size: 0.65rem;
+        width: 100px;
+    }
+
+    .form-control, .checked-item  {
+        width: 1rem !important;
+        height: 1rem !important;
+        padding-left: 15px !important;
+    }
+
+    .form-check {
+        padding-left: 2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    .form-check-label {
+        margin-left: 25px !important;
+    }
+
+    .shop-item-price {
+        font-size: 1.5rem !important;
+    }
+
+    .discription-link {
+        font-size: 1rem !important;
+    }
+
+    .prod-name {
+        height: 4.5rem;
+    }
+
+    .prod-describe {
+        height: 6rem;
+    }
+
+    .prod-price {
+        height: ;
+    }
+
+    .prod-btn {
+        height: ;
+    }
+
+    .prod-img {
+        height: 330px;
+    }
+
+}
+

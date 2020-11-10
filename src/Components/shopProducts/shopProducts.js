@@ -72,32 +72,25 @@ $(document).ready(function() {
 class ShopProducts extends Component  {
 
     state = {
-        collapseID: ''
+collapseID: '',
+value: 0,
+items: {
+    default: '1',
+},
+products: []
     }
 
 
-    state = {
-        value: 0
-    }
-
-    state = {
-            items: {
-                default: '1',
-            },
-            products: []
-        };
-
-
-        togglePills = (type, tab) => e => {
-            e.preventDefault();
-            if (this.state.items[type] !== tab) {
-                let items = { ...this.state.items };
-                items[type] = tab;
-                this.setState({
-                    items
-                });
-            }
-        };
+    togglePills = (type, tab) => e => {
+        e.preventDefault();
+        if (this.state.items[type] !== tab) {
+            let items = { ...this.state.items };
+            items[type] = tab;
+            this.setState({
+                items
+            });
+        }
+    };
 
 
     decrease = () => {
@@ -112,7 +105,9 @@ class ShopProducts extends Component  {
         // fetch('https://reqres.in/api/products/')
         //   .then(response => response.json())
         //   .then(products => this.setState({products: products.data}));
-        const data = {
+
+         const data = {
+
             "status": "ok",
             "products": [
                 {

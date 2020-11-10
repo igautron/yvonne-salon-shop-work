@@ -41,7 +41,7 @@ class ShopNav extends Component  {
             <div>
                 <div className='shop-nav-first'>
                     <header>
-                        <MDBNavbar white expand='md' scrolling fixed='top' className='navbar-bg p-0 p'>
+                        <MDBNavbar expand='md' scrolling fixed='top' className='navbar-bg p-0 p white'>
                             <div className='container'>
                                 <MDBNavbarNav left>
                                     <MDBNavItem active>

@@ -30,6 +30,327 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item1/Details1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item1/Item1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item10/Details10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item10/Item10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item11/Details11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item11/Item11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item12/Details12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item12/Item12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item13/Details13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item13/Item13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item14/Details14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item14/Item14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item15/Details15.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item15/Item15.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item16/Details16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item16/Item16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item17/Details17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item17/Item17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item18/Details18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item18/Item18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item19/Details19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item19/Item19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item2/Details2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item2/Item2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item20/Details20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item20/Item20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item21/Details21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item21/Item21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item22/Details22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item22/Item22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item23/Details23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item23/Item23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item24/Details24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item24/Item24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item25/Details25.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item25/Item25.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item26/Details26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item26/Item26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item27/Details27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item27/Item27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item28/Details28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item28/Item28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item29/Details29.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item29/Item29.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item3/Details3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item3/Item3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item30/Details30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item30/Item30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item31/Details31.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item31/Item31.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item32/Details32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item32/Item32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item33/Details33.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item33/Item33.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item4/Details4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item4/Item4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item5/Details5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item5/Item5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item6/Details6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item6/Item6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item7/Details7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item7/Item7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item8/Details8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item8/Item8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item9/Details9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item9/Item9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item201/Details201.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item201/Item201.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item202/Details202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item202/Item202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item203/Details203.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item203/Item203.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item204/Details204.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item204/Item204.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item205/Details205.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item205/Item205.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item206/Details206.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item206/Item206.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item207/Details207.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item207/Item207.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item208/Details208.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item208/Item208.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item209/Details209.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item209/Item209.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item210/Details210.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item210/Item210.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item211/Details211.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item211/Item211.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item212/Details212.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item212/Item212.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item213/Details213.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item213/Item213.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item214/Details214.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item214/Item214.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item215/Details215.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item215/Item215.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item216/Details216.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item216/Item216.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item217/Details217.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item217/Item217.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item218/Details218.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item218/Item218.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item219/Details219.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item219/Item219.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item220/Details220.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item220/Item220.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item221/Details221.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item221/Item221.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item222/Details222.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item222/Item222.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item223/Details223.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item223/Item223.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item224/Details224.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item224/Item224.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item225/Details225.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item225/Item225.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item226/Details226.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item226/Item226.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item227/Details227.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item227/Item227.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item228/Details228.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item228/Item228.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item229/Details229.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item229/Item229.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item230/Details230.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item230/Item230.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item231/Details231.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item231/Item231.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item232/Details232.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item232/Item232.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item233/Details233.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item233/Item233.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item234/Details234.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item234/Item234.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item235/Details235.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item235/Item235.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item236/Details236.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item236/Item236.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item237/Details237.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item237/Item237.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item238/Details238.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item238/Item238.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item239/Details239.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item239/Item239.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item240/Details240.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item240/Item240.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item241/Details241.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item241/Item241.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item242/Details242.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item242/Item242.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item243/Details243.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item243/Item243.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item244/Details244.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines2/Item244/Item244.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item34/Details34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item34/Item34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item35/Details35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item35/Item35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item36/Details36.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item36/Item36.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item37/Details37.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item37/Item37.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item38/Details38.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item38/Item38.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item39/Details39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item39/Item39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item40/Details40.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item40/Item40.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item41/Details41.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item41/Item41.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item42/Details42.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item42/Item42.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item43/Details43.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item43/Item43.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item44/Details44.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item44/Item44.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item45/Details45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item45/Item45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item46/Details46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item46/Item46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item47/Details47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item47/Item47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item48/Details48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item48/Item48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item50/Details50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item50/Item50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item51/Details51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item51/Item51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item52/Details52.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item52/Item52.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item53/Details53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item53/Item53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item54/Details54.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item54/Item54.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item55/Details55.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item55/Item55.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item56/Details56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item56/Item56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item57/Details57.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item57/Item57.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item58/Details58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita/Item58/Item58.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item100/Details100.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item100/Item100.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item101/Details101.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item101/Item101.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item102/Details102.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item102/Item102.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item103/Details103.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item103/Item103.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item104/Details104.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item104/Item104.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item105/Details105.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item105/Item105.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item106/Details106.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item106/Item106.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item107/Details107.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item107/Item107.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item108/Details108.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item108/Item108.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item109/Details109.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item109/Item109.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item110/Details110.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item110/Item110.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item111/Details111.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item111/Item111.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item112/Details112.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item112/Item112.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item113/Details113.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item113/Item113.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item114/Details114.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item114/Item114.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item115/Details115.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item115/Item115.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item116/Details116.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item116/Item116.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item117/Details117.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item117/Item117.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item118/Details118.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Farmavita2/Item118/Item118.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item60/Details60.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item60/Item60.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item61/Details61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item61/Item61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item62/Details62.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item62/Item62.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item63/Details63.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item63/Item63.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item64/Details64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item64/Item64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item65/Details65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item65/Item65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item66/Details66.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item66/Item66.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item67/Details67.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item67/Item67.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item68/Details68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item68/Item68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item69/Details69.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item69/Item69.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item70/Details70.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item70/Item70.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item71/Details71.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item71/Item71.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item72/Details72.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item72/Item72.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item74/Details74.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item74/Item74.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item75/Details75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item75/Item75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item76/Details76.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item76/Item76.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item77/Details77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item77/Item77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item78/Details78.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item78/Item78.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item79/Details79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item79/Item79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item80/Details80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item80/Item80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item81/Details81.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item81/Item81.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item82/Details82.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item82/Item82.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item83/Details83.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item83/Item83.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item84/Details84.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item84/Item84.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item85/Details85.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item85/Item85.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item86/Details86.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item86/Item86.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item87/Details87.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Joico/Item87/Item87.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f110.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f110.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f111.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f111.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/f53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/f53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/j80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/j80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/j81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/j81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/j82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/j82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/j83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/j83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/joico61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/catalogue/а105.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/catalogue/а105.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +366,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i6HfyQBtpWNbMM1ieKFqu1LNJB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,10 +375,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yvonne-salon-shop-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GITHUB CLONE/yvonne-salon-shop-work" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -203,7 +525,43 @@
       <workItem from="1604760714789" duration="1664000" />
       <workItem from="1604822552150" duration="1787000" />
       <workItem from="1604824356564" duration="1286000" />
-      <workItem from="1604826164454" duration="1592000" />
+      <workItem from="1604826164454" duration="1854000" />
+      <workItem from="1604828242545" duration="1792000" />
+      <workItem from="1604830049090" duration="1810000" />
+      <workItem from="1604831911428" duration="1796000" />
+      <workItem from="1604833729728" duration="1683000" />
+      <workItem from="1604839949985" duration="885000" />
+      <workItem from="1604844024751" duration="725000" />
+      <workItem from="1604845916630" duration="2012000" />
+      <workItem from="1604847945576" duration="1560000" />
+      <workItem from="1604850599939" duration="1793000" />
+      <workItem from="1604852430933" duration="1211000" />
+      <workItem from="1604854640794" duration="551000" />
+      <workItem from="1604871342458" duration="1724000" />
+      <workItem from="1604873147951" duration="1793000" />
+      <workItem from="1604874960174" duration="1701000" />
+      <workItem from="1604876786580" duration="1789000" />
+      <workItem from="1604878877510" duration="1102000" />
+      <workItem from="1604880084733" duration="1308000" />
+      <workItem from="1604904699376" duration="79000" />
+      <workItem from="1604904868214" duration="1780000" />
+      <workItem from="1604906669725" duration="1791000" />
+      <workItem from="1604908481191" duration="1874000" />
+      <workItem from="1604910369468" duration="1803000" />
+      <workItem from="1604912187140" duration="1793000" />
+      <workItem from="1604913994829" duration="1848000" />
+      <workItem from="1604919762667" duration="1610000" />
+      <workItem from="1604921573883" duration="1795000" />
+      <workItem from="1604923691751" duration="1793000" />
+      <workItem from="1604925501450" duration="1798000" />
+      <workItem from="1604927313434" duration="1815000" />
+      <workItem from="1604930332431" duration="1743000" />
+      <workItem from="1604932179480" duration="839000" />
+      <workItem from="1604934421926" duration="1072000" />
+      <workItem from="1604944132577" duration="1856000" />
+      <workItem from="1604946009223" duration="609000" />
+      <workItem from="1604963841125" duration="1054000" />
+      <workItem from="1605025767246" duration="965000" />
     </task>
     <servers />
   </component>
@@ -215,10 +573,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601225135610" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604827112756">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605026236455">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827112756" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605026236455" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604904887741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604904887741" />
     <state x="99" y="108" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604427686694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -231,16 +593,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604824220291" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

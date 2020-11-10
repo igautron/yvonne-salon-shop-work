@@ -180,13 +180,6 @@
 
 
 
-
-.item-to-cart {
-    border-radius: 3px !important;
-    height: 38px !important;
-    background-color: #aa66cc !important;
-}
-
 .item-pills {
     background-color: #aa66cc !important;
 }
@@ -324,17 +317,6 @@
         height: 30px !important;
     }
 
-    .item-to-cart {
-        font-size: 0.8rem;
-    }
-
-    td {
-        padding-left: 0px !important;
-    }
-
-    .discription-link {
-        font-size: 0.8rem !important;
-    }
 
     .prod-name {
         font-size:  0.8rem;
@@ -439,13 +421,6 @@
         height: 4.5rem;
     }
 
-    .prod-price {
-        height: ;
-    }
-
-    .prod-btn {
-        height: ;
-    }
 
     .prod-img {
         height: 260px;
@@ -541,13 +516,6 @@
         height: 6rem;
     }
 
-    .prod-price {
-        height: ;
-    }
-
-    .prod-btn {
-        height: ;
-    }
 
     .prod-img {
         height: 375px;
@@ -582,24 +550,12 @@
         font-size: 1.5rem !important;
     }
 
-    .discription-link {
-        font-size: 1rem !important;
-    }
-
     .prod-name {
         height: 4.5rem;
     }
 
     .prod-describe {
         height: 6rem;
-    }
-
-    .prod-price {
-        height: ;
-    }
-
-    .prod-btn {
-        height: ;
     }
 
     .prod-img {

@@ -18,6 +18,20 @@
                   h3 {
                     line-height: 35px !important;
                   }
+                  div {
+                    button#to-cart {
+                      border-radius: 3px !important;
+                      border: 3px solid mediumpurple;
+                      height: 38px !important;
+                      background-color: white !important;
+                      color: mediumpurple;
+                    }
+                    button.item-to-cart {
+                      border-radius: 3px !important;
+                      height: 38px !important;
+                      background-color: #aa66cc !important;
+                    }
+                  }
                 }
               }
 
@@ -25,7 +39,8 @@
           }
         }
         div {
-            div {
+            div.item-pills {
+
               div.menu-details {
                 background-color: #a74eb6 !important;
                 ul{
@@ -36,5 +51,194 @@
                 }
               }
             }
+          div.tab-content {
+            min-height: 300px;
+          }
           }
   }
+
+
+
+     @media (max-width: 576px) {
+       div {
+         div.container {
+           div {
+             button {
+               transform: translateX(50) !important;
+               background-color: #a74eb6;
+             }
+
+
+             div {
+               div {
+                 div {
+
+                 }
+               }
+
+               div {
+                 div {
+                   h3 {
+                     line-height: 35px !important;
+                   }
+
+                   div {
+                     button#to-cart {
+                       background-color: white !important;
+                       color: #aa66cc !important;
+                       border: 2px solid #aa66cc !important;
+                       width: 100% !important;
+                     }
+
+                     button.item-to-cart {
+                       border-radius: 3px;
+                       height: 38px;
+                       background-color: #aa66cc;
+                       width: 100%;
+                       color: white;
+                     }
+                   }
+                 }
+               }
+
+             }
+           }
+
+           div {
+               ul {
+                 li.nav-item {
+                   a {
+                     font-size: 0.8rem !important;
+                   }
+                 }
+               }
+           }
+
+           div.tab-content {
+             min-height: 300px;
+           }
+         }
+       }
+     }
+
+
+
+
+     @media (min-width: 576px) and (max-width: 768px) {
+       div {
+         div.container {
+           div {
+             button{
+               transform: translateX(50) !important;
+               background-color: #a74eb6;
+             }
+
+             div {
+               div {
+                 div {
+
+                 }
+               }
+               div {
+                 div {
+                   h3 {
+                     line-height: 35px !important;
+                   }
+                   div {
+                     button#to-cart {
+                       background-color: white !important;
+                       color: #aa66cc !important;
+                       border: 2px solid #aa66cc !important;
+                       width: 100% !important;
+                     }
+                     button.item-to-cart {
+                       border-radius: 3px ;
+                       height: 38px ;
+                       background-color: #aa66cc ;
+                       width: 100% ;
+                       color: white;
+                     }
+                   }
+                 }
+               }
+
+             }
+           }
+         div {
+           ul {
+             li.nav-item {
+               a {
+                 font-size: 0.8rem !important;
+               }
+             }
+           }
+         }
+
+           div.tab-content {
+             min-height: 300px;
+           }
+         }
+       }
+     }
+
+
+     @media (min-width: 768px) and (max-width: 991px) {
+       div {
+         div.container {
+           div {
+             button{
+               transform: translateX(50) !important;
+               background-color: #a74eb6;
+             }
+
+             div {
+               div {
+                 div {
+
+                 }
+               }
+               div {
+                 div {
+                   h3 {
+                     line-height: 35px !important;
+                   }
+                   div {
+                     button#to-cart {
+                       background-color: white !important;
+                       color: #aa66cc !important;
+                       border: 2px solid #aa66cc !important;
+                       width: 100% !important;
+                     }
+                     button.item-to-cart {
+                       border-radius: 3px ;
+                       height: 38px ;
+                       background-color: #aa66cc ;
+                       width: 100% ;
+                       color: white;
+                     }
+                   }
+                 }
+               }
+
+             }
+           }
+         }
+         div {
+           div.item-pills {
+
+             div.menu-details {
+               background-color: #a74eb6 !important;
+               ul{
+                 li.nav-item {
+                   a.link-details {
+                   }
+                 }
+               }
+             }
+           }
+           div.tab-content {
+             min-height: 300px;
+           }
+         }
+       }
+     }

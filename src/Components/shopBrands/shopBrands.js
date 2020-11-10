@@ -65,32 +65,6 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
-                                Mirella
-                            </MDBDropdownToggle>
-                            <MDBDropdownMenu color='purple' basic>
-                                <MDBDropdownItem>BeeForm</MDBDropdownItem>
-                                <MDBDropdownItem>Blond</MDBDropdownItem>
-                                <MDBDropdownItem>Massimo</MDBDropdownItem>
-                                <MDBDropdownItem>HairCare</MDBDropdownItem>
-                                <MDBDropdownItem>Professional</MDBDropdownItem>
-                            </MDBDropdownMenu>
-                        </MDBDropdown>
-                        <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
-                                ProfiStyle
-                            </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
-                                <MDBDropdownItem>Anti-Loss</MDBDropdownItem>
-                                <MDBDropdownItem>Anti-Yellow</MDBDropdownItem>
-                                <MDBDropdownItem>Blond</MDBDropdownItem>
-                                <MDBDropdownItem>Men's Style</MDBDropdownItem>
-                                <MDBDropdownItem>Sebum</MDBDropdownItem>
-                                <MDBDropdownItem>Smooth & Shine</MDBDropdownItem>
-                                <MDBDropdownItem>Volume</MDBDropdownItem>
-                            </MDBDropdownMenu>
-                        </MDBDropdown>
-                        <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 Davines
                             </MDBDropdownToggle>
                             <MDBDropdownMenu color='secondary' basic>
@@ -104,26 +78,61 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
-                                Barba Italiana
+                                Joico
                             </MDBDropdownToggle>
                             <MDBDropdownMenu color='secondary' basic>
-                                <MDBDropdownItem></MDBDropdownItem>
-                                <MDBDropdownItem>Enea</MDBDropdownItem>
-                                <MDBDropdownItem>Primitivo</MDBDropdownItem>
-                                <MDBDropdownItem>Leonardo</MDBDropdownItem>
-                                <MDBDropdownItem>Insolia</MDBDropdownItem>
-                                <MDBDropdownItem>Caronte</MDBDropdownItem>
-                                <MDBDropdownItem>Raffaello</MDBDropdownItem>
+                                <MDBDropdownItem>Defy Damage</MDBDropdownItem>
+                                <MDBDropdownItem>Blond Life</MDBDropdownItem>
+                                <MDBDropdownItem>Joifull</MDBDropdownItem>
+                                <MDBDropdownItem>Hydrasplash</MDBDropdownItem>
+                                <MDBDropdownItem>Color Balance</MDBDropdownItem>
+                                <MDBDropdownItem>K-Pak</MDBDropdownItem>
+                                <MDBDropdownItem>K-Pak Color Therapy</MDBDropdownItem>
+                                <MDBDropdownItem>Shake Series</MDBDropdownItem>
+                                <MDBDropdownItem>Style & Finish</MDBDropdownItem>
+                                <MDBDropdownItem>Moisture Recovery</MDBDropdownItem>
+                                <MDBDropdownItem>Color Infuse Red</MDBDropdownItem>
+                            </MDBDropdownMenu>
+                        </MDBDropdown>
+                        <MDBDropdown className='m-0 col-2 p-0'>
+                            <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
+                                ProfyStyle
+                            </MDBDropdownToggle>
+                            <MDBDropdownMenu color='secondary' basic>
+                                <MDBDropdownItem>Repair</MDBDropdownItem>
+                                <MDBDropdownItem>Argan</MDBDropdownItem>
+                                <MDBDropdownItem>Color</MDBDropdownItem>
+                                <MDBDropdownItem>Volume</MDBDropdownItem>
+                                <MDBDropdownItem>Curl</MDBDropdownItem>
+                                <MDBDropdownItem>Hydro</MDBDropdownItem>
+                                <MDBDropdownItem>Blond</MDBDropdownItem>
+                                <MDBDropdownItem>Anti-yellow</MDBDropdownItem>
+                                <MDBDropdownItem>Smooth</MDBDropdownItem>
+                                <MDBDropdownItem>Sebum</MDBDropdownItem>
+                                <MDBDropdownItem>Anti-loss</MDBDropdownItem>
+                                <MDBDropdownItem>Anti-dandruf</MDBDropdownItem>
+                                <MDBDropdownItem>Vikiplex</MDBDropdownItem>
+                                <MDBDropdownItem>Detox</MDBDropdownItem>
                             </MDBDropdownMenu>
                         </MDBDropdown>
                         <MDBDropdown className='col-2 p-0'>
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
-                                Choice
+                                Felps
                             </MDBDropdownToggle>
                             <MDBDropdownMenu color='secondary' basic>
-                                <MDBDropdownItem>White Mandarin</MDBDropdownItem>
-                                <MDBDropdownItem>Green Max</MDBDropdownItem>
-                                <MDBDropdownItem>Добра Їжа</MDBDropdownItem>
+                                <MDBDropdownItem></MDBDropdownItem>
+                                <MDBDropdownItem></MDBDropdownItem>
+                                <MDBDropdownItem></MDBDropdownItem>
+                            </MDBDropdownMenu>
+                        </MDBDropdown>
+                        <MDBDropdown className='col-2 p-0'>
+                            <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
+                                Schwarzkopf
+                            </MDBDropdownToggle>
+                            <MDBDropdownMenu color='secondary' basic>
+                                <MDBDropdownItem></MDBDropdownItem>
+                                <MDBDropdownItem></MDBDropdownItem>
+                                <MDBDropdownItem></MDBDropdownItem>
                             </MDBDropdownMenu>
                         </MDBDropdown>
                     </div>

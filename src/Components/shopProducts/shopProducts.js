@@ -102,69 +102,9 @@ products: []
     }
 
     componentDidMount(props) {
-        // fetch('https://reqres.in/api/products/')
-        //   .then(response => response.json())
-        //   .then(products => this.setState({products: products.data}));
-
-         const data = {
-
-            "status": "ok",
-            "products": [
-                {
-                    "title":"super product 1",
-                    "price":"11.99",
-                    "discr":"vervrvervgerfwr",
-                    "image":"https://www.joico.com/wp-content/uploads/2019/02/defy-damage-shampoo-styled1.jpg",
-                    "articul": "1025",
-                    "types": "Шампунь",
-                    "brand": "Davines",
-                    "seria": "for you",
-                    "amount": "200 ml",
-                    "hr1": "vwebertbtml",
-                    "a1": "vwebertbtml",
-                    "discr2": "vwebertbtml",
-                    "gender": "vwebertbtml",
-                    "discr3": "vwebertbtml",
-                    "country": "vwebertbtml"
-                },
-                {
-                    "title":"super product 2",
-                    "price":"34.99",
-                    "discr":"vervrvervgerfwr",
-                    "image":"https://www.joico.com/wp-content/uploads/2019/02/defy-damage-shampoo-styled1.jpg",
-                    "articul": "1025",
-                    "types": "Шампунь",
-                    "brand": "Davines",
-                    "seria": "for you",
-                    "amount": "200 ml",
-                    "hr1": "vwebertbtml",
-                    "a1": "vwebertbtml",
-                    "discr2": "vwebertbtml",
-                    "gender": "vwebertbtml",
-                    "discr3": "vwebertbtml",
-                    "country": "vwebertbtml"
-                },
-                {
-                    "title":"super product 3",
-                    "price":"456.99",
-                    "discr":"vervrvervgerfwr",
-                    "image":"https://www.joico.com/wp-content/uploads/2019/02/defy-damage-shampoo-styled1.jpg",
-                    "articul": "1025",
-                    "types": "Шампунь",
-                    "brand": "Davines",
-                    "seria": "for you",
-                    "amount": "200 ml",
-                    "hr1": "vwebertbtml",
-                    "a1": "vwebertbtml",
-                    "discr2": "vwebertbtml",
-                    "gender": "vwebertbtml",
-                    "discr3": "vwebertbtml",
-                    "country": "vwebertbtml"
-                },
-            ]
-        };
-        console.log(data);
-        this.setState({products: data.products});
+        fetch('http://yvonne-server.loc/products')
+          .then(response => response.json())
+          .then(products => this.setState({products: products.data}));
     }
 
     render() {

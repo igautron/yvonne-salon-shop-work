@@ -8,15 +8,15 @@ import './../../../shopProducts.css'
 class Item extends React.Component {
 
                 render() {
-                    let title,price, discr;
+                    let title,price, descr;
                     if (this.props.product) {
                         title = this.props.product.title;
                         price = this.props.product.price;
-                        discr = this.props.product.discr;
+                        descr = this.props.product.descr;
                     }else{
                         title = '';
                         price = '';
-                        discr = '';
+                        descr = '';
                     }
                 return (
                     <MDBCard className='border-0'>
@@ -35,7 +35,7 @@ class Item extends React.Component {
                                         style={{marginBottom: '1rem'}}
                                         className='text-left p-0 pb-0 mb-1'
                                     >
-                                        <p className='prod-describe black-text m-0 '>{discr}</p>
+                                        <p className='prod-describe black-text m-0 '>{descr}</p>
                                     </MDBLink>
                                     <p className='prod-price black-text py-1 text-left'>Ціна: <span>{price}</span>грн</p>
                                     <div>

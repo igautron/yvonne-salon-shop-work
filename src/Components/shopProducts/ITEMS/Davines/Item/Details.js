@@ -19,14 +19,6 @@ import Item from './Item';
 class Details extends React.Component {
 
     state = {
-        collapseID: ''
-    }
-
-    state = {
-        value: 0
-    }
-
-    state = {
         items: {
             default: '1',
         },
@@ -34,17 +26,18 @@ class Details extends React.Component {
             title:'',
             price:'',
             articul: '',
-            types: '',
+            type: '',
             brand: '',
             seria: '',
             amount: '',
             hr1: '',
             a1: '',
-            discr2: '',
+            descr2: '',
             gender: '',
-            discr3: '',
+            descr3: '',
             country: ''
-        }
+        },
+        appo_arr:'defaul!!!'
     };
 
 
@@ -62,61 +55,79 @@ class Details extends React.Component {
     };
 
      componentDidMount(props) {
-        // fetch('https://reqres.in/api/products/')
-        //   .then(response => response.json())
-        //   .then(products => this.setState({products: products.data}));
-        const data = {
-            "status": "ok",
-            "product": {
-                "title":"super product 1",
-                "price":"11.99",
-                "articul": "1025",
-                "types": "Шампунь",
-                "brand": "Davines",
-                "seria": "for you",
-                "amount": "200 ml",
-                "hr1": "vwebertbtml",
-                "a1": "vwebertbtml",
-                "discr2": "vwebertbtml",
-                "gender": "vwebertbtml",
-                "discr3": "vwebertbtml",
-                "country": "vwebertbtml"
+        const itemId = window.location.pathname.split('/').pop()
+        fetch('http://yvonne-server.loc/products/'+itemId)
+          .then(response => response.json())
+          .then(product => {
+            this.setState({product: product.data})
+            this.get_appo(product.data)
+          });
+        // console.log('id:::'+window.location.pathname.split('/').pop())
+        // const data = {
+        //     "status": "ok",
+        //     "product": {
+        //         "title":"super product 1",
+        //         "price":"11.99",
+        //         "articul": "1025",
+        //         "type": "Шампунь",
+        //         "brand": "Davines",
+        //         "seria": "for you",
+        //         "amount": "200 ml",
+        //         "hr1": "vwebertbtml",
+        //         "a1": "vwebertbtml",
+        //         "descr2": "vwebertbtml",
+        //         "gender": "vwebertbtml",
+        //         "descr3": "vwebertbtml",
+        //         "country": "vwebertbtml"
 
-            },
-        };
-        this.setState({product: data.product});
+        //     },
+        // };
+        // this.setState({product: data.product});
     }
 
+        get_appo(product){
+            let appo_arr = []
+            if(product.helth) appo_arr.push('Здоровье')
+            if(product.skin) appo_arr.push('Кожа')
+            if(product.coloring) appo_arr.push('для пофарбованого')
+            if(product.curl) appo_arr.push('для кучерявого')
+            if(product.lupa) appo_arr.push('проти лупи')
+            if(product.natural) appo_arr.push('Природный')
+            if(product.loss) appo_arr.push('Блеск')
+            console.log(appo_arr.join(','))
+            this.setState({appo_arr: appo_arr.join(', ')})
+        }
 
        render() {
-           let title, price, articul, types, brand, seria, amount, hr1, a1, discr2, gender, discr3, country;
-           if (this.props.product) {
-               title = this.props.product.title;
-               price = this.props.product.price;
-               articul = this.props.product.articul;
-               types = this.props.product.types;
-               brand = this.props.product.brand;
-               seria = this.props.product.seria;
-               amount = this.props.product.amount;
-               hr1 = this.props.product.hr1;
-               a1 = this.props.product.a1;
-               discr2 = this.props.product.discr2;
-               gender = this.props.product.gender;
-               discr3 = this.props.product.discr3;
-               country = this.props.product.country;
+            // console.log('appo'+this.state.appo_arr)
+           let title, price, articul, type, brand, seria, amount, hr1, a1, descr2, gender, descr3, country;
+           if (this.state.product) {
+               title = this.state.product.title;
+               price = this.state.product.price;
+               articul = this.state.product.articul;
+               type = this.state.product.type;
+               brand = this.state.product.brand;
+               seria = this.state.product.seria;
+               amount = this.state.product.amount;
+               hr1 = this.state.product.hr1;
+               a1 = this.state.product.a1;
+               descr2 = this.state.product.descr;
+               gender = this.state.product.gender;
+               descr3 = this.state.product.descr;
+               country = this.state.product.country;
            }else{
                title = '';
                price = '';
                articul = '';
-               types = '';
+               type = '';
                brand = '';
                seria = '';
                amount = '';
                hr1 = '';
                a1 = '';
-               discr2 = '';
+               descr2 = '';
                gender = '';
-               discr3 = '';
+               descr3 = '';
                country = '';
            }
 
@@ -135,14 +146,14 @@ class Details extends React.Component {
                                 <div className='p-2'>
                                     <h3 className='font-weight-normal'>{title}</h3>
                                     <p className='font-weight-bold py-1 m-0 grey-text'>Артикул:<span className='font-weight-normal'>{articul}</span></p>
-                                    <p className='font-weight-bold py-1 m-0'>Вид товару: <span className='font-weight-normal'>{types}</span></p>
+                                    <p className='font-weight-bold py-1 m-0'>Вид товару: <span className='font-weight-normal'>{type}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Виробник: <span className='font-weight-normal'>{brand}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Серія: <span className='font-weight-normal'>{seria}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Об'єм: <span className='font-weight-normal'>{amount}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Тип волосся: <span className='font-weight-normal'>{hr1}</span></p>
-                                    <p className='font-weight-bold py-1 m-0'>Призначення: <span className='font-weight-normal'>{a1}</span></p>
+                                    <p className='font-weight-bold py-1 m-0'>Призначення: <span className='font-weight-normal'>{this.state.appo_arr}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Пол: <span className='font-weight-normal'>{gender}</span></p>
-                                    <p className='font-weight-bold py-1 m-0'>Опис: <span className='font-weight-normal'>{discr2}</span></p>
+                                    <p className='font-weight-bold py-1 m-0'>Опис: <span className='font-weight-normal'>{descr2}</span></p>
                                     <p className='bg-white p-0 green-text py-1 m-0'><span className='font-weight-bold'><i className="fas fa-check green-text font-weight-bold p-2"></i>В наявності</span></p>
                                     <p className='font-weight-bold py-1 m-0 price'>Ціна: <span className='font-weight-bold py-1 m-0'>{price}</span></p>
                                     <div className='d-inline-flex flex-wrap text-center py-4 w-100'>
@@ -157,7 +168,7 @@ class Details extends React.Component {
                         <MDBNav  className='item-pills pills'>
                             <MDBNavItem className='w-25'>
                                 <MDBNavLink
-                                    className='white-text font-weight-normal px-1 py-3 discription-link text-center'
+                                    className='white-text font-weight-normal px-1 py-3 description-link text-center'
                                     to='#'
                                     active={this.state.items['default'] === '1'}
                                     onClick={this.togglePills('default', '1')}
@@ -167,7 +178,7 @@ class Details extends React.Component {
                             </MDBNavItem>
                             <MDBNavItem className='w-25'>
                                 <MDBNavLink
-                                    className='white-text font-weight-normal  px-1 py-3 discription-link text-center'
+                                    className='white-text font-weight-normal  px-1 py-3 description-link text-center'
                                     to='#'
                                     active={this.state.items['default'] === '2'}
                                     onClick={this.togglePills('default', '2')}
@@ -177,7 +188,7 @@ class Details extends React.Component {
                             </MDBNavItem>
                             <MDBNavItem className='w-25'>
                                 <MDBNavLink
-                                    className='white-text font-weight-normal discription-link px-1 py-3 text-center'
+                                    className='white-text font-weight-normal description-link px-1 py-3 text-center'
                                     to='#'
                                     active={this.state.items['default'] === '3'}
                                     onClick={this.togglePills('default', '3')}
@@ -187,7 +198,7 @@ class Details extends React.Component {
                             </MDBNavItem>
                             <MDBNavItem className='w-25'>
                                 <MDBNavLink
-                                    className='white-text font-weight-normal discription-link px-1 py-3 text-center'
+                                    className='white-text font-weight-normal description-link px-1 py-3 text-center'
                                     to='#'
                                     active={this.state.items['default'] === '4'}
                                     onClick={this.togglePills('default', '4')}
@@ -202,7 +213,7 @@ class Details extends React.Component {
                                     Детальний опис товару:
                                 </p>
                                 <div className='item-method-of-use'>
-                                    {discr3}
+                                    {descr3}
                                 </div>
                             </MDBTabPane>
                             <MDBTabPane tabId='2'  className='mt-4 p-2'>
@@ -218,7 +229,7 @@ class Details extends React.Component {
                                         </tr>
                                         <tr>
                                             <td>Тип товару:</td>
-                                            <td>{types}</td>
+                                            <td>{type}</td>
                                         </tr>
                                         <tr>
                                             <td>Країна виробник:</td>
@@ -234,7 +245,7 @@ class Details extends React.Component {
                                         </tr>
                                         <tr>
                                             <td>Призначення:</td>
-                                            <td>{a1}</td>
+                                            <td>{this.state.appo_arr}</td>
                                         </tr>
                                         <tr>
                                             <td>Категорія:</td>

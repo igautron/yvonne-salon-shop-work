@@ -82,7 +82,7 @@ function App() {
                 {/*<Route path='/shopLike'>*/}
                 {/*    <ShopLike />*/}
                 {/*</Route>*/}
-                <Route path='/details'>
+                <Route path='/details/:id'>
                     <Details />
                 </Route>
             </Switch>

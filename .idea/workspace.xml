@@ -31,6 +31,12 @@
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GITHUB CLONE/yvonne-salon-shop-work" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -243,6 +249,13 @@
       <workItem from="1604946009223" duration="609000" />
       <workItem from="1604963841125" duration="1054000" />
       <workItem from="1605025767246" duration="1785000" />
+      <workItem from="1605027898544" duration="695000" />
+      <workItem from="1605037392140" duration="1891000" />
+      <workItem from="1605039308842" duration="1793000" />
+      <workItem from="1605041118338" duration="1795000" />
+      <workItem from="1605042973259" duration="1122000" />
+      <workItem from="1605086363367" duration="234000" />
+      <workItem from="1605193001667" duration="1180000" />
     </task>
     <servers />
   </component>
@@ -258,10 +271,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605026236455" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604904887741">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605086397332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604904887741" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605086397332" />
     <state x="99" y="108" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604427686694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

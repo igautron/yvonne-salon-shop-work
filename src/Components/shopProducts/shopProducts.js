@@ -107,6 +107,7 @@ products: []
           .then(products => this.setState({products: products.data}));
     }
 
+
     render() {
         return (
             <div className='shop-products-block w-100'>

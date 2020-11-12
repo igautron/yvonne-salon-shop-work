@@ -101,6 +101,7 @@ class Details extends React.Component {
        render() {
             // console.log('appo'+this.state.appo_arr)
            let title, price, articul, type, brand, seria, amount, hr1, a1, descr2, gender, descr3, country;
+
            if (this.state.product) {
                title = this.state.product.title;
                price = this.state.product.price;

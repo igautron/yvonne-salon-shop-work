@@ -1,12 +1,11 @@
 .autorization {
     top: 0;
-    margin: 100px auto auto 30%;
+    margin: auto !important;
+    padding-top: 100px;
     justify-content: center !important;
     z-index: 3;
     width: 370px;
-    position: absolute;
-    display: block;
-
+    position: absolute !important;
 }
 
 
@@ -21,6 +20,13 @@
 .btn-reg {
     color: purple;
     border: 2px solid purple;
+    background-color: transparent !important;
+}
+
+.btn-reg:hover {
+    color: purple;
+    border: 2px solid purple;
+    background-color: transparent !important;
 }
 
 .btn-block:hover {

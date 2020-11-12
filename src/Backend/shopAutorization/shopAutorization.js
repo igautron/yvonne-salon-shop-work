@@ -12,11 +12,14 @@ import {Link} from 'react-router-dom';
 
 
 class ShopAutorization extends Component  {
+
+
     render() {
             return (
                 <div>
-                    <div className='container autorization z-index-5'>
-                        <div className='card'>
+                    <div className='w-100'>
+                    <div className='autorization'>
+                        <div className='card z-index-5'>
                             <h5 className='card-header white-text text-center py-4'>
                                 <strong className='logo-autorization'>Авторизація</strong>
                             </h5>
@@ -37,11 +40,12 @@ class ShopAutorization extends Component  {
                                 <button className="btn btn-reg font-weight-bold my-4 w-100" type="submit">Авторизація</button>
                                 <p>Ще не зареєстровані?
                                     <Link to='/shopRegistration'>
-                                        <a href="" className='pl-3'>Зареєструватись</a>
+                                            <a href="" className='pl-3' >Зареєструватись</a>
                                     </Link>
                                 </p>
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             )

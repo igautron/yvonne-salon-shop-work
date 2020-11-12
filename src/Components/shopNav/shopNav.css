@@ -71,6 +71,16 @@ img.flower {
     text-shadow: 1px 0px 0px ;
 }
 
+.dropdownmenu {
+    margin: auto;
+    top: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
 
 @media (max-width: 576px) {
     .shop-nav-first {

@@ -12,9 +12,11 @@ import {
     MDBNavLink,
     MDBNavbarToggler,
     MDBCollapse,
-    MDBContainer
+    MDBContainer, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu
 } from 'mdbreact';
 
+
+import './../../Backend/shopAutorization/shopAutorization.css'
 
 class ShopNav extends Component  {
 
@@ -70,11 +72,9 @@ class ShopNav extends Component  {
                                     <MDBNavItem className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text'>
                                         <MDBIcon far icon='envelope'/>
                                     </MDBNavItem>
-                                    <Link to='/shopRegistration'>
-                                        <MDBNavItem type='button' id='dialog-btn' className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text'>
-                                            <MDBIcon icon='user-circle' className='border-left pl-4 pl-md-3'/>
-                                        </MDBNavItem>
-                                    </Link>
+                                    <MDBNavItem className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text'>
+                                       <MDBIcon icon='user-circle' className='border-left pl-4 pl-md-3'/>
+                                    </MDBNavItem>
                                 </MDBNavbarNav>
                             </div>
                         </MDBNavbar>

@@ -90,20 +90,20 @@ class Details extends React.Component {
 
        render() {
            let title, price, articul, types, brand, seria, amount, hr1, a1, discr2, gender, discr3, country;
-           if (this.props.product) {
-               title = this.props.product.title;
-               price = this.props.product.price;
-               articul = this.props.product.articul;
-               types = this.props.product.types;
-               brand = this.props.product.brand;
-               seria = this.props.product.seria;
-               amount = this.props.product.amount;
-               hr1 = this.props.product.hr1;
-               a1 = this.props.product.a1;
-               discr2 = this.props.product.discr2;
-               gender = this.props.product.gender;
-               discr3 = this.props.product.discr3;
-               country = this.props.product.country;
+           if (this.state.product) {
+               title = this.state.product.title;
+               price = this.state.product.price;
+               articul = this.state.product.articul;
+               types = this.state.product.types;
+               brand = this.state.product.brand;
+               seria = this.state.product.seria;
+               amount = this.state.product.amount;
+               hr1 = this.state.product.hr1;
+               a1 = this.state.product.a1;
+               discr2 = this.state.product.discr2;
+               gender = this.state.product.gender;
+               discr3 = this.state.product.discr3;
+               country = this.state.product.country;
            }else{
                title = '';
                price = '';

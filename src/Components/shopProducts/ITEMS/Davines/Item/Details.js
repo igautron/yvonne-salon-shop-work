@@ -94,42 +94,28 @@ class Details extends React.Component {
             if(product.lupa) appo_arr.push('проти лупи')
             if(product.natural) appo_arr.push('Природный')
             if(product.loss) appo_arr.push('Блеск')
-            console.log(appo_arr.join(','))
             this.setState({appo_arr: appo_arr.join(', ')})
         }
 
        render() {
             // console.log('appo'+this.state.appo_arr)
-           let title, price, articul, type, brand, seria, amount, hr1, a1, descr2, gender, descr3, country;
+           let title, price, articul, type, brand, seria, amount, hr1, a1, descr2, gender, descr3, country, image;
 
            if (this.state.product) {
-               title = this.state.product.title;
-               price = this.state.product.price;
-               articul = this.state.product.articul;
-               type = this.state.product.type;
-               brand = this.state.product.brand;
-               seria = this.state.product.seria;
-               amount = this.state.product.amount;
-               hr1 = this.state.product.hr1;
-               a1 = this.state.product.a1;
-               descr2 = this.state.product.descr;
-               gender = this.state.product.gender;
-               descr3 = this.state.product.descr;
-               country = this.state.product.country;
-           }else{
-               title = '';
-               price = '';
-               articul = '';
-               type = '';
-               brand = '';
-               seria = '';
-               amount = '';
-               hr1 = '';
-               a1 = '';
-               descr2 = '';
-               gender = '';
-               descr3 = '';
-               country = '';
+                title = this.state.product.title;
+                price = this.state.product.price;
+                image = this.state.product.image;
+                articul = this.state.product.articul;
+                type = this.state.product.type;
+                brand = this.state.product.brand;
+                seria = this.state.product.seria;
+                amount = this.state.product.amount;
+                hr1 = this.state.product.hr1;
+                a1 = this.state.product.a1;
+                descr2 = this.state.product.descr;
+                gender = this.state.product.gender;
+                descr3 = this.state.product.descr;
+                country = this.state.product.country;
            }
 
         return (

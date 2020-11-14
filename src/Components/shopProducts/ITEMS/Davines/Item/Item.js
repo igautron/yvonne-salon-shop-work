@@ -8,19 +8,17 @@ import './../../../shopProducts.css'
 class Item extends React.Component {
 
                 render() {
-                    let title,price, descr;
+                    let id, title, price, descr, image;
                     if (this.props.product) {
+                        id = this.props.product.id;
                         title = this.props.product.title;
                         price = this.props.product.price;
                         descr = this.props.product.descr;
-                    }else{
-                        title = '';
-                        price = '';
-                        descr = '';
+                        image = this.props.product.image;
                     }
                 return (
                     <MDBCard className='border-0'>
-                        <Link to='/details'>
+                        <Link to={'/details/'+id}>
                             <div className='text-white text-center align-items-center p-0'>
                                 <MDBCardImage
                                     src={require('../../../../../img/catalogue/f45.jpg')}

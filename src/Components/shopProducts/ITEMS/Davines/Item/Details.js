@@ -126,7 +126,7 @@ class Details extends React.Component {
                        <div className='d-inline-flex flex-wrap'>
                             <MDBCol sm='6' md='6' lg='6' xl='5' className='m-0'>
                                 <div className='p-1 m-0 p-2'>
-                                    <img className='m-auto w-100 justify-content-center d-block' src={require('../../../../../img/catalogue/f45.jpg')} />
+                                    <img className='m-auto w-100 justify-content-center d-block' src={image/*require('../../../../../img/catalogue/f45.jpg')*/} />
                                 </div>
                             </MDBCol>
                             <MDBCol sm='6' md='6' lg='6' xl='7' className='p-2 m-0'>

@@ -21,7 +21,7 @@ class Item extends React.Component {
                         <Link to={'/details/'+id}>
                             <div className='text-white text-center align-items-center p-0'>
                                 <MDBCardImage
-                                    src={require('../../../../../img/catalogue/f45.jpg')}
+                                    src={image/*require('../../../../../img/catalogue/f45.jpg')*/}
                                     className='img-fluid w-100 prod-img'
                                     alt=''>
                                 </MDBCardImage>

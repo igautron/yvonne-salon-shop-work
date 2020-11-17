@@ -94,7 +94,7 @@ class ShopProducts extends Component  {
         this.setState({filterTypes:types})
         let url
         if (Object.keys(types).length !== 0) {
-            url = 'http://yvonne-server.loc/filter?types='+encodeURIComponent(JSON.stringify(types))
+            url = 'http://yvonne-server.loc/filter?filter='+encodeURIComponent(JSON.stringify({types:types}))
         }else{
             url = 'http://yvonne-server.loc/products'
         }

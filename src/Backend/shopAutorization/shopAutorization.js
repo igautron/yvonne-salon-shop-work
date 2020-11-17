@@ -1,12 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import './shopAutorization.css'
-import {
-    MDBBtn,
-    MDBIcon
-} from 'mdbreact';
-
-import $ from 'jquery';
+import './shopAutorization.css';
 import {Link} from 'react-router-dom';
 
 

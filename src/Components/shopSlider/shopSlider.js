@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './shopSlider.css'
-import {BrowserRouter as Router} from 'react-router-dom';
 import {
     MDBCarousel,
     MDBCarouselInner,

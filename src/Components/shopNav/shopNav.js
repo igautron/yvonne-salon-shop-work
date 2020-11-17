@@ -1,18 +1,17 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopNav.css'
-import {Link, BrowserRouter as Router } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {
     MDBNavbar,
     MDBNavbarNav,
     MDBNavItem,
     MDBIcon,
     MDBBtn,
-    MDBNavbarBrand,
     MDBNavLink,
     MDBNavbarToggler,
     MDBCollapse,
-    MDBContainer, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu
+    MDBContainer
 } from 'mdbreact';
 
 
@@ -133,7 +132,7 @@ class ShopNav extends Component  {
                 <div className='shop-bg-nav'>
                     <div className='container m-auto justify-content-center h-100'>
                         <div className='w-100 d-inline-flex pt-lg-5 pt-xl-5 h-100'>
-                            <div left className='col-8 col-lg-7 col-xl-8 col-md-7 col-sm-7 w-responsive shop-logo-div pl-5 pr-5 pt-3 pb-3 pl-sm-5 pr-sm-2 pt-sm-4 pb-sm-4 pl-md-2 pr-md-1 pt-md-4 pb-md-5 float-left ml-lg-5 pt-lg-4 pb-lg-5 pt-sm-1 pb-sm-1 mt-0 mt-md-2' style={{zIndex: '1'}}>
+                            <div  className='left col-8 col-lg-7 col-xl-8 col-md-7 col-sm-7 w-responsive shop-logo-div pl-5 pr-5 pt-3 pb-3 pl-sm-5 pr-sm-2 pt-sm-4 pb-sm-4 pl-md-2 pr-md-1 pt-md-4 pb-md-5 float-left ml-lg-5 pt-lg-4 pb-lg-5 pt-sm-1 pb-sm-1 mt-0 mt-md-2' style={{zIndex: '1'}}>
                                 <div className='shop-logo-img black-text ml-lg-0 w-auto ml-lg-5' >
                                     <img
                                         className='flower'
@@ -146,7 +145,7 @@ class ShopNav extends Component  {
                                     COSMETICS SHOP</a>
                                 </div>
                             </div>
-                            <div right className='col-4 col-lg-3 col-md-4 col-sm-4 col-xl-3 w-responsive shop-logo-div d-inline-flex  pt-3 pb-3 pl-0 pr-0 float-right pt-sm-4 pb-sm-3 mx-sm-0 mr-sm-0 mr-md-3 ml-md-4 ml-xl-5 mr-xl-5 pt-sm-4 pt-md-4 mt-md-3 mt-xl-0 mt-lg-0 mt-sm-0 pt-lg-5 mx-lg-3 pt-lg-2 pr-2 pr-xl-2 pr-lg-2 pr-sm-2 pl-sm-3 pl-md-5 pl-lg-3 '>
+                            <div  className='right col-4 col-lg-3 col-md-4 col-sm-4 col-xl-3 w-responsive shop-logo-div d-inline-flex  pt-3 pb-3 pl-0 pr-0 float-right pt-sm-4 pb-sm-3 mx-sm-0 mr-sm-0 mr-md-3 ml-md-4 ml-xl-5 mr-xl-5 pt-sm-4 pt-md-4 mt-md-3 mt-xl-0 mt-lg-0 mt-sm-0 pt-lg-5 mx-lg-3 pt-lg-2 pr-2 pr-xl-2 pr-lg-2 pr-sm-2 pl-sm-3 pl-md-5 pl-lg-3 '>
                                 <Link to='/shopBin'>
                                     <MDBBtn className='black-text btn-bk float-right ml-0  mt-4 my-sm-4  mb-4 mr-2 ml-sm-0 mr-sm-1 mt-sm-3 mb-sm-2 mt-md-3 mb-md-4 mx-md-2 mt-lg-3 ml-lg-4 mr-lg-3 ml-xl-5 px-lg-3 px-lg-2 px-md-3 px-sm-4 px-0 pl-0 py-lg-4 py-md-4 py-2 p-sm-2 p-md-1  font-weight-bold w-responsive font-small w-100' >
                                         КОРЗИНА

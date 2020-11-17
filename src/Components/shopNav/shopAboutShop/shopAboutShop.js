@@ -3,25 +3,17 @@ import './shopAboutShop.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import {  BrowserRouter as Router } from 'react-router-dom'
 import {
     MDBCard,
     MDBCol,
     MDBView,
     MDBRow,
-    MDBTable,
-    MDBInput,
-    MDBBtn,
-    MDBModal,
-    MDBModalHeader,
-    MDBModalBody,
     MDBIcon,
     MDBCarousel,
     MDBCarouselInner,
     MDBCarouselItem,
-    MDBContainer, MDBDropdownItem, MDBDropdownMenu
+    MDBContainer
 } from 'mdbreact';
-import $ from 'jquery'
 
 
 class shopAboutShop extends Component {
@@ -40,8 +32,7 @@ class shopAboutShop extends Component {
                                                    length={3}
                                                    showControls={true}
                                                    showIndicators={false}
-                                                   className='z-depth-0'
-                                                   slide
+                                                   className='z-depth-0 slide'
                                                >
                                                    <MDBCarouselInner>
                                                        <MDBCarouselItem itemId='1'>

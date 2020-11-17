@@ -1,3 +1,7 @@
+.products {
+    min-height: 2100px;
+}
+
 .prod-name {
     color: #000000;
     letter-spacing: normal;
@@ -206,6 +210,8 @@
     width: 85px;
     height: 45px;
 }
+
+
 
 
 @media (max-width: 576px) {

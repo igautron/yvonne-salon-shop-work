@@ -3,13 +3,11 @@ import './shopContacts.scss'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import {  BrowserRouter as Router } from 'react-router-dom'
 import {
 MDBCard,
 MDBCol,
 MDBView,
-MDBRow, MDBTable,MDBContainer, MDBInput, MDBBtn, MDBModal, MDBModalHeader, MDBModalBody, MDBIcon} from 'mdbreact';
-import $ from 'jquery'
+MDBRow, MDBTable,MDBContainer, MDBInput, MDBBtn, MDBModalHeader, MDBModalBody, MDBIcon} from 'mdbreact';
 
 class ShopContacts extends Component {
 
@@ -43,7 +41,7 @@ class ShopContacts extends Component {
                     <MDBCard className='border-0 laptop-v-block d-block'>
                         <MDBRow className='ml-0 mr-0 w-100 m-0 p-0 pt-3 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5 pb-5 '>
                             <MDBCol className='col-12 m-0 p-0 contact-info z-depth-1 pb-4'>
-                                <MDBView waves>
+                                <MDBView>
                                     {/*<img src={require('../../../../../../img/shop/slide5-1.jpg')} className="img-fluid m-0 p-0 w-100" alt="" />*/}
                                     <div className='black-text'>
                                         <h3 className='text-center header-text-contacts font-weight-normal pt-xl-5 pt-lg-5 pb-3 pt-md-4 pt-sm-4 pt-4 m-0 px-xl-5 px-lg-4 px-md-4 px-sm-1'>Інформація для зв'язку</h3>

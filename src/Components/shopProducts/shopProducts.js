@@ -2,47 +2,20 @@ import React from 'react';
 import {Component} from 'react';
 import './shopProducts.css'
 import ShopFilter from './shopFilter'
-import { Scrollbars } from 'react-custom-scrollbars';
-import Filter, { Sort, FilterValue } from 'data-engine';
-import {Link} from 'react-router-dom'
 
 import {
     MDBRow,
-    MDBInput,
     MDBCol,
     MDBCard,
-    MDBCardBody,
     MDBPagination,
     MDBPageNav,
     MDBPageItem,
-    MDBCardImage,
     MDBLink,
-    MDBCardFooter,
-    MDBCollapse,
-    MDBContainer,
-    MDBTabPane,
-    MDBTabContent,
-    MDBNav,
-    MDBNavItem,
-    MDBNavLink,
-    MDBIcon,
-    MDBTable,
-    MDBTableHead,
-    MDBTableBody,
-    MDBNavbarToggler,
-    MDBBtn,
-    MDBFilter
 } from 'mdbreact';
 
 import $ from 'jquery';
 import 'jquery';
 import 'mdbreact/dist/css/mdb.css';
-
-
-
-
-
-
 
 
 import Item from './../shopProducts/ITEMS/Davines/Item/Item'
@@ -54,8 +27,6 @@ $(document).ready(function () {
         $('#mdb-lightbox-ui').load('mdb-addons/mdb-lightbox-ui.html');
     });
 });
-
-// to make a block width 100%
 
 $(document).ready(function() {
     $(window).resize( function() {
@@ -83,11 +54,19 @@ class ShopProducts extends Component  {
                 default: '1',
             },
             products: [],
-            filterTypes:{}
+            filterTypes:{},
+            filterBrands:{},
+            filterSeries:{},
+            filterAmount:{},
+
+            // filterTopbrands: {}
         }
 
         this.setFilterTypes = this.setFilterTypes.bind(this)
-        // call, apply, bind
+        this.setFilterBrands = this.setFilterBrands.bind(this)
+        this.setFilterSeries = this.setFilterSeries.bind(this)
+        this.setFilterAmount = this.setFilterAmount.bind(this)
+        // this.setFilterTopbrands = this.setFilterTopbrands.bind(this)
     }
 
     setFilterTypes(types){
@@ -103,6 +82,62 @@ class ShopProducts extends Component  {
           .then(data => this.setState({products: data.products}));
     }
 
+    setFilterBrands(brands) {
+        this.setState({filterBrands:brands})
+        let url
+        if (Object.keys(brands).length !== 0) {
+            url = 'http://yvonne-server.loc/filter?brands='+encodeURIComponent(JSON.stringify(brands))
+        }else{
+            url = 'http://yvonne-server.loc/products'
+        }
+        fetch(url)
+            .then(response => response.json())
+            .then(data => this.setState({products: data.products}));
+    }
+
+    setFilterSeries(series) {
+        this.setState({filterSeries:series})
+        let url
+        if (Object.keys(series).length !== 0) {
+            url = 'http://yvonne-server.loc/filter?series='+encodeURIComponent(JSON.stringify(series))
+        }else{
+            url = 'http://yvonne-server.loc/products'
+        }
+        fetch(url)
+            .then(response => response.json())
+            .then(data => this.setState({products: data.products}));
+    }
+
+    setFilterAmount(amount) {
+        this.setState({filterAmount:amount})
+        let url
+        if (Object.keys(amount).length !== 0) {
+            url = 'http://yvonne-server.loc/filter?amount='+encodeURIComponent(JSON.stringify(amount))
+        }else{
+            url = 'http://yvonne-server.loc/products'
+        }
+        fetch(url)
+            .then(response => response.json())
+            .then(data => this.setState({products: data.products}));
+    }
+
+
+
+    // setFilterTopbrands(topbrands) {
+    //     this.setState({filterTopbrands:topbrands})
+    //     let url
+    //     if (Object.keys(topbrands).length !== 0) {
+    //         url = 'http://yvonne-server.loc/filter?topbrands='+encodeURIComponent(JSON.stringify(topbrands))
+    //     }else{
+    //         url = 'http://yvonne-server.loc/products'
+    //     }
+    //     fetch(url)
+    //         .then(response => response.json())
+    //         .then(data => this.setState({products: data.products}));
+    //
+    //
+    // }
+
     componentDidMount(props) {
         fetch('http://yvonne-server.loc/products')
           .then(response => response.json())
@@ -117,44 +152,56 @@ class ShopProducts extends Component  {
                 <div className='container pt-2 pt-md-3 pt-lg-3 shop-nav-brand'>
                     <div className='d-inline-flex w-100'>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center active' data-filter='shampoo'>
-                                    <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ШАМПУНІ</span>
+                            <MDBCard className='dd-text pink lighten-5 ' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center active' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ШАМПУНІ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center' data-filter='conditioner'>
-                                    <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>КОНДИЦІОНЕРИ</span>
+                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                       <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>КОНДИЦІОНЕРИ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center' data-filter='mask'>
-                                    <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>МАСКИ</span>
+                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>МАСКИ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center' data-filter='styleing'>
-                                    <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>СТАЙЛІНГИ</span>
+                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>СТАЙЛІНГИ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center pl-2 pr-2' data-filter='ampoules'>
-                                    <span className='text-span mt-3 black-text text-center font-weight-bold shop-prod-item'>ЕЛІКСИР</span>
+                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ОЛІЇ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
                         <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5' color='#fce4ec m-0 w-100 '>
-                                <MDBLink className='p-0 text-center pl-2 pr-2' data-filter='reconstruction'>
-                                    <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ЗАХИСТ</span>
+                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
+                                <MDBLink className='p-0 text-center' >
+                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
+                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ЗАХИСТ</span>
+                                    </button>
                                 </MDBLink>
                             </MDBCard>
                         </MDBCol>
@@ -166,7 +213,12 @@ class ShopProducts extends Component  {
                     <div className='container pl-1 pr-3 pl-sm-2 pl-md-2 pl-xl-1 pl-lg-1 pr-sm-2 pr-md-2 pr-xl-1 pr-lg-1'>
                         <div className='shop-filters-block w-responsive w-100 pt-3 pb-5 clearfix'>
 
-                        <ShopFilter setFilterTypes={this.setFilterTypes} />
+                        <ShopFilter
+                            setFilterTypes={this.setFilterTypes}
+                            setFilterBrands={this.setFilterBrands}
+                            setFilterSeries={this.setFilterSeries}
+                            setFilterAmount={this.setFilterAmount}
+                        />
                     {/*products list*/}
 
                     <div className='shop-items right w-75 bg-white d-inline-block ml-0  pr-3 pr-xl-0 ml-xl-5 ml-sm-3 ml-lg-3 ml-md-3'>
@@ -177,7 +229,7 @@ class ShopProducts extends Component  {
                             </p>
                             <MDBRow className='p-0 m-2 ml-0 border-0 products'>
                                 {this.state.products.map((product) => (
-                                <MDBCol key={product.id} lg='6' md='6' xl='4' className='pb-5 p-2'>
+                                <MDBCol key={product.id} lg='6' md='6' xl='4' className='pb-5 p-2 m-0 float-left'>
                                     <Item product={product}/>
                                 </MDBCol>
                                 ))}

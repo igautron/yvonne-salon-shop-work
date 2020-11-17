@@ -1,20 +1,10 @@
 import React from 'react';
 import {Component} from 'react';
-import $ from 'jquery';
 import './../shopOrder.css'
 
 import {
-    MDBBtn,
-    MDBIcon,
     MDBCol,
-    MDBRow,
-    MDBCard,
-    MDBContainer,
     MDBInput,
-    MDBSelect,
-    MDBCollapse, MDBCardImage
-
-
 } from 'mdbreact';
 
 

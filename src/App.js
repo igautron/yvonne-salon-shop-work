@@ -9,7 +9,6 @@ import {
     Route
 } from 'react-router-dom';
 
-
 import ShopNav from '../src/Components/shopNav/shopNav'
 import ShopSlider from '../src/Components/shopSlider/shopSlider'
 import ShopBrands from '../src/Components/shopBrands/shopBrands'
@@ -33,10 +32,7 @@ import ShopMobileUpload from '../src/Backend/shopMobileUpload/shopMobileUpload';
 // import ShopCallMe from '../src/Backend/shopCallMe/shopCallMe';
 
 
-import Details from "./Components/shopProducts/ITEMS/Davines/Item/Details";
-
-
-
+import Details from './Components/shopProducts/ITEMS/Davines/Item/Details';
 
 
 
@@ -75,13 +71,9 @@ function App() {
                 <Route path='/shopRegistration'>
                     <ShopRegistration />
                 </Route>
-                {/*<ShopMobileUpload />*/}
-                {/*<Route path='/shopCallMe'>*/}
-                {/*    <ShopCallMe />*/}
-                {/*</Route>*/}
-                {/*<Route path='/shopLike'>*/}
-                {/*    <ShopLike />*/}
-                {/*</Route>*/}
+                <Route path='/shopMobileUpload'>
+                   <ShopMobileUpload />
+                </Route>
                 <Route path='/details/:id'>
                     <Details />
                 </Route>

@@ -8,20 +8,24 @@ import './../../../shopProducts.css'
 class Item extends React.Component {
 
                 render() {
-                    let id, title, price, descr, image;
+                    let id, title, price, descr, image, type, brand, seria, gender;
                     if (this.props.product) {
                         id = this.props.product.id;
                         title = this.props.product.title;
                         price = this.props.product.price;
-                        descr = this.props.product.descr;
+                        descr = ''//this.props.product.descr;
                         image = this.props.product.image;
+                        type = this.props.product.type;
+                        brand = this.props.product.brand;
+                        seria = this.props.product.seria;
+                        gender = this.props.product.gender;
                     }
                 return (
                     <MDBCard className='border-0'>
                         <Link to={'/details/'+id}>
                             <div className='text-white text-center align-items-center p-0'>
                                 <MDBCardImage
-                                    src={image/*require('../../../../../img/catalogue/f45.jpg')*/}
+                                    src={require('../../../../../img/catalogue/f45.jpg')}
                                     className='img-fluid w-100 prod-img'
                                     alt=''>
                                 </MDBCardImage>
@@ -36,6 +40,10 @@ class Item extends React.Component {
                                         <p className='prod-describe black-text m-0'>{descr}</p>
                                     </MDBLink>
                                     <div className=' w-100'>
+                                        <p className='black-text m-0 py-1 text-left'>Type: <span>{type}</span></p>
+                                        <p className='black-text m-0 py-1 text-left'>brand: <span>{brand}</span></p>
+                                        <p className='black-text m-0 py-1 text-left'>seria: <span>{seria}</span></p>
+                                        <p className='black-text m-0 py-1 text-left'>gender: <span>{gender}</span></p>
                                         <p className='font-weight-bold black-text py-1 text-left float-left'>Ціна: <span>{price}</span> грн</p>
                                         <p className='float-right m-0'>
                                             <a className='bg-transparent border-0'>

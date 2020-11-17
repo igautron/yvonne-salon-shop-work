@@ -23,6 +23,7 @@ class ShopFilter extends Component  {
         brands: {},
         series: {},
         amount: {},
+        appointments: {},
 
         // topbrands: {}
       };
@@ -31,12 +32,33 @@ class ShopFilter extends Component  {
       this.chooseBrandHandle = this.chooseBrandHandle.bind(this)
       this.chooseSeriaHandle = this.chooseSeriaHandle.bind(this)
       this.chooseAmountHandle = this.chooseAmountHandle.bind(this)
+      this.chooseGenderHandle = this.chooseGenderHandle.bind(this)
+      this.chooseAppointmentHandler = this.chooseAppointmentHandler.bind(this)
+
 
       // this.chooseTopbrandsHandle = this.chooseTopbrandsHandle.bind(this)
+
+      this.genders = {
+        men: false,
+        women: false
+      }
     }
 
     componentDidMount(props) {
 
+    }
+
+    chooseAppointmentHandler(event){
+        let choosenValue = event.target.value
+        let appointments = {...this.state.appointments}
+        if (event.target.checked) {
+            appointments[choosenValue]= 1
+        }else{
+            delete appointments[choosenValue]
+        }
+        cl(appointments)
+        this.props.setFilterAppoinrments(appointments)
+        this.setState({appointments})
     }
 
     chooseTypeHandle(event){
@@ -90,6 +112,21 @@ class ShopFilter extends Component  {
     }
 
 
+
+    chooseGenderHandle(event){
+        let gender = event.target.value
+        this.genders[gender] = event.target.checked
+        cl(this.genders)
+        if (this.genders.men && !this.genders.women) {
+            return this.props.setFilterGender('men')
+        }
+        if (!this.genders.men && this.genders.women) {
+            return this.props.setFilterGender('women')
+        }
+        return this.props.setFilterGender('all') // men, women, all
+    }
+
+
     render() {
         return (
     <div className='shop-filters h-100  left w-25 w-responsive ml-2'>
@@ -139,26 +176,26 @@ class ShopFilter extends Component  {
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ПРИЗНАЧЕННЯ</p>
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
-                <MDBInput label='Оздоровлення' type='checkbox' id='healt'/>
-                <MDBInput label='Салонний догляд' type='checkbox' id='salon'/>
-                <MDBInput label='Реконструкція' type='checkbox' id='reconstraction'/>
-                <MDBInput label='Захист' type='checkbox' id='protection'/>
-                <MDBInput label='Фарбування' type='checkbox' id='coloring'/>
-                <MDBInput label='Випрямлення' type='checkbox' id='stratening'/>
-                <MDBInput label='Натуральне' type='checkbox' id='natural'/>
-                <MDBInput label='Для кучер' type='checkbox' id='curl'/>
-                <MDBInput label='Для шкіри голови' type='checkbox' id='skin'/>
-                <MDBInput label='Нейтралізація жовтизни' type='checkbox' id='yellow'/>
-                <MDBInput label='Обєм' type='checkbox' id='volume'/>
-                <MDBInput label='Себо' type='checkbox' id='sebo'/>
-                <MDBInput label='Проти лупи' type='checkbox' id='lupa'/>
-                <MDBInput label='Проти випадіння' type='checkbox' id='loss'/>
+                <MDBInput label='Оздоровлення' type='checkbox'           onChange={this.chooseAppointmentHandler} value='healt'          id='appo_healt'         />
+                <MDBInput label='Салонний догляд' type='checkbox'        onChange={this.chooseAppointmentHandler} value='salon'          id='appo_salon'         />
+                <MDBInput label='Реконструкція' type='checkbox'          onChange={this.chooseAppointmentHandler} value='reconstruction' id='appo_reconstruction'/>
+                <MDBInput label='Захист' type='checkbox'                 onChange={this.chooseAppointmentHandler} value='protection'     id='appo_protection'    />
+                <MDBInput label='Фарбування' type='checkbox'             onChange={this.chooseAppointmentHandler} value='coloring'       id='appo_coloring'      />
+                <MDBInput label='Випрямлення' type='checkbox'            onChange={this.chooseAppointmentHandler} value='stratening'     id='appo_stratening'    />
+                <MDBInput label='Натуральне' type='checkbox'             onChange={this.chooseAppointmentHandler} value='natural'        id='appo_natural'       />
+                <MDBInput label='Для кучер' type='checkbox'              onChange={this.chooseAppointmentHandler} value='curl'           id='appo_curl'          />
+                <MDBInput label='Для шкіри голови' type='checkbox'       onChange={this.chooseAppointmentHandler} value='skin'           id='appo_skin'          />
+                <MDBInput label='Нейтралізація жовтизни' type='checkbox' onChange={this.chooseAppointmentHandler} value='yellow'         id='appo_yellow'        />
+                <MDBInput label='Обєм' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='volume'         id='appo_volume'        />
+                <MDBInput label='Себо' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='sebo'           id='appo_sebo'          />
+                <MDBInput label='Проти лупи' type='checkbox'             onChange={this.chooseAppointmentHandler} value='lupa'           id='appo_lupa'          />
+                <MDBInput label='Проти випадіння' type='checkbox'        onChange={this.chooseAppointmentHandler} value='loss'           id='appo_loss'          />
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>КАТЕГОРІЯ</p>
-                <MDBInput label='Для жінок' type='checkbox' id='woman' />
-                <MDBInput label='Для чоловіків' type='checkbox' id='man'/>
+                <MDBInput onChange={this.chooseGenderHandle} value="women" label='Для жінок' type='checkbox' id='woman' />
+                <MDBInput onChange={this.chooseGenderHandle} value="men" label='Для чоловіків' type='checkbox' id='man'/>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>СЕРІЯ</p>

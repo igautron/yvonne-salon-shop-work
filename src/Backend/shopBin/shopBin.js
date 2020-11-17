@@ -4,12 +4,10 @@ import {Link} from 'react-router-dom'
 import './shopBin.css'
 import {
     MDBBtn,
-    MDBIcon,
     MDBCol,
     MDBRow
 } from 'mdbreact';
 
-import $ from 'jquery';
 
 
 class ShopBin extends Component  {

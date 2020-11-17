@@ -1,11 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import {Link} from 'react-router-dom'
 import './shopRegistration.css'
-import {
-    MDBBtn, MDBIcon, MDBInput
-
-} from 'mdbreact';
 
 
 class ShopRegistration extends Component  {

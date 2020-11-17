@@ -1,8 +1,6 @@
 import {
-    MDBCard, MDBCardBody, MDBCardImage,
     MDBCol,
-    MDBContainer,
-    MDBIcon, MDBLink,
+    MDBIcon,
     MDBNav,
     MDBNavItem,
     MDBNavLink, MDBRow,
@@ -37,7 +35,8 @@ class Details extends React.Component {
             descr3: '',
             country: ''
         },
-        appo_arr:'defaul!!!'
+        appo_arr:'defaul!!!',
+        appo_arr_hairtype:'defaul!!!'
     };
 
 
@@ -61,6 +60,7 @@ class Details extends React.Component {
           .then(product => {
             this.setState({product: product.data})
             this.get_appo(product.data)
+            this.get_appo_hairtype(product.data)
           });
         // console.log('id:::'+window.location.pathname.split('/').pop())
         // const data = {
@@ -87,15 +87,34 @@ class Details extends React.Component {
 
         get_appo(product){
             let appo_arr = []
-            if(product.helth) appo_arr.push('Здоровье')
-            if(product.skin) appo_arr.push('Кожа')
+            if(product.health) appo_arr.push('оздоровлення')
+            if(product.salon) appo_arr.push('салонний догляд')
+            if(product.reconstraction) appo_arr.push('відновлення')
+            if(product.protection) appo_arr.push('захист')
             if(product.coloring) appo_arr.push('для пофарбованого')
+            if(product.stratening) appo_arr.push('випрямлення')
+            if(product.natural) appo_arr.push('натуральний вигляд')
             if(product.curl) appo_arr.push('для кучерявого')
+            if(product.skin) appo_arr.push('нормалізація шкірного сала')
+            if(product.yellow) appo_arr.push('нормалізація жовтизни')
+            if(product.volume) appo_arr.push('збільшення об`єму')
+            if(product.sebo) appo_arr.push('себорегуляція')
             if(product.lupa) appo_arr.push('проти лупи')
-            if(product.natural) appo_arr.push('Природный')
-            if(product.loss) appo_arr.push('Блеск')
+            if(product.loss) appo_arr.push('проти втрати')
             this.setState({appo_arr: appo_arr.join(', ')})
         }
+
+        get_appo_hairtype(product) {
+            let appo_arr_hairtype = []
+            if (product.dry) appo_arr_hairtype.push('сухе')
+            if (product.fatter) appo_arr_hairtype.push('жирне')
+            if (product.lamina) appo_arr_hairtype.push('ламке')
+            if (product.clarified) appo_arr_hairtype.push('освітлене')
+            if (product.alltype) appo_arr_hairtype.push('нормальне')
+            this.setState({get_appo_hairtype: appo_arr_hairtype.join(', ')})
+        }
+
+
 
        render() {
             // console.log('appo'+this.state.appo_arr)
@@ -137,12 +156,12 @@ class Details extends React.Component {
                                     <p className='font-weight-bold py-1 m-0'>Виробник: <span className='font-weight-normal'>{brand}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Серія: <span className='font-weight-normal'>{seria}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Об'єм: <span className='font-weight-normal'>{amount}</span></p>
-                                    <p className='font-weight-bold py-1 m-0'>Тип волосся: <span className='font-weight-normal'>{hr1}</span></p>
+                                    <p className='font-weight-bold py-1 m-0'>Тип волосся: <span className='font-weight-normal'>{this.state.appo_arr_hairtype}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Призначення: <span className='font-weight-normal'>{this.state.appo_arr}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Пол: <span className='font-weight-normal'>{gender}</span></p>
                                     <p className='font-weight-bold py-1 m-0'>Опис: <span className='font-weight-normal'>{descr2}</span></p>
                                     <p className='bg-white p-0 green-text py-1 m-0'><span className='font-weight-bold'><i className="fas fa-check green-text font-weight-bold p-2"></i>В наявності</span></p>
-                                    <p className='font-weight-bold py-1 m-0 price'>Ціна: <span className='font-weight-bold py-1 m-0'>{price}</span></p>
+                                    <p className='font-weight-bold py-1 m-0 price'>Ціна: <span className='font-weight-bold py-1 m-0'>{price}</span> грн</p>
                                     <div className='d-inline-flex flex-wrap text-center py-4 w-100'>
                                         <button className='m-0 item-to-cart border-0 z-depth-1 mx-3 my-2 white-text' id='to-cart'>В КОРЗИНУ</button>
                                         <button className='m-0 item-to-cart border-0 z-depth-1 mx-3 my-2 white-text'>КУПИТИ</button>

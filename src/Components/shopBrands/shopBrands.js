@@ -23,12 +23,6 @@ $(document).ready(function() {
 
 
 class ShopBrands extends Component  {
-
-    // name: 'app',
-    // components: {
-    //     mdbFilter,
-    // },
-
     state = {
         collapseID: ''
     }
@@ -44,10 +38,10 @@ class ShopBrands extends Component  {
                 <div id='sb' className='container shop-brand w-100'>
                     <div className='shop-nav-brand w-100 d-inline-flex'>
                         <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
+                            <MDBDropdownToggle  color='secondary' className='caret shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 FarmaVita
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem>Amethyste</MDBDropdownItem>
                                 <MDBDropdownItem>Argan Sublime</MDBDropdownItem>
                                 <MDBDropdownItem>Back.bar</MDBDropdownItem>
@@ -67,7 +61,7 @@ class ShopBrands extends Component  {
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 Davines
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem>Oi</MDBDropdownItem>
                                 <MDBDropdownItem>Natural Tech</MDBDropdownItem>
                                 <MDBDropdownItem>Momo</MDBDropdownItem>
@@ -80,7 +74,7 @@ class ShopBrands extends Component  {
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 Joico
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem>Defy Damage</MDBDropdownItem>
                                 <MDBDropdownItem>Blond Life</MDBDropdownItem>
                                 <MDBDropdownItem>Joifull</MDBDropdownItem>
@@ -98,7 +92,7 @@ class ShopBrands extends Component  {
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 ProfyStyle
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem>Repair</MDBDropdownItem>
                                 <MDBDropdownItem>Argan</MDBDropdownItem>
                                 <MDBDropdownItem>Color</MDBDropdownItem>
@@ -119,7 +113,7 @@ class ShopBrands extends Component  {
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 Felps
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem></MDBDropdownItem>
                                 <MDBDropdownItem></MDBDropdownItem>
                                 <MDBDropdownItem></MDBDropdownItem>
@@ -129,7 +123,7 @@ class ShopBrands extends Component  {
                             <MDBDropdownToggle caret color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1'>
                                 Schwarzkopf
                             </MDBDropdownToggle>
-                            <MDBDropdownMenu color='secondary' basic>
+                            <MDBDropdownMenu color='secondary'>
                                 <MDBDropdownItem></MDBDropdownItem>
                                 <MDBDropdownItem></MDBDropdownItem>
                                 <MDBDropdownItem></MDBDropdownItem>

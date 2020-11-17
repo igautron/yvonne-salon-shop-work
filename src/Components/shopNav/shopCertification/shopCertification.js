@@ -1,18 +1,8 @@
 import React from 'react';
 import './shopCertification.css'
-import Lightbox from 'react-image-lightbox';
 
 
 import {
-    MDBNavbar,
-    MDBNavbarNav,
-    MDBNavItem,
-    MDBIcon,
-    MDBBtn,
-    MDBNavbarBrand,
-    MDBNavLink,
-    MDBNavbarToggler,
-    MDBCollapse,
     MDBContainer,
     MDBRow,
     MDBCol

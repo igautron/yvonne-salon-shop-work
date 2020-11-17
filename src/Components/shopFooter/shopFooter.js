@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopFooter.css'
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {
     MDBRow,
     MDBCol,
@@ -12,7 +12,6 @@ import {
     MDBFooter
 } from 'mdbreact';
 
-// import mdbFilter from 'mdbfilter';
 
 class ShopFooter extends Component  {
 

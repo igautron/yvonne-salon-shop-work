@@ -33,9 +33,16 @@ class Item extends React.Component {
                                         style={{marginBottom: '1rem'}}
                                         className='text-left p-0 pb-0 mb-1'
                                     >
-                                        <p className='prod-describe black-text m-0 '>{descr}</p>
+                                        <p className='prod-describe black-text m-0'>{descr}</p>
                                     </MDBLink>
-                                    <p className='prod-price black-text py-1 text-left'>Ціна: <span>{price}</span>грн</p>
+                                    <div className=' w-100'>
+                                        <p className='font-weight-bold black-text py-1 text-left float-left'>Ціна: <span>{price}</span> грн</p>
+                                        <p className='float-right m-0'>
+                                            <a className='bg-transparent border-0'>
+                                                <i className="fas fa-heart purple-ic p-2"></i>
+                                            </a>
+                                        </p>
+                                    </div>
                                     <div>
                                         <button
                                             className='prod-btn white-text z-depth-1 p-2 border-0 justify-content-center m-0 align-content-center'>В

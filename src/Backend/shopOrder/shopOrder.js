@@ -1,27 +1,22 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopOrder.css'
-import $ from 'jquery';
+
 
 import PRIVAT from './CARD/PRIVAT'
 import LIQPAY from './CARD/LIQPAY'
 import VISA from './CARD/VISA'
 import SHIPMENT from './CARD/SHIPMENT'
-import Congratulation from "./CARD/Congratulation";
 
 
 import {Link} from 'react-router-dom'
 
 import {
-    MDBBtn,
-    MDBIcon,
     MDBCol,
     MDBRow,
     MDBCard,
-    MDBContainer,
     MDBInput,
-    MDBSelect,
-    MDBCollapse, MDBCardImage
+    MDBCollapse
 
 
 } from 'mdbreact';

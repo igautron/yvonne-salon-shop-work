@@ -1,14 +1,8 @@
 import React from 'react';
-import {Component} from 'react';
 import Cards from 'react-credit-cards';
 import './../shopOrder.css'
 
 import 'react-credit-cards/es/styles-compiled.css';
-
-import {
-    MDBCol,
-    MDBRow
-} from 'mdbreact';
 
 class PRIVAT extends React.Component {
 

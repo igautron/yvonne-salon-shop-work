@@ -1,22 +1,20 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopMobileUpload.css'
-import {
-
-} from 'mdbreact';
 
 import $ from 'jquery'
 
 
 
-$(document).ready( function() {
-    var h = $(window).height()
-    $('.shop-upload').css({'height': h, 'overflow': 'hidden'})
-})
+
 
 class ShopMobileUpload extends Component  {
-
     render() {
+    $(document).ready( function() {
+        var h = $(window).height()
+        $('.shop-upload').css({'height': h, 'overflow': 'hidden'})
+    })
+
         return (
           <div className='shop-upload'>
             <div className='w-100'>

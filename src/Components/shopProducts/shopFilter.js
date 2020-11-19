@@ -24,7 +24,10 @@ class ShopFilter extends Component  {
         series: {},
         amount: {},
         appointments: {},
-
+        seriasArray: [],
+        brandsArray: [],
+        price_min: 0,
+        price_max: 2000,
         // topbrands: {}
       };
 
@@ -44,8 +47,48 @@ class ShopFilter extends Component  {
       }
     }
 
-    componentDidMount(props) {
+    seriasArray = [
+        {slug: "amethyste"   , label:'Amethyste'        },
+        {slug: "omniplex"    , label:'Omniplex'         },
+        {slug: "argan"       , label:'Argan sublime'    },
+        {slug: "onely"       , label:'Onely'            },
+        {slug: "bioxil"      , label:'Bioxil'           },
+        {slug: "kliss"       , label:'K.Liss'           },
+        {slug: "linea"       , label:'Linea Back Bar'   },
+        {slug: "oi"          , label:'OI'               },
+        {slug: "hydra"       , label:'HydraSplash'      },
+        {slug: "colorinfuse" , label:'Color infuse'     },
+        {slug: "colorbalance", label:'Color balance'    },
+        {slug: "kpack"       , label:'K-pack'           },
+        {slug: "style"       , label:'Style & Finish'   },
+        {slug: "moisture"    , label:'Moisture recovery'},
+        {slug: "blond"       , label:'Blond life'       },
+        {slug: "defy"        , label:'Defy Damage'      },
+        {slug: "joifull"     , label:'Joifull'          },
+        {slug: "shake"       , label:'Shake series'     },
+        {slug: "tricogen"    , label:'Tricogen'         },
+        {slug: "beeform"     , label:'Bee Form'         },
+        {slug: "blondpink"   , label:'Blond Pink'       },
+        {slug: "naturalt"    , label:'NaturalTech'      },
+        {slug: "essential"   , label:'Essential Haircare'},
+        {slug: "antiloss"    , label:'Anti-Loss'        },
+        {slug: "sebum"       , label:'Sebum'            },
+        {slug: "osis"        , label:'Osis+'            },
+    ]
 
+    brandsArray = [
+        {slug:"farmavita"  , label:'FarmaVita'  },
+        {slug:"davines"    , label:'Davines'    },
+        {slug:"joico"      , label:'Joico'      },
+        {slug:"profistyle" , label:'ProfiStyle' },
+        {slug:"felps"      , label:'Felps'      },
+        {slug:"schwarzkopf", label:'Schwarzkopf'},
+        {slug:"mirella"    , label:'Mirella'    },
+        {slug:"altrego"    , label:'Altr Ego'   },
+    ]
+
+    componentDidMount(props) {
+        this.setState({brandsArray:this.brandsArray, seriasArray:this.seriasArray})
     }
 
     chooseAppointmentHandler(event){
@@ -126,6 +169,31 @@ class ShopFilter extends Component  {
         return this.props.setFilterGender('all') // men, women, all
     }
 
+    volumeInputChange = (e) => {
+        const word = e.target.value.toLowerCase()
+        let seriasArray = this.seriasArray.filter((elem) => {
+            return (elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+        })
+        this.setState({seriasArray})
+    }
+
+    brandInputChange = (e) => {
+        const word = e.target.value.toLowerCase()
+        let brandsArray = this.brandsArray.filter((elem) => {
+            return (elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+        })
+        this.setState({brandsArray})
+    }
+
+    minPriceChange = (e) => {
+        this.setState({price_min: parseInt(e.target.value)})
+        this.props.setFilterPrice('min', parseInt(e.target.value))
+    }
+
+    maxPriceChange = (e) => {
+        this.setState({price_max: parseInt(e.target.value)})
+        this.props.setFilterPrice('max', parseInt(e.target.value))     
+    }
 
     render() {
         return (
@@ -155,15 +223,12 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>БРЕНД</p>
-                <input type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
-                <MDBInput name="brand[]" value="farmavita" onChange={this.chooseBrandHandle} label='FarmaVita' type='checkbox' id='farmavita' />
-                <MDBInput name="brand[]" value="davines" onChange={this.chooseBrandHandle} label='Davines' type='checkbox' id='davines'  />
-                <MDBInput name="brand[]" value="joico" onChange={this.chooseBrandHandle} label='Joico' type='checkbox' id='joico' />
-                <MDBInput name="brand[]" value="profistyle" onChange={this.chooseBrandHandle} label='ProfiStyle' type='checkbox' id='profistyle' />
-                <MDBInput name="brand[]" value="felps" onChange={this.chooseBrandHandle} label='Felps' type='checkbox' id='felps' />
-                <MDBInput name="brand[]" value="schwarzkopf" onChange={this.chooseBrandHandle} label='Schwarzkopf' type='checkbox' id='schwarzkopf' />
-                <MDBInput name="brand[]" value="mirella" onChange={this.chooseBrandHandle} label='Mirella' type='checkbox' id='mirella' />
-                <MDBInput name="brand[]" value="altrego" onChange={this.chooseBrandHandle} label='Altr Ego' type='checkbox' id='alterego' />
+                <input onChange={this.brandInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
+                {this.state.brandsArray.map((brand) => (
+                    <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug}/>
+                ))}
+                </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ТИП ВОЛОССЯ</p>
@@ -176,20 +241,20 @@ class ShopFilter extends Component  {
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ПРИЗНАЧЕННЯ</p>
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
-                <MDBInput label='Оздоровлення' type='checkbox'           onChange={this.chooseAppointmentHandler} value='healt'          id='appo_healt'         />
-                <MDBInput label='Салонний догляд' type='checkbox'        onChange={this.chooseAppointmentHandler} value='salon'          id='appo_salon'         />
-                <MDBInput label='Реконструкція' type='checkbox'          onChange={this.chooseAppointmentHandler} value='reconstruction' id='appo_reconstruction'/>
-                <MDBInput label='Захист' type='checkbox'                 onChange={this.chooseAppointmentHandler} value='protection'     id='appo_protection'    />
-                <MDBInput label='Фарбування' type='checkbox'             onChange={this.chooseAppointmentHandler} value='coloring'       id='appo_coloring'      />
-                <MDBInput label='Випрямлення' type='checkbox'            onChange={this.chooseAppointmentHandler} value='stratening'     id='appo_stratening'    />
-                <MDBInput label='Натуральне' type='checkbox'             onChange={this.chooseAppointmentHandler} value='natural'        id='appo_natural'       />
-                <MDBInput label='Для кучер' type='checkbox'              onChange={this.chooseAppointmentHandler} value='curl'           id='appo_curl'          />
-                <MDBInput label='Для шкіри голови' type='checkbox'       onChange={this.chooseAppointmentHandler} value='skin'           id='appo_skin'          />
-                <MDBInput label='Нейтралізація жовтизни' type='checkbox' onChange={this.chooseAppointmentHandler} value='yellow'         id='appo_yellow'        />
-                <MDBInput label='Обєм' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='volume'         id='appo_volume'        />
-                <MDBInput label='Себо' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='sebo'           id='appo_sebo'          />
-                <MDBInput label='Проти лупи' type='checkbox'             onChange={this.chooseAppointmentHandler} value='lupa'           id='appo_lupa'          />
-                <MDBInput label='Проти випадіння' type='checkbox'        onChange={this.chooseAppointmentHandler} value='loss'           id='appo_loss'          />
+                    <MDBInput label='Оздоровлення' type='checkbox'           onChange={this.chooseAppointmentHandler} value='healt'          id='appo_healt'         />
+                    <MDBInput label='Салонний догляд' type='checkbox'        onChange={this.chooseAppointmentHandler} value='salon'          id='appo_salon'         />
+                    <MDBInput label='Реконструкція' type='checkbox'          onChange={this.chooseAppointmentHandler} value='reconstruction' id='appo_reconstruction'/>
+                    <MDBInput label='Захист' type='checkbox'                 onChange={this.chooseAppointmentHandler} value='protection'     id='appo_protection'    />
+                    <MDBInput label='Фарбування' type='checkbox'             onChange={this.chooseAppointmentHandler} value='coloring'       id='appo_coloring'      />
+                    <MDBInput label='Випрямлення' type='checkbox'            onChange={this.chooseAppointmentHandler} value='stratening'     id='appo_stratening'    />
+                    <MDBInput label='Натуральне' type='checkbox'             onChange={this.chooseAppointmentHandler} value='natural'        id='appo_natural'       />
+                    <MDBInput label='Для кучер' type='checkbox'              onChange={this.chooseAppointmentHandler} value='curl'           id='appo_curl'          />
+                    <MDBInput label='Для шкіри голови' type='checkbox'       onChange={this.chooseAppointmentHandler} value='skin'           id='appo_skin'          />
+                    <MDBInput label='Нейтралізація жовтизни' type='checkbox' onChange={this.chooseAppointmentHandler} value='yellow'         id='appo_yellow'        />
+                    <MDBInput label='Обєм' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='volume'         id='appo_volume'        />
+                    <MDBInput label='Себо' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='sebo'           id='appo_sebo'          />
+                    <MDBInput label='Проти лупи' type='checkbox'             onChange={this.chooseAppointmentHandler} value='lupa'           id='appo_lupa'          />
+                    <MDBInput label='Проти випадіння' type='checkbox'        onChange={this.chooseAppointmentHandler} value='loss'           id='appo_loss'          />
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
@@ -199,64 +264,41 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>СЕРІЯ</p>
-                <input type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.volumeInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-5 w-100 scroll'>
-                <MDBInput name="seria[]" value="amethyste" onChange={this.chooseSeriaHandle} label='Amethyste' type='checkbox' id='amethyste'/>
-                <MDBInput name="seria[]" value="omniplex"  onChange={this.chooseSeriaHandle} label='Omniplex' type='checkbox' id='omniplex'/>
-                <MDBInput name="seria[]" value="argan"     onChange={this.chooseSeriaHandle} label='Argan sublime' type='checkbox' id='argan' />
-                <MDBInput name="seria[]" value="onely"     onChange={this.chooseSeriaHandle} label='Onely' type='checkbox' id='onely' />
-                <MDBInput name="seria[]" value="bioxil"    onChange={this.chooseSeriaHandle} label='Bioxil' type='checkbox' id='bioxil' />
-                <MDBInput name="seria[]" value="kliss"     onChange={this.chooseSeriaHandle} label='K.Liss' type='checkbox' id='kliss' />
-                <MDBInput name="seria[]" value="linea"     onChange={this.chooseSeriaHandle} label='Linea Back Bar' type='checkbox' id='linea' />
-                <MDBInput name="seria[]" value="oi"        onChange={this.chooseSeriaHandle} label='OI' type='checkbox' id='oi' />
-                <MDBInput name="seria[]" value="hydra"     onChange={this.chooseSeriaHandle} label='HydraSplash' type='checkbox' id='hydraSplash' />
-                <MDBInput name="seria[]" value="colori"    onChange={this.chooseSeriaHandle} label='Color infuse' type='checkbox' id='colorinfuse' />
-                <MDBInput name="seria[]" value="colorb"    onChange={this.chooseSeriaHandle} label='Color balance' type='checkbox' id='colorbalance' />
-                <MDBInput name="seria[]" value="kpack"     onChange={this.chooseSeriaHandle} label='K-pack' type='checkbox' id='k-pack' />
-                <MDBInput name="seria[]" value="style"     onChange={this.chooseSeriaHandle} label='Style & Finish' type='checkbox' id='sf' />
-                <MDBInput name="seria[]" value="moisture"  onChange={this.chooseSeriaHandle} label='Moisture recovery' type='checkbox' id='moisture' />
-                <MDBInput name="seria[]" value="blond"     onChange={this.chooseSeriaHandle} label='Blond life' type='checkbox' id='blondlife' />
-                <MDBInput name="seria[]" value="defy"      onChange={this.chooseSeriaHandle} label='Defy Damage' type='checkbox' id='defy' />
-                <MDBInput name="seria[]" value="joifull"   onChange={this.chooseSeriaHandle} label='Joifull' type='checkbox' id='joifull' />
-                <MDBInput name="seria[]" value="shake"     onChange={this.chooseSeriaHandle} label='Shake series' type='checkbox' id='shake' />
-                <MDBInput name="seria[]" value="tricogen"  onChange={this.chooseSeriaHandle} label='Tricogen' type='checkbox' id='tricogen' />
-                <MDBInput name="seria[]" value="beeform"   onChange={this.chooseSeriaHandle} label='Bee Form' type='checkbox' id='beeform' />
-                <MDBInput name="seria[]" value="blondpink" onChange={this.chooseSeriaHandle} label='Blond Pink' type='checkbox' id='blondpink' />
-                <MDBInput name="seria[]" value="naturalt"  onChange={this.chooseSeriaHandle} label='NaturalTech' type='checkbox' id='naturaltech' />
-                <MDBInput name="seria[]" value="essential" onChange={this.chooseSeriaHandle} label='Essential Haircare' type='checkbox' id='essential' />
-                <MDBInput name="seria[]" value="antiloss"  onChange={this.chooseSeriaHandle} label='Anti-Loss' type='checkbox' id='antiloss' />
-                <MDBInput name="seria[]" value="sebum"     onChange={this.chooseSeriaHandle} label='Sebum' type='checkbox' id='sebum' />
-                <MDBInput name="seria[]" value="osis"      onChange={this.chooseSeriaHandle} label='Osis+' type='checkbox' id='osis' />
+                    {this.state.seriasArray.map((seria) => (
+                        <MDBInput key={seria.slug} value={seria.slug} onChange={this.chooseSeriaHandle} label={seria.label} type='checkbox' id={seria.slug}/>
+                    ))}
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>ОБСЯГ</p>
                 <input type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-0 w-100 scroll'>
-                <MDBInput name="amount[]" value="8" onChange={this.chooseAmountHandle}  label='8 г' type='checkbox' id='8'/>
-                <MDBInput name="amount[]" value="10" onChange={this.chooseAmountHandle}  label='10 мл' type='checkbox' id='10'/>
-                <MDBInput name="amount[]" value="72" onChange={this.chooseAmountHandle} label='72 мл' type='checkbox' id='72'/>
-                <MDBInput name="amount[]" value="74" onChange={this.chooseAmountHandle} label='74 мл' type='checkbox' id='74'/>
-                <MDBInput name="amount[]" value="100" onChange={this.chooseAmountHandle} label='100 мл' type='checkbox' id='100' />
-                <MDBInput name="amount[]" value="130" onChange={this.chooseAmountHandle} label='130 мл' type='checkbox' id='130' />
-                <MDBInput name="amount[]" value="150" onChange={this.chooseAmountHandle} label='150 мл' type='checkbox' id='150' />
-                <MDBInput name="amount[]" value="180" onChange={this.chooseAmountHandle} label='180 мл' type='checkbox' id='180' />
-                <MDBInput name="amount[]" value="200" onChange={this.chooseAmountHandle} label='200 мл' type='checkbox' id='200' />
-                <MDBInput name="amount[]" value="250" onChange={this.chooseAmountHandle} label='250 мл' type='checkbox' id='250' />
-                <MDBInput name="amount[]" value="280" onChange={this.chooseAmountHandle} label='280 мл' type='checkbox' id='280' />
-                <MDBInput name="amount[]" value="300" onChange={this.chooseAmountHandle} label='300 мл' type='checkbox' id='300' />
-                <MDBInput name="amount[]" value="1000" onChange={this.chooseAmountHandle} label='1000 мл' type='checkbox' id='1000' />
-                <MDBInput name="amount[]" value="5" onChange={this.chooseAmountHandle} label='5 л' type='checkbox' id='5'/>
+                <MDBInput name="amount[]" value="8g"     onChange={this.chooseAmountHandle}  label='8 г' type='checkbox' id='8'/>
+                <MDBInput name="amount[]" value="10ml"   onChange={this.chooseAmountHandle}  label='10 мл' type='checkbox' id='10'/>
+                <MDBInput name="amount[]" value="72ml"   onChange={this.chooseAmountHandle} label='72 мл' type='checkbox' id='72'/>
+                <MDBInput name="amount[]" value="74ml"   onChange={this.chooseAmountHandle} label='74 мл' type='checkbox' id='74'/>
+                <MDBInput name="amount[]" value="100ml"  onChange={this.chooseAmountHandle} label='100 мл' type='checkbox' id='100' />
+                <MDBInput name="amount[]" value="130ml"  onChange={this.chooseAmountHandle} label='130 мл' type='checkbox' id='130' />
+                <MDBInput name="amount[]" value="150ml"  onChange={this.chooseAmountHandle} label='150 мл' type='checkbox' id='150' />
+                <MDBInput name="amount[]" value="180ml"  onChange={this.chooseAmountHandle} label='180 мл' type='checkbox' id='180' />
+                <MDBInput name="amount[]" value="200ml"  onChange={this.chooseAmountHandle} label='200 мл' type='checkbox' id='200' />
+                <MDBInput name="amount[]" value="250ml"  onChange={this.chooseAmountHandle} label='250 мл' type='checkbox' id='250' />
+                <MDBInput name="amount[]" value="280ml"  onChange={this.chooseAmountHandle} label='280 мл' type='checkbox' id='280' />
+                <MDBInput name="amount[]" value="300ml"  onChange={this.chooseAmountHandle} label='300 мл' type='checkbox' id='300' />
+                <MDBInput name="amount[]" value="1000ml" onChange={this.chooseAmountHandle} label='1000 мл' type='checkbox' id='1000' />
+                <MDBInput name="amount[]" value="5l"     onChange={this.chooseAmountHandle} label='5 л' type='checkbox' id='5'/>
                 </Scrollbars>
             </div>
             <div className='mb-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ЦІНА</p>
                 <div className='d-flex'>
-                    <span className='text-left pl-1 pr-2 font-weight-normal'>0 грн</span>
                     <form className='multi-range-field w-50 w-auto'>
-                        <input id='multi' type='range' className='multi-range'></input>
+                        <p>from:{this.state.price_min} to {this.state.price_max}</p>
+                        <input onChange={this.minPriceChange} id='min' value={this.state.price_min} type='number'></input>
+                        <input onChange={this.maxPriceChange} id='max' value={this.state.price_max} type='number'></input>
                     </form>
-                    <span className='text-right pr-1 pl-1 font-weight-normal'>2000 грн</span>
                 </div>
             </div>
         </div>

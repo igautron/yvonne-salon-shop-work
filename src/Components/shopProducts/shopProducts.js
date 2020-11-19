@@ -62,7 +62,9 @@ class ShopProducts extends Component  {
             // filterTopbrands: {}
         }
 
-        this.filter = {}
+        this.filter = {
+            price: {}
+        }
 
         this.setFilterTypes = this.setFilterTypes.bind(this)
         this.setFilterBrands = this.setFilterBrands.bind(this)
@@ -99,16 +101,13 @@ class ShopProducts extends Component  {
     }
 
     setFilterAmount(amount) {
-        this.setState({filterAmount:amount})
-        let url
-        if (Object.keys(amount).length !== 0) {
-            url = 'http://yvonne-server.loc/filter?amount='+encodeURIComponent(JSON.stringify(amount))
-        }else{
-            url = 'http://yvonne-server.loc/products'
-        }
-        fetch(url)
-            .then(response => response.json())
-            .then(data => this.setState({products: data.products}));
+        this.filter.amount = amount
+        this.doAjax()
+    }
+
+    setFilterPrice = (min_or_max, price) => {
+        this.filter.price[min_or_max] = price
+        this.doAjax()
     }
 
     doAjax() {
@@ -222,6 +221,7 @@ class ShopProducts extends Component  {
                             setFilterAmount={this.setFilterAmount}
                             setFilterGender={this.setFilterGender}
                             setFilterAppoinrments={this.setFilterAppoinrments}
+                            setFilterPrice={this.setFilterPrice}
                         />
                     {/*products list*/}
 

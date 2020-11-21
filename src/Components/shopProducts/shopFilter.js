@@ -90,6 +90,9 @@ class ShopFilter extends Component  {
     }
 
 
+
+
+
     render() {
         return (
     <div className='shop-filters h-100  left w-25 w-responsive ml-2'>

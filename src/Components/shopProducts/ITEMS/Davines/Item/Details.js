@@ -131,9 +131,9 @@ class Details extends React.Component {
                 amount = this.state.product.amount;
                 hr1 = this.state.product.hr1;
                 a1 = this.state.product.a1;
-                descr2 = this.state.product.descr;
+                descr2 = this.state.product.descr2;
                 gender = this.state.product.gender;
-                descr3 = this.state.product.descr;
+                descr3 = this.state.product.descr3;
                 country = this.state.product.country;
            }
 

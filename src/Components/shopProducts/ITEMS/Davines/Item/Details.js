@@ -111,7 +111,7 @@ class Details extends React.Component {
             if (product.lamina) appo_arr_hairtype.push('ламке')
             if (product.clarified) appo_arr_hairtype.push('освітлене')
             if (product.alltype) appo_arr_hairtype.push('нормальне')
-            this.setState({get_appo_hairtype: appo_arr_hairtype.join(', ')})
+            this.setState({appo_arr_hairtype: appo_arr_hairtype.join(', ')})
         }
 
 

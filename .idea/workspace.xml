@@ -30,9 +30,11 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,6 +298,7 @@
       <workItem from="1605953406881" duration="1400000" />
       <workItem from="1605975980644" duration="14000" />
       <workItem from="1605976263582" duration="676000" />
+      <workItem from="1605977582579" duration="516000" />
     </task>
     <servers />
   </component>

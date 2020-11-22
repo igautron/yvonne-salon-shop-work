@@ -28,6 +28,9 @@
 .prod-btn {
     background-color: #a74eb6 !important;
 }
+.top-filter-btn.active {
+    background-color: red !important;
+}
 
 .shop-filters-block {
     display: inline-flex !important;

@@ -113,8 +113,11 @@ class ShopProducts extends Component  {
         this.doAjax()
     }
 
-    setFilterTop(top) {
-        this.filter.top = top
+    setFilterTop(type) {
+        let types = {}
+        types[type] = 1
+        cl(type)
+        this.setFilterTypes(types)
         this.doAjax()
     }
 
@@ -135,9 +138,14 @@ class ShopProducts extends Component  {
 
 
     componentDidMount(props) {
-        fetch('http://yvonne-server.loc/products')
-          .then(response => response.json())
-          .then(data => this.setState({products: data.products}));
+        if (window.location.pathname.indexOf('/category') === 0) {
+            const category = window.location.pathname.split('/').pop()
+            this.setFilterTop(category)
+        }else{
+            fetch('http://yvonne-server.loc/products')
+              .then(response => response.json())
+              .then(data => this.setState({products: data.products}));
+        }
     }
 
 

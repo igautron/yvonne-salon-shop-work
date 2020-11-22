@@ -77,6 +77,10 @@ function App() {
                 <Route path='/details/:id'>
                     <Details />
                 </Route>
+                <Route path='/category/:category'>
+                    <ShopBrands />
+                    <ShopProducts />
+                </Route>
             </Switch>
             <ShopFooter />
             {/*<ShopAccount />*/}

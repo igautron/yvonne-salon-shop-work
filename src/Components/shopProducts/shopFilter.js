@@ -31,6 +31,11 @@ class ShopFilter extends Component  {
         typeArray: [],
         price_min: 0,
         price_max: 2000,
+        inputs: {
+            brands:{
+                davines:false
+            }
+        }
         // topbrands: {}
       };
 
@@ -50,6 +55,14 @@ class ShopFilter extends Component  {
       }
     }
 
+
+      isInputChecked = (filter_block, filter_input) => {
+        if (this.state.inputs && this.state.inputs[filter_block] && this.state.inputs[filter_block][filter_input]) {
+            true
+        }
+        return false
+      }
+      
     seriasArray = [
         {slug: 'amethyste'   , label:'Amethyste'        },
         {slug: 'omniplex'    , label:'Omniplex'         },
@@ -181,9 +194,24 @@ class ShopFilter extends Component  {
         this.setState({types})
     }
 
+    brandsSeries = {
+        'davines': [
+            {slug:'oi',       label: 'Oi'},
+            {slug:'naturalt', label: 'Natural Tech'},
+            {slug:'Momo',     label: 'Momo'},
+            {slug:'Minu',     label: 'Minu'},
+            {slug:'Melu',     label: 'Melu'},
+            {slug:'NouNou',   label: 'NouNou'},
+        ]
+    }
+
 
     chooseBrandHandle(event) {
          const input = event.target
+// cl(input)
+// cl(this.brandsSeries[input.value])
+        this.setState({ seriasArray:this.brandsSeries[input.value] })
+
          let brands = {...this.state.brands}
          if (input.checked) {
              brands[input.value] = 1
@@ -294,7 +322,7 @@ class ShopFilter extends Component  {
                 <input onChange={this.typeInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                     {this.state.typeArray.map((type) => (
-                        <MDBInput key={type.slug} value={type.slug} onChange={this.chooseTypeHandle} label={type.label} type='checkbox' id={type.slug} />
+                        <MDBInput key={type.slug} value={type.slug} onChange={this.chooseTypeHandle} label={type.label} type='checkbox' id={type.slug}/>
                     ))}
                 </Scrollbars>
             </div>
@@ -303,7 +331,7 @@ class ShopFilter extends Component  {
                 <input onChange={this.brandInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                 {this.state.brandsArray.map((brand) => (
-                    <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug}/>
+                    <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug} checked={this.isInputChecked('brands',brand.slug)}/>
                 ))}
                 </Scrollbars>
             </div>

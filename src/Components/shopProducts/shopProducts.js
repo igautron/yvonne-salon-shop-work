@@ -19,6 +19,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 
 import Item from './../shopProducts/ITEMS/Davines/Item/Item'
+import TopFilter from "./topFilter";
 
 
 
@@ -58,6 +59,8 @@ class ShopProducts extends Component  {
             filterBrands:{},
             filterSeries:{},
             filterAmount:{},
+            filterTop:{},
+            top:{}
 
             // filterTopbrands: {}
         }
@@ -72,7 +75,7 @@ class ShopProducts extends Component  {
         this.setFilterAmount = this.setFilterAmount.bind(this)
         this.setFilterGender = this.setFilterGender.bind(this)
         this.setFilterAppoinrments = this.setFilterAppoinrments.bind(this)
-        // this.setFilterTopbrands = this.setFilterTopbrands.bind(this)
+        this.setFilterTop = this.setFilterTop.bind(this)
     }
 
     setFilterAppoinrments(appointments){
@@ -110,6 +113,11 @@ class ShopProducts extends Component  {
         this.doAjax()
     }
 
+    setFilterTop(top) {
+        this.filter.top = top
+        this.doAjax()
+    }
+
     doAjax() {
         let url
         if (Object.keys(this.filter).length !== 0) {
@@ -124,20 +132,7 @@ class ShopProducts extends Component  {
 
 
 
-    // setFilterTopbrands(topbrands) {
-    //     this.setState({filterTopbrands:topbrands})
-    //     let url
-    //     if (Object.keys(topbrands).length !== 0) {
-    //         url = 'http://yvonne-server.loc/filter?topbrands='+encodeURIComponent(JSON.stringify(topbrands))
-    //     }else{
-    //         url = 'http://yvonne-server.loc/products'
-    //     }
-    //     fetch(url)
-    //         .then(response => response.json())
-    //         .then(data => this.setState({products: data.products}));
-    //
-    //
-    // }
+
 
     componentDidMount(props) {
         fetch('http://yvonne-server.loc/products')
@@ -151,68 +146,14 @@ class ShopProducts extends Component  {
         return (
             <div className='shop-products-block w-100'>
                 <div className='container pt-2 pt-md-3 pt-lg-3 shop-nav-brand'>
-                    <div className='d-inline-flex w-100'>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5 ' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center active' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ШАМПУНІ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                       <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>КОНДИЦІОНЕРИ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>МАСКИ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>СТАЙЛІНГИ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ОЛІЇ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol className='col-2 p-0'>
-                            <MDBCard className='dd-text pink lighten-5' color='#fce4ec'>
-                                <MDBLink className='p-0 text-center' >
-                                    <button className='border-0 h-100 w-100 bg-transparent pt-4 pb-4 pt-sm-4 pb-sm-4 pt-md-5 pb-md-5 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5'>
-                                        <span className='text-span mt-3 black-text font-weight-bold shop-prod-item'>ЗАХИСТ</span>
-                                    </button>
-                                </MDBLink>
-                            </MDBCard>
-                        </MDBCol>
-                    </div>
+                    <TopFilter
+                        setFilterTop = {this.setFilterTop}/>
                 </div>
 
                 {/*filters*/}
 
                     <div className='container pl-1 pr-3 pl-sm-2 pl-md-2 pl-xl-1 pl-lg-1 pr-sm-2 pr-md-2 pr-xl-1 pr-lg-1'>
-                        <div className='shop-filters-block w-responsive w-100 pt-3 pb-5 clearfix'>
+                        <div className='shop-filters-block w-responsive w-100 pt-3 pb-5 clearfix mt-5'>
 
                         <ShopFilter
                             setFilterTypes={this.setFilterTypes}
@@ -222,6 +163,7 @@ class ShopProducts extends Component  {
                             setFilterGender={this.setFilterGender}
                             setFilterAppoinrments={this.setFilterAppoinrments}
                             setFilterPrice={this.setFilterPrice}
+                            setFilterTop={this.setFilterTop}
                         />
                     {/*products list*/}
 

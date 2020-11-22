@@ -26,6 +26,9 @@ class ShopFilter extends Component  {
         appointments: {},
         seriasArray: [],
         brandsArray: [],
+        amountArray: [],
+        appArray: [],
+        typeArray: [],
         price_min: 0,
         price_max: 2000,
         // topbrands: {}
@@ -48,47 +51,108 @@ class ShopFilter extends Component  {
     }
 
     seriasArray = [
-        {slug: "amethyste"   , label:'Amethyste'        },
-        {slug: "omniplex"    , label:'Omniplex'         },
-        {slug: "argan"       , label:'Argan sublime'    },
-        {slug: "onely"       , label:'Onely'            },
-        {slug: "bioxil"      , label:'Bioxil'           },
-        {slug: "kliss"       , label:'K.Liss'           },
-        {slug: "linea"       , label:'Linea Back Bar'   },
-        {slug: "oi"          , label:'OI'               },
-        {slug: "hydra"       , label:'HydraSplash'      },
-        {slug: "colorinfuse" , label:'Color infuse'     },
-        {slug: "colorbalance", label:'Color balance'    },
-        {slug: "kpack"       , label:'K-pack'           },
-        {slug: "style"       , label:'Style & Finish'   },
-        {slug: "moisture"    , label:'Moisture recovery'},
-        {slug: "blond"       , label:'Blond life'       },
-        {slug: "defy"        , label:'Defy Damage'      },
-        {slug: "joifull"     , label:'Joifull'          },
-        {slug: "shake"       , label:'Shake series'     },
-        {slug: "tricogen"    , label:'Tricogen'         },
-        {slug: "beeform"     , label:'Bee Form'         },
-        {slug: "blondpink"   , label:'Blond Pink'       },
-        {slug: "naturalt"    , label:'NaturalTech'      },
-        {slug: "essential"   , label:'Essential Haircare'},
-        {slug: "antiloss"    , label:'Anti-Loss'        },
-        {slug: "sebum"       , label:'Sebum'            },
-        {slug: "osis"        , label:'Osis+'            },
+        {slug: 'amethyste'   , label:'Amethyste'        },
+        {slug: 'omniplex'    , label:'Omniplex'         },
+        {slug: 'argan'       , label:'Argan sublime'    },
+        {slug: 'onely'       , label:'Onely'            },
+        {slug: 'bioxil'      , label:'Bioxil'           },
+        {slug: 'kliss'       , label:'K.Liss'           },
+        {slug: 'linea'       , label:'Linea Back Bar'   },
+        {slug: 'oi'          , label:'OI'               },
+        {slug: 'hydra'       , label:'HydraSplash'      },
+        {slug: 'colorinfuse' , label:'Color infuse'     },
+        {slug: 'colorbalance', label:'Color balance'    },
+        {slug: 'kpack'       , label:'K-pack'           },
+        {slug: 'style'       , label:'Style & Finish'   },
+        {slug: 'moisture'    , label:'Moisture recovery'},
+        {slug: 'blond'       , label:'Blond life'       },
+        {slug: 'defy'        , label:'Defy Damage'      },
+        {slug: 'joifull'     , label:'Joifull'          },
+        {slug: 'shake'       , label:'Shake series'     },
+        {slug: 'tricogen'    , label:'Tricogen'         },
+        {slug: 'beeform'     , label:'Bee Form'         },
+        {slug: 'blondpink'   , label:'Blond Pink'       },
+        {slug: 'naturalt'    , label:'NaturalTech'      },
+        {slug: 'essential'   , label:'Essential Haircare'},
+        {slug: 'antiloss'    , label:'Anti-Loss'        },
+        {slug: 'sebum'       , label:'Sebum'            },
+        {slug: 'osis'        , label:'Osis+'            },
     ]
 
     brandsArray = [
-        {slug:"farmavita"  , label:'FarmaVita'  },
-        {slug:"davines"    , label:'Davines'    },
-        {slug:"joico"      , label:'Joico'      },
-        {slug:"profistyle" , label:'ProfiStyle' },
-        {slug:"felps"      , label:'Felps'      },
-        {slug:"schwarzkopf", label:'Schwarzkopf'},
-        {slug:"mirella"    , label:'Mirella'    },
-        {slug:"altrego"    , label:'Altr Ego'   },
+        {slug:'farmavita'  , label:'FarmaVita'  },
+        {slug:'davines'    , label:'Davines'    },
+        {slug:'joico'      , label:'Joico'      },
+        {slug:'profistyle' , label:'ProfiStyle' },
+        {slug:'felps'      , label:'Felps'      },
+        {slug:'schwarzkopf', label:'Schwarzkopf'},
+        {slug:'mirella'    , label:'Mirella'    },
+        {slug:'altrego'    , label:'Altr Ego'   },
+        {slug:'choice'    , label:'Choice'   },
     ]
 
+    amountArray = [
+        {slug:'8g'     , label:'8 г' },
+        {slug:'10ml'   , label:'10 мл' },
+        {slug:'72ml'   , label:'72 мл' },
+        {slug:'74ml'   , label:'74 мл' },
+        {slug:'100ml'  , label:'100 мл' },
+        {slug:'130ml'  , label:'130 мл' },
+        {slug:'150ml'  , label:'150 мл' },
+        {slug:'180ml'  , label:'180 мл' },
+        {slug:'200ml'  , label:'200 мл' },
+        {slug:'250ml'  , label:'250 мл' },
+        {slug:'280ml'  , label:'280 мл' },
+        {slug:'300ml'  , label:'300 мл' },
+        {slug:'1000ml' , label:'1000 мл' },
+        {slug:'5l'     , label:'5 л' }
+    ]
+
+    typeArray = [
+            {slug:'shampoo'       , label:'Шампунь' },
+            {slug:'conditioner'   , label:'Кондиціонер' },
+            {slug:'mask'          , label:'Маска' },
+            {slug:'ampule'        , label:'Ампули' },
+            {slug:'milk'          , label:'Молочко' },
+            {slug:'lotions'       , label:'Лосьйон' },
+            {slug:'elixir'        , label:'Еліксир' },
+            {slug:'spray'         , label:'Спрей' },
+            {slug:'coloring'      , label:'Колорінг' },
+            {slug:'styling'       , label:'Стайлінг' },
+            {slug:'protection'    , label:'Захист' },
+            {slug:'cream'         , label:'Крем для волосся' },
+            {slug:'oil'           , label:'Олія' },
+            {slug:'kit'           , label:'Набір' },
+            {slug:'veil'          , label:'Гель-вуаль' }
+        ]
+
+     appArray = [
+         {slug: 'health',            label: 'Оздоровлення'},
+         {slug: 'salon',             label: 'Салонний догляд'},
+         {slug: 'reconstruction',    label: 'Реконструкція'},
+         {slug: 'protection',        label: 'Термозахист'},
+         {slug: 'coloring',          label: 'Для пофарбованого'},
+         {slug: 'stratening',        label: 'Випрямлення'},
+         {slug: 'natural',           label: 'Натуральні'},
+         {slug: 'curl',              label: 'Для кучер'},
+         {slug: 'skin',              label: 'Для шкіри голови'},
+         {slug: 'yellow',            label: 'Нейтралізація жовтизни'},
+         {slug: 'volume',            label: 'Для об`єму'},
+         {slug: 'sebo',              label: 'Себорегуляція'},
+         {slug: 'lupa',              label: 'Проти лупи'},
+         {slug: 'loss',              label: 'Проти випадіння'}
+
+         ]
+
+
     componentDidMount(props) {
-        this.setState({brandsArray:this.brandsArray, seriasArray:this.seriasArray})
+        this.setState({
+            brandsArray:this.brandsArray,
+            seriasArray:this.seriasArray,
+            amountArray:this.amountArray,
+            typeArray:this.typeArray,
+            appArray:this.appArray
+        })
     }
 
     chooseAppointmentHandler(event){
@@ -185,6 +249,30 @@ class ShopFilter extends Component  {
         this.setState({brandsArray})
     }
 
+    amountInputChange = (e) => {
+        const word = e.target.value.toLowerCase()
+        let amountArray = this.amountArray.filter((elem) => {
+            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+        })
+        this.setState({amountArray})
+    }
+
+    typeInputChange = (e) => {
+        const word = e.target.value.toLowerCase()
+        let typeArray = this.typeArray.filter((elem) => {
+            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+        })
+        this.setState({typeArray})
+    }
+
+    appInputChange = (e) => {
+        const word = e.target.value.toLowerCase()
+        let appArray = this.appArray.filter((elem) => {
+            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+        })
+        this.setState({appArray})
+    }
+
     minPriceChange = (e) => {
         this.setState({price_min: parseInt(e.target.value)})
         this.props.setFilterPrice('min', parseInt(e.target.value))
@@ -203,23 +291,11 @@ class ShopFilter extends Component  {
         <div className='shop-filters-prod filter filter-basic'>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ВИД ПРОДУКЦІЇ</p>
+                <input onChange={this.typeInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
-                <MDBInput name="type[]" value="shampoo" onChange={this.chooseTypeHandle} label='Шампунь' type='checkbox' id='shampoo'  />
-                <MDBInput name="type[]" value="conditioner" onChange={this.chooseTypeHandle} label='Кондиціонер' type='checkbox' id='conditioner'/>
-                <MDBInput name="type[]" value="mask" onChange={this.chooseTypeHandle} label='Маска' type='checkbox' id='mask' />
-                <MDBInput name="type[]" value="ampule" onChange={this.chooseTypeHandle} label='Ампули' type='checkbox' id='ampule'/>
-                <MDBInput name="type[]" value="milk" onChange={this.chooseTypeHandle} label='Молочко' type='checkbox' id='milk' />
-                <MDBInput name="type[]" value="lotions" onChange={this.chooseTypeHandle} label='Лосьйон' type='checkbox' id='lotions'/>
-                <MDBInput name="type[]" value="elixir" onChange={this.chooseTypeHandle} label='Еліксир' type='checkbox' id='elixir' />
-                <MDBInput name="type[]" value="spray" onChange={this.chooseTypeHandle} label='Спрей' type='checkbox' id='spray' />
-                <MDBInput name="type[]" value="coloring" onChange={this.chooseTypeHandle} label='Колорінг' type='checkbox' id='coloring' />
-                <MDBInput name="type[]" value="styling" onChange={this.chooseTypeHandle} label='Стайлінг' type='checkbox' id='styling' />
-                <MDBInput name="type[]" value="protection" onChange={this.chooseTypeHandle} label='Захист' type='checkbox' id='protection' />
-                <MDBInput name="type[]" value="cream" onChange={this.chooseTypeHandle} label='Крем для волосся' type='checkbox' id='cream' />
-                <MDBInput name="type[]" value="oil" onChange={this.chooseTypeHandle} label='Олія' type='checkbox' id='oil' />
-                <MDBInput name="type[]" value="kit" onChange={this.chooseTypeHandle} label='Набір' type='checkbox' id='kit' />
-                <MDBInput name="type[]" value="veil" onChange={this.chooseTypeHandle} label='Гель-вуаль' type='checkbox' id='veil' />
-                <MDBInput name="type[]" value="alltypes" onChange={this.chooseTypeHandle} label='Усі продукти' type='checkbox' id='alltypes'  />
+                    {this.state.typeArray.map((type) => (
+                        <MDBInput key={type.slug} value={type.slug} onChange={this.chooseTypeHandle} label={type.label} type='checkbox' id={type.slug} />
+                    ))}
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
@@ -241,21 +317,11 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ПРИЗНАЧЕННЯ</p>
+                <input onChange={this.appInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
-                    <MDBInput label='Оздоровлення' type='checkbox'           onChange={this.chooseAppointmentHandler} value='healt'          id='appo_healt'         />
-                    <MDBInput label='Салонний догляд' type='checkbox'        onChange={this.chooseAppointmentHandler} value='salon'          id='appo_salon'         />
-                    <MDBInput label='Реконструкція' type='checkbox'          onChange={this.chooseAppointmentHandler} value='reconstruction' id='appo_reconstruction'/>
-                    <MDBInput label='Захист' type='checkbox'                 onChange={this.chooseAppointmentHandler} value='protection'     id='appo_protection'    />
-                    <MDBInput label='Фарбування' type='checkbox'             onChange={this.chooseAppointmentHandler} value='coloring'       id='appo_coloring'      />
-                    <MDBInput label='Випрямлення' type='checkbox'            onChange={this.chooseAppointmentHandler} value='stratening'     id='appo_stratening'    />
-                    <MDBInput label='Натуральне' type='checkbox'             onChange={this.chooseAppointmentHandler} value='natural'        id='appo_natural'       />
-                    <MDBInput label='Для кучер' type='checkbox'              onChange={this.chooseAppointmentHandler} value='curl'           id='appo_curl'          />
-                    <MDBInput label='Для шкіри голови' type='checkbox'       onChange={this.chooseAppointmentHandler} value='skin'           id='appo_skin'          />
-                    <MDBInput label='Нейтралізація жовтизни' type='checkbox' onChange={this.chooseAppointmentHandler} value='yellow'         id='appo_yellow'        />
-                    <MDBInput label='Обєм' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='volume'         id='appo_volume'        />
-                    <MDBInput label='Себо' type='checkbox'                   onChange={this.chooseAppointmentHandler} value='sebo'           id='appo_sebo'          />
-                    <MDBInput label='Проти лупи' type='checkbox'             onChange={this.chooseAppointmentHandler} value='lupa'           id='appo_lupa'          />
-                    <MDBInput label='Проти випадіння' type='checkbox'        onChange={this.chooseAppointmentHandler} value='loss'           id='appo_loss'          />
+                    {this.state.appArray.map((app) => (
+                        <MDBInput key={app.slug} value={app.slug} onChange={this.chooseAppointmentHandler} label={app.label} type='checkbox' id={app.slug}/>
+                    ))}
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
@@ -274,31 +340,20 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>ОБСЯГ</p>
-                <input type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.amountInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-0 w-100 scroll'>
-                <MDBInput name="amount[]" value="8g"     onChange={this.chooseAmountHandle}  label='8 г' type='checkbox' id='8'/>
-                <MDBInput name="amount[]" value="10ml"   onChange={this.chooseAmountHandle}  label='10 мл' type='checkbox' id='10'/>
-                <MDBInput name="amount[]" value="72ml"   onChange={this.chooseAmountHandle} label='72 мл' type='checkbox' id='72'/>
-                <MDBInput name="amount[]" value="74ml"   onChange={this.chooseAmountHandle} label='74 мл' type='checkbox' id='74'/>
-                <MDBInput name="amount[]" value="100ml"  onChange={this.chooseAmountHandle} label='100 мл' type='checkbox' id='100' />
-                <MDBInput name="amount[]" value="130ml"  onChange={this.chooseAmountHandle} label='130 мл' type='checkbox' id='130' />
-                <MDBInput name="amount[]" value="150ml"  onChange={this.chooseAmountHandle} label='150 мл' type='checkbox' id='150' />
-                <MDBInput name="amount[]" value="180ml"  onChange={this.chooseAmountHandle} label='180 мл' type='checkbox' id='180' />
-                <MDBInput name="amount[]" value="200ml"  onChange={this.chooseAmountHandle} label='200 мл' type='checkbox' id='200' />
-                <MDBInput name="amount[]" value="250ml"  onChange={this.chooseAmountHandle} label='250 мл' type='checkbox' id='250' />
-                <MDBInput name="amount[]" value="280ml"  onChange={this.chooseAmountHandle} label='280 мл' type='checkbox' id='280' />
-                <MDBInput name="amount[]" value="300ml"  onChange={this.chooseAmountHandle} label='300 мл' type='checkbox' id='300' />
-                <MDBInput name="amount[]" value="1000ml" onChange={this.chooseAmountHandle} label='1000 мл' type='checkbox' id='1000' />
-                <MDBInput name="amount[]" value="5l"     onChange={this.chooseAmountHandle} label='5 л' type='checkbox' id='5'/>
+                    {this.state.amountArray.map((amount) => (
+                        <MDBInput key={amount.slug} value={amount.slug} onChange={this.chooseAmountHandle}  label={amount.label} type='checkbox' id={amount.slug}/>
+                    ))}
                 </Scrollbars>
             </div>
             <div className='mb-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ЦІНА</p>
                 <div className='d-flex'>
-                    <form className='multi-range-field w-50 w-auto'>
-                        <p>from:{this.state.price_min} to {this.state.price_max}</p>
-                        <input onChange={this.minPriceChange} id='min' value={this.state.price_min} type='number'></input>
-                        <input onChange={this.maxPriceChange} id='max' value={this.state.price_max} type='number'></input>
+                    <form className='multi-range-field w-50 w-auto d-inline-flex m-2 '>
+                        <input className='w-25' onChange={this.minPriceChange} id='min' value={this.state.price_min} type='number' placeholder="Від"></input>
+                        <p className='px-3 mt-2 mb-0'> — </p>
+                        <input className='w-25' onChange={this.maxPriceChange} id='max' value={this.state.price_max} type='number' placeholder="До"></input>
                     </form>
                 </div>
             </div>

@@ -33,7 +33,7 @@ class LIQPAY extends React.Component {
                                 <div className="panel-heading">
                                     <h2 className="panel-name green-text text-left green-text font-weight-bold pb-2 mb-0">LiqPay >></h2>
                                     <div className='payment-form pt-0' id="PaymentForm">
-                                        <form role="form">
+                                        <form>
                                             <div className="form-group mb-1">
                                                 <label htmlFor="cardNumber" className='pt-4 pb-0 mb-1'>CARD NUMBER</label>
                                                 <div className="input-group">

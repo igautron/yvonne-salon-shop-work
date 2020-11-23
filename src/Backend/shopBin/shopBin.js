@@ -30,7 +30,7 @@ class ShopBin extends Component  {
                             </form>
                             <MDBRow className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 ml-2 w-responsive">
                                 <MDBCol className='col-2 p-0'>
-                                    <img src="./01_color_shampoo.jpg" className="img-fluid w-25 h-25" alt="Responsive image" />
+                                    <img src="./01_color_shampoo.jpg" className="img-fluid w-25 h-25" alt="Responsive" />
                                 </MDBCol>
                                 <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6 p-1 py-2 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
                                     <p className='order-item'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>

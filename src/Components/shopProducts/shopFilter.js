@@ -9,7 +9,7 @@ import {
 import 'jquery';
 import 'mdbreact/dist/css/mdb.css';
 
-import Item from './../shopProducts/ITEMS/Davines/Item/Item'
+// import Item from './../shopProducts/ITEMS/Davines/Item/Item'
 
 const cl = console.log
 
@@ -53,12 +53,13 @@ class ShopFilter extends Component  {
         men: false,
         women: false
       }
+      cl(this.props)
     }
 
 
       isInputChecked = (filter_block, filter_input) => {
         if (this.state.inputs && this.state.inputs[filter_block] && this.state.inputs[filter_block][filter_input]) {
-            true
+            return true
         }
         return false
       }
@@ -264,7 +265,7 @@ class ShopFilter extends Component  {
     volumeInputChange = (e) => {
         const word = e.target.value.toLowerCase()
         let seriasArray = this.seriasArray.filter((elem) => {
-            return (elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+            return (elem.slug.toLowerCase().indexOf(word) !== -1 || elem.label.toLowerCase().indexOf(word) !== -1);
         })
         this.setState({seriasArray})
     }
@@ -272,7 +273,7 @@ class ShopFilter extends Component  {
     brandInputChange = (e) => {
         const word = e.target.value.toLowerCase()
         let brandsArray = this.brandsArray.filter((elem) => {
-            return (elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+            return (elem.slug.toLowerCase().indexOf(word) !== -1 || elem.label.toLowerCase().indexOf(word) !== -1);
         })
         this.setState({brandsArray})
     }
@@ -280,7 +281,7 @@ class ShopFilter extends Component  {
     amountInputChange = (e) => {
         const word = e.target.value.toLowerCase()
         let amountArray = this.amountArray.filter((elem) => {
-            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+            return(elem.slug.toLowerCase().indexOf(word) !== -1 || elem.label.toLowerCase().indexOf(word) !== -1);
         })
         this.setState({amountArray})
     }
@@ -288,7 +289,7 @@ class ShopFilter extends Component  {
     typeInputChange = (e) => {
         const word = e.target.value.toLowerCase()
         let typeArray = this.typeArray.filter((elem) => {
-            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+            return(elem.slug.toLowerCase().indexOf(word) !== -1 || elem.label.toLowerCase().indexOf(word) !== -1);
         })
         this.setState({typeArray})
     }
@@ -296,7 +297,7 @@ class ShopFilter extends Component  {
     appInputChange = (e) => {
         const word = e.target.value.toLowerCase()
         let appArray = this.appArray.filter((elem) => {
-            return(elem.slug.toLowerCase().indexOf(word) != -1 || elem.label.toLowerCase().indexOf(word) != -1);
+            return(elem.slug.toLowerCase().indexOf(word) !== -1 || elem.label.toLowerCase().indexOf(word) !== -1);
         })
         this.setState({appArray})
     }
@@ -319,7 +320,7 @@ class ShopFilter extends Component  {
         <div className='shop-filters-prod filter filter-basic'>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ВИД ПРОДУКЦІЇ</p>
-                <input onChange={this.typeInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.typeInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                     {this.state.typeArray.map((type) => (
                         <MDBInput key={type.slug} value={type.slug} onChange={this.chooseTypeHandle} label={type.label} type='checkbox' id={type.slug}/>
@@ -328,7 +329,7 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>БРЕНД</p>
-                <input onChange={this.brandInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.brandInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                 {this.state.brandsArray.map((brand) => (
                     <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug} checked={this.isInputChecked('brands',brand.slug)}/>
@@ -345,7 +346,7 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ПРИЗНАЧЕННЯ</p>
-                <input onChange={this.appInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.appInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                     {this.state.appArray.map((app) => (
                         <MDBInput key={app.slug} value={app.slug} onChange={this.chooseAppointmentHandler} label={app.label} type='checkbox' id={app.slug}/>
@@ -359,7 +360,7 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>СЕРІЯ</p>
-                <input onChange={this.volumeInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.volumeInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-5 w-100 scroll'>
                     {this.state.seriasArray.map((seria) => (
                         <MDBInput key={seria.slug} value={seria.slug} onChange={this.chooseSeriaHandle} label={seria.label} type='checkbox' id={seria.slug}/>
@@ -368,7 +369,7 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>ОБСЯГ</p>
-                <input onChange={this.amountInputChange} type='text' id='example3' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <input onChange={this.amountInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-0 w-100 scroll'>
                     {this.state.amountArray.map((amount) => (
                         <MDBInput key={amount.slug} value={amount.slug} onChange={this.chooseAmountHandle}  label={amount.label} type='checkbox' id={amount.slug}/>

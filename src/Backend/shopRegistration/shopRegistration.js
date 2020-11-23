@@ -30,7 +30,7 @@ class ShopRegistration extends Component  {
                                 Щонайменше 8 літер латиницею
                             </small>
                             <button className="btn btn-reg font-weight-bold my-4 mx-0 w-100" type="submit">Реєстрація</button>
-                            <p>В той час як ви натискаєте на<em> Реєстрація </em>, ви погоджуєтесь із<a href="" target="_blank"> політикою конфіденційності</a>
+                            <p>В той час як ви натискаєте на<em> Реєстрація </em>, ви погоджуєтесь із<a href="/" target="_blank"> політикою конфіденційності</a>
                             </p>
                         </form>
                     </div>

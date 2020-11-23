@@ -14,6 +14,8 @@ import './../../Details.scss'
 import Item from './Item';
 
 
+const cl = console.log
+
 class Details extends React.Component {
 
     state = {
@@ -54,6 +56,7 @@ class Details extends React.Component {
     };
 
      componentDidMount(props) {
+        cl(props)
         const itemId = window.location.pathname.split('/').pop()
         fetch('http://yvonne-server.loc/products/'+itemId)
           .then(response => response.json())
@@ -145,7 +148,7 @@ class Details extends React.Component {
                        <div className='d-inline-flex flex-wrap'>
                             <MDBCol sm='6' md='6' lg='6' xl='5' className='m-0'>
                                 <div className='p-1 m-0 p-2'>
-                                    <img className='m-auto w-100 justify-content-center d-block' src={image/*require('../../../../../img/catalogue/f45.jpg')*/} />
+                                    <img className='m-auto w-100 justify-content-center d-block' src={image/*require('../../../../../img/catalogue/f45.jpg')*/} alt={title}/>
                                 </div>
                             </MDBCol>
                             <MDBCol sm='6' md='6' lg='6' xl='7' className='p-2 m-0'>
@@ -281,7 +284,7 @@ class Details extends React.Component {
                                     <MDBTableBody>
                                         <p className='pl-0 w-100'>Відправлення товарів відбувається одразу ж після отримання замовлення.</p>
                                         <tr>
-                                            <td><a href='#'>Самовивіз із салону ІВОН (вул. Данченко 32)</a></td>
+                                            <td><a href='/'>Самовивіз із салону ІВОН (вул. Данченко 32)</a></td>
                                             <td className='text-green'>Безкоштовно</td>
                                         </tr>
                                         <tr>
@@ -293,7 +296,7 @@ class Details extends React.Component {
                                             <td className='text-green'>Безкоштовно</td>
                                         </tr>
                                         <tr>
-                                            <td><a href='#'>Доставка кур'єром (м. Київ)</a></td>
+                                            <td><a href='/'>Доставка кур'єром (м. Київ)</a></td>
                                             <td className='text-green'>50 грн</td>
                                         </tr>
                                     </MDBTableBody>
@@ -305,25 +308,25 @@ class Details extends React.Component {
                                 <div className='item-payment mb-5'>
                                     <p>
                                         <a href='https://www.privat24.ua/' className='font-weight-bold black-text'>
-                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/privat.png')} /></span>
+                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/privat.png')} alt="privat"/></span>
                                             PRIVAT 24
                                         </a>
                                     </p>
                                     <p>
                                         <a href='https://www.visa.com.ua/uk_UA' className='font-weight-bold black-text'>
-                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/Visa.jpg')}/></span>
+                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/Visa.jpg')} alt="Visa"/></span>
                                             VISA
                                         </a>
                                     </p>
                                     <p>
                                         <a href='https://www.mastercard.ua/uk-ua.html' className='font-weight-bold black-text'>
-                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/MasterCard.png')} /></span>
+                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/MasterCard.png')} alt="MasterCard"/></span>
                                             MASTERCARD
                                         </a>
                                     </p>
                                     <p>
                                         <a href='https://www.liqpay.ua/uk' className='font-weight-bold black-text'>
-                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/liqpay.png')} /></span>
+                                            <span><img className='item-payment-img pr-3' src={require('../../../../../img/shipment/liqpay.png')} alt="liqpay"/></span>
                                             LIQPAY
                                         </a>
                                     </p>

@@ -20,7 +20,7 @@ class ShopCertification extends React.Component  {
     }
 
     render() {
-        const { photoIndex, isOpen } = this.state;
+        // const { photoIndex, isOpen } = this.state;
         return (
             <MDBContainer>
                 <h1 className='h1-responsive font-weight-bolder m-0 pt-5 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-5 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>СЕРТИФІКАЦІЯ</h1>

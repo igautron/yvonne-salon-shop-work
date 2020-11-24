@@ -59,43 +59,6 @@ class ShopFilter extends Component  {
       cl(this.props)
     }
 
-
-      isInputChecked = (filter_block, filter_input) => {
-        if (this.state.inputs && this.state.inputs[filter_block] && this.state.inputs[filter_block][filter_input]) {
-            return true
-        }
-        return false
-      }
-      
-    seriasArray = [
-        {slug: 'amethyste'   , label:'Amethyste'        },
-        {slug: 'omniplex'    , label:'Omniplex'         },
-        {slug: 'argan'       , label:'Argan sublime'    },
-        {slug: 'onely'       , label:'Onely'            },
-        {slug: 'bioxil'      , label:'Bioxil'           },
-        {slug: 'kliss'       , label:'K.Liss'           },
-        {slug: 'linea'       , label:'Linea Back Bar'   },
-        {slug: 'oi'          , label:'OI'               },
-        {slug: 'hydra'       , label:'HydraSplash'      },
-        {slug: 'colorinfuse' , label:'Color infuse'     },
-        {slug: 'colorbalance', label:'Color balance'    },
-        {slug: 'kpack'       , label:'K-pack'           },
-        {slug: 'style'       , label:'Style & Finish'   },
-        {slug: 'moisture'    , label:'Moisture recovery'},
-        {slug: 'blond'       , label:'Blond life'       },
-        {slug: 'defy'        , label:'Defy Damage'      },
-        {slug: 'joifull'     , label:'Joifull'          },
-        {slug: 'shake'       , label:'Shake series'     },
-        {slug: 'tricogen'    , label:'Tricogen'         },
-        {slug: 'beeform'     , label:'Bee Form'         },
-        {slug: 'blondpink'   , label:'Blond Pink'       },
-        {slug: 'naturalt'    , label:'NaturalTech'      },
-        {slug: 'essential'   , label:'Essential Haircare'},
-        {slug: 'antiloss'    , label:'Anti-Loss'        },
-        {slug: 'sebum'       , label:'Sebum'            },
-        {slug: 'osis'        , label:'Osis+'            },
-    ]
-
     brandsArray = [
         {slug:'farmavita'  , label:'FarmaVita'  },
         {slug:'davines'    , label:'Davines'    },
@@ -169,7 +132,35 @@ class ShopFilter extends Component  {
         {slug: 'clarified',          label: 'Освітлене'},
         {slug: 'alltypes',           label: 'Нормальне'}
     ]
-
+ 
+    seriasArray = [
+        {slug: 'amethyste'   , label:'Amethyste'        },
+        {slug: 'omniplex'    , label:'Omniplex'         },
+        {slug: 'argan'       , label:'Argan sublime'    },
+        {slug: 'onely'       , label:'Onely'            },
+        {slug: 'bioxil'      , label:'Bioxil'           },
+        {slug: 'kliss'       , label:'K.Liss'           },
+        {slug: 'linea'       , label:'Linea Back Bar'   },
+        {slug: 'oi'          , label:'OI'               },
+        {slug: 'hydra'       , label:'HydraSplash'      },
+        {slug: 'colorinfuse' , label:'Color infuse'     },
+        {slug: 'colorbalance', label:'Color balance'    },
+        {slug: 'kpack'       , label:'K-pack'           },
+        {slug: 'style'       , label:'Style & Finish'   },
+        {slug: 'moisture'    , label:'Moisture recovery'},
+        {slug: 'blond'       , label:'Blond life'       },
+        {slug: 'defy'        , label:'Defy Damage'      },
+        {slug: 'joifull'     , label:'Joifull'          },
+        {slug: 'shake'       , label:'Shake series'     },
+        {slug: 'tricogen'    , label:'Tricogen'         },
+        {slug: 'beeform'     , label:'Bee Form'         },
+        {slug: 'blondpink'   , label:'Blond Pink'       },
+        {slug: 'naturalt'    , label:'NaturalTech'      },
+        {slug: 'essential'   , label:'Essential Haircare'},
+        {slug: 'antiloss'    , label:'Anti-Loss'        },
+        {slug: 'sebum'       , label:'Sebum'            },
+        {slug: 'osis'        , label:'Osis+'            },
+    ]
 
     brandsSeries = {
         'davines': [
@@ -179,7 +170,13 @@ class ShopFilter extends Component  {
             {slug:'Minu',     label: 'Minu'},
             {slug:'Melu',     label: 'Melu'},
             {slug:'NouNou',   label: 'NouNou'}
-        ]
+        ],
+        'farmavita': [
+            {slug:'naturalt',       label: 'naturalt'},
+            {slug:'naturalt',       label: 'naturalt'},
+            {slug:'naturalt',       label: 'naturalt'},
+            {slug:'naturalt',       label: 'naturalt'},
+        ],
     }
 
 
@@ -227,7 +224,6 @@ class ShopFilter extends Component  {
          const input = event.target
 // cl(input)
 // cl(this.brandsSeries[input.value])
-        this.setState({ seriasArray:this.brandsSeries[input.value] })
 
          let brands = {...this.state.brands}
          if (input.checked) {
@@ -235,8 +231,22 @@ class ShopFilter extends Component  {
          } else {
              delete brands[input.value]
          }
-         this.props.setFilterBrands(brands)
-         this.setState({brands})
+         cl(brands)
+
+        let seriasArray = []
+        for(let brand in brands){
+            seriasArray = seriasArray.concat(this.brandsSeries[brand])
+            // cl(this.brandsSeries[brand])
+        }
+        // cl(seriasArray)
+        if (seriasArray.length) {
+            this.setState({ seriasArray: seriasArray })
+        }else{
+            this.setState({ seriasArray: this.seriasArray })
+        }
+        
+        this.props.setFilterBrands(brands)
+        this.setState({brands})
     }
 
     chooseSeriaHandle(event) {
@@ -361,8 +371,17 @@ class ShopFilter extends Component  {
                 <input onChange={this.brandInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
                 <Scrollbars className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 w-100 scroll'>
                 {this.state.brandsArray.map((brand) => (
-                    <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug} checked={this.isInputChecked('brands',brand.slug)}/>
+                    <MDBInput key={brand.slug} value={brand.slug} onChange={this.chooseBrandHandle} label={brand.label} type='checkbox' id={brand.slug}/>
                 ))}
+                </Scrollbars>
+            </div>
+            <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
+                <p className='m-2 font-weight-bold'>СЕРІЯ</p>
+                <input onChange={this.volumeInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <Scrollbars className='mb-5 w-100 scroll'>
+                    {this.state.seriasArray.map((seria) => (
+                        <MDBInput key={seria.slug} value={seria.slug} onChange={this.chooseSeriaHandle} label={seria.label} type='checkbox' id={seria.slug}/>
+                    ))}
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
@@ -384,15 +403,6 @@ class ShopFilter extends Component  {
                 <p className='m-2 mb-3 font-weight-bold'>КАТЕГОРІЯ</p>
                 <MDBInput onChange={this.chooseGenderHandle} value="women" label='Для жінок' type='checkbox' id='woman' />
                 <MDBInput onChange={this.chooseGenderHandle} value="men" label='Для чоловіків' type='checkbox' id='man'/>
-            </div>
-            <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
-                <p className='m-2 font-weight-bold'>СЕРІЯ</p>
-                <input onChange={this.volumeInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
-                <Scrollbars className='mb-5 w-100 scroll'>
-                    {this.state.seriasArray.map((seria) => (
-                        <MDBInput key={seria.slug} value={seria.slug} onChange={this.chooseSeriaHandle} label={seria.label} type='checkbox' id={seria.slug}/>
-                    ))}
-                </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 font-weight-bold'>ОБСЯГ</p>

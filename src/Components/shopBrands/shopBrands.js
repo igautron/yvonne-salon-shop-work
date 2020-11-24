@@ -5,7 +5,7 @@ import {
     MDBDropdown,
     MDBDropdownToggle,
     MDBDropdownMenu,
-    MDBDropdownItem, MDBLink,
+    MDBDropdownItem, MDBNavLink
 } from 'mdbreact';
 
 import $ from 'jquery'
@@ -40,7 +40,7 @@ class ShopBrands extends Component  {
 
 
     chooseMarkHandle = (brand) => {
-        this.props.setFilterMark(brand)
+        // this.props.setFilterMark(brand)
     }
 
 
@@ -48,11 +48,11 @@ class ShopBrands extends Component  {
         return (
                     <div className='shop-nav-brand w-100 d-inline-flex'>
                         <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBLink to="/category/farmavita" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/farmavita" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'farmavita')} color='secondary' className='caret shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3 '>
                                     FarmaVita
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem>Amethyste</MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem>Argan Sublime</MDBDropdownItem>*/}
@@ -70,11 +70,11 @@ class ShopBrands extends Component  {
                             {/*</MDBDropdownMenu>*/}
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBLink to="/category/davines" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/davines" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'davines')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3'>
                                     Davines
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem>Oi</MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem>Natural Tech</MDBDropdownItem>*/}
@@ -85,11 +85,11 @@ class ShopBrands extends Component  {
                             {/*</MDBDropdownMenu>*/}
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBLink to="/category/joico" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/joico" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'joico')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  '>
                                     Joico
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem>Defy Damage</MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem>Blond Life</MDBDropdownItem>*/}
@@ -105,11 +105,11 @@ class ShopBrands extends Component  {
                             {/*</MDBDropdownMenu>*/}
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
-                            <MDBLink to="/category/profystyle" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/profystyle" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'profistyle')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     ProfyStyle
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem>Repair</MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem>Argan</MDBDropdownItem>*/}
@@ -128,11 +128,11 @@ class ShopBrands extends Component  {
                             {/*</MDBDropdownMenu>*/}
                         </MDBDropdown>
                         <MDBDropdown className='col-2 p-0'>
-                            <MDBLink to="/category/felps" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/felps" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'felps')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     Felps
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem></MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem></MDBDropdownItem>*/}
@@ -140,11 +140,11 @@ class ShopBrands extends Component  {
                             {/*</MDBDropdownMenu>*/}
                         </MDBDropdown>
                         <MDBDropdown className='col-2 p-0'>
-                            <MDBLink to="/category/schwarzkopf" className='p-0 text-center active z-depth-3' >
+                            <MDBNavLink to="/brand/schwarzkopf" className='p-0 text-center z-depth-3' >
                                 <button onClick={this.chooseMarkHandle.bind(null, 'schwarzkopf')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     Schwarzkopf
                                 </button>
-                            </MDBLink>
+                            </MDBNavLink>
                             {/*<MDBDropdownMenu color='secondary'>*/}
                             {/*    <MDBDropdownItem></MDBDropdownItem>*/}
                             {/*    <MDBDropdownItem></MDBDropdownItem>*/}

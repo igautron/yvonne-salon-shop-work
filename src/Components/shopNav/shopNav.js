@@ -3,6 +3,10 @@ import {Component} from 'react';
 import './shopNav.css'
 import {Link} from 'react-router-dom';
 import {
+    MDBModal,
+    MDBModalHeader,
+    MDBModalBody,
+    MDBModalFooter,
     MDBNavbar,
     MDBNavbarNav,
     MDBNavItem,
@@ -26,7 +30,8 @@ class ShopNav extends Component  {
     // },
 
     state = {
-        collapseID: ''
+        collapseID: '',
+        isCartModalOpened: false
     }
 
     toggleCollapse = collapseID => () => {
@@ -35,7 +40,11 @@ class ShopNav extends Component  {
         }));
     }
 
-
+    cartModalToggle = () => {
+      this.setState({
+        isCartModalOpened: !this.state.isCartModalOpened
+      });
+    }
 
     render() {
         return (
@@ -146,11 +155,21 @@ class ShopNav extends Component  {
                                 </div>
                             </div>
                             <div  className='right col-4 col-lg-3 col-md-4 col-sm-4 col-xl-3 w-responsive shop-logo-div d-inline-flex  pt-3 pb-3 pl-0 pr-0 float-right pt-sm-4 pb-sm-3 mx-sm-0 mr-sm-0 mr-md-3 ml-md-4 ml-xl-5 mr-xl-5 pt-sm-4 pt-md-4 mt-md-3 mt-xl-0 mt-lg-0 mt-sm-0 pt-lg-5 mx-lg-3 pt-lg-2 pr-2 pr-xl-2 pr-lg-2 pr-sm-2 pl-sm-3 pl-md-5 pl-lg-3 '>
-                                <Link to='/shopBin'>
-                                    <MDBBtn className='black-text btn-bk float-right ml-0  mt-4 my-sm-4  mb-4 mr-2 ml-sm-0 mr-sm-1 mt-sm-3 mb-sm-2 mt-md-3 mb-md-4 mx-md-2 mt-lg-3 ml-lg-4 mr-lg-3 ml-xl-5 px-lg-3 px-lg-2 px-md-3 px-sm-4 px-0 pl-0 py-lg-4 py-md-4 py-2 p-sm-2 p-md-1  font-weight-bold w-responsive font-small w-100' >
+                                
+                                    <MDBBtn onClick={this.cartModalToggle} className='black-text btn-bk float-right ml-0  mt-4 my-sm-4  mb-4 mr-2 ml-sm-0 mr-sm-1 mt-sm-3 mb-sm-2 mt-md-3 mb-md-4 mx-md-2 mt-lg-3 ml-lg-4 mr-lg-3 ml-xl-5 px-lg-3 px-lg-2 px-md-3 px-sm-4 px-0 pl-0 py-lg-4 py-md-4 py-2 p-sm-2 p-md-1  font-weight-bold w-responsive font-small w-100' >
                                         КОРЗИНА
                                     </MDBBtn>
-                                </Link>
+                                    <MDBModal isOpen={this.state.isCartModalOpened} toggle={this.cartModalToggle}>
+                                        <MDBModalHeader toggle={this.cartModalToggle}>MDBModal title</MDBModalHeader>
+                                        <MDBModalBody>
+                                          (...)
+                                        </MDBModalBody>
+                                        <MDBModalFooter>
+                                          <MDBBtn color="secondary" onClick={this.cartModalToggle}>Close</MDBBtn>
+                                          <MDBBtn color="primary">Save changes</MDBBtn>
+                                        </MDBModalFooter>
+                                    </MDBModal>
+                                
                                 <Link to='/shopLike'>
                                     <MDBBtn className='btn-like float-right ml-0 mr-0 mt-4 mb-4 ml-0 mr-2 ml-sm-1 mr-sm-2 pr-4 pl-3 pt-3 pl-sm-3 pr-sm-3  mt-md-3 mb-md-4 mt-lg-3 mr-lg-3 mr-md-0 px-lg-3  pt-1' >
                                         <MDBIcon className='font-small px-sm-0 px-md-3 pl-0 pr-0  pr-lg-3 pl-0 px-lg-3 px-xl-3 py-0 py-xl-2 py-lg-2 py-md-2 py-sm-0 my-0 my-xl-1 my-lg-1 my-md-1 my-sm-0 heart-icon' icon='heart'/>

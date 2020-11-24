@@ -79,6 +79,9 @@ function App() {
                 <Route path='/category/:category'>
                     <ShopProducts />
                 </Route>
+                <Route path='/brand/:brand'>
+                    <ShopProducts />
+                </Route>
             </Switch>
             <ShopFooter />
             {/*<ShopAccount />*/}

@@ -30,10 +30,16 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/shopProducts/topFilter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/topFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/topFilter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../choice-shop-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -304,6 +310,23 @@
       <workItem from="1605990575559" duration="1792000" />
       <workItem from="1605992384089" duration="1404000" />
       <workItem from="1605994216549" duration="1013000" />
+      <workItem from="1606025720532" duration="1147000" />
+      <workItem from="1606027525523" duration="995000" />
+      <workItem from="1606051440346" duration="1736000" />
+      <workItem from="1606053469699" duration="1523000" />
+      <workItem from="1606055304487" duration="1812000" />
+      <workItem from="1606057151972" duration="1800000" />
+      <workItem from="1606059049807" duration="2009000" />
+      <workItem from="1606083951836" duration="1791000" />
+      <workItem from="1606085762985" duration="1762000" />
+      <workItem from="1606087766826" duration="174000" />
+      <workItem from="1606123701521" duration="48000" />
+      <workItem from="1606180870444" duration="88000" />
+      <workItem from="1606180974015" duration="790000" />
+      <workItem from="1606183628733" duration="1760000" />
+      <workItem from="1606185437746" duration="1905000" />
+      <workItem from="1606187359716" duration="1791000" />
+      <workItem from="1606189166348" duration="1184000" />
     </task>
     <servers />
   </component>
@@ -319,10 +342,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605026236455" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605991049381">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606189230778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605991049381" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606189230778" />
     <state x="99" y="108" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604427686694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

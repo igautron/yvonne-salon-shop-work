@@ -44,7 +44,6 @@ function App() {
             <ShopSlider />
             <Switch>
                 <Route path='/' exact>
-                    <ShopBrands />
                     <ShopProducts />
                 </Route>
                 <Route path='/shopAboutShop'>
@@ -78,7 +77,6 @@ function App() {
                     <Details />
                 </Route>
                 <Route path='/category/:category'>
-                    <ShopBrands />
                     <ShopProducts />
                 </Route>
             </Switch>

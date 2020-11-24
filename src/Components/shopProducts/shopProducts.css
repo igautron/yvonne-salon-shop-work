@@ -19,7 +19,6 @@
 .prod-btn {
     border-radius: 3px;
     background-color: #a74eb6;
-    width: 225px !important;
     height: 41px;
     text-decoration: none;
     outline: none;
@@ -29,7 +28,7 @@
     background-color: #a74eb6 !important;
 }
 .top-filter-btn.active {
-    background-color: red !important;
+    background-color: rgba(167, 111, 165, 0.38) !important;
 }
 
 .shop-filters-block {
@@ -218,6 +217,17 @@
 
 
 @media (max-width: 576px) {
+
+
+    #display-products-big-size {
+        display: none;
+    }
+
+    #display-products-small-size {
+        display: block;
+    }
+
+
     span.shop-prod-item {
         font-size: 0.5rem !important;
     }
@@ -354,6 +364,15 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+
+    #display-products-big-size {
+        display: block;
+    }
+
+    #display-products-small-size {
+        display: none;
+    }
+
     span.shop-prod-item {
         font-size: 0.6rem !important;
     }
@@ -440,6 +459,14 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+    #display-products-big-size {
+        display: block;
+    }
+
+    #display-products-small-size {
+        display: none;
+    }
+
    .form-control, .checked-item {
        width: 1rem !important;
        height: 1rem !important;
@@ -493,6 +520,15 @@
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
+
+    #display-products-big-size {
+        display: block;
+    }
+
+    #display-products-small-size {
+        display: none;
+    }
+
     .item-btn-buy {
         font-size: 0.65rem;
         width: 100px;
@@ -535,6 +571,16 @@
 
 
 @media (min-width: 1200px) {
+
+    #display-products-big-size {
+        display: block;
+    }
+
+    #display-products-small-size {
+        display: none;
+    }
+
+
     .item-btn-buy {
         font-size: 0.65rem;
         width: 100px;

@@ -24,9 +24,11 @@ class ShopFilter extends Component  {
         series: {},
         amount: {},
         appointments: {},
+        hairtype: {},
         seriasArray: [],
         brandsArray: [],
         amountArray: [],
+        hairtypeArray: [],
         appArray: [],
         typeArray: [],
         price_min: 0,
@@ -45,6 +47,7 @@ class ShopFilter extends Component  {
       this.chooseAmountHandle = this.chooseAmountHandle.bind(this)
       this.chooseGenderHandle = this.chooseGenderHandle.bind(this)
       this.chooseAppointmentHandler = this.chooseAppointmentHandler.bind(this)
+      this.chooseHairtypeHandle = this.chooseHairtypeHandle.bind(this)
 
 
       // this.chooseTopbrandsHandle = this.chooseTopbrandsHandle.bind(this)
@@ -58,7 +61,7 @@ class ShopFilter extends Component  {
 
       isInputChecked = (filter_block, filter_input) => {
         if (this.state.inputs && this.state.inputs[filter_block] && this.state.inputs[filter_block][filter_input]) {
-            true
+            // true
         }
         return false
       }
@@ -101,7 +104,7 @@ class ShopFilter extends Component  {
         {slug:'schwarzkopf', label:'Schwarzkopf'},
         {slug:'mirella'    , label:'Mirella'    },
         {slug:'altrego'    , label:'Altr Ego'   },
-        {slug:'choice'    , label:'Choice'   },
+        {slug:'choice'    , label:'Choice'      },
     ]
 
     amountArray = [
@@ -158,13 +161,36 @@ class ShopFilter extends Component  {
          ]
 
 
+    hairtypeArray = [
+        {slug: 'dry',                label: 'Сухе'},
+        {slug: 'fatter',             label: 'Жирне'},
+        {slug: 'lamina',             label: 'Ламке'},
+        {slug: 'clarified',          label: 'Освітлене'},
+        {slug: 'alltypes',           label: 'Нормальне'}
+    ]
+
+
+    brandsSeries = {
+        'davines': [
+            {slug:'oi',       label: 'Oi'},
+            {slug:'naturalt', label: 'Natural Tech'},
+            {slug:'Momo',     label: 'Momo'},
+            {slug:'Minu',     label: 'Minu'},
+            {slug:'Melu',     label: 'Melu'},
+            {slug:'NouNou',   label: 'NouNou'}
+        ]
+    }
+
+
+
     componentDidMount(props) {
         this.setState({
             brandsArray:this.brandsArray,
             seriasArray:this.seriasArray,
             amountArray:this.amountArray,
             typeArray:this.typeArray,
-            appArray:this.appArray
+            appArray:this.appArray,
+            hairtypeArray:this.hairtypeArray
         })
     }
 
@@ -194,16 +220,6 @@ class ShopFilter extends Component  {
         this.setState({types})
     }
 
-    brandsSeries = {
-        'davines': [
-            {slug:'oi',       label: 'Oi'},
-            {slug:'naturalt', label: 'Natural Tech'},
-            {slug:'Momo',     label: 'Momo'},
-            {slug:'Minu',     label: 'Minu'},
-            {slug:'Melu',     label: 'Melu'},
-            {slug:'NouNou',   label: 'NouNou'},
-        ]
-    }
 
 
     chooseBrandHandle(event) {
@@ -259,6 +275,19 @@ class ShopFilter extends Component  {
             return this.props.setFilterGender('women')
         }
         return this.props.setFilterGender('all') // men, women, all
+    }
+
+    chooseHairtypeHandle(event) {
+        let input = event.target
+        let hairtype = {...this.state.hairtype}
+        if(input.checked) {
+            hairtype[input.value] = 1
+        } else {
+            delete hairtype[input.value]
+        }
+        cl(hairtype)
+        this.props.setFilterHairtype(hairtype)
+        this.setState({hairtype})
     }
 
     volumeInputChange = (e) => {
@@ -337,11 +366,9 @@ class ShopFilter extends Component  {
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ТИП ВОЛОССЯ</p>
-                <MDBInput value="dry"  label='Сухе' type='checkbox' id='dry'/>
-                <MDBInput value="fatter"  label='Жирне' type='checkbox' id='fatter'/>
-                <MDBInput value="lamina"  label='Ламке' type='checkbox' id='lamina'/>
-                <MDBInput value="clarified"  label='Освітлене' type='checkbox' id='clarified'/>
-                <MDBInput value="alltypes"  label='Нормальне' type='checkbox' id='alltypes'/>
+                {this.state.hairtypeArray.map((hairtype) => (
+                <MDBInput key={hairtype.slug} value={hairtype.slug} onChange={this.chooseHairtypeHandle}  label={hairtype.label} type='checkbox' id={hairtype.slug}/>
+                ))}
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ПРИЗНАЧЕННЯ</p>

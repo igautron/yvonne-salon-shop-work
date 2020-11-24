@@ -53,7 +53,7 @@ class Item extends React.Component {
                                     </div>
                                     <div>
                                         <button
-                                            className='prod-btn white-text z-depth-1 p-2 border-0 justify-content-center m-0 align-content-center'>В
+                                            className='w-100 prod-btn white-text z-depth-1 p-2 border-0 justify-content-center m-0 align-content-center'>В
                                             КОРЗИНУ
                                         </button>
                                     </div>

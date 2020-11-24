@@ -10,6 +10,7 @@ import {
 import React from 'react';
 
 import './../../Details.scss'
+import './../../../shopProducts.css'
 
 import Item from './Item';
 
@@ -262,13 +263,13 @@ class Details extends React.Component {
                             </MDBTabPane>
                             <MDBTabPane tabId='3' className='m-1 p-2'>
                                 <MDBRow className='mt-4 p-0'>
-                                    <MDBCol lg='4' md='4' xl='4' sm='6' className='pb-5 p-2 col-8' >
+                                    <MDBCol lg='4' md='4' xl='3' sm='6' className='pb-5 p-2 col-8' >
                                         <Item />
                                     </MDBCol>
-                                    <MDBCol lg='4' md='4' xl='4' sm='6' className='pb-5 p-2 col-8' >
+                                    <MDBCol lg='4' md='4' xl='3' sm='6' className='pb-5 p-2 col-8' >
                                         <Item />
                                     </MDBCol>
-                                    <MDBCol lg='4' md='4' xl='4' sm='6' className='pb-5 p-2 col-8' >
+                                    <MDBCol lg='4' md='4' xl='3' sm='6' className='pb-5 p-2 col-8' >
                                         <Item />
                                     </MDBCol>
                                 </MDBRow>

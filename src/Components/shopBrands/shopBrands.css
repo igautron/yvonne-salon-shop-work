@@ -1,3 +1,9 @@
+
+.shop-brands-item {
+    border-radius: 2px;
+}
+
+
 @media (max-width: 576px) {
     .shop-brand {
         margin: 0px !important;

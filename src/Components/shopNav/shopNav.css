@@ -66,9 +66,27 @@ img.flower {
 }
 
 .btn-bk {
-    background-color: #fffdc4 !important;
-    color: #7f249c !important;
     text-shadow: 1px 0px 0px ;
+    width:  75px !important;
+    height: 85px !important;
+    outline: none;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.btn-bk:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.btn-bk img {
+    width: 45px;
+}
+
+i.fa-search {
+    width: 65px;
+    font-size: 30px;
+    color: lightgrey;
 }
 
 .dropdownmenu {
@@ -77,9 +95,28 @@ img.flower {
     left: 0;
     align-content: center;
     justify-content: center;
-
-
 }
+
+.btn-x {
+    transform: translateX(130px);
+    background-color: rgba(106, 27, 154, 0.08);
+    color: white;
+    width: 35px !important;
+    height: 35px;
+}
+
+.btn-x:focus {
+    outline: none;
+    border: none;
+}
+
+.heart-icon {
+    width: 65px;
+    font-size: 30px;
+    color: lightgrey;
+}
+
+
 
 
 @media (max-width: 576px) {
@@ -154,10 +191,6 @@ img.flower {
         width: 45px !important;
     }
 
-    i.fa.fa-heart {
-        font-size: 0.8rem!important;
-    }
-
     .fb-icon {
         font-size: 15px !important;
         transform: translateY(-3px);
@@ -175,6 +208,22 @@ img.flower {
 
     .tgl-item {
         font-size: 10px !important;
+    }
+
+    i.fa-search {
+        width: 65px;
+        font-size: 30px;
+        color: lightgrey;
+    }
+
+    .heart-icon {
+        font-size: 30px !important;
+        padding-right: 15px !important;
+    }
+
+    i.fa-search, .bin-img {
+        font-size: 20px !important;
+        width: 30px !important;
     }
 
 }
@@ -238,19 +287,7 @@ img.flower {
         padding-left: 20px;
     }
 
-    .btn-bk, #text {
-        font-size: 0.6rem !important;
-        height: 2.7rem !important;
-    }
 
-    .btn-like, #text {
-        height: 2.7rem !important;
-        font-size: 0.6rem !important;
-    }
-
-    i.fa.fa-heart {
-        font-size: 0.7rem !important;
-    }
 
     .fb-icon {
         font-size: 15px !important;
@@ -270,6 +307,17 @@ img.flower {
     .tgl-item {
         font-size: 15px !important;
     }
+
+    .heart-icon {
+        font-size: 30px !important;
+        padding-right: 10px !important;
+    }
+
+    i.fa-search, .bin-img {
+        font-size: 20px !important;
+        width: 30px !important;
+    }
+
 
 }
 
@@ -329,13 +377,6 @@ img.flower {
         padding-left: 70px;
     }
 
-    .btn-bk, #text {
-        font-size: 0.7rem !important;
-    }
-
-    .btn-like, #text {
-        font-size: 0.7rem !important;
-    }
 
     .fb-icon {
         font-size: 15px !important;
@@ -362,7 +403,7 @@ img.flower {
     }
 
     .heart-icon {
-        font-size: 12px;
+        font-size: 30px;
     }
 
 }
@@ -422,7 +463,7 @@ img.flower {
     }
 
     .heart-icon {
-        font-size: 19px;
+        font-size: 30px;
     }
 }
 
@@ -475,10 +516,6 @@ img.flower {
     .email-icon {
         font-size: 17px !important;
         transform: translateY(-2px);
-    }
-
-    .heart-icon {
-        font-size: 19px;
     }
 
 }

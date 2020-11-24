@@ -23,7 +23,6 @@ import ShopCertification from './Components/shopNav/shopCertification/shopCertif
 
 import ShopAutorization from '../src/Backend/shopAutorization/shopAutorization';
 import ShopRegistration from '../src/Backend/shopRegistration/shopRegistration';
-import ShopBin from '../src/Backend/shopBin/shopBin';
 // import ShopLike from '../src/Backend/shopLike/shopLike';
 import ShopOrder from '../src/Backend/shopOrder/shopOrder';
 import Congratulation from './Backend/shopOrder/CARD/Congratulation';
@@ -51,9 +50,6 @@ function App() {
                 </Route>
                 <Route path='/shopContacts'>
                     <ShopContacts />
-                </Route>
-                <Route path='/shopBin'>
-                    <ShopBin />
                 </Route>
                 <Route path='/shopOrder'>
                     <ShopOrder />

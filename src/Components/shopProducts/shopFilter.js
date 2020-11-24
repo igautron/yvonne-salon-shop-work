@@ -35,9 +35,15 @@ class ShopFilter extends Component  {
         price_max: 2000,
         inputs: {
             brands:{
-                davines:false
+                davines:false,
+                joico:false,
+                farmavita:false,
+                schwarzkopf:false,
+                profistyle:false,
+                felps:false
             }
         }
+
         // topbrands: {}
       };
 
@@ -73,15 +79,24 @@ class ShopFilter extends Component  {
 
     amountArray = [
         {slug:'8g'     , label:'8 г' },
+        {slug:'8ml'   , label:'8 мл' },
+        {slug:'9g'   , label:'9 г' },
         {slug:'10ml'   , label:'10 мл' },
+        {slug:'10*10ml'     , label:'10X10 мл' },
+        {slug:'10st'   , label:'10 шт' },
         {slug:'72ml'   , label:'72 мл' },
         {slug:'74ml'   , label:'74 мл' },
+        {slug:'75ml'   , label:'75 мл' },
+        {slug:'50ml'   , label:'50 мл' },
         {slug:'100ml'  , label:'100 мл' },
+        {slug:'120ml'  , label:'120 мл' },
         {slug:'130ml'  , label:'130 мл' },
         {slug:'150ml'  , label:'150 мл' },
         {slug:'180ml'  , label:'180 мл' },
         {slug:'200ml'  , label:'200 мл' },
+        {slug:'233ml'  , label:'233 мл' },
         {slug:'250ml'  , label:'250 мл' },
+        {slug:'255ml'  , label:'255 мл' },
         {slug:'280ml'  , label:'280 мл' },
         {slug:'300ml'  , label:'300 мл' },
         {slug:'1000ml' , label:'1000 мл' },
@@ -142,6 +157,7 @@ class ShopFilter extends Component  {
         {slug: 'kliss'       , label:'K.Liss'           },
         {slug: 'linea'       , label:'Linea Back Bar'   },
         {slug: 'oi'          , label:'OI'               },
+
         {slug: 'hydra'       , label:'HydraSplash'      },
         {slug: 'colorinfuse' , label:'Color infuse'     },
         {slug: 'colorbalance', label:'Color balance'    },
@@ -152,32 +168,153 @@ class ShopFilter extends Component  {
         {slug: 'defy'        , label:'Defy Damage'      },
         {slug: 'joifull'     , label:'Joifull'          },
         {slug: 'shake'       , label:'Shake series'     },
-        {slug: 'tricogen'    , label:'Tricogen'         },
-        {slug: 'beeform'     , label:'Bee Form'         },
-        {slug: 'blondpink'   , label:'Blond Pink'       },
-        {slug: 'naturalt'    , label:'NaturalTech'      },
-        {slug: 'essential'   , label:'Essential Haircare'},
-        {slug: 'antiloss'    , label:'Anti-Loss'        },
-        {slug: 'sebum'       , label:'Sebum'            },
-        {slug: 'osis'        , label:'Osis+'            },
+
+        {slug: 'blondme'     , label:'BlondMe'         },
+        {slug: 'bcbonacure'  , label:'BC Bonacure'         },
+
+        {slug: 'repair'       , label:'Repair'       },
+        {slug: 'antiloss'     , label:'Anti-loss'      },
+        {slug: 'sebum'        , label:'Sebum'},
+        {slug: 'antidandruff' , label:'Anti-dandruff'        },
+        {slug: 'curl'         , label:'Curl'            },
+
+        {slug: 'bamboo'         , label:'Bampboo'       },
+        {slug: 'asai'           , label:'Asai'      },
+        {slug: 'marula'         , label:'Marula'},
+        {slug: 'xrepair'        , label:'Xrepair'        },
+        {slug: 'xintense'       , label:'Xintense'            },
+        {slug: 'xcolor'         , label:'Xcolor'            },
+        {slug: 'bahnodeverniz'  , label:'Bahno De Verniz'            }
     ]
+
 
     brandsSeries = {
         'davines': [
-            {slug:'oi',       label: 'Oi'},
-            {slug:'naturalt', label: 'Natural Tech'},
-            {slug:'Momo',     label: 'Momo'},
-            {slug:'Minu',     label: 'Minu'},
-            {slug:'Melu',     label: 'Melu'},
-            {slug:'NouNou',   label: 'NouNou'}
+            {slug: 'oi', label: 'Oi'},
         ],
         'farmavita': [
-            {slug:'naturalt',       label: 'naturalt'},
-            {slug:'naturalt',       label: 'naturalt'},
-            {slug:'naturalt',       label: 'naturalt'},
-            {slug:'naturalt',       label: 'naturalt'},
+            {slug: '250', label: 'Amethyste'},
+            {slug: 'omniplex', label: 'Omniplex'},
+            {slug: 'argan', label: 'Argan sublime'},
+            {slug: 'onely', label: 'Onely'},
+            {slug: 'bioxil', label: 'Bioxil'},
+            {slug: 'kliss', label: 'K.Liss'},
+            {slug: 'linea', label: 'Linea Back Bar'}
         ],
+        'joico': [
+            {slug: 'hydra', label: 'HydraSplash'},
+            {slug: 'colorinfuse', label: 'Color infuse'},
+            {slug: 'colorbalance', label: 'Color balance'},
+            {slug: 'kpack', label: 'K-pack'},
+            {slug: 'style', label: 'Style & Finish'},
+            {slug: 'moisture', label: 'Moisture recovery'},
+            {slug: 'blond', label: 'Blond life'},
+            {slug: 'defy', label: 'Defy Damage'},
+            {slug: 'joifull', label: 'Joifull'},
+            {slug: 'shake', label: 'Shake series'},
+
+        ],
+
+        'schwarzkopf': [
+            {slug: 'blondme', label: 'BlondMe'},
+            {slug: 'bcbonacure', label: 'BC Bonacure'},
+
+        ],
+
+        'profistyle': [
+            {slug: 'repair', label: 'Repair'},
+            {slug: 'antiloss', label: 'Anti-loss'},
+            {slug: 'sebum', label: 'Sebum'},
+            {slug: 'antidandruff', label: 'Anti-dandruff'},
+            {slug: 'curl', label: 'Curl'},
+        ],
+
+        'felps': [
+            {slug: 'bamboo', label: 'Bampboo'},
+            {slug: 'asai', label: 'Asai'},
+            {slug: 'marula', label: 'Marula'},
+            {slug: 'xrepair', label: 'Xrepair'},
+            {slug: 'xintense', label: 'Xintense'},
+            {slug: 'xcolor', label: 'Xcolor'},
+            {slug: 'bahnodeverniz', label: 'Bahno De Verniz'}
+        ],
+
     }
+
+        brandsSeries = {
+            'davines': [
+                {slug:'8g'     , label:'8 г' },
+                {slug:'9g'   , label:'9 г' },
+                {slug:'8ml'   , label:'8 мл' },
+                {slug:'125ml'  , label:'125 мл' },
+                {slug:'130ml'  , label:'130 мл' },
+                {slug:'75ml'   , label:'75 мл' },
+                {slug:'50ml'   , label:'50 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'120ml'  , label:'120 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'280ml'  , label:'280 мл' },
+                {slug:'400ml'  , label:'400 мл' },
+                {slug:'500ml' , label:'500 мл' },
+                {slug:'300ml'  , label:'300 мл' },
+            ],
+            'farmavita': [
+                {slug:'10st'   , label:'10 шт' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+            ],
+            'joico':  [
+
+                {slug:'72ml'   , label:'72 мл' },
+                {slug:'74ml'   , label:'74 мл' },
+                {slug:'50ml'   , label:'50 мл' },
+                {slug:'63ml'   , label:'63 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'125ml'  , label:'125 мл' },
+                {slug:'140ml'  , label:'140 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'200ml'  , label:'200 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'255ml'  , label:'255 мл' },
+                {slug:'233ml'  , label:'233 мл' },
+                {slug:'300ml'  , label:'300 мл' },
+            ],
+
+            'schwarzkopf':  [
+
+                {slug:'75ml'   , label:'75 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'200ml'  , label:'200 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+                {slug:'10*10ml'     , label:'10X10 мл' }
+
+            ],
+
+            'profistyle': [
+                {slug:'10*10ml'     , label:'10X10 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+            ],
+
+            'felps': [
+                {slug:'250ml'  , label:'250 мл' },
+            ],
+
+
+        }
+
+
+
 
 
 
@@ -233,9 +370,11 @@ class ShopFilter extends Component  {
          }
          cl(brands)
 
+
+
         let seriasArray = []
         for(let brand in brands){
-            seriasArray = seriasArray.concat(this.brandsSeries[brand])
+            seriasArray = seriasArray.concat(this.brandsSeries[brand] )
             // cl(this.brandsSeries[brand])
         }
         // cl(seriasArray)
@@ -244,6 +383,18 @@ class ShopFilter extends Component  {
         }else{
             this.setState({ seriasArray: this.seriasArray })
         }
+
+
+        let amountArray = []
+        for(let brand in brands) {
+            amountArray = amountArray.concat(this.brandsSeries[brand])
+        }
+        if(amountArray.length) {
+            this.setState({ amountArray: amountArray })
+        } else {
+            this.setState({ amountArray: this.amountArray})
+        }
+
         
         this.props.setFilterBrands(brands)
         this.setState({brands})

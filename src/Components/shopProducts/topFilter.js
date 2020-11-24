@@ -74,7 +74,7 @@ class TopFilter extends Component  {
 
 
     chooseTopHandle = (type) => {
-        this.props.setFilterTop(type)
+        // this.props.setFilterTop(type)
     }
 
     isActive = (type) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import './shopProducts.css'
 import ShopFilter from './shopFilter'
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, withRouter } from "react-router-dom";
 import { MDBNav,  MDBContainer, MDBIcon, MDBBtn } from "mdbreact";
 
 import {
@@ -25,7 +25,6 @@ import TopFilter from './topFilter';
 import ShopBrands from './../shopBrands/shopBrands';
 
 
-import { withRouter } from 'react-router-dom';
 
 
 $(document).ready(function () {
@@ -143,8 +142,16 @@ class ShopProducts extends Component  {
     setFilterTop(type) {
         let types = {}
         types[type] = 1
-        cl(type)
+        // cl(type)
         this.setFilterTypes(types)
+        this.doAjax()
+    }
+
+    setFilterBrand = (brand) => {
+        let brands = {}
+        brands[brand] = 1
+        // cl(type)
+        this.setFilterBrands(brands)
         this.doAjax()
     }
 
@@ -159,9 +166,9 @@ class ShopProducts extends Component  {
     doAjax() {
         let url
         if (Object.keys(this.filter).length !== 0) {
-            url = 'http://yvonne-server.loc/filter?filter='+encodeURIComponent(JSON.stringify(this.filter))
+            url = 'http://yvonne-server.loc/api/filter?filter='+encodeURIComponent(JSON.stringify(this.filter))
         }else{
-            url = 'http://yvonne-server.loc/products'
+            url = 'http://yvonne-server.loc/api/products'
         }
         fetch(url)
           .then(response => response.json())
@@ -169,19 +176,32 @@ class ShopProducts extends Component  {
     }
 
     componentDidMount(props) {
-        if (window.location.pathname.indexOf('/category') === 0) {
-            const category = window.location.pathname.split('/').pop()
+        if (window.location.pathname.indexOf('/api/category') === 0) {
+            const category = this.props.match.params.category
             this.setFilterTop(category)
+        }else if (window.location.pathname.indexOf('/api/brand') === 0) {
+            const brand = this.props.match.params.brand
+            this.setFilterBrand(brand)
         }else{
-            fetch('http://yvonne-server.loc/products')
+            fetch('http://yvonne-server.loc/api/products')
               .then(response => response.json())
               .then(data => this.setState({products: data.products}));
         }
     }
 
     componentDidUpdate(prevProps) {
-        cl(prevProps.match.params)
-        cl(this.props.match.params)
+        // cl(prevProps.match.params.category)
+        // cl(this.props.match.params.category)
+        if (window.location.pathname.indexOf('/api/category') === 0) {
+            if (prevProps.match.params.category !== this.props.match.params.category) {
+               this.setFilterTop(this.props.match.params.category) 
+            } 
+        }
+        if (window.location.pathname.indexOf('/api/brand') === 0) {
+            if (prevProps.match.params.brand !== this.props.match.params.brand) {
+               this.setFilterBrand(this.props.match.params.brand)
+            } 
+        }
     }
 
     render() {

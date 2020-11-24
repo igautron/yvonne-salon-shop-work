@@ -31,9 +31,15 @@
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopBrands/shopBrands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopMobileUpload/shopMobileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopMobileUpload/shopMobileUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/LIQPAY.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/LIQPAY.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/PRIVAT.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/PRIVAT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/VISA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopOrder/CARD/VISA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />

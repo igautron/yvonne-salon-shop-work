@@ -43,7 +43,7 @@ class PRIVAT extends React.Component {
                                             name={this.state.name}
                                             styles={{width: '15px'}}
                                         />
-                                        <form role="form">
+                                        <form>
                                             <div className="form-group mb-1">
                                                 <label htmlFor="cardNumber" className='pt-3 pb-0 mb-1'>CARD NUMBER</label>
                                                 <div className="input-group">

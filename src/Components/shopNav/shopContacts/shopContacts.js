@@ -73,9 +73,9 @@ class ShopContacts extends Component {
                                                 <tr className='font-weight-light'>+38 073 500 55 33</tr>
                                                 <tr className='font-weight-light'>+38 093 500 55 33</tr>
                                                 <tr className='font-weight-light'>09:00-20:00 (працюємо без вихідних)</tr>
-                                                <tr className='font-weight-light'><a href='#'>link</a></tr>
-                                                <tr className='font-weight-light'><a href='#'>link</a></tr>
-                                                <tr className='font-weight-light'><a href='#'>link</a></tr>
+                                                <tr className='font-weight-light'><a href='/'>link</a></tr>
+                                                <tr className='font-weight-light'><a href='/'>link</a></tr>
+                                                <tr className='font-weight-light'><a href='/'>link</a></tr>
                                             </th>
                                         </MDBTable>
                                     </div>
@@ -193,9 +193,9 @@ class ShopContacts extends Component {
                                                 <tr className='font-weight-bold'>+38 073 500 55 33</tr>
                                                 <tr className='font-weight-bold'>+38 093 500 55 33</tr>
                                                 <tr className='font-weight-bold'>09:00-20:00 (без вихідних)</tr>
-                                                <tr className='font-weight-bold'><a href='#'>link</a></tr>
-                                                <tr className='font-weight-bold'><a href='#'>link</a></tr>
-                                                <tr className='font-weight-bold'><a href='#'>link</a></tr>
+                                                <tr className='font-weight-bold'><a href='/'>link</a></tr>
+                                                <tr className='font-weight-bold'><a href='/'>link</a></tr>
+                                                <tr className='font-weight-bold'><a href='/'>link</a></tr>
                                             </th>
                                         </MDBTable>
                                     </div>
@@ -229,9 +229,9 @@ class ShopContacts extends Component {
                                             titleClass='d-inline title'
                                             className='p-0 m-0 border-0'
                                         >
-                                            <h4 className='text-center font-weight-normal py-4 py-sm-4 m-0'>Форма зв'язку</h4>
-                                            <h6 className='w-responsive font-italic text-center m-auto justify-content-center font-weight-normal grey-text px-xl-5'>Залиште ваші
-                                                контактні данні і ми зв'яжемось із Вами найближчим часом</h6>
+                                            <div className='text-center font-weight-normal py-4 py-sm-4 m-0'>Форма зв'язку</div>
+                                            <div className='w-responsive font-italic text-center m-auto justify-content-center font-weight-normal grey-text px-xl-5'>Залиште ваші
+                                                контактні данні і ми зв'яжемось із Вами найближчим часом</div>
                                         </MDBModalHeader>
                                         <MDBModalBody
                                             className='p-0 m-0 border-0 pb-xl-3 px-md-5 px-lg-5 px-xl-5'

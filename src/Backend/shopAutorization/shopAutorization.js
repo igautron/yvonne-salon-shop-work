@@ -28,13 +28,13 @@ class ShopAutorization extends Component  {
                                         </div>
                                     </div>
                                     <div>
-                                        <a href="" className='py-1 form-text'>Забули пароль?</a>
+                                        <a href="/" className='py-1 form-text'>Забули пароль?</a>
                                     </div>
                                 </div>
                                 <button className="btn btn-reg font-weight-bold my-4 w-100" type="submit">Авторизація</button>
                                 <p>Ще не зареєстровані?
                                     <Link to='/shopRegistration'>
-                                            <a href="" className='pl-3' >Зареєструватись</a>
+                                            <a href="/" className='pl-3' >Зареєструватись</a>
                                     </Link>
                                 </p>
                             </form>

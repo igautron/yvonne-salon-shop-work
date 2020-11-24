@@ -1,15 +1,15 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopProducts.css'
-import ShopFilter from './shopFilter'
+// import ShopFilter from './shopFilter'
 
 import {
-    MDBRow,
+    // MDBRow,
     MDBCol,
     MDBCard,
-    MDBPagination,
-    MDBPageNav,
-    MDBPageItem,
+    // MDBPagination,
+    // MDBPageNav,
+    // MDBPageItem,
     MDBLink,
 } from 'mdbreact';
 
@@ -17,8 +17,9 @@ import $ from 'jquery';
 import 'jquery';
 import 'mdbreact/dist/css/mdb.css';
 
+import { withRouter } from 'react-router-dom';
 
-import Item from './../shopProducts/ITEMS/Davines/Item/Item'
+// import Item from './../shopProducts/ITEMS/Davines/Item/Item'
 
 
 
@@ -78,17 +79,16 @@ class TopFilter extends Component  {
 
     isActive = (type) => {
         const category = window.location.pathname.split('/').pop()
-        cl(type)
+        // cl(type)
         return category === type ? 'active' : ''
     }
 
 
 
-    componentDidMount(props) {
-        fetch('http://yvonne-server.loc/products')
-            .then(response => response.json())
-            .then(data => this.setState({products: data.products}));
-    }
+    // componentDidMount(props) {
+    //     cl(this.props)
+    // }
+
 
 
 
@@ -156,4 +156,6 @@ class TopFilter extends Component  {
     }
 }
 
-export default TopFilter;
+// let TopFilterDD = withRouter(TopFilter);
+
+export default withRouter(TopFilter);

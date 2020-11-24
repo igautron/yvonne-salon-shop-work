@@ -8,11 +8,11 @@ import { MDBNav,  MDBContainer, MDBIcon, MDBBtn } from "mdbreact";
 import {
     MDBRow,
     MDBCol,
-    MDBCard,
+    // MDBCard,
     MDBPagination,
     MDBPageNav,
     MDBPageItem,
-    MDBLink,
+    // MDBLink,
 } from 'mdbreact';
 
 import $ from 'jquery';
@@ -25,6 +25,7 @@ import TopFilter from './topFilter';
 import ShopBrands from './../shopBrands/shopBrands';
 
 
+import { withRouter } from 'react-router-dom';
 
 
 $(document).ready(function () {
@@ -167,10 +168,6 @@ class ShopProducts extends Component  {
           .then(data => this.setState({products: data.products}));
     }
 
-
-
-
-
     componentDidMount(props) {
         if (window.location.pathname.indexOf('/category') === 0) {
             const category = window.location.pathname.split('/').pop()
@@ -182,7 +179,10 @@ class ShopProducts extends Component  {
         }
     }
 
-
+    componentDidUpdate(prevProps) {
+        cl(prevProps.match.params)
+        cl(this.props.match.params)
+    }
 
     render() {
         return (
@@ -355,4 +355,4 @@ class ShopProducts extends Component  {
     }
 }
 
-export default ShopProducts;
+export default withRouter(ShopProducts);

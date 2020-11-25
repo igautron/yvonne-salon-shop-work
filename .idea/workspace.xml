@@ -30,39 +30,7 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/3bac2d32688efd5eb7152705f927828a.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/ajax.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/compare.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/favorite.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/image-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/jquery.min.js(1).Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/jquery.min.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/kiivstar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/lifecell_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/lightbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/lightbox.min.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/logo8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/maska-sprej-mitteve-vidnovlennya.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/pluso-like.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/process" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/script.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/tree.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/tree.js.Без названия" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/veriword.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/catalogue/704_files/webfont.js.Без названия" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +334,10 @@
       <workItem from="1606242418386" duration="599000" />
       <workItem from="1606252700287" duration="782000" />
       <workItem from="1606255927059" duration="1391000" />
-      <workItem from="1606260856882" duration="320000" />
+      <workItem from="1606260856882" duration="1894000" />
+      <workItem from="1606262770887" duration="757000" />
+      <workItem from="1606264588740" duration="2115000" />
+      <workItem from="1606267372214" duration="655000" />
     </task>
     <servers />
   </component>

@@ -40,7 +40,11 @@ class ShopFilter extends Component  {
                 farmavita:false,
                 schwarzkopf:false,
                 profistyle:false,
-                felps:false
+                felps:false,
+                mirella:false,
+                altrego:false,
+                choice: false,
+
             }
         }
 
@@ -238,10 +242,20 @@ class ShopFilter extends Component  {
             {slug: 'xcolor', label: 'Xcolor'},
             {slug: 'bahnodeverniz', label: 'Bahno De Verniz'}
         ],
+        'mirella': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ],
+
+        'altrego': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ],
+        'choice': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ]
 
     }
 
-        brandsSeries = {
+        brandsAmount= {
             'davines': [
                 {slug:'8g'     , label:'8 г' },
                 {slug:'9g'   , label:'9 г' },
@@ -310,6 +324,16 @@ class ShopFilter extends Component  {
                 {slug:'250ml'  , label:'250 мл' },
             ],
 
+            'mirella': [
+                {slug: 'bamboo', label: 'Bampboo'},
+            ],
+
+            'altrego': [
+                {slug: 'bamboo', label: 'Bampboo'},
+            ],
+            'choice': [
+                {slug: 'bamboo', label: 'Bampboo'},
+            ]
 
         }
 
@@ -387,7 +411,7 @@ class ShopFilter extends Component  {
 
         let amountArray = []
         for(let brand in brands) {
-            amountArray = amountArray.concat(this.brandsSeries[brand])
+            amountArray = amountArray.concat(this.brandsAmount[brand])
         }
         if(amountArray.length) {
             this.setState({ amountArray: amountArray })

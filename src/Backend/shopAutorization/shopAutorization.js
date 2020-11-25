@@ -53,11 +53,8 @@ class ShopAutorization extends Component  {
             return (
                 <div>
                     <div className='w-100'>
-                    <div className='autorization'>
+                    <div className='autorization m-0'>
                         <div className='card z-index-5'>
-                            <h5 className='card-header white-text text-center py-4'>
-                                <strong className='logo-autorization'>Авторизація</strong>
-                            </h5>
                             <form className='text-center border border-light p-5' action="#!">
                                 <input onChange={this.changeEmailHandler} type='email' className="form-control mb-4 form-reg" placeholder="Електронна пошта" />
                                 <input onChange={this.changePasswordHandler} type='password' className="form-control mb-4 form-reg" placeholder="Пароль" />

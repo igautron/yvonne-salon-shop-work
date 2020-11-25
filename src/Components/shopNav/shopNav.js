@@ -133,19 +133,13 @@ class ShopNav extends Component  {
                                     <button onClick={this. cartCirclesModalToggle} className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text btn-circle'>
                                         <MDBIcon icon='user-circle'  className='border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
                                     </button>
-                                    <MDBModal isOpen={this.state.isCartCirclesModalOpened} toggle={this. cartCirclesModalToggle} >
+                                    <MDBModal className='m-auto w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this. cartCirclesModalToggle} >
                                         <MDBModalHeader className='text-center justify-content-center my-3'>Сподобалось
                                             <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
-                                        <MDBModalBody className='h-100 modal-body'>
+                                        <MDBModalBody className='h-100 modal-body m-0 w-100'>
                                              <ShopAutorization />
                                         </MDBModalBody>
-                                        <MDBModalFooter>
-                                            <div className='w-100'>
-                                                <MDBBtn color="secondary" onClick={this.cartCirclesModalToggle}>ЗАКРИТИ</MDBBtn>
-                                                <MDBBtn color="primary" className='btn-pay'>ДОДАТИ ДО КОРЗИНИ</MDBBtn>
-                                            </div>
-                                        </MDBModalFooter>
                                     </MDBModal>
                                 </MDBNavbarNav>
                             </div>
@@ -179,19 +173,13 @@ class ShopNav extends Component  {
                                     <button onClick={this.cartCirclesModalToggle} className='btn-circle bg-transparent w-25 d-inline pl-1 pr-0 pt-0 pb-0 pl-sm-2 pr-sm-2 pt-sm-2 pb-sm-2 pr-md-1 pl-md-2 white-text '>
                                           <MDBIcon icon='user-circle'  className=' border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
                                     </button>
-                                    <MDBModal isOpen={this.state.isCartCirclesModalOpened} toggle={this.cartCirclesModalToggle} >
+                                    <MDBModal className='m-auto w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this.cartCirclesModalToggle} >
                                         <MDBModalHeader className='text-center justify-content-center my-3'>Сподобалось
                                             <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
                                         <MDBModalBody className='h-100 modal-body'>
                                             <ShopAutorization />
                                         </MDBModalBody>
-                                        <MDBModalFooter>
-                                            <div className='w-100'>
-                                                <MDBBtn color="secondary" onClick={this.cartCirclesModalToggle}>ЗАКРИТИ</MDBBtn>
-                                                <MDBBtn color="primary" className='btn-pay'>ДОДАТИ ДО КОРЗИНИ</MDBBtn>
-                                            </div>
-                                        </MDBModalFooter>
                                     </MDBModal>
                                 </MDBNavbarNav>
                                 <MDBCollapse

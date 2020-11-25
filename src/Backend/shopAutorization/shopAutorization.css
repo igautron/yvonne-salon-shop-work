@@ -1,11 +1,9 @@
 .autorization {
     top: 0;
-    margin: auto !important;
-    padding-top: 100px;
+    margin: 0 !important;
     justify-content: center !important;
     z-index: 3;
     width: 370px;
-    position: absolute !important;
 }
 
 
@@ -42,6 +40,16 @@
 .form-text {
     font-size: 0.8rem !important;
 }
+
+.btn-circle {
+    background: transparent;
+    border: 0px;
+}
+
+.btn-circle:focus {
+    outline: none;
+}
+
 
 
 

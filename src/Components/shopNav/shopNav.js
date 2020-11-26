@@ -37,7 +37,13 @@ class ShopNav extends Component  {
         isCartModalOpened: false,
         isCartLikeModalOpened: false,
         isCartCircleModalOpened: false,
-        isCartCirclesModalOpened: false
+        isCartCirclesModalOpened: false,
+        isLoginForm: true,
+    }
+
+    goToRegistration = () => {
+        console.log('isLoginForm')
+        this.setState({isLoginForm: false})
     }
 
     toggleCollapse = collapseID => () => {
@@ -90,6 +96,14 @@ class ShopNav extends Component  {
         });
     }
 
+    modalBody = () => {
+        if (this.state.isLoginForm) {
+            return <ShopAutorization goToRegistration={this.goToRegistration} />
+        }else{
+            return <div>registration</div>
+        }
+    }
+
 
 
     render() {
@@ -138,7 +152,7 @@ class ShopNav extends Component  {
                                             <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
                                         <MDBModalBody className='h-100 modal-body'>
-                                             <ShopAutorization />
+                                            {this.modalBody()}
                                         </MDBModalBody>
                                         <MDBModalFooter>
                                             <div className='w-100'>
@@ -184,7 +198,7 @@ class ShopNav extends Component  {
                                             <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
                                         <MDBModalBody className='h-100 modal-body'>
-                                            <ShopAutorization />
+                                            {this.modalBody()}
                                         </MDBModalBody>
                                         <MDBModalFooter>
                                             <div className='w-100'>

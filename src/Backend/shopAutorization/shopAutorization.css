@@ -1,11 +1,9 @@
 .autorization {
     top: 0;
     margin: auto !important;
-    padding-top: 100px;
     justify-content: center !important;
     z-index: 3;
     width: 370px;
-    position: absolute !important;
 }
 
 

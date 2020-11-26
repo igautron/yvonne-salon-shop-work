@@ -176,10 +176,10 @@ class ShopProducts extends Component  {
     }
 
     componentDidMount(props) {
-        if (window.location.pathname.indexOf('/api/category') === 0) {
+        if (window.location.pathname.indexOf('/category') === 0) {
             const category = this.props.match.params.category
             this.setFilterTop(category)
-        }else if (window.location.pathname.indexOf('/api/brand') === 0) {
+        }else if (window.location.pathname.indexOf('/brand') === 0) {
             const brand = this.props.match.params.brand
             this.setFilterBrand(brand)
         }else{
@@ -192,12 +192,12 @@ class ShopProducts extends Component  {
     componentDidUpdate(prevProps) {
         // cl(prevProps.match.params.category)
         // cl(this.props.match.params.category)
-        if (window.location.pathname.indexOf('/api/category') === 0) {
+        if (window.location.pathname.indexOf('/category') === 0) {
             if (prevProps.match.params.category !== this.props.match.params.category) {
                this.setFilterTop(this.props.match.params.category) 
             } 
         }
-        if (window.location.pathname.indexOf('/api/brand') === 0) {
+        if (window.location.pathname.indexOf('/brand') === 0) {
             if (prevProps.match.params.brand !== this.props.match.params.brand) {
                this.setFilterBrand(this.props.match.params.brand)
             } 

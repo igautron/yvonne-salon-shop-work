@@ -238,80 +238,72 @@ class ShopFilter extends Component  {
             {slug: 'xcolor', label: 'Xcolor'},
             {slug: 'bahnodeverniz', label: 'Bahno De Verniz'}
         ],
-
     }
 
-        brandsSeries = {
-            'davines': [
-                {slug:'8g'     , label:'8 г' },
-                {slug:'9g'   , label:'9 г' },
-                {slug:'8ml'   , label:'8 мл' },
-                {slug:'125ml'  , label:'125 мл' },
-                {slug:'130ml'  , label:'130 мл' },
-                {slug:'75ml'   , label:'75 мл' },
-                {slug:'50ml'   , label:'50 мл' },
-                {slug:'100ml'  , label:'100 мл' },
-                {slug:'120ml'  , label:'120 мл' },
-                {slug:'150ml'  , label:'150 мл' },
-                {slug:'250ml'  , label:'250 мл' },
-                {slug:'280ml'  , label:'280 мл' },
-                {slug:'400ml'  , label:'400 мл' },
-                {slug:'500ml' , label:'500 мл' },
-                {slug:'300ml'  , label:'300 мл' },
-            ],
-            'farmavita': [
-                {slug:'10st'   , label:'10 шт' },
-                {slug:'100ml'  , label:'100 мл' },
-                {slug:'150ml'  , label:'150 мл' },
-                {slug:'250ml'  , label:'250 мл' },
-                {slug:'500ml'  , label:'500 мл' },
-                {slug:'1000ml' , label:'1000 мл' },
-            ],
-            'joico':  [
+    brandsAmount = {
+        'davines': [
+            {slug:'8g'     , label:'8 г' },
+            {slug:'9g'     , label:'9 г' },
+            {slug:'8ml'    , label:'8 мл' },
+            {slug:'125ml'  , label:'125 мл' },
+            {slug:'130ml'  , label:'130 мл' },
+            {slug:'75ml'   , label:'75 мл' },
+            {slug:'50ml'   , label:'50 мл' },
+            {slug:'100ml'  , label:'100 мл' },
+            {slug:'120ml'  , label:'120 мл' },
+            {slug:'150ml'  , label:'150 мл' },
+            {slug:'250ml'  , label:'250 мл' },
+            {slug:'280ml'  , label:'280 мл' },
+            {slug:'400ml'  , label:'400 мл' },
+            {slug:'500ml'  , label:'500 мл' },
+            {slug:'300ml'  , label:'300 мл' },
+        ],
+        'farmavita': [
+            {slug:'10st'   , label:'10 шт' },
+            {slug:'100ml'  , label:'100 мл' },
+            {slug:'150ml'  , label:'150 мл' },
+            {slug:'250ml'  , label:'250 мл' },
+            {slug:'500ml'  , label:'500 мл' },
+            {slug:'1000ml' , label:'1000 мл' },
+        ],
+        'joico':  [
+            {slug:'72ml'   , label:'72 мл' },
+            {slug:'74ml'   , label:'74 мл' },
+            {slug:'50ml'   , label:'50 мл' },
+            {slug:'63ml'   , label:'63 мл' },
+            {slug:'100ml'  , label:'100 мл' },
+            {slug:'125ml'  , label:'125 мл' },
+            {slug:'140ml'  , label:'140 мл' },
+            {slug:'150ml'  , label:'150 мл' },
+            {slug:'200ml'  , label:'200 мл' },
+            {slug:'250ml'  , label:'250 мл' },
+            {slug:'255ml'  , label:'255 мл' },
+            {slug:'233ml'  , label:'233 мл' },
+            {slug:'300ml'  , label:'300 мл' },
+        ],
+        'schwarzkopf':  [
+            {slug:'75ml'   , label:'75 мл' },
+            {slug:'100ml'  , label:'100 мл' },
+            {slug:'150ml'  , label:'150 мл' },
+            {slug:'200ml'  , label:'200 мл' },
+            {slug:'250ml'  , label:'250 мл' },
+            {slug:'500ml'  , label:'500 мл' },
+            {slug:'1000ml' , label:'1000 мл' },
+            {slug:'10*10ml', label:'10X10 мл' }
 
-                {slug:'72ml'   , label:'72 мл' },
-                {slug:'74ml'   , label:'74 мл' },
-                {slug:'50ml'   , label:'50 мл' },
-                {slug:'63ml'   , label:'63 мл' },
-                {slug:'100ml'  , label:'100 мл' },
-                {slug:'125ml'  , label:'125 мл' },
-                {slug:'140ml'  , label:'140 мл' },
-                {slug:'150ml'  , label:'150 мл' },
-                {slug:'200ml'  , label:'200 мл' },
-                {slug:'250ml'  , label:'250 мл' },
-                {slug:'255ml'  , label:'255 мл' },
-                {slug:'233ml'  , label:'233 мл' },
-                {slug:'300ml'  , label:'300 мл' },
-            ],
-
-            'schwarzkopf':  [
-
-                {slug:'75ml'   , label:'75 мл' },
-                {slug:'100ml'  , label:'100 мл' },
-                {slug:'150ml'  , label:'150 мл' },
-                {slug:'200ml'  , label:'200 мл' },
-                {slug:'250ml'  , label:'250 мл' },
-                {slug:'500ml'  , label:'500 мл' },
-                {slug:'1000ml' , label:'1000 мл' },
-                {slug:'10*10ml'     , label:'10X10 мл' }
-
-            ],
-
-            'profistyle': [
-                {slug:'10*10ml'     , label:'10X10 мл' },
-                {slug:'150ml'  , label:'150 мл' },
-                {slug:'100ml'  , label:'100 мл' },
-                {slug:'250ml'  , label:'250 мл' },
-                {slug:'500ml'  , label:'500 мл' },
-                {slug:'1000ml' , label:'1000 мл' },
-            ],
-
-            'felps': [
-                {slug:'250ml'  , label:'250 мл' },
-            ],
-
-
-        }
+        ],
+        'profistyle': [
+            {slug:'10*10ml', label:'10X10 мл' },
+            {slug:'150ml'  , label:'150 мл' },
+            {slug:'100ml'  , label:'100 мл' },
+            {slug:'250ml'  , label:'250 мл' },
+            {slug:'500ml'  , label:'500 мл' },
+            {slug:'1000ml' , label:'1000 мл' },
+        ],
+        'felps': [
+            {slug:'250ml'  , label:'250 мл' },
+        ],
+    }
 
 
 
@@ -358,36 +350,28 @@ class ShopFilter extends Component  {
 
 
     chooseBrandHandle(event) {
-         const input = event.target
-// cl(input)
-// cl(this.brandsSeries[input.value])
+        const input = event.target
 
-         let brands = {...this.state.brands}
-         if (input.checked) {
+        let brands = {...this.state.brands}
+        if (input.checked) {
              brands[input.value] = 1
-         } else {
+        } else {
              delete brands[input.value]
-         }
-         cl(brands)
-
-
+        }
 
         let seriasArray = []
         for(let brand in brands){
-            seriasArray = seriasArray.concat(this.brandsSeries[brand] )
-            // cl(this.brandsSeries[brand])
+            if(this.brandsSeries[brand]) seriasArray = seriasArray.concat(this.brandsSeries[brand])
         }
-        // cl(seriasArray)
         if (seriasArray.length) {
             this.setState({ seriasArray: seriasArray })
         }else{
             this.setState({ seriasArray: this.seriasArray })
         }
 
-
         let amountArray = []
         for(let brand in brands) {
-            amountArray = amountArray.concat(this.brandsSeries[brand])
+            if(this.brandsAmount[brand]) amountArray = amountArray.concat(this.brandsAmount[brand])
         }
         if(amountArray.length) {
             this.setState({ amountArray: amountArray })
@@ -395,7 +379,6 @@ class ShopFilter extends Component  {
             this.setState({ amountArray: this.amountArray})
         }
 
-        
         this.props.setFilterBrands(brands)
         this.setState({brands})
     }
@@ -536,6 +519,15 @@ class ShopFilter extends Component  {
                 </Scrollbars>
             </div>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
+                <p className='m-2 font-weight-bold'>ОБСЯГ</p>
+                <input onChange={this.amountInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
+                <Scrollbars className='mb-0 w-100 scroll'>
+                    {this.state.amountArray.map((amount) => (
+                        <MDBInput key={amount.slug} value={amount.slug} onChange={this.chooseAmountHandle}  label={amount.label} type='checkbox' id={amount.slug}/>
+                    ))}
+                </Scrollbars>
+            </div>
+            <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ТИП ВОЛОССЯ</p>
                 {this.state.hairtypeArray.map((hairtype) => (
                 <MDBInput key={hairtype.slug} value={hairtype.slug} onChange={this.chooseHairtypeHandle}  label={hairtype.label} type='checkbox' id={hairtype.slug}/>
@@ -554,15 +546,6 @@ class ShopFilter extends Component  {
                 <p className='m-2 mb-3 font-weight-bold'>КАТЕГОРІЯ</p>
                 <MDBInput onChange={this.chooseGenderHandle} value="women" label='Для жінок' type='checkbox' id='woman' />
                 <MDBInput onChange={this.chooseGenderHandle} value="men" label='Для чоловіків' type='checkbox' id='man'/>
-            </div>
-            <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
-                <p className='m-2 font-weight-bold'>ОБСЯГ</p>
-                <input onChange={this.amountInputChange} type='text' className='w-75 m-2 mt-3 mb-3 search-input' />
-                <Scrollbars className='mb-0 w-100 scroll'>
-                    {this.state.amountArray.map((amount) => (
-                        <MDBInput key={amount.slug} value={amount.slug} onChange={this.chooseAmountHandle}  label={amount.label} type='checkbox' id={amount.slug}/>
-                    ))}
-                </Scrollbars>
             </div>
             <div className='mb-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ЦІНА</p>

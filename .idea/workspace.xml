@@ -30,23 +30,7 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopForgetPassword/shopForgetPassword.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/shopForgetPassword/shopForgetPassword.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -367,6 +351,9 @@
       <workItem from="1606375265463" duration="1794000" />
       <workItem from="1606377077111" duration="303000" />
       <workItem from="1606406137526" duration="2105000" />
+      <workItem from="1606412480116" duration="618000" />
+      <workItem from="1606415006942" duration="1190000" />
+      <workItem from="1606417449897" duration="842000" />
     </task>
     <servers />
   </component>

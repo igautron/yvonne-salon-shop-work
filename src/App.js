@@ -23,6 +23,7 @@ import ShopCertification from './Components/shopNav/shopCertification/shopCertif
 
 import ShopAutorization from '../src/Backend/shopAutorization/shopAutorization';
 import ShopRegistration from '../src/Backend/shopRegistration/shopRegistration';
+import ShopAccount from './Backend/shopAccount/shopAccount';
 // import ShopLike from '../src/Backend/shopLike/shopLike';
 import ShopOrder from '../src/Backend/shopOrder/shopOrder';
 import Congratulation from './Backend/shopOrder/CARD/Congratulation';
@@ -35,12 +36,14 @@ import Details from './Components/shopProducts/ITEMS/Davines/Item/Details';
 
 
 
+
 function App() {
 
   return (
         <Router>
             <ShopNav />
             <ShopSlider />
+            <ShopAccount />
             <Switch>
                 <Route path='/' exact>
                     <ShopProducts />

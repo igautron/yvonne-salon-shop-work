@@ -22,7 +22,13 @@ import {
 
 
 import './../../Backend/shopAutorization/shopAutorization.css'
+import './../../Backend/shopRegistration/shopRegistration.css'
+import './../../Backend/shopLike/shopLike.css'
 import ShopAutorization from '../../Backend/shopAutorization/shopAutorization';
+import ShopBin from '../../Backend/shopBin/shopBin';
+import ShopRegistration from '../../Backend/shopRegistration/shopRegistration';
+import ShopLike from '../../Backend/shopLike/shopLike';
+import ShopForgetPassword from '../../Backend/shopForgetPassword/shopForgetPassword';
 
 class ShopNav extends Component  {
 
@@ -39,12 +45,15 @@ class ShopNav extends Component  {
         isCartCircleModalOpened: false,
         isCartCirclesModalOpened: false,
         isLoginForm: true,
+
     }
 
     goToRegistration = () => {
         console.log('isLoginForm')
         this.setState({isLoginForm: false})
     }
+
+
 
     toggleCollapse = collapseID => () => {
         this.setState(prevState => ({
@@ -100,9 +109,11 @@ class ShopNav extends Component  {
         if (this.state.isLoginForm) {
             return <ShopAutorization goToRegistration={this.goToRegistration} />
         }else{
-            return <div>registration</div>
+            return <div><ShopRegistration /></div>
         }
     }
+
+
 
 
 
@@ -147,11 +158,11 @@ class ShopNav extends Component  {
                                     <button onClick={this. cartCirclesModalToggle} className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text btn-circle'>
                                         <MDBIcon icon='user-circle'  className='border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
                                     </button>
-                                    <MDBModal className='m-auto w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this. cartCirclesModalToggle} >
-                                        <MDBModalHeader className='text-center justify-content-center my-3'>Сподобалось
-                                            <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                    <MDBModal className='z-depth-0 w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this. cartCirclesModalToggle} >
+                                        <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>Авторизація
+                                            <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
-                                        <MDBModalBody className='h-100 modal-body'>
+                                        <MDBModalBody className='h-100 modal-body z-depth-0'>
                                             {this.modalBody()}
                                         </MDBModalBody>
                                     </MDBModal>
@@ -248,43 +259,12 @@ class ShopNav extends Component  {
                                         </button>
                                         <MDBModal isOpen={this.state.isCartModalOpened} toggle={this.cartModalToggle} >
                                             <MDBModalHeader className='text-center justify-content-center my-3'>Корзина
-                                                <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                                <MDBBtn className='btn-x m-2 p-2 border-0   z-depth-0 position-absolute' color="secondary" onClick={this.cartModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                             </MDBModalHeader>
-                                                 <MDBModalBody className='h-100 modal-body'>
-                                                    <div className='w-100 h-100'>
-                                                        <div className='bin-container justify-content-center  z-depth-0 p-2'>
-                                                            <div className='bg-white h-100'>
-                                                                <form>
-                                                                    <label htmlFor="defaultFormCardNameEx" className="bin-label grey-text font-weight-light mb-1 pl-3">
-                                                                        Товари
-                                                                    </label>
-                                                                </form>
-                                                                <MDBRow className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 w-responsive">
-                                                                    <MDBCol className='col-2 p-0'>
-                                                                        <img src="./01_color_shampoo.jpg" className="img-fluid w-25 h-25" alt="Responsive" />
-                                                                    </MDBCol>
-                                                                    <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-5 p-1 py-1 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
-                                                                        <p className='order-item'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
-                                                                    </MDBCol>
-                                                                    <MDBCol className='col-1 p-1 py-3 mx-0'>
-                                                                        <form>
-                                                                            <input className='input-q' type='number' min='1' value='1'></input>
-                                                                        </form>
-                                                                    </MDBCol>
-                                                                    <MDBCol className='col-1 p-1 mx-0'>
-                                                                        <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-1 py-3'>1500<span>грн</span></p>
-                                                                    </MDBCol>
-                                                                    <MDBCol className='col-1 p-1 py-2'>
-                                                                        <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                                                            <i className="fas fa-times mr-2"></i>
-                                                                        </button>
-                                                                    </MDBCol>
-                                                                </MDBRow>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            </MDBModalBody>
-                                            <MDBModalFooter>
+                                                 <MDBModalBody className='h-100 modal-body px-5 py-3'>
+                                                    <ShopBin />
+                                                 </MDBModalBody>
+                                            <MDBModalFooter className='mx-4'>
                                               <MDBCol className='my-2 text-left order-price w-auto pr-0 w-100'><span className='font-weight-small font-smaller'>Разом до сплати:  <span className='font-weight-small'>  1564</span> грн</span></MDBCol>
                                               <div className='w-100'>
                                                   <MDBBtn color="secondary" onClick={this.cartModalToggle}>ЗАКРИТИ</MDBBtn>
@@ -299,41 +279,10 @@ class ShopNav extends Component  {
                                         </button>
                                         <MDBModal isOpen={this.state.isCartLikeModalOpened} toggle={this.cartLikeModalToggle} >
                                             <MDBModalHeader className='text-center justify-content-center my-3'>Сподобалось
-                                                <MDBBtn className='btn-s m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartLikeModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                                <MDBBtn className='btn-s m-2 p-2 border-0 z-depth-0 position-absolute' color="secondary" onClick={this.cartLikeModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                             </MDBModalHeader>
-                                            <MDBModalBody className='h-100 modal-body'>
-                                                <div className='w-100 h-100'>
-                                                    <div className='bin-container justify-content-center  z-depth-0 p-2'>
-                                                        <div className='bg-white h-100'>
-                                                            <form>
-                                                                <label htmlFor="defaultFormCardNameEx" className="bin-label grey-text font-weight-light mb-1 pl-3">
-                                                                    Товари
-                                                                </label>
-                                                            </form>
-                                                            <MDBRow className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 w-responsive">
-                                                                <MDBCol className='col-2 p-0'>
-                                                                    <img src="./01_color_shampoo.jpg" className="img-fluid w-25 h-25" alt="Responsive" />
-                                                                </MDBCol>
-                                                                <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-5 p-1 py-1 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
-                                                                    <p className='order-item'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
-                                                                </MDBCol>
-                                                                <MDBCol className='col-1 p-1 py-3 mx-0'>
-                                                                    <form>
-                                                                        <input className='input-q' type='number' min='1' value='1'></input>
-                                                                    </form>
-                                                                </MDBCol>
-                                                                <MDBCol className='col-1 p-1 mx-0'>
-                                                                    <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-1 py-3'>1500<span>грн</span></p>
-                                                                </MDBCol>
-                                                                <MDBCol className='col-1 p-1 py-2'>
-                                                                    <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                                                        <i className="fas fa-times mr-2"></i>
-                                                                    </button>
-                                                                </MDBCol>
-                                                            </MDBRow>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <MDBModalBody className='h-100 modal-body px-5 py-3'>
+                                                <ShopLike />
                                             </MDBModalBody>
                                             <MDBModalFooter>
                                                 <div className='w-100'>

@@ -30,7 +30,23 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backend/shopForgetPassword/shopForgetPassword.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Backend/shopForgetPassword/shopForgetPassword.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +353,20 @@
       <workItem from="1606260856882" duration="1894000" />
       <workItem from="1606262770887" duration="757000" />
       <workItem from="1606264588740" duration="2115000" />
-      <workItem from="1606267372214" duration="655000" />
+      <workItem from="1606267372214" duration="1292000" />
+      <workItem from="1606281706759" duration="672000" />
+      <workItem from="1606283633671" duration="1186000" />
+      <workItem from="1606290647068" duration="1867000" />
+      <workItem from="1606292582715" duration="1791000" />
+      <workItem from="1606294389440" duration="1835000" />
+      <workItem from="1606296274808" duration="1794000" />
+      <workItem from="1606298085971" duration="436000" />
+      <workItem from="1606369847077" duration="1789000" />
+      <workItem from="1606371648765" duration="1794000" />
+      <workItem from="1606373457200" duration="1794000" />
+      <workItem from="1606375265463" duration="1794000" />
+      <workItem from="1606377077111" duration="303000" />
+      <workItem from="1606406137526" duration="2105000" />
     </task>
     <servers />
   </component>
@@ -357,10 +386,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606189230778" />
-    <state x="99" y="108" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606232441797">
+    <state x="230" y="178" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606371405320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="99" y="108" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606232441797" />
+    <state x="230" y="178" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606371405320" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1604759700435">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

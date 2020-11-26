@@ -98,9 +98,9 @@ i.fa-search {
 }
 
 .btn-x {
-    transform: translateX(130px);
-    background-color: rgba(106, 27, 154, 0.08);
-    color: white;
+    transform: translate(135px, -6px);
+    background-color: transparent !important;
+    color: black;
     width: 35px !important;
     height: 35px;
 }
@@ -108,6 +108,10 @@ i.fa-search {
 .btn-x:focus {
     outline: none;
     border: none;
+}
+
+.btn-x:hover {
+    color: black;
 }
 
 .heart-icon {
@@ -120,6 +124,8 @@ i.fa-search {
 .modal-autorization {
     width: 400px !important;
 }
+
+
 
 
 

@@ -2,8 +2,8 @@ import React from 'react';
 import {Component} from 'react';
 import './shopProducts.css'
 import ShopFilter from './shopFilter'
-import { BrowserRouter as Router, withRouter } from "react-router-dom";
-import { MDBNav,  MDBContainer, MDBIcon, MDBBtn } from "mdbreact";
+import { BrowserRouter as Router, withRouter } from 'react-router-dom';
+import {MDBNav, MDBContainer, MDBIcon, MDBBtn, MDBCollapse} from 'mdbreact';
 
 import {
     MDBRow,
@@ -50,8 +50,12 @@ const cl = console.log
 class ShopProducts extends Component  {
 
 
+
+
+
     state = {
         sideNavLeft: false,
+        collapseID: '',
     }
 
     sidenavToggle = sidenavId => () => {
@@ -60,6 +64,8 @@ class ShopProducts extends Component  {
             [sidenavNr]: !this.state[sidenavNr]
         });
     };
+
+
 
     constructor(props) {
         super(props);
@@ -88,6 +94,7 @@ class ShopProducts extends Component  {
             price: {}
         }
 
+
         this.setFilterTypes = this.setFilterTypes.bind(this)
         this.setFilterBrands = this.setFilterBrands.bind(this)
         this.setFilterSeries = this.setFilterSeries.bind(this)
@@ -98,6 +105,15 @@ class ShopProducts extends Component  {
         this.setFilterTop = this.setFilterTop.bind(this)
         this.setFilterMark = this.setFilterMark.bind(this)
     }
+
+
+    toggleCollapse = collapseID => () => {
+        this.setState(prevState => ({
+            collapseID: prevState.collapseID !== collapseID ? collapseID : ''
+        }));
+    }
+
+
 
     setFilterAppoinrments(appointments){
         this.filter.appointments = appointments
@@ -295,8 +311,15 @@ class ShopProducts extends Component  {
                  </div>
 
                      {/*small-display */}
-                    <div id='display-products-small-size'>
-                            <div className='z-index-2 left-0 position-absolute ml-0 pl-0 rgba-brown-strong  shop-filters-block w-responsive w-50 pt-3 pb-5 clearfix mt-5 '>
+
+                 <MDBCollapse
+                     id='navbarCollapse1'
+                     isOpen={this.state.collapseID}
+                     navbar
+                     className='shop-nav-navbar'
+                     id='display-products-small-size'
+                 >
+                         <div className='z-index-2 left-0 position-absolute ml-0 pl-0 rgba-brown-strong  shop-filters-block w-responsive w-50 pt-3 pb-5 clearfix mt-5 '>
                                 <button className='left-side-toggle h-25'>
                                     <MDBIcon icon="bars" size="5x" />
                                 </button>
@@ -313,6 +336,8 @@ class ShopProducts extends Component  {
                                             setFilterMark = {this.setFilterMark}
                                         />
                             </div>
+
+                         </MDBCollapse>
                             {/*products list*/}
                             <div className='z-index-5 shop-items pt-5 mt-3 right w-75 bg-white d-inline-block '>
                                 <div className='shop-items-md bg-white m-0 justify-content-center'>
@@ -370,7 +395,6 @@ class ShopProducts extends Component  {
                     </div>
              </div>
              </div>
-          </div>
         )
     }
 }

@@ -32,7 +32,7 @@
     border: 2px solid purple;
 }
 
-.form-reg {
+input.form-reg {
     width: 270px !important;
     height: 35px !important;
 }
@@ -50,7 +50,18 @@
     outline: none;
 }
 
+.btn-aut {
+    transform: translate(65px, -6px);
+    background-color: transparent !important;
+    color: black;
+    width: 35px !important;
+    height: 35px;
+}
 
+
+.btn-aut:hover  {
+    color: black;
+}
 
 
 @media (max-width: 576px) {

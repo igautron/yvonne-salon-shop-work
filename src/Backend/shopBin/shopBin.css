@@ -1,7 +1,5 @@
 .bin-container{
-    max-width: 850px;
-    margin: auto;
-    padding-bottom: 100%;
+    max-width: 1300px !important;
 }
 
 
@@ -46,7 +44,7 @@ i.fas.fa-times {
 
 
 .input-q {
-    width: 2rem !important;
+    width: 2.5rem !important;
     border-radius: 3px;
     border: 2px solid dimgrey;
 }
@@ -60,7 +58,7 @@ i.fas.fa-times {
 }
 
 .btn-pay {
-    width: 300px;
+    width: 267px !important;
 }
 
 h4.modal-title {
@@ -69,11 +67,15 @@ h4.modal-title {
 
 
 .btn-s {
-    transform: translateX(110px);
-    background-color: rgba(106, 27, 154, 0.08);
-    color: white;
+    transform: translate(100px, -6px);
+    background-color: transparent !important;
+    color: black;
     width: 35px !important;
     height: 45px;
+}
+
+.btn-s:hover {
+    color: black;
 }
 
 .btn-x:focus {

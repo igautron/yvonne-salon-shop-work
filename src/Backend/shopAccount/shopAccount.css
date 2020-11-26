@@ -1,0 +1,15 @@
+.info-pain {
+    border: 1px solid rgba(128, 128, 128, 0.29);
+}
+
+.nav-links {
+    border-right: 2px solid lightgrey;
+}
+
+
+@media (max-width: 576px) {
+    li.nav-item {
+        font-size: 0.5rem !important;
+    }
+
+}

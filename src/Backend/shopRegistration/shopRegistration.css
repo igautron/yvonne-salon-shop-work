@@ -1,19 +1,17 @@
 .registration {
     top: 0;
-    margin: 100px auto auto 30%;
     justify-content: center !important;
     z-index: 4;
     width: 370px;
-    position: absolute;
     display: block;
 }
 
-.form-reg {
+input.form-reg {
     width: 270px !important;
     height: 35px !important;
 }
 
-.form-aut {
+input.form-aut {
     width: 127px !important;
     height: 35px !important;
 }

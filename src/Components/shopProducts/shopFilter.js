@@ -122,7 +122,8 @@ class ShopFilter extends Component  {
             {slug:'cream'         , label:'Крем для волосся' },
             {slug:'oil'           , label:'Олія' },
             {slug:'kit'           , label:'Набір' },
-            {slug:'veil'          , label:'Гель-вуаль' }
+            {slug:'veil'          , label:'Гель-вуаль' },
+            {slug:'remover'       , label:'Ремувер' }
         ]
 
      appArray = [
@@ -335,17 +336,6 @@ class ShopFilter extends Component  {
             'choice': [
                 {slug: 'bamboo', label: 'Bampboo'},
 
-        ],
-        'profistyle': [
-            {slug:'10*10ml', label:'10X10 мл' },
-            {slug:'150ml'  , label:'150 мл' },
-            {slug:'100ml'  , label:'100 мл' },
-            {slug:'250ml'  , label:'250 мл' },
-            {slug:'500ml'  , label:'500 мл' },
-            {slug:'1000ml' , label:'1000 мл' },
-        ],
-        'felps': [
-            {slug:'250ml'  , label:'250 мл' },
         ],
     }
 

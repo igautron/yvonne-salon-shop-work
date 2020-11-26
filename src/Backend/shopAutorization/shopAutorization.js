@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopAutorization.css';
-import {Link} from 'react-router-dom';
+
 
 const cl = console.log
 
@@ -61,18 +61,18 @@ class ShopAutorization extends Component  {
         postData(this)
     }
 
+
     goToRegistration = () => {
         this.props.goToRegistration()
     }
-
 
     render() {
             return (
                 <div>
                     <div className='w-100'>
-                    <div className='autorization m-0'>
-                        <div className='card z-index-5'>
-                            <form className='text-center border border-light p-5' action="#!">
+                    <div className='m-0'>
+                        <div className='card z-depth-0 border-0'>
+                            <form className='text-center px-5 pb-5 pt-3' action="#!">
                                 <p style={{color:'red'}}>
                                     {this.state.alert}
                                 </p>

@@ -6,6 +6,12 @@
     display: block;
 }
 
+.errors-list{
+        padding: 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+
 input.form-reg {
     width: 270px !important;
     height: 35px !important;

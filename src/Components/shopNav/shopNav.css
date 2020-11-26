@@ -6,6 +6,13 @@
     background-color: #21001c;
 }
 
+.profile-menu{
+    color: #fff;
+    position: absolute;
+    background: purple;
+    padding: 10px;
+}
+
 
 p.adr {
     font-size: 15px;

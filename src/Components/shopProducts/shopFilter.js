@@ -40,7 +40,11 @@ class ShopFilter extends Component  {
                 farmavita:false,
                 schwarzkopf:false,
                 profistyle:false,
-                felps:false
+                felps:false,
+                mirella:false,
+                altrego:false,
+                choice: false,
+
             }
         }
 
@@ -238,58 +242,98 @@ class ShopFilter extends Component  {
             {slug: 'xcolor', label: 'Xcolor'},
             {slug: 'bahnodeverniz', label: 'Bahno De Verniz'}
         ],
+
+        'mirella': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ],
+
+        'altrego': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ],
+        'choice': [
+            {slug: 'bamboo', label: 'Bampboo'},
+        ]
+
     }
 
-    brandsAmount = {
-        'davines': [
-            {slug:'8g'     , label:'8 г' },
-            {slug:'9g'     , label:'9 г' },
-            {slug:'8ml'    , label:'8 мл' },
-            {slug:'125ml'  , label:'125 мл' },
-            {slug:'130ml'  , label:'130 мл' },
-            {slug:'75ml'   , label:'75 мл' },
-            {slug:'50ml'   , label:'50 мл' },
-            {slug:'100ml'  , label:'100 мл' },
-            {slug:'120ml'  , label:'120 мл' },
-            {slug:'150ml'  , label:'150 мл' },
-            {slug:'250ml'  , label:'250 мл' },
-            {slug:'280ml'  , label:'280 мл' },
-            {slug:'400ml'  , label:'400 мл' },
-            {slug:'500ml'  , label:'500 мл' },
-            {slug:'300ml'  , label:'300 мл' },
-        ],
-        'farmavita': [
-            {slug:'10st'   , label:'10 шт' },
-            {slug:'100ml'  , label:'100 мл' },
-            {slug:'150ml'  , label:'150 мл' },
-            {slug:'250ml'  , label:'250 мл' },
-            {slug:'500ml'  , label:'500 мл' },
-            {slug:'1000ml' , label:'1000 мл' },
-        ],
-        'joico':  [
-            {slug:'72ml'   , label:'72 мл' },
-            {slug:'74ml'   , label:'74 мл' },
-            {slug:'50ml'   , label:'50 мл' },
-            {slug:'63ml'   , label:'63 мл' },
-            {slug:'100ml'  , label:'100 мл' },
-            {slug:'125ml'  , label:'125 мл' },
-            {slug:'140ml'  , label:'140 мл' },
-            {slug:'150ml'  , label:'150 мл' },
-            {slug:'200ml'  , label:'200 мл' },
-            {slug:'250ml'  , label:'250 мл' },
-            {slug:'255ml'  , label:'255 мл' },
-            {slug:'233ml'  , label:'233 мл' },
-            {slug:'300ml'  , label:'300 мл' },
-        ],
-        'schwarzkopf':  [
-            {slug:'75ml'   , label:'75 мл' },
-            {slug:'100ml'  , label:'100 мл' },
-            {slug:'150ml'  , label:'150 мл' },
-            {slug:'200ml'  , label:'200 мл' },
-            {slug:'250ml'  , label:'250 мл' },
-            {slug:'500ml'  , label:'500 мл' },
-            {slug:'1000ml' , label:'1000 мл' },
-            {slug:'10*10ml', label:'10X10 мл' }
+        brandsAmount= {
+            'davines': [
+                {slug:'8g'     , label:'8 г' },
+                {slug:'9g'   , label:'9 г' },
+                {slug:'8ml'   , label:'8 мл' },
+                {slug:'125ml'  , label:'125 мл' },
+                {slug:'130ml'  , label:'130 мл' },
+                {slug:'75ml'   , label:'75 мл' },
+                {slug:'50ml'   , label:'50 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'120ml'  , label:'120 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'280ml'  , label:'280 мл' },
+                {slug:'400ml'  , label:'400 мл' },
+                {slug:'500ml' , label:'500 мл' },
+                {slug:'300ml'  , label:'300 мл' },
+            ],
+            'farmavita': [
+                {slug:'10st'   , label:'10 шт' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+            ],
+            'joico':  [
+
+                {slug:'72ml'   , label:'72 мл' },
+                {slug:'74ml'   , label:'74 мл' },
+                {slug:'50ml'   , label:'50 мл' },
+                {slug:'63ml'   , label:'63 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'125ml'  , label:'125 мл' },
+                {slug:'140ml'  , label:'140 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'200ml'  , label:'200 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'255ml'  , label:'255 мл' },
+                {slug:'233ml'  , label:'233 мл' },
+                {slug:'300ml'  , label:'300 мл' },
+            ],
+
+            'schwarzkopf':  [
+
+                {slug:'75ml'   , label:'75 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'200ml'  , label:'200 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+                {slug:'10*10ml'     , label:'10X10 мл' }
+
+            ],
+
+            'profistyle': [
+                {slug:'10*10ml'     , label:'10X10 мл' },
+                {slug:'150ml'  , label:'150 мл' },
+                {slug:'100ml'  , label:'100 мл' },
+                {slug:'250ml'  , label:'250 мл' },
+                {slug:'500ml'  , label:'500 мл' },
+                {slug:'1000ml' , label:'1000 мл' },
+            ],
+
+            'felps': [
+                {slug:'250ml'  , label:'250 мл' },
+            ],
+
+            'mirella': [
+                {slug: 'bamboo', label: 'Bampboo'},
+            ],
+
+            'altrego': [
+                {slug: 'bamboo', label: 'Bampboo'},
+            ],
+            'choice': [
+                {slug: 'bamboo', label: 'Bampboo'},
 
         ],
         'profistyle': [

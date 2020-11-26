@@ -70,11 +70,8 @@ class ShopAutorization extends Component  {
             return (
                 <div>
                     <div className='w-100'>
-                    <div className='autorization'>
+                    <div className='autorization m-0'>
                         <div className='card z-index-5'>
-                            <h5 className='card-header white-text text-center py-4'>
-                                <strong className='logo-autorization'>Авторизація</strong>
-                            </h5>
                             <form className='text-center border border-light p-5' action="#!">
                                 <p style={{color:'red'}}>
                                     {this.state.alert}

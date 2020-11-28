@@ -30,6 +30,8 @@ import ShopRegistration from '../../Backend/shopRegistration/shopRegistration';
 import ShopLike from '../../Backend/shopLike/shopLike';
 import ShopForgetPassword from '../../Backend/shopForgetPassword/shopForgetPassword';
 
+let cl = console.log
+
 class ShopNav extends Component  {
 
 
@@ -43,16 +45,11 @@ class ShopNav extends Component  {
         isCartModalOpened: false,
         isCartLikeModalOpened: false,
         isCartCircleModalOpened: false,
-        isCartCirclesModalOpened: false,
-        isLoginForm: true,
-
+        isLoginModalOpened: false,
+        modalBody: 'authorization', // registration
+        modalTitle: 'Авторизація',
+        showProfileMenu: true
     }
-
-    goToRegistration = () => {
-        console.log('isLoginForm')
-        this.setState({isLoginForm: false})
-    }
-
 
 
     toggleCollapse = collapseID => () => {
@@ -68,7 +65,6 @@ class ShopNav extends Component  {
     }
 
 
-
     cartLikeModalToggle = () => {
         this.setState({
             isCartLikeModalOpened: !this.state.isCartLikeModalOpened
@@ -82,13 +78,11 @@ class ShopNav extends Component  {
     }
 
 
-
-    cartCircleModalToggle = () => {
+    loginModalToggle = () => {
         this.setState({
-            isCartCircleModalOpened: !this.state.isCartCircleModalOpened
+            isLoginModalOpened: !this.state.isLoginModalOpened
         });
     }
-
 
 
     cartModalToggle = () => {
@@ -98,23 +92,59 @@ class ShopNav extends Component  {
     }
 
 
-
     cartCirclesModalToggle = () => {
         this.setState({
             isCartCirclesModalOpened: !this.state.isCartCirclesModalOpened
         });
     }
 
-    modalBody = () => {
-        if (this.state.isLoginForm) {
-            return <ShopAutorization goToRegistration={this.goToRegistration} />
-        }else{
-            return <div><ShopRegistration /></div>
+
+    changeModalBody = (where_to_go) => {
+        this.setState({modalBody: where_to_go})
+
+        if (where_to_go === 'authorization') {
+            this.setState({modalTitle: 'Авторизація'})
+        }else if(where_to_go === 'registration'){
+            this.setState({modalTitle: 'Регистрація'})
         }
     }
 
 
+    modalBody = () => {
+        if (this.state.modalBody === 'authorization') {
+            return <ShopAutorization changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle} />
+        }else if(this.state.modalBody === 'registration'){
+            return <ShopRegistration changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle} />
+        }else if(this.state.modalBody === 'successRgistration'){
+            return <div>Вы успешно зарегистрированы!</div>
+        }else{
+            return <div>Error!</div>
+        }
+    }
 
+
+    logout = () => {
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+        this.setState({showProfileMenu: false})
+    }
+
+
+    profileMenu = () => {
+        let user = localStorage.getItem('user', 1);
+        if (user && this.state.showProfileMenu) {
+            return (
+                <ul className="profile-menu">
+                    <li>Личный кабинет</li>
+                    <li>Заказы</li>
+                    <li>Избранное</li>
+                    <li onClick={this.logout}>Выход</li>
+                </ul>
+                )
+        }else{
+            return false
+        }
+    }
 
 
     render() {
@@ -155,17 +185,20 @@ class ShopNav extends Component  {
                                     <MDBNavItem className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text'>
                                         <MDBIcon far icon='envelope'/>
                                     </MDBNavItem>
-                                    <button onClick={this. cartCirclesModalToggle} className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text btn-circle'>
-                                        <MDBIcon icon='user-circle'  className='border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
-                                    </button>
-                                    <MDBModal className='z-depth-0 w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this. cartCirclesModalToggle} >
-                                        <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>Авторизація
-                                            <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
-                                        </MDBModalHeader>
-                                        <MDBModalBody className='h-100 modal-body z-depth-0'>
-                                            {this.modalBody()}
-                                        </MDBModalBody>
-                                    </MDBModal>
+                                    <div>
+                                        <button onClick={this.loginModalToggle} className='w-25 d-inline p-3 pr-md-3 pl-md-1 pt-2 pb-2 white-text btn-circle'>
+                                            <MDBIcon icon='user-circle'  className='border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
+                                        </button>
+                                        <MDBModal className='z-depth-0 w-100 modal-autorization' isOpen={this.state.isLoginModalOpened} toggle={this. loginModalToggle} >
+                                            <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>{this.state.modalTitle}
+                                                <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary" onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                            </MDBModalHeader>
+                                            <MDBModalBody className='h-100 modal-body z-depth-0'>
+                                                {this.modalBody()}
+                                            </MDBModalBody>
+                                        </MDBModal>
+                                        {this.profileMenu()}
+                                    </div>
                                 </MDBNavbarNav>
                             </div>
                         </MDBNavbar>
@@ -195,12 +228,12 @@ class ShopNav extends Component  {
                                     </MDBNavItem>
 
                          {/*окно авторизации*/}
-                                    <button onClick={this.cartCirclesModalToggle} className='btn-circle bg-transparent w-25 d-inline pl-1 pr-0 pt-0 pb-0 pl-sm-2 pr-sm-2 pt-sm-2 pb-sm-2 pr-md-1 pl-md-2 white-text '>
+                                    <button onClick={this.loginModalToggle} className='btn-circle bg-transparent w-25 d-inline pl-1 pr-0 pt-0 pb-0 pl-sm-2 pr-sm-2 pt-sm-2 pb-sm-2 pr-md-1 pl-md-2 white-text '>
                                           <MDBIcon icon='user-circle'  className=' border-left pl-4 pl-sm-3 pl-md-3 pt-0'/>
                                     </button>
-                                    <MDBModal className='m-auto w-100 modal-autorization' isOpen={this.state.isCartCirclesModalOpened} toggle={this.cartCirclesModalToggle} >
+                                    <MDBModal className='m-auto w-100 modal-autorization' isOpen={this.state.isLoginModalOpened} toggle={this.loginModalToggle} >
                                         <MDBModalHeader className='text-center justify-content-center my-3'>Сподобалось
-                                            <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.cartCirclesModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                            <MDBBtn className='btn-x m-2 p-2 border-0 position-absolute' color="secondary" onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
                                         </MDBModalHeader>
                                         <MDBModalBody className='h-100 modal-body'>
                                             {this.modalBody()}

@@ -5,21 +5,29 @@ import './shopAutorization.css';
 
 const cl = console.log
 
-async function postData(_this){
-    const url = 'http://yvonne-server.loc/api/sanctum/token';
+function getToken(_this){
+    const url = 'http://yvonne-server.loc/api/login';
 
-    try {
-      const response = await fetch(url, {
+    fetch(url, {
         method: 'POST', // или 'PUT'
         body: new URLSearchParams(_this.state.form).toString(), // данные могут быть 'строкой' или {объектом}!
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      });
-      const json = await response.json();
-
-      _this.setState({alert:''})
-    } catch (error) {
-      _this.setState({alert:'Неверный логин или пароль'})
-    }
+        headers: {
+            // 'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded'
+            }
+    }).then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        if(data.success === 'ok') {
+            _this.setState({alert:''})
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('user', JSON.stringify(data.user));
+            _this.props.loginModalToggle()
+        }else{
+            _this.setState({alert:'Неверный логин или пароль'})
+        }
+    });
 }
 
 function getUser(argument) {
@@ -51,19 +59,15 @@ class ShopAutorization extends Component  {
         this.setState({form: formData})
     }
 
-    rememberInputChange = () => {
-        let formData = {...this.state.form}
-        formData.remember = !this.state.form.remember
-        this.setState({form: formData})
-    }
 
     loginSubmit = () => {
-        postData(this)
+        getToken(this)
     }
 
 
     goToRegistration = () => {
-        this.props.goToRegistration()
+        // cl('registration')
+        this.props.changeModalBody('registration')
     }
 
     render() {
@@ -79,13 +83,7 @@ class ShopAutorization extends Component  {
                                 <input onChange={this.changeEmailHandler} value={this.state.form.email} type='email' className="form-control mb-4 form-reg" placeholder="Електронна пошта" />
                                 <input onChange={this.changePasswordHandler} value={this.state.form.password} type='password' className="form-control mb-4 form-reg" placeholder="Пароль" />
                                 <div className="d-flex justify-content-around">
-                                    <div>
-                                        <div className="custom-control custom-checkbox">
-                                            <input onChange={this.rememberInputChange} checked={this.state.form.remember} type="checkbox" className="custom-control-input" id="defaultLoginFormRemember" />
-                                            <label className="custom-control-label py-1 form-text" htmlFor="defaultLoginFormRemember">Запам'ятати мене</label>
-                                        </div>
-                                    </div>
-                                    <div>
+                                     <div>
                                         <a href="/" className='py-1 form-text'>Забули пароль?</a>
                                     </div>
                                 </div>

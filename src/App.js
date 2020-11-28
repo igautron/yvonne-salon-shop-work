@@ -35,57 +35,67 @@ import ShopMobileUpload from '../src/Backend/shopMobileUpload/shopMobileUpload';
 import Details from './Components/shopProducts/ITEMS/Davines/Item/Details';
 
 
+import {Component} from 'react';
 
 
-function App() {
+class App extends Component  {
 
-  return (
-        <Router>
-            <ShopNav />
-            <ShopSlider />
-            <ShopAccount />
-            <Switch>
-                <Route path='/' exact>
-                    <ShopProducts />
-                </Route>
-                <Route path='/shopAboutShop'>
-                    <ShopAboutShop />
-                </Route>
-                <Route path='/shopContacts'>
-                    <ShopContacts />
-                </Route>
-                <Route path='/shopOrder'>
-                    <ShopOrder />
-                </Route>
-                <Route path='/congratulation'>
-                    <Congratulation />
-                </Route>
-                <Route path='/shopCertification'>
-                    <ShopCertification />
-                </Route>
-                <Route path='/shopAutorization'>
-                    <ShopAutorization />
-                </Route>
-                <Route path='/shopRegistration'>
-                    <ShopRegistration />
-                </Route>
-                <Route path='/shopMobileUpload'>
-                   <ShopMobileUpload />
-                </Route>
-                <Route path='/details/:id'>
-                    <Details />
-                </Route>
-                <Route path='/category/:category'>
-                    <ShopProducts />
-                </Route>
-                <Route path='/brand/:brand'>
-                    <ShopProducts />
-                </Route>
-            </Switch>
-            <ShopFooter />
-            {/*<ShopAccount />*/}
-        </Router>
-  );
+
+    state = {
+        isAutorized: false,
+        token: '',
+        user: {}
+    }
+    
+    render(){
+        return (
+            <Router>
+                <ShopNav appState={this.state} appSetState={this.setState} />
+                <ShopSlider />
+                <ShopAccount />
+                <Switch>
+                    <Route path='/' exact>
+                        <ShopProducts />
+                    </Route>
+                    <Route path='/shopAboutShop'>
+                        <ShopAboutShop />
+                    </Route>
+                    <Route path='/shopContacts'>
+                        <ShopContacts />
+                    </Route>
+                    <Route path='/shopOrder'>
+                        <ShopOrder />
+                    </Route>
+                    <Route path='/congratulation'>
+                        <Congratulation />
+                    </Route>
+                    <Route path='/shopCertification'>
+                        <ShopCertification />
+                    </Route>
+                    <Route path='/shopAutorization'>
+                        <ShopAutorization />
+                    </Route>
+                    <Route path='/shopRegistration'>
+                        <ShopRegistration />
+                    </Route>
+                    <Route path='/shopMobileUpload'>
+                       <ShopMobileUpload />
+                    </Route>
+                    <Route path='/details/:id'>
+                        <Details />
+                    </Route>
+                    <Route path='/category/:category'>
+                        <ShopProducts />
+                    </Route>
+                    <Route path='/brand/:brand'>
+                        <ShopProducts />
+                    </Route>
+                </Switch>
+                <ShopFooter />
+                {/*<ShopAccount />*/}
+            </Router>
+      );
+    }
 }
 
 export default App;

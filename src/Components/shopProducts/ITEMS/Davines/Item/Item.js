@@ -5,18 +5,16 @@ import {Link} from 'react-router-dom'
 import './../../../shopProducts.css'
 
 
-const cl = console.log
-
 class Item extends React.Component {
 
                 render() {
-                    let id, title, price, descr, type, brand, seria, gender;
+                    let id, title, price, descr, type, brand, seria, gender, image;
                     if (this.props.product) {
                         id = this.props.product.id;
                         title = this.props.product.title;
                         price = this.props.product.price;
                         descr = this.props.product.descr;
-                        // let image = this.props.product.image;
+                        image = this.props.product.image;
                         type = this.props.product.type;
                         brand = this.props.product.brand;
                         seria = this.props.product.seria;
@@ -27,7 +25,7 @@ class Item extends React.Component {
                         <Link to={'/details/'+id}>
                             <div className='text-white text-center align-items-center p-0'>
                                 <MDBCardImage
-                                    src={require('../../../../../img/catalogue/f45.jpg')}
+                                    src={image}
                                     className='img-fluid w-100 prod-img'
                                     alt=''>
                                 </MDBCardImage>

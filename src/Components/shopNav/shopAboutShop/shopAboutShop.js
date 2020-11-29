@@ -68,36 +68,13 @@ class shopAboutShop extends Component {
                                         </MDBCol>
                                         <MDBCol lg='7'>
                                             <MDBRow
-                                                    className='mb-0 about-shop-content pt-xl-3 pt-lg-4 pt-md-5 pt-sm-5 pt-5 border-0 z-index-0'
+                                                    className='mb-0 about-shop-content pt-0 border-0 z-index-0'
                                             >
                                                 <MDBCol xl='10' md='11' size='10' sm='12'  className='px-sm-4 px-0'>
                                                     <h5 className='font-weight-bold mb-3'>Асортимент</h5>
                                                     <p className='black-text'>
                                                         Інтернет магазин YVONNE пропонує широкий асортимент продукції для догляду за волоссям та аксесуарами. Існує можливість замовити будь-який товар, який не представлений серед асортименту продукції. Магазин співпрацює із такими марками, як:
-                                                         <td className='pr-xl-4 pr-lg-4 pr-md-5 pr-sm-4 pr-4 py-xl-2 py-lg-2 py-md-2 py-sm-2 py-3'>
-                                                             <tr className='green-text font-weight-bold font-small h-50'>Argan Sublime</tr>
-                                                             <tr className='pink-text font-weight-bold font-small h-50'>Hydro Repair</tr>
-                                                             <tr className='blue-text font-weight-bold font-small h-50'>Back.bar</tr>
-                                                             <tr className='yellow-text font-weight-bold font-small h-50'>Purify</tr>
-                                                         </td>
-                                                         <td className='pr-xl-4 pr-lg-4 pr-md-5 pr-sm-4 pr-4 py-xl-2 py-lg-2 py-md-2 py-sm-2 py-3'>
-                                                             <tr className='green-text font-weight-bold font-small h-75'>HD Life Style</tr>
-                                                             <tr className='pink-text font-weight-bold font-small h-75'>Amethyste</tr>
-                                                             <tr className='blue-text font-weight-bold font-small h-75'>Bioxil</tr>
-                                                             <tr className='yellow-text font-weight-bold font-small h-75'>Amaro</tr>
-                                                         </td>
-                                                          <td className='pr-xl-4 pr-lg-4 pr-md-5 pr-sm-4 pr-4 py-xl-2 py-lg-2 py-md-2 py-sm-2 py-3'>
-                                                             <tr className='green-text font-weight-bold font-small h-75'>Choice</tr>
-                                                             <tr className='pink-text font-weight-bold font-small h-75'>Onely</tr>
-                                                             <tr className='blue-text font-weight-bold font-small h-75'>K.Liss</tr>
-                                                             <tr className='yellow-text font-weight-bold font-small h-75'></tr>
-                                                         </td>
-                                                         <td className='pr-xl-4 pr-lg-4 pr-md-5 pr-sm-4 pr-1 py-xl-2 py-lg-2 py-md-2 py-sm-2 py-3'>
-                                                             <tr className='green-text font-weight-bold font-small h-75'>FarmaVita</tr>
-                                                             <tr className='pink-text font-weight-bold font-small h-75'>Tricogen</tr>
-                                                             <tr className='blue-text font-weight-bold font-small h-75'>K.Liss</tr>
-                                                             <tr className='yellow-text font-weight-bold font-small h-75'></tr>
-                                                         </td>
+                                                        Choice, FarmaVita, ProfiStyle, Mirella, Davines, Joico, Schwarzkopf
                                                     </p>
                                                 </MDBCol>
                                             </MDBRow>
@@ -118,31 +95,31 @@ class shopAboutShop extends Component {
                                                     </p>
                                                 </MDBCol>
                                             </MDBRow>
-                                            <MDBRow
-                                                    className='mb-0 about-shop-content pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-5'
-                                            >
-                                                <MDBCol xl='10' md='11' size='10' sm='12'  className='px-sm-4 px-0'>
-                                                    <h5 className='font-weight-bold mb-3'>Замовлення</h5>
-                                                    <p className='black-text'>
-                                                        Обрати та замовити необхідний товар можливо зробивши онлайн замовлення, зателефонувавши за телефоном та відвідавши магазин за наступними реквізитами:
-                                                        <li className="list-unstyled pt-xl-3 pt-3 w-100">
-                                                            <a href="#!"><MDBIcon icon="home" className="green-text pr-3"/><span className='black-text w-75 font-small'>м.Київ, вул. Данченко 32</span></a>
-                                                        </li>
-                                                        <li className="list-unstyled">
-                                                            <a href="#!"><span className='w-75 font-small purple-text font-weight-bold'>ЗАТЕЛЕФОНУЙТЕ НАМ!</span></a>
-                                                        </li>
-                                                        <li className="list-unstyled">
-                                                            <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 073 500 55 33</span></a>
-                                                        </li>
-                                                        <li className="list-unstyled">
-                                                            <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 098 500 55 33</span></a>
-                                                        </li>
-                                                    </p>
-                                                </MDBCol>
-                                            </MDBRow>
                                         </MDBCol>
                                </MDBRow>
-                               <div className="mdb-lightbox no-margin mb-lg-5 mb-xl-5 mb-md-5 mb-sm-2 mb-1 mx-2">
+                               <MDBRow
+                                   className='mb-0 about-shop-content  pt-3'
+                               >
+                                   <MDBCol xl='12' md='12' size='12' sm='12'  className='px-sm-4 px-0 '>
+                                       <h5 className='font-weight-bold mb-3'>Замовлення</h5>
+                                       <p className='black-text'>
+                                           Замовлення можливо здійснити як через особистий кабінет, так і зателефонувавши нам номерами, вказаними у контактах. Також є можливість відвідати нам салон краси та магазин Івон за наступними реквізитами:
+                                           <li className="list-unstyled pt-xl-3 pt-3 w-100">
+                                           <a href="#!"><MDBIcon icon="home" className="green-text pr-3"/><span className='black-text w-75 font-small'>м.Київ, вул. Данченко 32</span></a>
+                                           </li>
+                                           <li className="list-unstyled">
+                                               <a href="#!"><span className='w-75 font-small purple-text font-weight-bold'>ЗАТЕЛЕФОНУЙТЕ НАМ!</span></a>
+                                           </li>
+                                           <li className="list-unstyled">
+                                               <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 073 500 55 33</span></a>
+                                           </li>
+                                           <li className="list-unstyled">
+                                               <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 098 500 55 33</span></a>
+                                           </li>
+                                       </p>
+                                   </MDBCol>
+                               </MDBRow>
+                               <div className="mdb-lightbox no-margin mb-lg-5 mb-xl-5 mb-md-5 mb-sm-2 mb-1 mx-2 pt-5">
                                    <h5 className='font-weight-bold text-center w-100'>Наш салон-магазин YVONNE</h5>
                                    <MDBRow>
                                        <MDBCol md="4">

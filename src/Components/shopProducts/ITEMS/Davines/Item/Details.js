@@ -13,34 +13,41 @@ import './../../Details.scss'
 import './../../../shopProducts.css'
 
 import Item from './Item';
-
+import $ from 'jquery'
 
 const cl = console.log
 
+
 class Details extends React.Component {
 
-    state = {
-        items: {
-            default: '1',
-        },
-        product:{
-            title:'',
-            price:'',
-            articul: '',
-            type: '',
-            brand: '',
-            seria: '',
-            amount: '',
-            hr1: '',
-            a1: '',
-            descr2: '',
-            gender: '',
-            descr3: '',
-            country: ''
-        },
-        appo_arr:'defaul!!!',
-        appo_arr_hairtype:'defaul!!!'
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            items: {
+                default: '1',
+            },
+            product:{
+                title:'',
+                price:'',
+                articul: '',
+                type: '',
+                brand: '',
+                seria: '',
+                amount: '',
+                hr1: '',
+                a1: '',
+                descr2: '',
+                gender: '',
+                descr3: '',
+                country: '',
+                image: ''
+            },
+            appo_arr:'defaul!!!',
+            appo_arr_hairtype:'defaul!!!'
+        };
+
+    }
 
 
 
@@ -120,6 +127,9 @@ class Details extends React.Component {
 
 
 
+
+
+
        render() {
             // console.log('appo'+this.state.appo_arr)
            let title, price, articul, type, brand, seria, amount, hr1, a1, descr2, gender, descr3, country, image;
@@ -141,6 +151,9 @@ class Details extends React.Component {
                 country = this.state.product.country;
            }
 
+
+
+
         return (
             <div>
                 <div className='container'>
@@ -149,7 +162,7 @@ class Details extends React.Component {
                        <div className='d-inline-flex flex-wrap'>
                             <MDBCol sm='6' md='6' lg='6' xl='5' className='m-0'>
                                 <div className='p-1 m-0 p-2'>
-                                    <img className='m-auto w-100 justify-content-center d-block' src={image/*require('../../../../../img/catalogue/f45.jpg')*/} alt={title}/>
+                                        <img className='item-image m-auto w-100 justify-content-center d-block' id='image' src={require('../../../../../img/catalogue/shampoo-tsitrus.png')} alt={title}/>
                                 </div>
                             </MDBCol>
                             <MDBCol sm='6' md='6' lg='6' xl='7' className='p-2 m-0'>

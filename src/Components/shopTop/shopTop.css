@@ -1,0 +1,30 @@
+.btn-search {
+    transform: translateX(480px);
+    background-color: transparent !important;
+    color: black;
+    width: 35px;
+}
+
+
+.btn-search:hover {
+    color: black;
+}
+
+
+@media (max-width: 576px) {
+    .btn-search {
+        transform: translate(380px, -10px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px;
+    }
+
+
+    .btn-search:hover {
+        color: black;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+}

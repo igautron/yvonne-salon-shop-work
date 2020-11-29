@@ -179,6 +179,15 @@ class ShopProducts extends Component  {
         this.doAjax()
     }
 
+    // setFilterFooter(type) {
+    //     let types = {}
+    //     types[type] = 1
+    //     console.log(type)
+    //     this.setFilterFooter(type)
+    //     this.doAjax()
+    // }
+
+
     doAjax() {
         let url
         if (Object.keys(this.filter).length !== 0) {
@@ -234,7 +243,6 @@ class ShopProducts extends Component  {
                 </div>
 
 
-
                 {/*filters*/}
 
              <div className='container pl-1 pr-3 pl-sm-2 pl-md-2 pl-xl-1 pl-lg-1 pr-sm-2 pr-md-2 pr-xl-1 pr-lg-1'>
@@ -251,6 +259,7 @@ class ShopProducts extends Component  {
                             setFilterPrice={this.setFilterPrice}
                             setFilterTop={this.setFilterTop}
                             setFilterMark = {this.setFilterMark}
+                            // setFilterFooter = {this.setFilterFooter}
                         />
 
                     {/*products list*/}
@@ -319,8 +328,8 @@ class ShopProducts extends Component  {
                      className='shop-nav-navbar'
                      id='display-products-small-size'
                  >
-                         <div className='z-index-2 left-0 position-absolute ml-0 pl-0 rgba-brown-strong  shop-filters-block w-responsive w-50 pt-3 pb-5 clearfix mt-5 '>
-                                <button className='left-side-toggle h-25'>
+                         <div className='left-0 position-absolute ml-0 pl-0 bg-white shop-filters-block w-responsive w-50 pt-3 pb-5 clearfix mt-5 '>
+                                <button className='left-side-toggle h-25 collapse-button'>
                                     <MDBIcon icon="bars" size="5x" />
                                 </button>
                                 <ShopFilter
@@ -339,7 +348,7 @@ class ShopProducts extends Component  {
 
                          </MDBCollapse>
                             {/*products list*/}
-                            <div className='z-index-5 shop-items pt-5 mt-3 right w-75 bg-white d-inline-block '>
+                            <div className='z-index-5 shop-items pt-5 mt-3 right w-75 bg-white  d-none'>
                                 <div className='shop-items-md bg-white m-0 justify-content-center'>
                                     <h4 className='text-center p-4 font-weight-bold'>Товари</h4>
                                     <p className='shop-items-text grey-text text-center w-responsive mx-auto mb-5'>

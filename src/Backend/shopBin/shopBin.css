@@ -8,6 +8,7 @@ input.input-autoriz {
     width: 100% !important;
 }
 
+
 .bin-block {
     height: 100%;
     padding-bottom: 100%;
@@ -19,7 +20,8 @@ input.input-autoriz {
 }
 
 .order-item {
-    line-height: 1.5rem;
+    line-height: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .bin-lable {
@@ -58,7 +60,7 @@ i.fas.fa-times {
 }
 
 .btn-pay {
-    width: 267px !important;
+    width: 240px !important;
 }
 
 h4.modal-title {
@@ -66,13 +68,7 @@ h4.modal-title {
 }
 
 
-.btn-s {
-    transform: translate(100px, -6px);
-    background-color: transparent !important;
-    color: black;
-    width: 35px !important;
-    height: 45px;
-}
+
 
 .btn-s:hover {
     color: black;
@@ -90,18 +86,20 @@ h4.modal-title {
 @media (max-width: 576px) {
 
     .btn-x {
-        width: 1.5rem;
-        height: 2rem;
+        transform: translateX(137px);
+        background-color: rgba(106, 27, 154, 0.08);
+        color: black;
+        width: 35px !important;
+        height: 35px;
     }
-
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
 
     .btn-x {
-        transform: translateX(150px);
+        transform: translateX(137px);
         background-color: rgba(106, 27, 154, 0.08);
-        color: white;
+        color: black;
         width: 35px !important;
         height: 35px;
     }
@@ -127,6 +125,14 @@ h4.modal-title {
         width: 30px !important;
     }
 
+    .button-close {
+        padding-left: 22px !important;
+    }
+
+    .col-bin {
+        width: 10px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -135,6 +141,14 @@ h4.modal-title {
     i.fa-search, .bin-img {
         font-size: 20px !important;
         width: 30px !important;
+    }
+
+    .button-close {
+        padding-left: 21px !important;
+    }
+
+    .col-bin {
+        width: 10px;
     }
 
 
@@ -148,11 +162,52 @@ h4.modal-title {
         font-size: 30px;
     }
 
+    .button-close {
+        padding: 0px !important;
+    }
+
+    .button-close {
+        padding-left: 13px !important;
+        padding-top: 10px !important;
+    }
+
+    .col-bin {
+        width: 10px;
+    }
+
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
+    .button-close {
+        padding-left: 0px !important;
+    }
 
+    .col-bin {
+        width: 15px;
+    }
+
+    .button-close {
+        padding-left: 13px !important;
+        font-weight: normal !important;
+    }
+
+    .col-bin {
+        width: 15px;
+    }
 }
 
+@media (min-width: 1200px) {
 
+    .col-bin {
+        width: 15px;
+    }
+
+    .button-close {
+        padding-left: 13px !important;
+    }
+
+    .col-bin {
+        width: 15px;
+    }
+}
 

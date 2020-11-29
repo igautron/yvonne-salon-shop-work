@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopFooter.css'
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import {
     MDBRow,
     MDBCol,
@@ -24,6 +24,18 @@ class ShopFooter extends Component  {
             collapseID: prevState.collapseID !== collapseID ? collapseID : ''
         }));
     }
+
+
+    // chooseFooterHandler = (type) => {
+    //     this.props.setFilterFooter(type)
+    // }
+    //
+    // isActive = (type) => {
+    //     const category = window.location.pathname.split('/').pop()
+    //     return category === type ? 'active' : ''
+    // }
+
+
 
     render() {
         return (
@@ -59,9 +71,9 @@ class ShopFooter extends Component  {
                                 <MDBCol sm="3" md="3" className='goods w-responsive p-md-0 p-sm-0 p-0'>
                                     <h5 className="title pl-lg-5 pl-md-2 pl-sm-4 text-left pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Товари</h5>
                                     <ul className='pl-lg-5 pl-md-2 pl-sm-4 text-left pl-0'>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!">Шампуні для волосся</a>
-                                        </Link>
+                                        {/*<Link className="list-unstyled pb-2">*/}
+                                        {/*    <button onClick={this.chooseFooterHandler.bind(null, 'shampoo')} href="#!">Шампуні для волосся</button>*/}
+                                        {/*</Link>*/}
                                         <Link className="list-unstyled pb-2">
                                             <a href="#!">Кондиціонери для волосся</a>
                                         </Link>
@@ -99,13 +111,19 @@ class ShopFooter extends Component  {
                                         </Link>
                                         <MDBNavbarNav right inline className="footer-ic w-100 mb-0">
                                             <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3'>
-                                                <MDBIcon fab icon="facebook-f"  className="footer-icons white-text"/>
+                                                <a href='https://www.facebook.com/yvonnemultibrands'>
+                                                     <MDBIcon fab icon="facebook-f"  className="footer-icons white-text"/>
+                                                </a>
                                             </MDBNavItem>
                                             <MDBNavItem className='col-4 d-inline pr-3 pt-2 pb-3' >
-                                                <MDBIcon fab icon="instagram" className="footer-icons white-text"/>
+                                                <a href='https://www.instagram.com/yvonnemultibrands/'>
+                                                    <MDBIcon fab icon="instagram" className="footer-icons white-text"/>
+                                                </a>
                                             </MDBNavItem>
                                             <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3' >
-                                                <MDBIcon far icon="envelope" className="footer-icons white-text"/>
+                                                <a href='https://www.instagram.com/yvonnemultibrands/'>
+                                                     <MDBIcon far icon="envelope" className="footer-icons white-text"/>
+                                                </a>
                                             </MDBNavItem>
                                         </MDBNavbarNav>
                                     </ul>
@@ -123,4 +141,4 @@ class ShopFooter extends Component  {
     }
 }
 
-export default ShopFooter;
+export default withRouter(ShopFooter);

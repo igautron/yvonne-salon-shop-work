@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 
 import ShopNav from '../src/Components/shopNav/shopNav'
+import ShopTop from '../src/Components/shopTop/shopTop'
 import ShopSlider from '../src/Components/shopSlider/shopSlider'
 import ShopBrands from '../src/Components/shopBrands/shopBrands'
 import ShopProducts from '../src/Components/shopProducts/shopProducts'
@@ -51,6 +52,7 @@ class App extends Component  {
         return (
             <Router>
                 <ShopNav appState={this.state} appSetState={this.setState} />
+                <ShopTop />
                 <ShopSlider />
                 <ShopAccount />
                 <Switch>
@@ -91,7 +93,7 @@ class App extends Component  {
                         <ShopProducts />
                     </Route>
                 </Switch>
-                <ShopFooter />
+                <ShopFooter/>
                 {/*<ShopAccount />*/}
             </Router>
       );

@@ -31,9 +31,9 @@ class ShopLike extends React.Component {
                             <MDBCol className='col-2 px-3 py-1 mx-0'>
                                 <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-2 py-3'>1500<span>грн</span></p>
                             </MDBCol>
-                            <MDBCol className='col-1 p-1 py-2'>
-                                <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                    <i className="fas fa-times mr-2"></i>
+                            <MDBCol className='col-like p-1 py-2'>
+                                <button type="button" className="px-0 btn btn-m m-0 text-center bg-transparent border-0 z-depth-0 button-like">
+                                    <i className="fas fa-times pr-0"></i>
                                 </button>
                             </MDBCol>
                         </div>

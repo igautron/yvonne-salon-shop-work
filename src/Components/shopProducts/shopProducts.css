@@ -360,7 +360,27 @@
         height: 339px;
     }
 
+    .shop-items {
+       display: block !important;
+    }
 
+    .collapse-button {
+        position: absolute;
+        height: 35px !important;
+        width: 35px !important;
+        transform: translateY(-17px);
+        outline: none;
+
+    }
+
+    .collapse-button:focus {
+        outline: none;
+    }
+
+    .shop-filters-block {
+        background-color: #e8e8e8 !important;
+        z-index: 10;
+    }
 
 }
 

@@ -169,7 +169,7 @@ class ShopFilter extends Component  {
         {slug: 'kpack'       , label:'K-pack'           },
         {slug: 'style'       , label:'Style & Finish'   },
         {slug: 'moisture'    , label:'Moisture recovery'},
-        {slug: 'blond'       , label:'Blond life'       },
+        {slug: 'blondlife'       , label:'Blond life'       },
         {slug: 'defy'        , label:'Defy Damage'      },
         {slug: 'joifull'     , label:'Joifull'          },
         {slug: 'shake'       , label:'Shake series'     },
@@ -189,7 +189,17 @@ class ShopFilter extends Component  {
         {slug: 'xrepair'        , label:'Xrepair'        },
         {slug: 'xintense'       , label:'Xintense'            },
         {slug: 'xcolor'         , label:'Xcolor'            },
-        {slug: 'bahnodeverniz'  , label:'Bahno De Verniz'            }
+        {slug: 'bahnodeverniz'  , label:'Bahno De Verniz'            },
+
+        {slug: 'blond',           label: 'Blond'},
+        {slug: 'beeform',         label: 'BeeForm'},
+
+        {slug: 'arganikare',      label: 'Arganikare'},
+        {slug: 'length',          label: 'Length'},
+        {slug: 'botanikare',      label: 'Botanikare'},
+
+        {slug: 'whitemandarin',   label: 'White Mandarin'}
+
     ]
 
 
@@ -213,7 +223,7 @@ class ShopFilter extends Component  {
             {slug: 'kpack', label: 'K-pack'},
             {slug: 'style', label: 'Style & Finish'},
             {slug: 'moisture', label: 'Moisture recovery'},
-            {slug: 'blond', label: 'Blond life'},
+            {slug: 'blondlife', label: 'Blond life'},
             {slug: 'defy', label: 'Defy Damage'},
             {slug: 'joifull', label: 'Joifull'},
             {slug: 'shake', label: 'Shake series'},
@@ -245,14 +255,17 @@ class ShopFilter extends Component  {
         ],
 
         'mirella': [
-            {slug: 'bamboo', label: 'Bampboo'},
+            {slug: 'blond', label: 'Blond'},
+            {slug: 'beeform', label: 'BeeForm'},
         ],
 
         'altrego': [
-            {slug: 'bamboo', label: 'Bampboo'},
+            {slug: 'arganikare', label: 'Arganikare'},
+            {slug: 'length', label: 'Length'},
+            {slug: 'botanikare', label: 'Botanikare'}
         ],
         'choice': [
-            {slug: 'bamboo', label: 'Bampboo'},
+            {slug: 'whitemandarin', label: 'White Mandarin'},
         ]
 
     }
@@ -327,16 +340,19 @@ class ShopFilter extends Component  {
             ],
 
             'mirella': [
-                {slug: 'bamboo', label: 'Bampboo'},
+                {slug: '300ml', label: '300 мл'},
+                {slug: '500ml', label: '500 мл'},
+                {slug: '1000ml', label: '1000 мл'},
             ],
 
             'altrego': [
-                {slug: 'bamboo', label: 'Bampboo'},
+                {slug: '300ml', label: '300 мл'},
+                {slug: '950ml', label: '950 мл'},
+                {slug: '1000ml', label: '1000 мл'},
             ],
             'choice': [
-                {slug: 'bamboo', label: 'Bampboo'},
-
-        ],
+                {slug: '250ml', label: '250 мл'},
+            ]
     }
 
 
@@ -523,7 +539,7 @@ class ShopFilter extends Component  {
     render() {
         return (
     <div className='shop-filters h-100  left w-25 w-responsive ml-2'>
-        <h5 className='font-weight-bold pt-4 pl-3 pb-4' >Фільтри</h5>
+        <h5 className='font-weight-bold pt-2 pt-md-4 pl-5 pb-4' >Фільтри</h5>
         <div className='shop-filters-prod filter filter-basic'>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ВИД ПРОДУКЦІЇ</p>

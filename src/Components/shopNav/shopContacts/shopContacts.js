@@ -40,13 +40,11 @@ class ShopContacts extends Component {
                         ТОВАРІВ НЕОБХІДНИХ САМЕ ДЛЯ ТЕБЕ</h4>
                     <MDBCard className='border-0 laptop-v-block d-block'>
                         <MDBRow className='ml-0 mr-0 w-100 m-0 p-0 pt-3 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-5 pb-5 '>
-                            <MDBCol className='col-12 m-0 p-0 contact-info z-depth-1 pb-4'>
+                            <MDBCol className='col-12 m-0 p-0 contact-info  pb-4'>
                                 <MDBView>
                                     {/*<img src={require('../../../../../../img/shop/slide5-1.jpg')} className="img-fluid m-0 p-0 w-100" alt="" />*/}
                                     <div className='black-text'>
-                                        <h3 className='text-center header-text-contacts font-weight-normal pt-xl-5 pt-lg-5 pb-3 pt-md-4 pt-sm-4 pt-4 m-0 px-xl-5 px-lg-4 px-md-4 px-sm-1'>Інформація для зв'язку</h3>
-                                        <h6 className='w-responsive m-0 font-italic text-info-contact text-center justify-content-center m-auto w-50 font-weight-normal grey-text pl-xl-5 pl-lg-4 pl-md-4 pl-sm-3 py-md-1'>Замовлення косметичних засобів приймаються онлайн, за телефоном або при відвідуванні магазину.</h6>
-                                        <MDBTable className='shop-contacts-text m-0 h-100 py-5 w-75 justify-content-center m-auto'>
+                                        <MDBTable className='shop-contacts-text m-0 h-100 py-5 w-100 justify-content-center m-auto'>
                                             <th className='ml-5 pl-xl-5 pr-xl-2 p pl-lg-4 pr-lg-0 pl-md-4 pr-md-0 px-sm-2 py-xl-3 py-md-3 py-sm-2 m-0 border-0 w-auto th-icon'>
                                                 <tr className='font-weight-normal'><MDBIcon icon="city" className='mx-1 purple-text'/></tr>
                                                 <tr className='font-weight-normal'><MDBIcon icon="map-marker-alt" className='mx-2 purple-text'/></tr>

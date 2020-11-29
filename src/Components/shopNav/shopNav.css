@@ -6,6 +6,29 @@
     background-color: #21001c;
 }
 
+.modal-dialog.modal-bin {
+    display: block !important;
+}
+
+.modal-dialog {
+    max-width: 680px !important;
+}
+
+.modal-bin .modal-content {
+    width: 680px !important;
+}
+
+div.modal-dialog.modal-autorization {
+    width: 350px !important;
+    margin: 0;
+    justify-content: center;
+    display: block;
+}
+
+.modal-autorization .modal-content {
+    width: 400px !important;
+}
+
 .profile-menu{
     color: #fff;
     position: absolute;
@@ -91,7 +114,6 @@ img.flower {
 }
 
 i.fa-search {
-    width: 65px;
     font-size: 30px;
     color: lightgrey;
 }
@@ -105,11 +127,20 @@ i.fa-search {
 }
 
 .btn-x {
-    transform: translate(135px, -6px);
+    transform: translate(215px, -6px);
     background-color: transparent !important;
     color: black;
     width: 35px !important;
     height: 35px;
+}
+
+
+.btn-s {
+    transform: translate(185px, -6px);
+    background-color: transparent !important;
+    color: black;
+    width: 35px !important;
+    height: 45px;
 }
 
 .btn-x:focus {
@@ -122,14 +153,25 @@ i.fa-search {
 }
 
 .heart-icon {
-    width: 65px;
     font-size: 30px;
     color: lightgrey;
 }
 
 
-.modal-autorization {
+input.input-search {
     width: 400px !important;
+    height: 35px !important;
+}
+
+.nav-block {
+    width: 225px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+}
+
+.nav-block-btn {
+    width: 50px !important;
 }
 
 
@@ -199,7 +241,7 @@ i.fa-search {
     .btn-bk, #text {
         font-size: 0.6rem !important;
         height: 2.6rem !important;
-        width: 60px !important;
+        width: 40px !important;
     }
 
     .btn-like, #text {
@@ -241,6 +283,57 @@ i.fa-search {
     i.fa-search, .bin-img {
         font-size: 20px !important;
         width: 30px !important;
+    }
+
+
+    .nav-block {
+        width: 150px;
+        justify-content: space-between;
+        display: flex;
+        margin: auto;
+    }
+
+
+
+    div.modal-dialog {
+        width: 475px !important;
+        display: block !important;
+    }
+
+    div.modal-dialog.modal-autorization {
+        width: 400px !important;
+        justify-content: center;
+        display: block;
+
+    }
+
+    .modal-autorization .modal-content {
+        width: 400px !important;
+    }
+
+    .modal-dialog {
+        max-width: 475px !important;
+    }
+
+    .modal-bin .modal-content {
+        width: 475px !important;
+    }
+
+
+    .btn-x {
+        transform: translate(115px, -6px) !important;
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 35px;
+    }
+
+    .btn-s {
+        transform: translate(95px, -6px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 45px;
     }
 
 }
@@ -326,8 +419,8 @@ i.fa-search {
     }
 
     .heart-icon {
-        font-size: 30px !important;
-        padding-right: 10px !important;
+        font-size: 45px !important;
+        width: 25px !important;
     }
 
     i.fa-search, .bin-img {
@@ -335,7 +428,40 @@ i.fa-search {
         width: 30px !important;
     }
 
+    input.form-search {
+        width: 100px !important;
+        height: 35px !important;
+    }
 
+    input.input-search {
+        width: 400px !important;
+        height: 35px !important;
+    }
+
+    .nav-block {
+        width: 150px;
+        justify-content: space-between;
+        display: flex;
+        margin: auto;
+    }
+
+    .btn-s {
+        transform: translate(105px, -6px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 45px;
+    }
+
+
+
+    .modal-dialog {
+        max-width: 550px !important;
+    }
+
+    .modal-bin .modal-content {
+        width: 550px !important;
+    }
 }
 
 
@@ -423,6 +549,11 @@ i.fa-search {
         font-size: 30px;
     }
 
+    input.input-search {
+        width: 400px !important;
+        height: 35px !important;
+    }
+
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -481,6 +612,19 @@ i.fa-search {
 
     .heart-icon {
         font-size: 30px;
+    }
+
+    input.input-search {
+        width: 400px !important;
+        height: 35px !important;
+    }
+
+    .modal-dialog, .modal-body {
+        max-width: 680px !important;
+    }
+
+    .modal-bin .modal-content {
+        width: 680px !important;
     }
 }
 

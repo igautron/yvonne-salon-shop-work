@@ -30,33 +30,10 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/modalAutorization/modalAutorization.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/shopTop/shopTop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/shopTop/shopTop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopBin/shopBin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopLike/shopLike.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopAboutShop/shopAboutShop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopAboutShop/shopAboutShop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopAboutShop/shopAboutShop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopAboutShop/shopAboutShop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/topFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/topFilter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,7 +402,11 @@
       <workItem from="1606685548494" duration="1887000" />
       <workItem from="1606687471931" duration="1789000" />
       <workItem from="1606689743667" duration="1833000" />
-      <workItem from="1606691599221" duration="834000" />
+      <workItem from="1606691599221" duration="1433000" />
+      <workItem from="1606693601845" duration="1675000" />
+      <workItem from="1606696035358" duration="1068000" />
+      <workItem from="1606699697623" duration="1221000" />
+      <workItem from="1606764337476" duration="726000" />
     </task>
     <servers />
   </component>

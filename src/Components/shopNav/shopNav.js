@@ -107,9 +107,11 @@ class ShopNav extends Component  {
 
     modalBody = () => {
         if (this.state.modalBody === 'authorization') {
-            return <ShopAutorization changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle} />
+            return <ShopAutorization changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle}/>
+
         }else if(this.state.modalBody === 'registration'){
-            return <ShopRegistration changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle} />
+            return <ShopRegistration changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle}/>
+
         }else if(this.state.modalBody === 'successRgistration'){
             return <div>Вы успешно зарегистрированы!</div>
         }else{
@@ -189,9 +191,10 @@ class ShopNav extends Component  {
                                         <MDBIcon far icon='envelope'/>
                                     </MDBNavItem>
                                     <div className='w-100'>
-                                        <button onClick={this.loginModalToggle} className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
-                                            <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>
-                                        </button>
+                                            <button onClick={this.loginModalToggle}
+                                                    className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
+                                                <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>
+                                            </button>
                                             <MDBModal className='z-depth-0 modal-autorization justify-content-center mx-auto mt-4' isOpen={this.state.isLoginModalOpened}
                                                       toggle={this.loginModalToggle}>
                                                 <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>{this.state.modalTitle}

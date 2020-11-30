@@ -29,12 +29,7 @@ div.modal-dialog.modal-autorization {
     width: 400px !important;
 }
 
-.profile-menu{
-    color: #fff;
-    position: absolute;
-    background: purple;
-    padding: 10px;
-}
+
 
 
 p.adr {
@@ -174,8 +169,17 @@ input.input-search {
     width: 50px !important;
 }
 
+.profile-menu {
+    display: none;
+}
 
-
+.profile-menu:hover {
+    display: block !important;
+    color: #fff;
+    position: absolute !important;
+    background: purple;
+    padding: 10px;
+}
 
 
 @media (max-width: 576px) {

@@ -26,14 +26,14 @@ class ShopFooter extends Component  {
     }
 
 
-    // chooseFooterHandler = (type) => {
-    //     this.props.setFilterFooter(type)
-    // }
-    //
-    // isActive = (type) => {
-    //     const category = window.location.pathname.split('/').pop()
-    //     return category === type ? 'active' : ''
-    // }
+     chooseFooterHandler = (type) => {
+         this.props.setFilterFooter(type)
+     }
+
+     isActive = (type) => {
+         const category = window.location.pathname.split('/').pop()
+         return category === type ? 'active' : ''
+     }
 
 
 
@@ -71,9 +71,9 @@ class ShopFooter extends Component  {
                                 <MDBCol sm="3" md="3" className='goods w-responsive p-md-0 p-sm-0 p-0'>
                                     <h5 className="title pl-lg-5 pl-md-2 pl-sm-4 text-left pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Товари</h5>
                                     <ul className='pl-lg-5 pl-md-2 pl-sm-4 text-left pl-0'>
-                                        {/*<Link className="list-unstyled pb-2">*/}
-                                        {/*    <button onClick={this.chooseFooterHandler.bind(null, 'shampoo')} href="#!">Шампуні для волосся</button>*/}
-                                        {/*</Link>*/}
+                                        <Link className="list-unstyled pb-2">*/}
+                                            <button onClick={this.chooseFooterHandler.bind(null, 'shampoo')} href="#!">Шампуні для волосся</button>*/}
+                                        </Link>
                                         <Link className="list-unstyled pb-2">
                                             <a href="#!">Кондиціонери для волосся</a>
                                         </Link>

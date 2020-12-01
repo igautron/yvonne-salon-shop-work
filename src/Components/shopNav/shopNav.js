@@ -74,6 +74,7 @@ class ShopNav extends Component  {
 
 
     loginModalToggle = () => {
+        if(this.props.appState.user && !this.state.isLoginModalOpened) return false // запрещаем вызов модального окна авторизованным пользователям
         this.setState({
             isLoginModalOpened: !this.state.isLoginModalOpened
         });
@@ -107,11 +108,15 @@ class ShopNav extends Component  {
 
     modalBody = () => {
         if (this.state.modalBody === 'authorization') {
-            return <ShopAutorization changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle}/>
-
+            return <ShopAutorization changeModalBody={this.changeModalBody}
+                                     loginModalToggle={this.loginModalToggle}
+                                     appState={this.props.appState}
+                                     setUserData={this.props.setUserData} />
         }else if(this.state.modalBody === 'registration'){
-            return <ShopRegistration changeModalBody={this.changeModalBody} loginModalToggle={this.loginModalToggle}/>
-
+            return <ShopRegistration changeModalBody={this.changeModalBody}
+                                     loginModalToggle={this.loginModalToggle}
+                                     appState={this.props.appState}
+                                     setUserData={this.props.setUserData} />
         }else if(this.state.modalBody === 'successRgistration'){
             return <div>Вы успешно зарегистрированы!</div>
         }else{
@@ -120,23 +125,28 @@ class ShopNav extends Component  {
     }
 
 
-    logout = () => {
-        localStorage.removeItem('token')
-        localStorage.removeItem('user')
-        this.setState({showProfileMenu: false})
+    logout = () => { //
+        localStorage.removeItem('token') // удаляем данные из localStorage
+        localStorage.removeItem('user') // удаляем данные из localStorage
+        this.props.setUserData({user:'', token:''}) // удаляем данные из App.state
     }
 
 
     profileMenu = () => {
-        let user = localStorage.getItem('user', 1);
-        if (user && this.state.showProfileMenu) {
+        // let user = localStorage.getItem('user');
+        let user = this.props.appState.user
+        if (user) { // если пользователь авторизован
+            let hello = `Hello ${user.name}`
             return (
-                <ul className="profile-menu">
-                    <li>Личный кабинет</li>
-                    <li>Заказы</li>
-                    <li>Избранное</li>
-                    <li onClick={this.logout}>Выход</li>
-                </ul>
+                <React.Fragment>{/*  */}
+                    <h6 style={{color: 'white'}}>{hello}</h6>
+                    <ul className="profile-menu">
+                        <li>Личный кабинет</li>
+                        <li>Заказы</li>
+                        <li>Избранное</li>
+                        <li onClick={this.logout}>Выход</li>
+                    </ul>
+                </React.Fragment>
                 )
         }else{
             return false
@@ -149,6 +159,11 @@ class ShopNav extends Component  {
         this.setState( {
             isSearchModalOpened: !this.state.isSearchModalOpened
         })
+    }
+
+
+    componentDidMount(props) {
+        cl(this.props)
     }
 
 
@@ -191,21 +206,20 @@ class ShopNav extends Component  {
                                         <MDBIcon far icon='envelope'/>
                                     </MDBNavItem>
                                     <div className='w-100'>
-                                            <button onClick={this.loginModalToggle}
-                                                    className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
-                                                <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>
-                                            </button>
-                                            <MDBModal className='z-depth-0 modal-autorization justify-content-center mx-auto mt-4' isOpen={this.state.isLoginModalOpened}
-                                                      toggle={this.loginModalToggle}>
-                                                <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>{this.state.modalTitle}
-                                                    <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary"
-                                                            onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
-                                                </MDBModalHeader>
-                                                <MDBModalBody className='h-100 modal-body z-depth-0'>
-                                                    {this.modalBody()}
-                                                </MDBModalBody>
-                                            </MDBModal>
-                                            {this.profileMenu()}
+                                        <button onClick={this.loginModalToggle} className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
+                                            <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>
+                                        </button>
+                                        <MDBModal className='z-depth-0 modal-autorization justify-content-center mx-auto mt-4' isOpen={this.state.isLoginModalOpened}
+                                                  toggle={this.loginModalToggle}>
+                                            <MDBModalHeader className='text-center justify-content-center mt-3 mb-0'>{this.state.modalTitle}
+                                                <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary"
+                                                        onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                            </MDBModalHeader>
+                                            <MDBModalBody className='h-100 modal-body z-depth-0'>
+                                                {this.modalBody()}
+                                            </MDBModalBody>
+                                        </MDBModal>
+                                        {this.profileMenu()}
                                     </div>
                                 </MDBNavbarNav>
                             </div>

@@ -30,7 +30,7 @@ class ShopOrder extends Component  {
     }
 
     state = {
-        collapseID: ""
+        collapseID: ''
     }
 
     toggleCollapse = collapseID => () => {

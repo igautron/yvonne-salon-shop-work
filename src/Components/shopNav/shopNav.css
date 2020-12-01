@@ -169,9 +169,7 @@ input.input-search {
     width: 50px !important;
 }
 
-.profile-menu {
-    display: none;
-}
+
 
 .profile-menu:hover {
     display: block !important;

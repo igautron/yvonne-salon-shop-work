@@ -96,8 +96,8 @@ class ShopAccount extends Component {
                                             <p>Кеух</p>
                                         </div>
                                         <div className='p-3 col-3'>
-                                            <p>По-батькові</p>
-                                            <p>Яна</p>
+                                            <p></p>
+                                            <p></p>
                                         </div>
                                         <div>
                                             <button className='bg-transparent border-0 m-2'>Редагувати</button>
@@ -109,15 +109,15 @@ class ShopAccount extends Component {
                                     <div col='12' className='d-inline-flex  w-100 info-pain'>
                                         <div className='p-3 col-3'>
                                             <p>Телефон</p>
-                                            <p>Яна</p>
-                                        </div>
-                                        <div className='p-3 col-3'>
-                                            <p>Додатковий телефон</p>
-                                            <p>Кеух</p>
+                                            <p>+380671088799</p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Email</p>
-                                            <p>Яна</p>
+                                            <p>ianagautron@gmail.com</p>
+                                        </div>
+                                        <div className='p-3 col-3'>
+                                            <p>Пароль</p>
+                                            <p>ацукацфус</p>
                                         </div>
                                         <div>
                                             <button className='bg-transparent border-0 m-2'>Редагувати</button>
@@ -129,15 +129,15 @@ class ShopAccount extends Component {
                                     <div col='12' className='d-inline-flex  w-100 info-pain'>
                                         <div className='p-3 col-3'>
                                             <p>Місто</p>
-                                            <p>Яна</p>
+                                            <p>Київ</p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Вулиця</p>
-                                            <p>Яна</p>
+                                            <p>Гонгадзе</p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Будинок</p>
-                                            <p>Яна</p>
+                                            <p>45</p>
                                         </div>
                                         <div>
                                             <button className='bg-transparent border-0 m-2'>Редагувати</button>

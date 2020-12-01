@@ -50,14 +50,6 @@ const cl = console.log
 class ShopProducts extends Component  {
 
 
-
-
-
-    state = {
-        sideNavLeft: false,
-        collapseID: '',
-    }
-
     sidenavToggle = sidenavId => () => {
         const sidenavNr = `sideNav${sidenavId}`
         this.setState({
@@ -71,6 +63,7 @@ class ShopProducts extends Component  {
         super(props);
     
         this.state = {
+            sideNavLeft: false,
             collapseID: '',
             value: 0,
             items: {

@@ -43,15 +43,24 @@ class App extends Component  {
 
 
     state = {
-        isAutorized: false,
         token: '',
-        user: {}
+        user: ''
+    }
+
+    setUserData = (data) => {
+        this.setState({user:data.user, token:data.token})
+    }
+
+    componentDidMount() {
+      const token = localStorage.getItem('token');
+      const user = JSON.parse(localStorage.getItem('user'));
+      this.setState({ user, token });
     }
     
     render(){
         return (
             <Router>
-                <ShopNav appState={this.state} appSetState={this.setState} />
+                <ShopNav appState={this.state} setUserData={this.setUserData} />
                 <ShopTop />
                 <ShopSlider />
                 <ShopAccount />

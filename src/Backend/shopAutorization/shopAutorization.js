@@ -5,12 +5,13 @@ import './shopAutorization.css';
 
 const cl = console.log
 
-function getToken(_this){
-    const url = 'http://yvonne-server.loc/api/login';
+function doLogin(_this){
+    const url = 'http://yvonne-server.loc/api/login'; // урл UserController->login 
 
+    // получение данных с сервера
     fetch(url, {
         method: 'POST', // или 'PUT'
-        body: new URLSearchParams(_this.state.form).toString(), // данные могут быть 'строкой' или {объектом}!
+        body: new URLSearchParams(_this.state.form).toString(), // отправляем данные из формы
         headers: {
             // 'Content-Type': 'application/json'
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -18,14 +19,14 @@ function getToken(_this){
     }).then((response) => {
         return response.json();
     }).then((data) => {
-        console.log(data);
         if(data.success === 'ok') {
-            _this.setState({alert:''})
-            localStorage.setItem('token', data.token);
-            localStorage.setItem('user', JSON.stringify(data.user));
-            _this.props.loginModalToggle()
+            _this.setState({alert:''}) // очищаем alert
+            localStorage.setItem('token', data.token); // сохраняем данные в localStorage
+            localStorage.setItem('user', JSON.stringify(data.user)); // объект user преобразовуем в строку (JSON.stringify)
+            _this.props.setUserData(data) // сохраняем данные в App.state
+            _this.props.loginModalToggle() // скрываем модальное окно
         }else{
-            _this.setState({alert:'Неверный логин или пароль'})
+            _this.setState({alert:'Неверный логин или пароль'}) // выводим сообщение об ошибке
         }
     });
 }
@@ -41,7 +42,6 @@ class ShopAutorization extends Component  {
         form: {
             email: 'kluettgen@example.com',
             password: 'password',
-            remember: true,
             device_name: 'chrome'
         },
         alert: '',
@@ -60,8 +60,8 @@ class ShopAutorization extends Component  {
     }
 
 
-    loginSubmit = () => {
-        getToken(this)
+    loginSubmit = () => { // срабатывает при клике на "Авторизоваться"
+        doLogin(this) // вызываем функцию doLogin
     }
 
 

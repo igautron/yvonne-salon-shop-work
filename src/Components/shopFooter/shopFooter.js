@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import './shopFooter.css'
-import {Link, withRouter} from 'react-router-dom';
+import {Link, withRouter, NavLink} from 'react-router-dom';
 import {
     MDBRow,
     MDBCol,
@@ -26,9 +26,9 @@ class ShopFooter extends Component  {
     }
 
 
-    // chooseFooterHandler = (type) => {
-    //     this.props.setFilterFooter(type)
-    // }
+    chooseFooterHandler = (type) => {
+        // this.props.setFilterFooter(type)
+    }
     //
     // isActive = (type) => {
     //     const category = window.location.pathname.split('/').pop()
@@ -71,12 +71,12 @@ class ShopFooter extends Component  {
                                 <MDBCol sm="3" md="3" className='goods w-responsive p-md-0 p-sm-0 p-0'>
                                     <h5 className="title pl-lg-5 pl-md-2 pl-sm-4 text-left pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Товари</h5>
                                     <ul className='pl-lg-5 pl-md-2 pl-sm-4 text-left pl-0'>
-                                        {/*<Link className="list-unstyled pb-2">*/}
-                                        {/*    <button onClick={this.chooseFooterHandler.bind(null, 'shampoo')} href="#!">Шампуні для волосся</button>*/}
-                                        {/*</Link>*/}
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!">Кондиціонери для волосся</a>
-                                        </Link>
+                                        <NavLink to="/category/shampoo"  className="list-unstyled pb-2">
+                                            <span>Шампуні для волосся</span>
+                                        </NavLink>
+                                        <NavLink to="/category/conditioner" className="list-unstyled pb-2">
+                                            <span>Кондиціонери для волосся</span>
+                                        </NavLink>
                                         <Link className="list-unstyled pb-2">
                                             <a href="#!">Маски для волосся</a>
                                         </Link>

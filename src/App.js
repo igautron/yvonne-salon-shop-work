@@ -35,7 +35,6 @@ import ShopMobileUpload from '../src/Backend/shopMobileUpload/shopMobileUpload';
 
 import Details from './Components/shopProducts/ITEMS/Davines/Item/Details';
 
-
 import {Component} from 'react';
 
 
@@ -63,13 +62,18 @@ class App extends Component  {
                 <ShopNav appState={this.state} setUserData={this.setUserData} />
                 <ShopTop />
                 <ShopSlider />
-                <ShopAccount />
                 <Switch>
                     <Route path='/' exact>
                         <ShopProducts />
                     </Route>
                     <Route path='/shopAboutShop'>
                         <ShopAboutShop />
+                    </Route>
+                    <Route path='/shopAccount'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="1" />
+                    </Route>
+                    <Route path='/myOrders'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="2" />
                     </Route>
                     <Route path='/shopContacts'>
                         <ShopContacts />

@@ -44,7 +44,7 @@ class App extends Component  {
 
     state = {
         token: '',
-        user: ''
+        user: '' //1. Получаем пользователя
     }
 
     setUserData = (data) => {
@@ -60,7 +60,7 @@ class App extends Component  {
     render(){
         return (
             <Router>
-                <ShopNav appState={this.state} setUserData={this.setUserData} />
+                <ShopNav appState={this.state} setUserData={this.setUserData} /> //2.Получаем пользователя
                 <ShopTop />
                 <ShopSlider />
                 <ShopAccount />

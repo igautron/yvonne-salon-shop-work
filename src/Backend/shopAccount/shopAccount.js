@@ -30,7 +30,7 @@ class ShopAccount extends Component {
     render() {
         return (
             <MDBContainer className='pb-5'>
-                <h1 className='h1-responsive font-weight-bolder m-0 pt-2 py-xl-5 py-lg-5 py-md-5 py-sm-5 py-5'>Форма замовлення</h1>
+                <h1 className='h1-responsive font-weight-bolder m-0 pt-2 py-xl-5 py-lg-5 py-md-5 py-sm-5 py-5'>Особистий кабінет</h1>
                 <MDBRow className='p-0 w-100 m-0'>
                     <MDBCol md="12" className='p-0 w-100'>
                         <MDBNav

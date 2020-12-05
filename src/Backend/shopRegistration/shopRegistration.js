@@ -24,6 +24,7 @@ function fetchRegister(_this){
             _this.setState({alert:''})
             localStorage.setItem('token', data.token);
             localStorage.setItem('user', JSON.stringify(data.user));
+            _this.props.setUserData(data) // сохраняем данные в App.state
             _this.props.changeModalBody('successRgistration')
         }else{
             _this.setState({alert:'Неверный логин или пароль'})

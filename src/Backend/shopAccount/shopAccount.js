@@ -5,6 +5,7 @@ import { MDBContainer, MDBNav, MDBNavItem, MDBNavLink, MDBTabPane, MDBTabContent
 import './shopAccount.css'
 import ShopAutorization from '../shopAutorization/shopAutorization';
 
+let cl = console.log
 
 class ShopAccount extends Component {
 
@@ -13,7 +14,13 @@ class ShopAccount extends Component {
             content: '',
             // contentCard: '1',
         },
-        user: {}
+        alertTab1: '',
+        changePasswordError: '',
+        passwordInputs:{
+            old:'',
+            new:'',
+            confirm:'',
+        }
     }
 
     togglePills = (type, tab) => e => {
@@ -41,13 +48,60 @@ class ShopAccount extends Component {
     }
 
     changeInputHandler = (event) => {
-        let userData = {...this.state.user}
+        let userData = {...this.props.appState.user}
         userData[event.target.name] = event.target.value
-        this.setState({user: userData})
+        this.props.setUserData({user: userData})
+    }
+
+    changePasswordInputHandler = (event) => {
+        let passwordInputs = {...this.state.passwordInputs}
+        passwordInputs[event.target.name] = event.target.value
+        this.setState({passwordInputs})
+    }
+
+    changePassword = () => {
+        fetch('http://yvonne-server.loc/api/changePassword', {
+            method: 'POST', // или 'PUT' 
+            // body: new URLSearchParams(this.props.appState.user).toString(),
+            body: JSON.stringify(this.state.passwordInputs),
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+                'Authorization': 'Bearer ' + this.props.appState.token
+            }
+        }).then((response) => {
+            return response.json();
+        }).then((data) => {
+            if (data.success && data.success === 'ok') {
+                this.setState({passwordInputs:{old:'',new:'',confirm:''}})
+                this.setState({changePasswordError:'Success'})
+            }else{
+                this.setState({changePasswordError:data.message})
+            }
+        });
     }
 
     saveUserData = () => {
-        console.log(this.state)
+        this.setState({alertTab1: ''})
+        fetch('http://yvonne-server.loc/api/userUpdate', {
+            method: 'POST', // или 'PUT' 
+            // body: new URLSearchParams(this.props.appState.user).toString(),
+            body: JSON.stringify(this.props.appState.user),
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+                'Authorization': 'Bearer ' + this.props.appState.token
+            }
+        }).then((response) => {
+            return response.json();
+        }).then((data) => {
+            if (data.success && data.success === 'ok') {
+                this.setState({alertTab1: 'Данные успешно сохранены'})
+                localStorage.setItem('user', JSON.stringify(data.user)); // объект user преобразовуем в строку (JSON.stringify)
+            }else{
+                this.setState({alertTab1: 'Error!'})
+            }
+        });
     }
 
     render() {
@@ -121,6 +175,7 @@ class ShopAccount extends Component {
                         </MDBNav>
                         <MDBTabContent activeItem={tabIndex}>
                             <MDBTabPane tabId="1" className='p-2'>
+                                <p style={{textAlign:'center',color:'green'}}>{this.state.alertTab1}</p>
                                 <div className='py-3'>
                                     <h4 className='py-3'>Особисті дані</h4>
                                     <div col='12' className='d-inline-flex w-100 info-pain'>
@@ -146,18 +201,18 @@ class ShopAccount extends Component {
                                     <div col='12' className='d-inline-flex  w-100 info-pain'>
                                         <div className='p-3 col-3'>
                                             <p>Телефон</p>
-                                            <p>{user.phone}</p>
+                                            <p><input onChange={this.changeInputHandler} name="phone" value={user.phone}/></p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Email</p>
-                                            <p>{user.email}</p>
+                                            <p><input onChange={this.changeInputHandler} name="email" value={user.email}/></p>
                                         </div>
                                         <div className='p-3 col-3'>
-                                            <p>Пароль</p>
-                                            <p>******</p>
+                                            <p></p>
+                                            <p></p>
                                         </div>
                                         <div>
-                                            <button className='bg-transparent border-0 m-2'>Редагувати</button>
+                                            <button className='bg-transparent border-0 m-2'>Сохранить</button>
                                         </div>
                                     </div>
                                 </div>
@@ -178,6 +233,27 @@ class ShopAccount extends Component {
                                         </div>
                                         <div>
                                             <button className='bg-transparent border-0 m-2'>Редагувати</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='py-3'>
+                                    <h4 className='py-3'>Изменение пароля</h4>
+                                    <p style={{color:'red'}}>{this.state.changePasswordError}</p>
+                                    <div col='12' className='d-inline-flex  w-100 info-pain'>
+                                        <div className='p-3 col-3'>
+                                            <p>Старый пароль</p>
+                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="old" value={this.state.passwordInputs.old}/></p>
+                                        </div>
+                                        <div className='p-3 col-3'>
+                                            <p>Новый пароль</p>
+                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="new" value={this.state.passwordInputs.new}/></p>
+                                        </div>
+                                        <div className='p-3 col-3'>
+                                            <p>Подтверждение нового пароля</p>
+                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="confirm" value={this.state.passwordInputs.confirm}/></p>
+                                        </div>
+                                        <div>
+                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2'>Сменить пароль</button>
                                         </div>
                                     </div>
                                 </div>

@@ -43,11 +43,15 @@ class App extends Component  {
 
     state = {
         token: '',
-        user: ''
+        user: '',
+        cart: {
+            id:'',
+            products:[],
+        }
     }
 
     setUserData = (data) => {
-        this.setState({user:data.user, token:data.token})
+        this.setState(data)
     }
 
     componentDidMount() {
@@ -64,7 +68,7 @@ class App extends Component  {
                 <ShopSlider />
                 <Switch>
                     <Route path='/' exact>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                     <Route path='/shopAboutShop'>
                         <ShopAboutShop />
@@ -100,10 +104,10 @@ class App extends Component  {
                         <Details />
                     </Route>
                     <Route path='/category/:category'>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                     <Route path='/brand/:brand'>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                 </Switch>
                 <ShopFooter/>

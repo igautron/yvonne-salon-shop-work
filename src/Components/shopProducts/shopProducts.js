@@ -265,7 +265,7 @@ class ShopProducts extends Component  {
                             <MDBRow className='p-0 m-2 ml-0 border-0 products'>
                                 {this.state.products.map((product) => (
                                 <MDBCol key={product.id} lg='6' md='6' xl='4' className='pb-5 p-2 m-0 float-left'>
-                                    <Item product={product}/>
+                                    <Item product={product} appState={this.props.appState} setUserData={this.props.setUserData}/>
                                 </MDBCol>
                                 ))}
                             </MDBRow>

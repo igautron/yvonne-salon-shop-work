@@ -30,16 +30,6 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yvonne-salon-build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -445,6 +435,7 @@
       <workItem from="1607208702567" duration="1695000" />
       <workItem from="1607210523747" duration="654000" />
       <workItem from="1607244041172" duration="450000" />
+      <workItem from="1607298128884" duration="372000" />
     </task>
     <servers />
   </component>

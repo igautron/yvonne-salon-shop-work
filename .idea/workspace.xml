@@ -30,9 +30,16 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/ITEMS/Davines/Item/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopProducts/shopProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +442,9 @@
       <workItem from="1607201560022" duration="599000" />
       <workItem from="1607203368958" duration="602000" />
       <workItem from="1607205206446" duration="3460000" />
-      <workItem from="1607208702567" duration="762000" />
+      <workItem from="1607208702567" duration="1695000" />
+      <workItem from="1607210523747" duration="654000" />
+      <workItem from="1607244041172" duration="450000" />
     </task>
     <servers />
   </component>
@@ -451,10 +460,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222425116" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607208667804">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607210458858">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607208667804" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607210458858" />
     <state x="110" y="88" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606590566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

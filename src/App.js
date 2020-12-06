@@ -35,7 +35,6 @@ import ShopMobileUpload from '../src/Backend/shopMobileUpload/shopMobileUpload';
 
 import Details from './Components/shopProducts/ITEMS/Davines/Item/Details';
 
-
 import {Component} from 'react';
 
 
@@ -44,11 +43,15 @@ class App extends Component  {
 
     state = {
         token: '',
-        user: '' //1. Получаем пользователя
+        user: '', //1. Получаем пользователя
+        cart: {
+            id:'',
+            products:[],
+        }
     }
 
     setUserData = (data) => {
-        this.setState({user:data.user, token:data.token})
+        this.setState(data)
     }
 
     componentDidMount() {
@@ -63,13 +66,18 @@ class App extends Component  {
                 <ShopNav appState={this.state} setUserData={this.setUserData} /> //2.Получаем пользователя
                 <ShopTop />
                 <ShopSlider />
-                <ShopAccount />
                 <Switch>
                     <Route path='/' exact>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                     <Route path='/shopAboutShop'>
                         <ShopAboutShop />
+                    </Route>
+                    <Route path='/shopAccount'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="1" />
+                    </Route>
+                    <Route path='/myOrders'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="2" />
                     </Route>
                     <Route path='/shopContacts'>
                         <ShopContacts />
@@ -96,10 +104,10 @@ class App extends Component  {
                         <Details />
                     </Route>
                     <Route path='/category/:category'>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                     <Route path='/brand/:brand'>
-                        <ShopProducts />
+                        <ShopProducts appState={this.state} setUserData={this.setUserData} />
                     </Route>
                 </Switch>
                 <ShopFooter/>

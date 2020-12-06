@@ -40,7 +40,7 @@ class ShopAutorization extends Component  {
 
     state = {
         form: {
-            email: 'kluettgen@example.com',
+            email: 'grady.anabelle@example.net',
             password: 'password',
             device_name: 'chrome'
         },

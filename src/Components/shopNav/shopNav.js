@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import './shopNav.css'
 import './../../Backend/shopBin/shopBin.css'
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import {
     MDBModal,
     MDBModalHeader,
@@ -141,8 +141,8 @@ class ShopNav extends Component  {
                 <React.Fragment>{/*  */}
                     <h6 style={{color: 'white'}}>{hello}</h6>
                     <ul className="profile-menu">
-                        <li>Личный кабинет</li>
-                        <li>Заказы</li>
+                        <li><NavLink to="/shopAccount">Личный кабинет</NavLink></li>
+                        <li><NavLink to="/myOrders">Заказы</NavLink></li>
                         <li>Избранное</li>
                         <li onClick={this.logout}>Выход</li>
                     </ul>

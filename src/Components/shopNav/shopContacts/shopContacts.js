@@ -46,14 +46,14 @@ class ShopContacts extends Component {
                                     <div className='black-text'>
                                         <MDBTable className='shop-contacts-text m-0 h-100 py-5 w-100 justify-content-center m-auto'>
                                             <th className='ml-5 pl-xl-5 pr-xl-2 p pl-lg-4 pr-lg-0 pl-md-4 pr-md-0 px-sm-2 py-xl-3 py-md-3 py-sm-2 m-0 border-0 w-auto th-icon'>
-                                                <tr className='font-weight-normal'><MDBIcon icon="city" className='mx-1 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon icon="map-marker-alt" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon icon="mobile-alt" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon icon="mobile" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon far icon="clock" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon far icon="envelope" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon fab icon="facebook-square" className='mx-2 purple-text'/></tr>
-                                                <tr className='font-weight-normal'><MDBIcon fab icon="instagram" className='mx-2 purple-text'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon icon="city" className='mx-1'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon icon="map-marker-alt" className='mx-2'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon icon="mobile-alt" className='mx-2'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon icon="mobile" className='mx-2'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon far icon="clock" className='mx-2 '/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon far icon="envelope" className='mx-2'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon fab icon="facebook-square" className='mx-2'/></tr>
+                                                <tr className='font-weight-normal'><MDBIcon fab icon="instagram" className='mx-2'/></tr>
                                             </th>
                                             <th className='pl-xl-0 pl-lg-0 pl-md-0 py-xl-3 m-0 border-0 th-name'>
                                                 <tr className='font-weight-normal'>Місто</tr>
@@ -119,14 +119,14 @@ class ShopContacts extends Component {
                                                 hint="Ваше ім'я"
                                                 type='textarea'
                                                 icon='user'
-                                                iconClass='purple-text px-auto'
+                                                iconClass='px-auto'
                                                 className='py-md-2 py-lg-2 py-xl-2 my-xl-3 mx-xl-5 contact-input'
                                             />
                                             <MDBInput
                                                 hint='Номер телефону'
                                                 type='textarea'
                                                 icon='mobile-alt'
-                                                iconClass='purple-text px-1'
+                                                iconClass='px-1'
                                                 className='py-md-2 py-lg-2 py-xl-2 my-xl-3 mx-xl-5 contact-input'
                                             />
                                             <MDBInput
@@ -134,7 +134,7 @@ class ShopContacts extends Component {
                                                 type='textarea'
                                                 icon='comment-alt'
                                                 height={'3rem'}
-                                                iconClass='purple-text px-1'
+                                                iconClass='px-1'
                                                 className='py-md-2 py-lg-2 py-xl-2 my-xl-3 mx-xl-5 contact-input '
                                             />
                                             <div className='text-center mt-1-half'>

@@ -25,6 +25,7 @@ import ShopCertification from './Components/shopNav/shopCertification/shopCertif
 import ShopAutorization from '../src/Backend/shopAutorization/shopAutorization';
 import ShopRegistration from '../src/Backend/shopRegistration/shopRegistration';
 import ShopAccount from './Backend/shopAccount/shopAccount';
+import Writetous from './Backend/writretous/writetous';
 // import ShopLike from '../src/Backend/shopLike/shopLike';
 import ShopOrder from '../src/Backend/shopOrder/shopOrder';
 import Congratulation from './Backend/shopOrder/CARD/Congratulation';
@@ -63,7 +64,7 @@ class App extends Component  {
     render(){
         return (
             <Router>
-                <ShopNav appState={this.state} setUserData={this.setUserData} /> //2.Получаем пользователя
+                <ShopNav appState={this.state} setUserData={this.setUserData} />
                 <ShopTop />
                 <ShopSlider />
                 <Switch>
@@ -88,7 +89,7 @@ class App extends Component  {
                     <Route path='/congratulation'>
                         <Congratulation />
                     </Route>
-                    <Route path='/shopCertification'>
+                    <Route path='/shopJob'>
                         <ShopCertification />
                     </Route>
                     <Route path='/shopAutorization'>
@@ -108,6 +109,9 @@ class App extends Component  {
                     </Route>
                     <Route path='/brand/:brand'>
                         <ShopProducts appState={this.state} setUserData={this.setUserData} />
+                    </Route>
+                    <Route path='/writetous'>
+                        <Writetous />
                     </Route>
                 </Switch>
                 <ShopFooter/>

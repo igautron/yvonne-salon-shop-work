@@ -212,7 +212,7 @@ class ShopAccount extends Component {
                                             <p></p>
                                         </div>
                                         <div>
-                                            <button className='bg-transparent border-0 m-2'>Сохранить</button>
+                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -221,18 +221,18 @@ class ShopAccount extends Component {
                                     <div col='12' className='d-inline-flex  w-100 info-pain'>
                                         <div className='p-3 col-3'>
                                             <p>Місто</p>
-                                            <p>Київ</p>
+                                            <p><input onChange={this.changeInputHandler} name="city" value={user.city}/></p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Вулиця</p>
-                                            <p>Гонгадзе</p>
+                                            <p><input onChange={this.changeInputHandler} name="street" value={user.street}/></p>
                                         </div>
                                         <div className='p-3 col-3'>
                                             <p>Будинок</p>
-                                            <p>45</p>
+                                            <p><input onChange={this.changeInputHandler} name="house" value={user.house}/></p>
                                         </div>
                                         <div>
-                                            <button className='bg-transparent border-0 m-2'>Редагувати</button>
+                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +253,7 @@ class ShopAccount extends Component {
                                             <p><input type="password" onChange={this.changePasswordInputHandler} name="confirm" value={this.state.passwordInputs.confirm}/></p>
                                         </div>
                                         <div>
-                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2'>Сменить пароль</button>
+                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2'>Змінити пароль</button>
                                         </div>
                                     </div>
                                 </div>

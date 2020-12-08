@@ -101,8 +101,8 @@ class ShopContacts extends Component {
                 </div>
                 <div className='laptop-v-block'>
                     <div className='pb-sm-5 pb-lg-5 pb-xl-5'>
-                        <MDBCard className='contacts-form border-0 z-depth-1'>
-                                <MDBCol className='col-12 m-0 p-0 contact-info m-auto justify-content-center'>
+                        <MDBCard className='contacts-form border-0 z-depth-1 m-auto justify-content-center'>
+                                <MDBCol className='col-12 m-0 p-0 contact-info '>
                                     <MDBContainer>
                                         <MDBModalHeader
                                             titleClass='d-inline title'

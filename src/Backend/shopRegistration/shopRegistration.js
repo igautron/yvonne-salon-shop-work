@@ -87,15 +87,15 @@ class ShopRegistration extends Component  {
                             </ul>
                             <div className="form-row mb-4">
                                 <div className="col">
-                                    <input onChange={this.changeInputHandler} value={this.state.form.name} name="name"  type="text" id="defaultRegisterFormFirstName" className="form-control form-aut" placeholder="Ім'я" />
+                                    <input onChange={this.changeInputHandler} value={this.state.form.name} name="name"  type="text" id="defaultRegisterFormFirstName" className="mx-auto justify-content-center form-control form-aut" placeholder="Ім'я" />
                                 </div>
                                 <div className="col">
-                                    <input onChange={this.changeInputHandler} value={this.state.form.last_name} name="last_name" type="text" id="defaultRegisterFormLastName" className="form-control form-aut" placeholder="Фамілія" />
+                                    <input onChange={this.changeInputHandler} value={this.state.form.last_name} name="last_name" type="text" id="defaultRegisterFormLastName" className="mx-auto justify-content-center form-control form-aut" placeholder="Фамілія" />
                                 </div>
                             </div>
-                            <input onChange={this.changeInputHandler} value={this.state.form.email} name="email"  type="email" id="defaultRegisterFormEmail" className="form-control mb-4 form-reg" placeholder="Електронна пошта" />
-                            <input onChange={this.changeInputHandler} value={this.state.form.phone} name="phone" type="text" id="defaultRegisterPhonePassword" className="form-control mb-4 form-reg" placeholder="Номер телефону" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-                            <input onChange={this.changeInputHandler} value={this.state.form.password} name="password" type="password" id="defaultRegisterFormPassword" className="form-control form-reg" placeholder="Пароль" aria-describedby="defaultRegisterFormPasswordHelpBlock" />
+                            <input onChange={this.changeInputHandler} value={this.state.form.email} name="email"  type="email" id="defaultRegisterFormEmail" className="mx-auto justify-content-center w-100 form-control mb-4 form-reg" placeholder="Електронна пошта" />
+                            <input onChange={this.changeInputHandler} value={this.state.form.phone} name="phone" type="text" id="defaultRegisterPhonePassword" className="mx-auto justify-content-center form-control mb-4 form-reg" placeholder="Номер телефону" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+                            <input onChange={this.changeInputHandler} value={this.state.form.password} name="password" type="password" id="defaultRegisterFormPassword" className="mx-auto justify-content-center form-control form-reg" placeholder="Пароль" aria-describedby="defaultRegisterFormPasswordHelpBlock" />
                             <small id="defaultRegisterFormPasswordHelpBlock" className="form-text text-muted mb-2">
                                 Щонайменше 8 літер латиницею
                             </small>

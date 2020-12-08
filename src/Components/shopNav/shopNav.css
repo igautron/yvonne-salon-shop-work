@@ -1,9 +1,9 @@
-.navbar-bg {
-    background-color: rgb(66,0,58) !important;
+.shop-nav-first {
+    height: 56px !important;
 }
 
-.shop-bg-nav {
-    background-color: #21001c;
+.navbar-bg {
+    background-color: rgb(66,0,58) !important;
 }
 
 .modal-dialog.modal-bin {
@@ -38,26 +38,6 @@ p.adr {
     line-height: 15px !important;
 }
 
-div {
-    margin: 0 auto;
-    align-content: center;
-}
-
-a {
-    z-index: 200;
-    display: block;
-    position: relative;
-}
-
-img.flower {
-    z-index: 100;
-    display: block;
-    position: absolute;
-    width: 165px;
-    height: 135px;
-    transform: translate(-195px, -30px);
-    margin: 30px;
-}
 
 .shop-logo {
     font-size: 65px;
@@ -218,15 +198,6 @@ input.input-search {
         padding-left: 3rem;
     }
 
-    img.flower {
-        display: block;
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        transform: translate(-105px, -17px);
-        margin: 30px;
-    }
-
     .shop-logo {
         font-size: 2.4rem;
     }
@@ -352,15 +323,6 @@ input.input-search {
         height: 37px;
     }
 
-    img.flower {
-        display: block;
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        transform: translate(-105px, -17px);
-        margin: 30px;
-    }
-
     .shop-logo {
         font-size: 2.5rem;
     }
@@ -480,16 +442,6 @@ input.input-search {
     }
 
 
-    img.flower {
-        display: block;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        transform: translate(-105px, -17px);
-        margin: 30px;
-    }
-
-
     .shop-logo {
         font-size: 3.2rem;
     }
@@ -559,15 +511,6 @@ input.input-search {
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
-    img.flower {
-        z-index: 100;
-        display: block;
-        position: absolute;
-        width: 145px;
-        height: 115px;
-        transform: translate(-147px, -21px);
-        margin: 30px;
-    }
 
     .nav-text {
         font-size: 0.8rem;
@@ -632,15 +575,6 @@ input.input-search {
 
 
 @media (min-width: 1200px) {
-    img.flower {
-        z-index: 100;
-        display: block;
-        position: absolute;
-        width: 145px;
-        height: 115px;
-        transform: translate(-155px, -21px);
-        margin: 30px;
-    }
 
     .shop-nav-second {
         display: none;

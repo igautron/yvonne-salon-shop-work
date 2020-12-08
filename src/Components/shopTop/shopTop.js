@@ -89,25 +89,23 @@ class ShopTop extends Component {
     render() {
         return (
             <div className='shop-bg-nav'>
-                <div className='container m-auto justify-content-center h-100 px-2'>
-                    <div className='w-100 d-inline-flex pt-lg-5 pt-xl-5 h-100'>
+                <div className='container m-auto justify-content-center px-2 '>
+                    <div className='w-100 d-block h-100'>
 
-                        <div className='float-left   w-responsive py-4'>
-                            <div className='shop-logo-img black-text ml-lg-0 w-auto ml-lg-5'>
+                        <div className='float-left py-4'>
                                 <img
-                                    className='flower'
+                                    className='logo-flower'
                                     src={require('../../img/slider/IMGBIN_pink-flowers-pink-flowers-watercolor-painting-png_STw63vwG.png')}
                                     alt='fl1'
                                 />
-                                <a href='./Top.js' className='white-text w-auto shop-logo pl-lg-4 pl-md-4'>YVONNE</a>
-                            </div>
-                            <div className='shop-logo-text ml-lg-0 m-0 w-auto text-left white-text pl-lg-5 pl-md-4'><a
-                                href='./Top' className='white-text pl-lg-4'>HAIR
-                                COSMETICS SHOP</a>
-                            </div>
+                                <img
+                                    className='logo-bordo'
+                                    src={require('../../img/catalogue/logo-bordo.png')}
+                                    alt='fl1'
+                                />
                         </div>
-                        <div className='float-right m-0  w-responsive d-inline-flex float-right py-4 w-auto'>
-                            <div className='nav-block'>
+                        <div className='float-right pt-4 pt-sm-0 pt-md-4 pb-1'>
+                            <div className='nav-block py-3'>
 
                 {/*search*/}
                                 <button onClick={this.searchHandleToggle}
@@ -161,11 +159,11 @@ class ShopTop extends Component {
              {/*сподобалось*/}
                                 <button onClick={this.cartLikeModalToggle}
                                         className='nav-block-btn  m-auto  black-text btn-bk m-1 p-1  bg-transparent border-0 p-0 font-weight-bold w-responsive w-100'>
-                                    <MDBIcon className='heart-icon p-0' icon='heart'/>
+                                    <MDBIcon className='heart-icon' icon='heart'/>
                                 </button>
                                 <MDBModal isOpen={this.state.isCartLikeModalOpened} toggle={this.cartLikeModalToggle}
                                           className='pt-3 mx-auto justify-content-center'>
-                                    <MDBModalHeader className='text-center my-3'>Сподобалось
+                                    <MDBModalHeader className='text-center my-3 justify-content-center'>Сподобалось
                                         <MDBBtn className='btn-s m-2 p-2 border-0 z-depth-0 position-absolute'
                                                 color="secondary" onClick={this.cartLikeModalToggle}><i
                                             className="fas fa-times mr-2"></i></MDBBtn>

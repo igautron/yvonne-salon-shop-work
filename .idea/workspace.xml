@@ -30,6 +30,21 @@
       <change afterPath="$PROJECT_DIR$/../solgar-app/src/Components/TOP/Top.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../solgar-shop-app/src/Components/BENEFITS/Benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAccount/shopAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopAutorization/shopAutorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/shopRegistration/shopRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopFooter/shopFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopCertification/shopCertification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopContacts/shopContacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopNav/shopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopTop/shopTop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopTop/shopTop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shopTop/shopTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shopTop/shopTop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +450,27 @@
       <workItem from="1607208702567" duration="1695000" />
       <workItem from="1607210523747" duration="654000" />
       <workItem from="1607244041172" duration="450000" />
-      <workItem from="1607298128884" duration="372000" />
+      <workItem from="1607298128884" duration="1747000" />
+      <workItem from="1607299989181" duration="1787000" />
+      <workItem from="1607301801331" duration="236000" />
+      <workItem from="1607349156570" duration="753000" />
+      <workItem from="1607350963335" duration="599000" />
+      <workItem from="1607352775063" duration="999000" />
+      <workItem from="1607354589329" duration="1208000" />
+      <workItem from="1607356922779" duration="610000" />
+      <workItem from="1607357596107" duration="1612000" />
+      <workItem from="1607359501702" duration="8000" />
+      <workItem from="1607379403624" duration="505000" />
+      <workItem from="1607379922691" duration="1917000" />
+      <workItem from="1607381903654" duration="1794000" />
+      <workItem from="1607383891124" duration="1818000" />
+      <workItem from="1607385728570" duration="1793000" />
+      <workItem from="1607387539036" duration="1440000" />
+      <workItem from="1607389064772" duration="783000" />
+      <workItem from="1607411906623" duration="1736000" />
+      <workItem from="1607413720286" duration="1792000" />
+      <workItem from="1607415526630" duration="1444000" />
+      <workItem from="1607417462020" duration="2348000" />
     </task>
     <servers />
   </component>
@@ -451,21 +486,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222425116" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607210458858">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607389077346">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607210458858" />
-    <state x="110" y="88" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606590566519">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607389077346" />
+    <state x="110" y="88" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607388873964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="110" y="88" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606590566519" />
+    <state x="110" y="88" width="1350" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1607388873964" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606546955247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606546955247" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606785155076">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607418234321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606785155076" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607418234321" />
   </component>
 </project>

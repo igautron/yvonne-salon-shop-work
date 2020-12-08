@@ -80,8 +80,8 @@ class ShopAutorization extends Component  {
                                 <p style={{color:'red'}}>
                                     {this.state.alert}
                                 </p>
-                                <input onChange={this.changeEmailHandler} value={this.state.form.email} type='email' className="form-control mb-4 form-reg" placeholder="Електронна пошта" />
-                                <input onChange={this.changePasswordHandler} value={this.state.form.password} type='password' className="form-control mb-4 form-reg" placeholder="Пароль" />
+                                <input onChange={this.changeEmailHandler} value={this.state.form.email} type='email' className="mx-auto justify-content-center form-control mb-4 form-reg" placeholder="Електронна пошта" />
+                                <input onChange={this.changePasswordHandler} value={this.state.form.password} type='password' className="mx-auto justify-content-center form-control mb-4 form-reg" placeholder="Пароль" />
                                 <div className="d-flex justify-content-around">
                                      <div>
                                         <a href="/" className='py-1 form-text'>Забули пароль?</a>

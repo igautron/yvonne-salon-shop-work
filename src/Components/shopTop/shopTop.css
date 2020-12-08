@@ -1,5 +1,11 @@
+.shop-bg-nav {
+    background-color: #21001c !important;
+    height: 160px;
+}
+
+
 .btn-search {
-    transform: translateX(480px);
+    transform: translateX(590px);
     background-color: transparent !important;
     color: black;
     width: 35px;
@@ -12,6 +18,19 @@
 
 
 @media (max-width: 576px) {
+    .shop-bg-nav {
+        background-color: #21001c !important;
+        height: 123px;
+    }
+
+    .logo-flower {
+        width: 70px;
+    }
+
+    .logo-bordo {
+        width: 180px;
+    }
+
     .btn-search {
         transform: translate(380px, -10px);
         background-color: transparent !important;
@@ -27,4 +46,55 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .btn-search {
+        transform: translate(465px, -10px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px;
+    }
+
+    .shop-bg-nav {
+        background-color: #21001c !important;
+        height: 125px;
+    }
+
+    .logo-flower {
+        width: 80px;
+    }
+
+    .logo-bordo {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-flower {
+        width: 100px;
+    }
+
+    .logo-bordo {
+        width: 300px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .logo-flower {
+        width: 100px;
+    }
+
+    .logo-bordo {
+        width: 300px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .logo-flower {
+        width: 100px;
+    }
+
+    .logo-bordo {
+        width: 300px;
+    }
 }

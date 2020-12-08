@@ -151,8 +151,10 @@ i.footer-icons {
         font-size: 0.6rem;
     }
 
-    .goods {
-        display: none;
+    .image-bordo {
+        width: 140px !important;
+        float: right;
+        margin-bottom: 25px;
     }
 }
 
@@ -213,6 +215,12 @@ i.footer-icons {
     .shop-salon {
         font-size: 0.7rem;
     }
+
+    .image-bordo {
+        width: 140px !important;
+        float: right;
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -237,6 +245,10 @@ i.footer-icons {
         font-size: 0.8rem !important;
     }
 
+    .image-bordo {
+        width: 200px !important;
+    }
+
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -250,6 +262,10 @@ i.footer-icons {
 
     .logo-text-cr {
         font-size: 0.8rem;
+    }
+
+    .image-bordo {
+        width: 250px !important;
     }
 }
 
@@ -266,5 +282,9 @@ i.footer-icons {
 
     .logo-text-cr {
         font-size: 0.8rem;
+    }
+
+    .image-bordo {
+        width: 300px;
     }
 }

@@ -43,76 +43,106 @@ class ShopFooter extends Component  {
                     <MDBFooter className="font-small pt-4 mt-4">
                         <MDBContainer fluid className="container text-center text-md-left pl-0 pl-sm-2 pl-md-0 pl-lg-0  pr-sm-2 pr-md-0 pr-lg-0">
                             <MDBRow className='pb-5 ml-4 mr-4 ml-sm-0 ml-md-0 ml-lg-0 ml-xl-0 mr-sm-0 mr-md-0 mr-lg-0 mr-xl-0'>
-                                <MDBCol sm="3" md="3" lg="3" className='col-4 w-responsive p-md-0 p-sm-0 p-0'>
-                                    <div className='w-100'>
-                                        <a href="./Top.js" className='shop-foot text-center font-weight-normal h-50 w-100 float-right m-auto'>YVONNE</a>
-                                        <div className='shop-slogan text-center font-weight-light'>HAIR COSMETICS SHOP</div>
+                                <MDBCol sm="5" md="3" lg="3" className='col-4  w-responsive p-md-0 p-sm-0 p-0 pb-5'>
+                                    <div className='w-100 pb-5'>
+                                       <img className='image-bordo' src={require('./../../img/catalogue/logo-bordo.png')}/>
                                     </div>
                                     <p className="logo-text">Початкова краса - це те, як людина виглядає вранці, ледь встав з ліжка, тобто природно, але бездоганно.</p>
                                     <p className="logo-text-cr pb-1 mb-0">Сьюзен Коллінз, "Голодні ігри"</p>
                                 </MDBCol>
-                                <MDBCol sm="3" md="3" className='col-4 w-responsive p-md-0 p-sm-0 p-0'>
+                                <MDBCol sm="5" md="3" className='col-6 w-responsive p-md-0 p-sm-0 p-0 mb-5'>
                                     <h5 className="title pl-lg-5 pl-md-2 footer-nav pl-sm-2 text-left pl-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Навігація</h5>
-                                    <ul className='pl-lg-5 pl-md-2 pl-sm-2 text-left pl-2'>
-                                        <Link to='/' className="pb-2 footer-nav">
-                                            <a href="#!">Головна</a>
-                                        </Link>
-                                        <Link to='/shopAboutShop' className="list-unstyled pb-2 footer-nav">
-                                            <a href="#!">Про магазин</a>
-                                        </Link>
-                                        <Link to='/shopCertification' className="list-unstyled pb-2 footer-nav">
-                                            <a href="#!">Сертифікація</a>
-                                        </Link>
-                                        <Link to='/shopContacts' className="list-unstyled pb-2 footer-nav">
-                                            <a href="#!">Контакти</a>
-                                        </Link>
+                                    <ul className='pl-lg-5 pl-md-2 pl-sm-2 text-left pl-2 d-table'>
+                                        <li>
+                                            <Link to='/' className="w-100 pb-2 footer-nav">
+                                                <span>Головна</span>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/shopAboutShop' className="w-100 list-unstyled pb-2 footer-nav">
+                                                <span>Про магазин</span>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/shopCertification' className="w-100 list-unstyled pb-2 footer-nav">
+                                                <span>Сертифікація</span>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/shopContacts' className="w-100 list-unstyled pb-2 footer-nav">
+                                                <span>Контакти</span>
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </MDBCol>
-                                <MDBCol sm="3" md="3" className='goods w-responsive p-md-0 p-sm-0 p-0'>
-                                    <h5 className="title pl-lg-5 pl-md-2 pl-sm-4 text-left pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Товари</h5>
-                                    <ul className='pl-lg-5 pl-md-2 pl-sm-4 text-left pl-0'>
-                                        <NavLink to="/category/shampoo"  className="list-unstyled pb-2">
-                                            <span>Шампуні для волосся</span>
-                                        </NavLink>
-                                        <NavLink to="/category/conditioner" className="list-unstyled pb-2">
-                                            <span>Кондиціонери для волосся</span>
-                                        </NavLink>
-                                        <NavLink to="/category/mask" className="list-unstyled pb-2">
-                                            <a href="#!">Маски для волосся</a>
-                                        </NavLink>
-                                        <NavLink to="/category/styling" className="list-unstyled pb-2">
-                                            <a href="#!">Стайлінги</a>
-                                        </NavLink>
-                                        <NavLink to="/category/ampule" className="list-unstyled pb-2">
-                                            <a href="#!">Лікувальні ампули</a>
-                                        </NavLink>
-                                        <NavLink to="/category/protection" className="list-unstyled pb-2">
-                                            <a href="#!">Захист для волосся</a>
-                                        </NavLink>
-                                        <NavLink to="/category/kit" className="list-unstyled pb-2">
-                                            <a href="#!">Подарункові набори</a>
-                                        </NavLink>
-
+                                <MDBCol sm="5" md="3" className='col-5  w-responsive p-md-0 p-sm-0 p-0'>
+                                    <h5 className="title pl-lg-5 pl-md-2 pl-sm-4 text-left pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2 pl-0">Товари</h5>
+                                    <ul className='pl-lg-5 pl-md-2 pl-sm-4 text-left pl-0 h-100'>
+                                        <li>
+                                            <NavLink to="/category/shampoo"  className="list-unstyled pb-2 w-100">
+                                                Шампуні для волосся
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/category/conditioner" className="list-unstyled pb-2">
+                                                Кондиціонери для волосся
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/category/mask" className="list-unstyled pb-2">
+                                                Маски для волосся
+                                            </NavLink>
+                                        </li>
+                                       <li>
+                                           <NavLink to="/category/styling" className="list-unstyled pb-2">
+                                               Стайлінги
+                                           </NavLink>
+                                       </li>
+                                        <li>
+                                            <NavLink to="/category/ampule" className="list-unstyled pb-2">
+                                                Лікувальні ампули
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/category/protection" className="list-unstyled pb-2">
+                                                Захист для волосся
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/category/kit" className="list-unstyled pb-2">
+                                                Подарункові набори
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </MDBCol>
-                                <MDBCol sm="3" md="3" className='col-4 w-responsive p-md-0 p-sm-0 p-0'>
+                                <MDBCol sm="5" md="3" className='col-6  w-responsive p-md-0 p-sm-0 p-0 h-100 pl-sm-4'>
                                     <h5 className="title pl-lg-4 pl-md-4 pl-sm-3 text-left pl-0 pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Контакти</h5>
-                                    <ul className='pl-lg-4 pl-md-4 pl-sm-3 text-left pl-0 mb-0'>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!">м.Київ, вул. Данченко 32 (вхід з двору)</a>
-                                        </Link>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!" className=''><MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 073 500 55 33</a>
-                                        </Link>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!" className=''><MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 098 500 55 33</a>
-                                        </Link>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!">Графік роботи:</a>
-                                        </Link>
-                                        <Link className="list-unstyled pb-2">
-                                            <a href="#!">09:00 - 20:00 (без вихідних)</a>
-                                        </Link>
+                                    <ul className='pl-lg-4 pl-md-4 pl-sm-3 text-left pl-0 mb-0 h-100'>
+                                        <li>
+                                            <Link className="list-unstyled pb-2">
+                                                    м.Київ, вул. Данченко 32 (вхід з двору)
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="list-unstyled pb-2">
+                                                <MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 073 500 55 33
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="list-unstyled pb-2">
+                                                <MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 098 500 55 33
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="list-unstyled pb-2">
+                                                Графік роботи:
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="list-unstyled pb-2">
+                                                09:00 - 20:00 (без вихідних)
+                                            </Link>
+                                        </li>
                                         <MDBNavbarNav right inline className="footer-ic w-100 mb-0">
                                             <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3'>
                                                 <a href='https://www.facebook.com/yvonnemultibrands'>
@@ -125,9 +155,9 @@ class ShopFooter extends Component  {
                                                 </a>
                                             </MDBNavItem>
                                             <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3' >
-                                                <a href='https://www.instagram.com/yvonnemultibrands/'>
+                                                <Link to='/writetous'>
                                                      <MDBIcon far icon="envelope" className="footer-icons white-text"/>
-                                                </a>
+                                                </Link>
                                             </MDBNavItem>
                                         </MDBNavbarNav>
                                     </ul>

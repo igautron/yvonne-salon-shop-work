@@ -1,0 +1,12 @@
+.mobileme {
+    width: 70px !important;
+    height: 100%;
+    float: right !important;
+    left: 80%;
+    z-index: 50;
+}
+
+.mobileme-image {
+    width: 70px !important;
+    position: fixed;
+}

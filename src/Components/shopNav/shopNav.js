@@ -28,6 +28,8 @@ import ShopRegistration from '../../Backend/shopRegistration/shopRegistration';
 import ShopLike from '../../Backend/shopLike/shopLike';
 import ShopForgetPassword from '../../Backend/shopForgetPassword/shopForgetPassword';
 import ModalAutorization from './../../Backend/modalAutorization/modalAutorization'
+import Mobile from './../../Backend/shopMobile/Mobile'
+
 let cl = console.log
 
 class ShopNav extends Component  {
@@ -286,6 +288,9 @@ class ShopNav extends Component  {
                             </MDBContainer>
                         </MDBNavbar>
                     </MDBContainer>
+                    <div>
+                        <Mobile />
+                    </div>
                 </div>
             </div>
         )

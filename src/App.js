@@ -26,6 +26,7 @@ import ShopAutorization from '../src/Backend/shopAutorization/shopAutorization';
 import ShopRegistration from '../src/Backend/shopRegistration/shopRegistration';
 import ShopAccount from './Backend/shopAccount/shopAccount';
 import Writetous from './Backend/writretous/writetous';
+import Mobile from './Backend/shopMobile/Mobile';
 // import ShopLike from '../src/Backend/shopLike/shopLike';
 import ShopOrder from '../src/Backend/shopOrder/shopOrder';
 import Congratulation from './Backend/shopOrder/CARD/Congratulation';
@@ -112,6 +113,9 @@ class App extends Component  {
                     </Route>
                     <Route path='/writetous'>
                         <Writetous />
+                    </Route>
+                    <Route path='/mobile'>
+                        <Mobile />
                     </Route>
                 </Switch>
                 <ShopFooter/>

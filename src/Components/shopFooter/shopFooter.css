@@ -90,6 +90,7 @@ i.footer-icons {
 
 
 @media (max-width: 576px) {
+
     .shop-foot {
         font-size: 1.9rem !important;
     }
@@ -113,10 +114,6 @@ i.footer-icons {
 
     .logo-text-cr {
         font-size: 0.6rem;
-    }
-
-    .footer-nav  {
-        margin-left: 2rem !important;
     }
 
     h5.title {
@@ -152,7 +149,6 @@ i.footer-icons {
     }
 
     .image-bordo {
-        width: 140px !important;
         float: right;
         margin-bottom: 25px;
     }

@@ -56,7 +56,7 @@ class Item extends React.Component {
                         className='img-fluid w-100 prod-img'
                         alt=''>
                     </MDBCardImage>
-                    <MDBCardBody className='w-responsive w-100 m-0 p-0 '>
+                    <MDBCardBody className='w-responsive w-100 m-0 p-0 h-100 product-card-body'>
                         <p className='prod-name text-left font-weight-bold pl-0 pb-0 mb-1 w-100'>{title}</p>
                         <p className='text-left prod-describe black-text m-0 mb-1'>{descr}</p>
                         <div className='w-100'>

@@ -20,15 +20,15 @@
 @media (max-width: 576px) {
     .shop-bg-nav {
         background-color: #21001c !important;
-        height: 123px;
+        height: 75px;
     }
 
     .logo-flower {
-        width: 70px;
+        width: 40px;
     }
 
     .logo-bordo {
-        width: 180px;
+        width: 120px;
     }
 
     .btn-search {
@@ -43,6 +43,34 @@
         color: black;
     }
 
+    .nav-block {
+        width: 100px;
+    }
+
+    i.fa-search.search-icon {
+        font-size: 15px!important;
+    }
+
+    .bin-img {
+        width: 25px !important;
+    }
+
+    i.fa-heart.heart-icon {
+        font-size: 17px!important;
+        padding-right: 0px !important;
+    }
+
+    i.fa-user-circle {
+        padding-right: 6px !important;
+    }
+
+    i.fa-instagram {
+        font-size: 15px!important;
+    }
+
+    i.fa-envelope {
+        font-size: 15px!important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {

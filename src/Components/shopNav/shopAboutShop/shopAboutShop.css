@@ -3,7 +3,13 @@
 }
 
 @media (max-width: 576px) {
+    .about-shop-content {
+        height: 10% !important;
+    }
 
+    .about-shop-content-quality {
+        height: 10% !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {

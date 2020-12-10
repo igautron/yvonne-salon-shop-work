@@ -3,7 +3,7 @@ import {Component} from 'react';
 import './shopProducts.css'
 import ShopFilter from './shopFilter'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom';
-import {MDBNav, MDBContainer, MDBIcon, MDBBtn, MDBCollapse} from 'mdbreact';
+import {MDBNav, MDBContainer, MDBIcon, MDBBtn, MDBCollapse, MDBHamburgerToggler} from 'mdbreact';
 
 import {
     MDBRow,
@@ -238,7 +238,7 @@ class ShopProducts extends Component  {
 
                 {/*filters*/}
 
-             <div className='container pl-1 pr-3 pl-sm-2 pl-md-2 pl-xl-1 pl-lg-1 pr-sm-2 pr-md-2 pr-xl-1 pr-lg-1'>
+             <div className='container'>
                 <div id='display-products-big-size'>
                    <div className='shop-filters-block w-responsive w-100 pt-3 pb-5 clearfix mt-5'>
                         <ShopFilter
@@ -313,18 +313,14 @@ class ShopProducts extends Component  {
                  </div>
 
                      {/*small-display */}
-
+                 <MDBHamburgerToggler color="black" id="hamburger1"  className='mx-3 left-side-toggle collapse-button' onClick={this.toggleCollapse('navbarCollapse1')} />
                  <MDBCollapse
                      id='navbarCollapse1'
                      isOpen={this.state.collapseID}
                      navbar
                      className='shop-nav-navbar'
-                     id='display-products-small-size'
                  >
-                         <div className='left-0 position-absolute ml-0 pl-0 bg-white shop-filters-block w-responsive w-50 pt-3 pb-5 clearfix mt-5 '>
-                                <button className='left-side-toggle h-25 collapse-button'>
-                                    <MDBIcon icon="bars" size="5x" />
-                                </button>
+                         <div className='left-0 position-absolute bg-white shop-filters-block w-responsive pt-0 pb-5'>
                                 <ShopFilter
                                             setFilterTypes={this.setFilterTypes}
                                             setFilterBrands={this.setFilterBrands}
@@ -341,21 +337,21 @@ class ShopProducts extends Component  {
 
                          </MDBCollapse>
                             {/*products list*/}
-                            <div className='z-index-5 shop-items pt-5 mt-3 right w-75 bg-white  d-none'>
-                                <div className='shop-items-md bg-white m-0 justify-content-center'>
-                                    <h4 className='text-center p-4 font-weight-bold'>Товари</h4>
+                            <div className='z-index-5 shop-items pt-0 m-auto justify-content-center w-100 bg-white  d-none'>
+                                <div className='shop-items-md bg-white '>
+                                    <h4 className='text-center px-4 py-1 font-weight-bold'>Товари</h4>
                                     <p className='shop-items-text grey-text text-center w-responsive mx-auto mb-5'>
                                         В нашому магазині представлений широкий вибір професійної косметики для волосся: шампуні для домашнього догляду та для професіного використання.
                                     </p>
                                     <MDBRow className='p-0 m-2 ml-0 border-0 products'>
                                         {this.state.products.map((product) => (
-                                            <MDBCol key={product.id} lg='6' md='6' xl='4' className='pb-5 p-2 m-0 float-left'>
+                                            <MDBCol key={product.id} lg='6' md='6' xl='4' className='col-6 pb-5 p-2 m-0 float-left product-card h-100'>
                                                 <Item product={product}/>
                                             </MDBCol>
                                         ))}
                                     </MDBRow>
                                 </div>
-                                <MDBPagination color='purple'>
+                                <MDBPagination color='purple' className='h-100'>
                                     <MDBPageItem disabled>
                                         <MDBPageNav aria-label='Previous'>
                                             <span aria-hidden='true'>&laquo;</span>

@@ -272,16 +272,16 @@ class ShopNav extends Component  {
                                 >
                                     <MDBNavbarNav left className='d-block'>
                                         <MDBNavItem active>
-                                            <MDBNavLink to='/' exact className='pl-3 p-2 font-weight-normal text-white tgl-item'>Головна</MDBNavLink>
+                                            <MDBNavLink onClick={this.toggleCollapse('navbarCollapse1')} to='/' exact className='pl-3 p-2 font-weight-normal text-white tgl-item'>Головна</MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
-                                            <MDBNavLink to='/shopAboutShop' className='pl-3 p-2 font-weight-normal text-white tgl-item'>Про магазин</MDBNavLink>
+                                            <MDBNavLink onClick={this.toggleCollapse('navbarCollapse1')} to='/shopAboutShop' className='pl-3 p-2 font-weight-normal text-white tgl-item'>Про магазин</MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
-                                            <MDBNavLink to='/shopContacts' className='pl-3 p-2 font-weight-normal text-white tgl-item'>Контакти</MDBNavLink>
+                                            <MDBNavLink onClick={this.toggleCollapse('navbarCollapse1')} to='/shopContacts' className='pl-3 p-2 font-weight-normal text-white tgl-item'>Контакти</MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
-                                            <MDBNavLink to='#!' className='pl-3 p-2 font-weight-normal text-white tgl-item'>До салону краси</MDBNavLink>
+                                            <MDBNavLink onClick={this.toggleCollapse('navbarCollapse1')} to='#!' className='pl-3 p-2 font-weight-normal text-white tgl-item'>До салону краси</MDBNavLink>
                                         </MDBNavItem>
                                     </MDBNavbarNav>
                                 </MDBCollapse>

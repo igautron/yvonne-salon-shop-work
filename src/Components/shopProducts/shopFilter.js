@@ -539,7 +539,7 @@ class ShopFilter extends Component  {
     render() {
         return (
     <div className='shop-filters h-100  left w-25 w-responsive ml-2'>
-        <h5 className='font-weight-bold pt-2 pt-md-4 pl-5 pb-4' >Фільтри</h5>
+        <h5 className='font-weight-bold pt-2 pt-md-4 pl-5 pb-4 ml-sm-0 ml-3' >Фільтри</h5>
         <div className='shop-filters-prod filter filter-basic'>
             <div className='mb-4 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5'>
                 <p className='m-2 mb-3 font-weight-bold'>ВИД ПРОДУКЦІЇ</p>

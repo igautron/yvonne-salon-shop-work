@@ -33,7 +33,7 @@ class ShopContacts extends Component {
         return (
             <div>
                 <div className='container'>
-                    <h1 className='h1-responsive font-weight-bolder m-0 pt-5 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-5 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>КОНТАКТИ</h1>
+                    <h1 className='h1-responsive font-weight-bolder m-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-4 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>КОНТАКТИ</h1>
                     <h2 className='h2-responsive text-info-h1 text-left font-weight-bold  mb-0 pt-2 pl-3 py-xl-1 py-lg-2 py-md-2 py-sm-2 py-1 px-md-0 pl-sm-4'>ІНТЕРНЕТ
                         МАГАЗИН <span className='font-weight-bold h2-span purple-text'>ЗАСОБІВ ДОГЛЯДУ ЗА ВОЛОССЯМ</span></h2>
                     <h4 className='h4-responsive text-info-h4 text-left font-weight-bold m-0  pl-3 py-xl-3 py-lg-2 py-md-2 pb-sm-4 py-1 px-md-0 px-sm-4'>МИТТЄВА ДОСТАВКА

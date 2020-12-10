@@ -216,6 +216,11 @@
 
 
 
+#nav-icon1 {
+    transform: translateY(65px);
+    z-index: 500;
+}
+
 
 @media (max-width: 576px) {
 
@@ -230,7 +235,7 @@
 
 
     span.shop-prod-item {
-        font-size: 0.5rem !important;
+        font-size: 0.1rem !important;
     }
 
     .dd-text {
@@ -238,7 +243,7 @@
     }
 
     .shop-filters, .shop-filters-prod {
-        width: 180px !important;
+        width: 210px !important;
     }
 
     /*filters*/
@@ -316,11 +321,10 @@
     }
 
     .shop-filters {
-        width: 150px !important;
+        width: 180px !important;
     }
 
     .shop-items {
-        width: 370px !important;
         padding-right: 0px !important;
     }
 
@@ -356,9 +360,7 @@
         font-size:  0.8rem;
     }
 
-    .prod-img {
-        height: 339px;
-    }
+
 
     .shop-items {
        display: block !important;
@@ -368,7 +370,7 @@
         position: absolute;
         height: 35px !important;
         width: 35px !important;
-        transform: translateY(-17px);
+        transform: translateY(40px) !important;
         outline: none;
 
     }
@@ -378,9 +380,41 @@
     }
 
     .shop-filters-block {
+        width: 200px;
         background-color: #e8e8e8 !important;
         z-index: 10;
     }
+
+    .card-body.product-card-body {
+      height: 300px!important;
+    }
+
+    .top-filter-btn {
+        padding: 10px 3px !important;
+        height: 50px !important;
+    }
+
+    .dd-text {
+        height: 55px !important;
+    }
+
+    .col-filter-top {
+        height: 55px !important;
+    }
+
+    .collapse-button {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    #nav-icon1 span:nth-child(2) {
+        top: 13px;
+    }
+
+    #nav-icon1 span:nth-child(3) {
+        top: 21px;
+    }
+
 
 }
 
@@ -466,8 +500,8 @@
         height: 3.5rem;
     }
 
-    .prod-describe {
-        height: 4.5rem;
+    p.prod-describe {
+        height: 4.5rem !important;
     }
 
 
@@ -536,6 +570,10 @@
 
     .shop-item-name {
         font-size: 1.2rem !important;
+    }
+
+    .prod-describe {
+        height: 4.5rem !important;
     }
 
 }

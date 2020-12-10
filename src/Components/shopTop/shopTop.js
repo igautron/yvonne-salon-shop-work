@@ -92,7 +92,7 @@ class ShopTop extends Component {
                 <div className='container m-auto justify-content-center px-2 '>
                     <div className='w-100 d-block h-100'>
 
-                        <div className='float-left py-4'>
+                        <div className='float-left py-3 py-sm-4'>
                                 <img
                                     className='logo-flower'
                                     src={require('../../img/slider/IMGBIN_pink-flowers-pink-flowers-watercolor-painting-png_STw63vwG.png')}
@@ -104,8 +104,8 @@ class ShopTop extends Component {
                                     alt='fl1'
                                 />
                         </div>
-                        <div className='float-right pt-4 pt-sm-0 pt-md-4 pb-1'>
-                            <div className='nav-block py-3'>
+                        <div className='float-right py-1 pt-sm-0 pt-md-4 pb-1'>
+                            <div className='nav-block pt-3 pb-2'>
 
                 {/*search*/}
                                 <button onClick={this.searchHandleToggle}

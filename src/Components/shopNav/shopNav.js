@@ -138,7 +138,7 @@ class ShopNav extends Component  {
         if (user) { // если пользователь авторизован
             return (
                 <React.Fragment>{/*  */}
-                    <ul className="profile-menu p-0">
+                    <ul className="profile-menu">
                         <li><NavLink to="/shopAccount">Профіль</NavLink></li>
                         <li><NavLink to="/myOrders">Замовлення</NavLink></li>
                         <li><NavLink to="/thatLike">Сподобалось</NavLink></li>
@@ -162,7 +162,7 @@ class ShopNav extends Component  {
                 </React.Fragment>
             )
         }
-}
+    }
 
 
 
@@ -220,7 +220,7 @@ class ShopNav extends Component  {
                                             <MDBIcon far icon='envelope' className='white-ic'/>
                                         </Link>
                                     </MDBNavItem>
-                                    <div className='w-100'>
+                                    <div className='w-100 profile-icon'>
                                         <div className='profile-menu-block'>
                                             <button onClick={this.loginModalToggle} className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
                                                 <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>

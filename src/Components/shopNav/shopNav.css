@@ -1,3 +1,14 @@
+.profile-menu-info{
+    display: none;
+}
+.profile-menu{
+    background: #fff;
+    padding: 10px 15px;
+}
+.profile-icon:hover .profile-menu-info{
+    display: block;
+}
+
 .shop-nav-first {
     height: 56px !important;
 }

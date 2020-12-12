@@ -141,12 +141,12 @@ class ShopTop extends Component {
                                         </MDBBtn>
                                     </MDBModalHeader>
                                     <MDBModalBody className='border-0 h-100 modal-body px-4 mx-md-5 mx-sm-5 py-sm-5 py-3'>
-                                        <ShopBin/>
+                                        <ShopBin appState={this.props.appState} setUserData={this.props.setUserData}/>
                                     </MDBModalBody>
                                     <MDBModalFooter className='mx-0 mx-sm-5 p-0'>
                                         <MDBCol className='my-2 text-left order-price w-auto pr-0 w-100'><span
                                             className='font-weight-small font-smaller'>Разом до сплати:  <span
-                                            className='font-weight-small'>  1564</span> грн</span></MDBCol>
+                                            className='font-weight-small'>{this.props.appState.cart.total_price}</span> грн</span></MDBCol>
                                         <div className='w-100 d-inline-flex flex-wrap m-0 justify-content-center'>
                                             <MDBBtn color="secondary" className='mb-2 mb-sm-0 mb-md-5 btn-pay'
                                                     onClick={this.cartModalToggle}>ЗАКРИТИ</MDBBtn>

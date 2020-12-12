@@ -19,7 +19,7 @@
 }
 
 div.modal-dialog.modal-autorization {
-    width: 350px !important;
+    width: 400px !important;
     margin: 0;
     justify-content: center;
     display: block;
@@ -151,13 +151,17 @@ input.input-search {
 
 
 
-.profile-menu:hover {
+.profile-menu-block:hover .profile-menu{
     display: block !important;
     color: #fff;
     position: absolute !important;
     background: purple;
     padding: 10px;
 }
+
+/*.profile-menu {*/
+/*  display: none;*/
+/*}*/
 
 
 @media (max-width: 576px) {
@@ -294,7 +298,7 @@ input.input-search {
 
 
     .btn-x {
-        transform: translate(115px, -6px) !important;
+        transform: translate(50px, -10px) !important;
         background-color: transparent !important;
         color: black;
         width: 35px !important;
@@ -307,6 +311,26 @@ input.input-search {
         color: black;
         width: 35px !important;
         height: 45px;
+    }
+
+    .modal-content {
+        max-width: 350px !important;
+    }
+
+    div.modal-dialog {
+        width: 300px !important;
+        display: block !important;
+    }
+
+    div.modal-dialog.modal-autorization {
+        width: 300px !important;
+        justify-content: center;
+        display: block;
+
+    }
+
+    .modal-autorization .modal-content {
+        width: 300px !important;
     }
 
 }
@@ -417,15 +441,16 @@ input.input-search {
         height: 45px;
     }
 
-
-
-    .modal-dialog {
-        max-width: 550px !important;
+    .btn-x {
+        transform: translate(130px, -10px) !important;
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 35px;
     }
 
-    .modal-bin .modal-content {
-        width: 550px !important;
-    }
+
+
 }
 
 
@@ -463,6 +488,7 @@ input.input-search {
 
 
     #navbarCollapse1 {
+        background-color: #a372a9 !important;
         z-index: 100;
 
     }
@@ -506,6 +532,10 @@ input.input-search {
     input.input-search {
         width: 400px !important;
         height: 35px !important;
+    }
+
+    .btn-circle {
+        font-size: 20px;
     }
 
 }

@@ -79,7 +79,7 @@ class ShopRegistration extends Component  {
             <div>
                 <div className='container registration z-index-0'>
                     <div className='card z-depth-0'>
-                        <form className="text-center px-5 py-4 my-2" action="#!">
+                        <form className="text-center px-sm-5 px-3 py-4 my-2" action="#!">
                             <ul className="errors-list">
                             {this.state.errors.map((error) => (
                                 <li style={{color:'red'}}>{error}</li>

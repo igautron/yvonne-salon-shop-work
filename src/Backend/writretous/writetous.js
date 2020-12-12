@@ -71,18 +71,17 @@ class Contactform extends React.Component {
             <div>
                 <div className='container  justify-content-center m-auto pb-5 contacts'>
                     <div className='price w-100 m-auto justify-content-center'>
-                        <h1 className='h1-responsive py-5 m-0 font-weight-normal text-center'>ФОРМА ЗВ'ЯЗКУ</h1>
-                        <MDBCard className='p-3 m-auto justify-content-center contact-card'>
-                            <MDBRow className='pt-0'>
+                        <h4 className='h4-responsive text-center font-weight-bolder m-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-4 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>ФОРМА ЗВ'ЯЗКУ</h4>
+                        <div className='p-2 m-auto justify-content-center contact-card z-depth-3'>
                                 <div lg="12" className='w-100'>
-                                    <MDBCardBody className="form">
-                                        <p className='text-center contact-text'>
+                                    <MDBCardBody className="p-0 p-sm-2 w-100">
+                                        <p className='text-center contact-text pt-3'>
                                             <MDBIcon icon="envelope" className="pr-2 pt-3" />
                                             Напишіть нам:
                                         </p>
                                         <p className='px-3' style={{color:'green'}}>{this.state.alert}</p>
                                         <div className='d-inline-flex w-100'>
-                                            <div className='w-50 h-100 col-contact px-3 m-0'>
+                                            <div className='w-50 h-100 col-contact pl-3 px-sm-3 m-0'>
                                                 <div className="mb-0 h-100 m-0">
                                                     <MDBInput
                                                         type="text"
@@ -95,8 +94,8 @@ class Contactform extends React.Component {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className='w-50 h-100 col-contact px-3'>
-                                                <div className="mb-0 h-100 m-0">
+                                            <div className='w-50 h-100 col-contact pl-0 px-sm-3'>
+                                                <div className="mb-0 h-100 mr-0">
                                                     <MDBInput
                                                         type="text"
                                                         id="form-contact-email"
@@ -104,12 +103,13 @@ class Contactform extends React.Component {
                                                         name='email'
                                                         value={this.state.form.email}
                                                         onChange={this.changeInputHandler}
+                                                        className='m-0'
                                                     />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className='d-inline-flex w-100 mb-4'>
-                                            <div className='w-50 h-100 col-contact px-3'>
+                                            <div className='w-50 h-100 col-contact pl-3 px-sm-3'>
                                                 <div className=" mb-0 mt-2">
                                                     <MDBInput
                                                         type="text"
@@ -121,7 +121,7 @@ class Contactform extends React.Component {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className='w-50 h-100 col-contact px-3'>
+                                            <div className='w-50 h-100 col-contact pl-0 px-sm-3'>
                                                 <div className="md-form mb-0 mt-2 ">
                                                     <MDBInput
                                                         type="text"
@@ -134,7 +134,7 @@ class Contactform extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='px-3 mb-5 h-100 col-contact'>
+                                        <div className='px-3 mb-2 mb-sm-5 h-100 col-contact'>
                                             <div md="12">
                                                 <div className="md-form m-0">
                                                     <MDBInput
@@ -148,13 +148,12 @@ class Contactform extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <MDBBtn onClick={this.formSubmit} rounded color="purple" className='mb-3 justify-content-center m-auto d-block'>
+                                        <MDBBtn onClick={this.formSubmit} rounded color="purple" className='mb-3 justify-content-center m-auto d-block '>
                                              Надіслати
                                         </MDBBtn>
                                     </MDBCardBody>
                                 </div>
-                            </MDBRow>
-                        </MDBCard>
+                        </div>
                     </div>
                 </div>
             </div>

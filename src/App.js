@@ -81,6 +81,12 @@ class App extends Component  {
                     <Route path='/myOrders'>
                         <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="2" />
                     </Route>
+                    <Route path='/thatLike'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="3" />
+                    </Route>
+                    <Route path='/haveSeen'>
+                        <ShopAccount appState={this.state} setUserData={this.setUserData} tabIndex="4" />
+                    </Route>
                     <Route path='/shopContacts'>
                         <ShopContacts />
                     </Route>

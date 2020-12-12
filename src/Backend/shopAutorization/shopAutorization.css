@@ -74,4 +74,17 @@ input.form-reg {
     .form-text {
         font-size: 0.8rem !important;
     }
+
+    input.form-control.form-reg {
+        width: 250px !important;
+        height: 35px !important;
+    }
+
+    .btn-aut {
+        transform: translate(30px, -8px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 35px;
+    }
 }

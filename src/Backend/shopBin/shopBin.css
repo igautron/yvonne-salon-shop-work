@@ -114,45 +114,14 @@ h4.modal-title {
         font-size: 30px;
         color: lightgrey;
     }
+
+    .btn-pay {
+        width: 400px !important;
+    }
 }
 
 
-@media (max-width: 576px) {
 
-
-    i.fa-search, .bin-img {
-        font-size: 20px !important;
-        width: 30px !important;
-    }
-
-    .button-close {
-        padding-left: 22px !important;
-    }
-
-    .col-bin {
-        width: 10px;
-    }
-
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-
-
-    i.fa-search, .bin-img {
-        font-size: 20px !important;
-        width: 30px !important;
-    }
-
-    .button-close {
-        padding-left: 21px !important;
-    }
-
-    .col-bin {
-        width: 10px;
-    }
-
-
-}
 
 
 @media (min-width: 768px) and (max-width: 991px) {

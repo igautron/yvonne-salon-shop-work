@@ -96,7 +96,7 @@ class ShopAccount extends Component {
             return response.json();
         }).then((data) => {
             if (data.success && data.success === 'ok') {
-                this.setState({alertTab1: 'Данные успешно сохранены'})
+                this.setState({alertTab1: 'Дані збережено'})
                 localStorage.setItem('user', JSON.stringify(data.user)); // объект user преобразовуем в строку (JSON.stringify)
             }else{
                 this.setState({alertTab1: 'Error!'})
@@ -110,7 +110,7 @@ class ShopAccount extends Component {
         if (!user) {
             return (
                 <React.Fragment>
-                    <h1>Вы не авторизованы!</h1>
+                    <h1>Ви не авторизовані!</h1>
                     <div style={{'max-width':'350px',margin:'auto'}}>
                         <ShopAutorization changeModalBody={()=>{}}
                                      loginModalToggle={()=>{}}
@@ -191,8 +191,8 @@ class ShopAccount extends Component {
                                             <p></p>
                                             <p></p>
                                         </div>
-                                        <div>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2'>Сохранить</button>
+                                        <div className='col-2'>
+                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Сохранить</button>
                                         </div>
                                     </div>
                                 </div>
@@ -211,8 +211,8 @@ class ShopAccount extends Component {
                                             <p></p>
                                             <p></p>
                                         </div>
-                                        <div>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2'>Зберегти</button>
+                                        <div className='col-2'>
+                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -231,8 +231,8 @@ class ShopAccount extends Component {
                                             <p>Будинок</p>
                                             <p><input onChange={this.changeInputHandler} name="house" value={user.house}/></p>
                                         </div>
-                                        <div>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2'>Зберегти</button>
+                                        <div className='col-2'>
+                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -252,8 +252,8 @@ class ShopAccount extends Component {
                                             <p>Подтверждение нового пароля</p>
                                             <p><input type="password" onChange={this.changePasswordInputHandler} name="confirm" value={this.state.passwordInputs.confirm}/></p>
                                         </div>
-                                        <div>
-                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2'>Змінити пароль</button>
+                                        <div className='col-2'>
+                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2 py-2'>Змінити пароль</button>
                                         </div>
                                     </div>
                                 </div>

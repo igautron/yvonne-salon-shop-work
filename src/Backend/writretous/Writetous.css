@@ -23,12 +23,23 @@
     height: 50px !important;
 }
 
+.contact-text {
+    font-size: 1.2rem !important;
+}
+
 
 @media (max-width: 576px) {
     .contact-card {
-        height: 500px !important;
-        width: 410px !important;
+        height: 470px !important;
+        width: 310px !important;
+        border-radius: 5px;
     }
+
+    #form-contact-name, #form-contact-email, #form-contact-phone, #form-contact-company {
+        width: 120px !important;
+    }
+
+
 }
 
 
@@ -36,7 +47,11 @@
 @media (min-width: 576px) and (max-width: 768px) {
     .contact-card {
         height: 500px !important;
-        width: 500px !important;
+        width: 550px !important;
+    }
+
+    #form-contact-name, #form-contact-email, #form-contact-phone, #form-contact-company {
+        width: 220px !important;
     }
 
 }

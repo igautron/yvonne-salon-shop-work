@@ -71,15 +71,38 @@
     i.fa-envelope {
         font-size: 15px!important;
     }
+
+    .btn-s {
+        transform: translate(25px, -8px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px !important;
+        height: 45px;
+    }
+
+    .modal-content {
+        max-width: 350px !important;
+    }
+
+    div.modal-dialog {
+        width: 300px !important;
+        display: block !important;
+    }
+
+    div.modal-dialog.modal-bin {
+        width: 300px !important;
+        justify-content: center;
+        display: block;
+
+    }
+
+    .modal-bin .modal-content {
+        width: 300px !important;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .btn-search {
-        transform: translate(465px, -10px);
-        background-color: transparent !important;
-        color: black;
-        width: 35px;
-    }
 
     .shop-bg-nav {
         background-color: #21001c !important;
@@ -92,6 +115,29 @@
 
     .logo-bordo {
         width: 200px;
+    }
+
+    .btn-search {
+        transform: translate(580px, -10px);
+        background-color: transparent !important;
+        color: black;
+        width: 35px;
+    }
+
+    div.modal-dialog {
+        width: 550px !important;
+        display: block !important;
+    }
+
+    div.modal-dialog.modal-bin {
+        width: 550px !important;
+        justify-content: center;
+        display: block;
+
+    }
+
+    .modal-bin .modal-content {
+        width: 550px !important;
     }
 }
 

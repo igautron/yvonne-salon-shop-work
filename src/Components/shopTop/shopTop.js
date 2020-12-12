@@ -118,8 +118,8 @@ class ShopTop extends Component {
                                                  color="secondary" onClick={this.searchHandleToggle}><i className="fas fa-times mr-2"></i>
                                         </MDBBtn>
                                         <form
-                                            className="bg-transparent form-inline d-inline-flex form-search  p-0 m-0 my-5 justify-content-center w-100">
-                                            <input className="bg-transparent form-control form-control-sm ml-3 w-75 input-search"
+                                            className="bg-transparent form-inline d-inline-flex form-search  p-0 m-0 my-2 justify-content-center w-100">
+                                            <input className="bg-transparent form-control form-control-sm w-75 input-search"
                                                    type="text"
                                                    placeholder="Search"
                                                    aria-label="Search"/>
@@ -135,20 +135,20 @@ class ShopTop extends Component {
                                 </button>
                                 <MDBModal isOpen={this.state.isCartModalOpened} toggle={this.cartModalToggle}
                                           className='pt-3 modal-bin mx-auto justify-content-center'>
-                                    <MDBModalHeader className='text-center justify-content-center my-3'>Корзина
+                                    <MDBModalHeader className='text-center justify-content-center my-0 my-sm-3'>Корзина
                                         <MDBBtn className='btn-x m-2 p-2 border-0   z-depth-0 position-absolute'
                                                 color="secondary" onClick={this.cartModalToggle}><i className="fas fa-times mr-2"></i>
                                         </MDBBtn>
                                     </MDBModalHeader>
-                                    <MDBModalBody className='h-100 modal-body px-4 mx-md-5 py-5'>
+                                    <MDBModalBody className='border-0 h-100 modal-body px-4 mx-md-5 mx-sm-5 py-sm-5 py-3'>
                                         <ShopBin/>
                                     </MDBModalBody>
-                                    <MDBModalFooter className='mx-4'>
+                                    <MDBModalFooter className='mx-0 mx-sm-5 p-0'>
                                         <MDBCol className='my-2 text-left order-price w-auto pr-0 w-100'><span
                                             className='font-weight-small font-smaller'>Разом до сплати:  <span
                                             className='font-weight-small'>  1564</span> грн</span></MDBCol>
-                                        <div className='w-100 d-inline-flex m-0 justify-content-center'>
-                                            <MDBBtn color="secondary" className='mb-5'
+                                        <div className='w-100 d-inline-flex flex-wrap m-0 justify-content-center'>
+                                            <MDBBtn color="secondary" className='mb-2 mb-sm-0 mb-md-5 btn-pay'
                                                     onClick={this.cartModalToggle}>ЗАКРИТИ</MDBBtn>
                                             <MDBBtn color="primary" className='btn-pay mb-5'>ОФОРМИТИ
                                                 ЗАМОВЛЕННЯ</MDBBtn>
@@ -163,17 +163,17 @@ class ShopTop extends Component {
                                 </button>
                                 <MDBModal isOpen={this.state.isCartLikeModalOpened} toggle={this.cartLikeModalToggle}
                                           className='pt-3 mx-auto justify-content-center'>
-                                    <MDBModalHeader className='text-center my-3 justify-content-center'>Сподобалось
+                                    <MDBModalHeader className='text-center my-0 my-sm-3 justify-content-center'>Сподобалось
                                         <MDBBtn className='btn-s m-2 p-2 border-0 z-depth-0 position-absolute'
                                                 color="secondary" onClick={this.cartLikeModalToggle}><i
                                             className="fas fa-times mr-2"></i></MDBBtn>
                                     </MDBModalHeader>
-                                    <MDBModalBody className='h-100 modal-body px-5 py-3'>
+                                    <MDBModalBody className='h-100 modal-body px-4 mx-md-5 mx-sm-5 py-sm-5 py-3'>
                                         <ShopLike/>
                                     </MDBModalBody>
-                                    <MDBModalFooter className='w-100'>
-                                        <div className='w-100 d-inline-flex m-0 justify-content-center'>
-                                            <MDBBtn color="secondary" className='mb-5'
+                                    <MDBModalFooter className='mx-0 mx-sm-5 p-0'>
+                                        <div className='w-100 d-inline-flex flex-wrap m-0 justify-content-center'>
+                                            <MDBBtn color="secondary" className='mb-2 mb-sm-0 mb-md-5 btn-pay'
                                                     onClick={this.cartLikeModalToggle}>ЗАКРИТИ</MDBBtn>
                                             <MDBBtn color="primary" className='btn-pay mb-5'>ОФОРМИТИ
                                                 ЗАМОВЛЕННЯ</MDBBtn>

@@ -22,7 +22,7 @@ class shopAboutShop extends Component {
         return (
             <div>
                 <div className='container'>
-                     <h1 className='h1-responsive font-weight-bolder m-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-4 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>ПРО МАГАЗИН</h1>
+                    <h4 className='h4-responsive text-center font-weight-bolder m-0 py-md-5 py-sm-5 py-4 py-xl-5 py-lg-5'>ПРО МАГАЗИН</h4>
                            <MDBCard className='mb-xl-5 mb-lg-4 mb-md-4 mb-sm-3 mb-2 border-0 z-index-0'>
                                 <MDBRow className='m-0 py-xl-5 py-lg-0 py-md-0 py-sm-0 py-0'>
                                        <MDBCol lg='5' className='text-center text-lg-left'>
@@ -68,10 +68,10 @@ class shopAboutShop extends Component {
                                         </MDBCol>
                                         <MDBCol lg='7' className='h-100'>
                                             <MDBRow
-                                                    className='p-3 mb-0 about-shop-content pt-0 border-0 z-index-0'
+                                                    className='px-3 mb-0 about-shop-content pt-0 border-0 z-index-0'
                                             >
                                                 <MDBCol xl='10' md='11' size='10' sm='12'  className='px-sm-4 px-0 py-0'>
-                                                    <h5 className='font-weight-bold mb-3'>Асортимент</h5>
+                                                    <h5 className='font-weight-bold mb-3 pt-3'>Асортимент</h5>
                                                     <p className='black-text'>
                                                         Інтернет магазин YVONNE пропонує широкий асортимент продукції для догляду за волоссям та аксесуарами. Існує можливість замовити будь-який товар, який не представлений серед асортименту продукції. Магазин співпрацює із такими марками, як:
                                                         Choice, FarmaVita, ProfiStyle, Mirella, Davines, Joico, Schwarzkopf
@@ -79,7 +79,7 @@ class shopAboutShop extends Component {
                                                 </MDBCol>
                                             </MDBRow>
                                             <MDBRow
-                                                className='p-3 mb-0 about-shop-content-quality pt-xl-4 pt-lg-4 pt-md-5 pt-sm-5 pt-0'
+                                                className='px-3 mb-0 about-shop-content-quality pt-xl-4 pt-lg-4 pt-md-5 pt-sm-5 pt-0'
                                             >
                                                 <MDBCol xl='10' md='11' size='10' sm='12'  className='px-sm-4 px-0 py-0 w-100'>
                                                     <h5 className='font-weight-bold mb-3'>Якість та послуги</h5>
@@ -98,7 +98,7 @@ class shopAboutShop extends Component {
                                         </MDBCol>
                                </MDBRow>
                                <MDBRow
-                                   className='mb-0 about-shop-content  pt-3 p-3'
+                                   className='mb-0 about-shop-content  pt-0 px-3'
                                >
                                    <MDBCol xl='12' md='12' size='12' sm='12'  className='px-sm-4 px-0 px-3'>
                                        <h5 className='font-weight-bold mb-3'>Замовлення</h5>
@@ -111,17 +111,17 @@ class shopAboutShop extends Component {
                                                <a href="#!"><span className='w-75 font-small purple-text font-weight-bold'>ЗАТЕЛЕФОНУЙТЕ НАМ!</span></a>
                                            </li>
                                            <li className="list-unstyled">
-                                               <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 073 500 55 33</span></a>
+                                               <a href="tel:+380735005533"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 073 500 55 33</span></a>
                                            </li>
                                            <li className="list-unstyled">
-                                               <a href="#!"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 098 500 55 33</span></a>
+                                               <a href="tel:+380985005533"><MDBIcon icon="phone-alt" className="green-text pr-3"/><span className='green-text w-75 font-small'>+38 098 500 55 33</span></a>
                                            </li>
                                        </p>
                                    </MDBCol>
                                </MDBRow>
                                <div className="mdb-lightbox no-margin mb-lg-5 mb-xl-5 mb-md-5 mb-sm-2 mb-1 mx-2 pt-3">
                                    <h5 className='font-weight-bold text-center w-100'>Наш салон-магазин YVONNE</h5>
-                                   <MDBRow>
+                                   <MDBRow className='pt-3 pt-sm-5'>
                                        <MDBCol md="4">
 
                                            <figure>
@@ -241,23 +241,6 @@ class shopAboutShop extends Component {
 }
 
 export default shopAboutShop;
-
-
-
-// import React from 'react';
-// import {Component} from 'react';
-// import {BrowserRouter as Router} from 'react-router-dom';
-//
-//
-// class ShopContacts extends Component {
-//     render() {
-//         return(
-//             <p>hi</p>
-//         )
-//     }
-// }
-//
-// export default ShopContacts;
 
 
 

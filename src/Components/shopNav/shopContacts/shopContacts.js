@@ -26,53 +26,60 @@ class ShopContacts extends Component {
     };
 
 
-
-
-
     render() {
         return (
             <div>
                 <div className='container'>
-                    <h1 className='h1-responsive font-weight-bolder m-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pt-4 pb-4 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4'>КОНТАКТИ</h1>
-                    <MDBCard className='border-0 laptop-v-block d-block'>
-                        <div className="text-center h-100 black-text p-3">
+                    <h4 className='h4-responsive text-center font-weight-bolder m-0 py-md-5 py-sm-5 py-4 py-xl-5 py-lg-5'>КОНТАКТИ</h4>
+                    <MDBCard className='border-0 laptop-v-block d-block m-0'>
+                        <div className="text-center h-100 black-text px-3">
                             <ul className="text-lg-left list-unstyled ml-0">
                                 <li>
                                     <p className="text-center contact-text">
-                                        <MDBIcon icon="map-marker-alt" className="pr-3"/>
-                                        м. Київ, вулиця Данченко 32,
-                                        (вхід з двору)
+                                        <a href='https://goo.gl/maps/bzk1W5AZCec4QVR89' className='black-ic'>
+                                            <MDBIcon icon="map-marker-alt" className="pr-3"/>
+                                            м. Київ, вулиця Данченко 32,
+                                            (вхід з двору)
+                                        </a>
                                     </p>
                                 </li>
                                 <li>
                                     <p className="text-center contact-text">
-                                        <MDBIcon icon="clock" className="pr-3"/>
-                                        Графік роботи: 09:00-20:00 (без вихідних)
+                                        <a href='#' className='black-ic'>
+                                            <MDBIcon icon="clock" className="pr-3"/>
+                                            Графік роботи: 09:00-20:00 (без вихідних)
+                                        </a>
                                     </p>
                                 </li>
                                 <li>
-                                    <p className="text-center contact-text">
-                                        <MDBIcon icon="phone" className="pr-3"/>
-                                        +38 073 500 55 33
+                                    <p href='#' className="text-center contact-text" >
+                                        <a href='tel:+380735005533' className='black-ic'>
+                                            <MDBIcon icon="phone" className="pr-3"/>
+                                            +38 073 500 55 33
+                                        </a>
                                     </p>
                                 </li>
                                 <li>
-                                    <p className="text-center contact-text">
-                                        <MDBIcon icon="phone" className="pr-3"/>
-                                        +38 098 500 55 33
+                                    <p className="text-center contact-text" >
+                                        <a href='tel:+380985005533' className='black-ic'>
+                                            <MDBIcon icon="phone" className="pr-3"/>
+                                            +38 098 500 55 33
+                                        </a>
                                     </p>
                                 </li>
                                 <li className='text-center justify-content-center'>
-                                    <a href='https://www.instagram.com/yvonnemultibrands/' className="contact-text text-center justify-content-center">
-                                        <MDBIcon fab icon="instagram" className='pr-3'/>
-                                        yvonnemultibrands
-                                    </a>
+                                    <p  className="contact-text text-center justify-content-center">
+                                        <a href='https://www.instagram.com/yvonnemultibrands/' className='black-ic'>
+                                            <MDBIcon fab icon="instagram" className='pr-3'/>
+                                            yvonnemultibrands
+                                        </a>
+                                    </p>
                                 </li>
                             </ul>
                             <hr className="hr-light my-2 mt-0 mb-0 p-0"/>
                         </div>
                     </MDBCard>
-                    <MDBCard className='border-0 contact-map d-block mb-5'>
+                    <MDBCard className='border-0 contact-map d-block mb-sm-5'>
                         <MDBCol className='col-12 m-0 p-0 contact-map z-depth-2 '>
                             <div
                                 id='map-container'
@@ -95,12 +102,12 @@ class ShopContacts extends Component {
                 {/*mobile-version*/}
 
                 <div className='mobile d-none justify-content-center m-auto'>
-                    <MDBCard className='mobile-v-block m-3 m-sm-3 rounded'>
-                            <img src={require('../../../img/shop/slider11.jpg')} className="h-100 img-fluid m-0 p-0 w-100 position-absolute" alt="" />
+                    <MDBCard className='mobile-v-block mx-3 m-sm-3 rounded mb-3'>
+                            <img src={require('../../../img/shop/slider11.jpg')} className="img-fluid m-0 p-0 w-100 position-absolute" alt="" />
                             <MDBCol className='col-12 m-0 p-0 contact-info d-block position-relative'>
                                 <MDBView waves className='z-depth-3 h-100'>
                                     <div className="text-center h-100 black-text p-3">
-                                        <ul className="text-lg-left list-unstyled ml-0 my-3">
+                                        <ul className="text-lg-left list-unstyled ml-0 my-0">
                                             <li>
                                                 <p className="text-center contact-text mb-0">
                                                     <MDBIcon icon="map-marker-alt" className="pr-3"/>
@@ -144,7 +151,7 @@ class ShopContacts extends Component {
                                 <div
                                     id="map-container"
                                     className="rounded z-depth-1-half map-container"
-                                    style={{ height: '300px' }}
+                                    style={{ height: '280px' }}
                                 >
                                     <iframe
                                         width="100%"

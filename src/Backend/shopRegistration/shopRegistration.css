@@ -13,7 +13,7 @@
 }
 
 input.form-reg {
-    width: 285px !important;
+    width: 273px !important;
     height: 35px !important;
 }
 
@@ -37,4 +37,20 @@ input.form-aut {
     color: purple;
     border: 2px solid purple;
     background-color: transparent;
+}
+
+@media (max-width: 576px) {
+    input.form-aut {
+        width: 110px !important;
+        height: 35px !important;
+    }
+
+    input.form-reg {
+        width: 250px !important;
+        height: 35px !important;
+    }
+
+    .btn-reg {
+        width: 250px !important;
+    }
 }

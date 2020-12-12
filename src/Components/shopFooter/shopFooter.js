@@ -47,8 +47,8 @@ class ShopFooter extends Component  {
                                     <div className='w-100 pb-5 w-responsive'>
                                        <img className='image-bordo w-100 w-responsive' src={require('./../../img/catalogue/logo-bordo.png')}/>
                                     </div>
-                                    <p className="logo-text">Початкова краса - це те, як людина виглядає вранці, ледь встав з ліжка, тобто природно, але бездоганно.</p>
-                                    <p className="logo-text-cr pb-1 mb-0">Сьюзен Коллінз, "Голодні ігри"</p>
+                                    <p className="logo-text pr-1">Початкова краса - це те, як людина виглядає вранці, ледь встав з ліжка, тобто природно, але бездоганно.</p>
+                                    <p className="logo-text-cr pb-1 mb-0 pr-1">Сьюзен Коллінз, "Голодні ігри"</p>
                                 </MDBCol>
                                 <MDBCol sm="5" md="3" className='col-6 w-responsive p-md-0 p-sm-0 p-0 mb-5'>
                                     <h5 className="title pl-lg-5 pl-md-2 footer-nav pl-sm-2 pl-1 text-left pl-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Навігація</h5>
@@ -64,8 +64,8 @@ class ShopFooter extends Component  {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to='/shopCertification' className="w-100 list-unstyled pb-2 footer-nav">
-                                                <span>Сертифікація</span>
+                                            <Link to='/ShopJob' className="w-100 list-unstyled pb-2 footer-nav">
+                                                <span>Співпраця</span>
                                             </Link>
                                         </li>
                                         <li>
@@ -119,29 +119,29 @@ class ShopFooter extends Component  {
                                     <h5 className="ml-3 ml-sm-0 title pl-lg-4 pl-md-4 pl-sm-3 text-left pl-4 pt-2 pt-2 pt-xl-4 pt-md-3 pt-sm-2">Контакти</h5>
                                     <ul className='ml-3 ml-sm-0 pl-lg-4 pl-md-4 pl-sm-3 pl-4 text-left mb-0 h-100'>
                                         <li>
-                                            <Link className="list-unstyled pb-2">
+                                            <a href='https://goo.gl/maps/bzk1W5AZCec4QVR89' className='white-ic'>
                                                     м.Київ, вул. Данченко 32 (вхід з двору)
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
-                                            <Link className="list-unstyled pb-2">
+                                            <a href='#' className="list-unstyled pb-2" href='tel:+380735005533'>
                                                 <MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 073 500 55 33
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
-                                            <Link className="list-unstyled pb-2">
+                                            <a href='#' className="list-unstyled pb-2" href='tel:+380985005533'>
                                                 <MDBIcon icon="phone-alt" className="green-text pr-1"/>+38 098 500 55 33
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
-                                            <Link className="list-unstyled pb-2">
+                                            <a href='#' className="list-unstyled pb-2">
                                                 Графік роботи:
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
-                                            <Link className="list-unstyled pb-2">
+                                            <a href='#' className="list-unstyled pb-2">
                                                 09:00 - 20:00 (без вихідних)
-                                            </Link>
+                                            </a>
                                         </li>
                                         <MDBNavbarNav right inline className="footer-ic w-100 mb-0">
                                             <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3'>

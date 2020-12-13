@@ -138,12 +138,12 @@ class ShopNav extends Component  {
         if (user) { // если пользователь авторизован
             return (
                 <React.Fragment>{/*  */}
-                    <ul className="profile-menu p-0">
-                        <li><NavLink to="/shopAccount">Профіль</NavLink></li>
-                        <li><NavLink to="/myOrders">Замовлення</NavLink></li>
-                        <li><NavLink to="/thatLike">Сподобалось</NavLink></li>
-                        <li><NavLink to="/haveSeen">Переглянуті</NavLink></li>
-                        <li onClick={this.logout}>Выход</li>
+                    <ul className="profile-menu p-0 ">
+                        <li><NavLink to="/shopAccount" className='white-ic'>Профіль</NavLink></li>
+                        <li><NavLink to="/myOrders" className='white-ic'>Замовлення</NavLink></li>
+                        <li><NavLink to="/thatLike" className='white-ic'>Сподобалось</NavLink></li>
+                        <li><NavLink to="/haveSeen" className='white-ic'>Переглянуті</NavLink></li>
+                        <li onClick={this.logout} className='white-ic'>Выход</li>
                     </ul>
                 </React.Fragment>
                 )
@@ -220,8 +220,8 @@ class ShopNav extends Component  {
                                             <MDBIcon far icon='envelope' className='white-ic'/>
                                         </Link>
                                     </MDBNavItem>
-                                    <div className='w-100'>
-                                        <div className='profile-menu-block'>
+                                    <div className='w-100 profile-menu-block'>
+                                        <div>
                                             <button onClick={this.loginModalToggle} className='w-100 d-inline p-3 pr-md-2 pl-md-1 pt-2 pb-2 white-text btn-circle bg-transparent'>
                                                 <MDBIcon icon='user-circle'  className='border-left pl-3 pr-0 pt-0'/>
                                             </button>
@@ -281,7 +281,6 @@ class ShopNav extends Component  {
                                             {this.modalBody()}
                                         </MDBModalBody>
                                     </MDBModal>
-                                    {this.profileMenu()}
                                 </MDBNavbarNav>
                                 <MDBCollapse
                                     id='navbarCollapse1'

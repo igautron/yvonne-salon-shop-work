@@ -120,37 +120,37 @@ class ShopAccount extends Component {
                 </React.Fragment>
                 )
         }else return (
-            <MDBContainer className='pb-5'>
-                <h1 className='h1-responsive font-weight-bolder m-0 pt-2 py-xl-5 py-lg-5 py-md-5 py-sm-5 py-5'>Особистий кабінет</h1>
+            <MDBContainer className='pb-0 pb-sm-5'>
+                <h4 className='h4-responsive text-center font-weight-bolder m-0 py-md-5 py-sm-5 py-4 py-xl-5 py-lg-5'>Особистий кабінет</h4>
                 <MDBRow className='p-0 w-100 m-0'>
                     <MDBCol md="12" className='p-0 w-100'>
                         <MDBNav
                             pills
                             className="nav-justified pills-rounded pills-purple-gradient"
                         >
-                            <MDBNavItem>
+                            <MDBNavItem className='p-0'>
                                 <MDBNavLink
                                     link
                                     to="#"
                                     active={tabIndex === "1"}
                                     onClick={this.togglePills("content", "1")}
-                                    className='font-weight-bold black-text rgba-grey-light p-3 nav-links'
+                                    className='font-weight-bold black-text rgba-grey-light p-3 m-0 nav-links '
                                 >
                                     ПРОФІЛЬ
                                 </MDBNavLink>
                             </MDBNavItem>
-                            <MDBNavItem>
+                            <MDBNavItem className='p-0'>
                                 <MDBNavLink
                                     link
                                     to="#"
                                     active={tabIndex === "2"}
                                     onClick={this.togglePills("content", "2")}
-                                    className='font-weight-bold black-text rgba-grey-light p-3 nav-links'
+                                    className='font-weight-bold black-text rgba-grey-light p-3  m-0 nav-links'
                                 >
                                     ЗАМОВЛЕННЯ
                                 </MDBNavLink>
                             </MDBNavItem>
-                            <MDBNavItem>
+                            <MDBNavItem className='p-0'>
                                 <MDBNavLink
                                     link
                                     to="#"
@@ -161,7 +161,7 @@ class ShopAccount extends Component {
                                     СПОДОБАЛОСЬ
                                 </MDBNavLink>
                             </MDBNavItem>
-                            <MDBNavItem>
+                            <MDBNavItem className='p-0'>
                                 <MDBNavLink
                                     link
                                     to="#"
@@ -176,84 +176,76 @@ class ShopAccount extends Component {
                         <MDBTabContent activeItem={tabIndex}>
                             <MDBTabPane tabId="1" className='p-2'>
                                 <p style={{textAlign:'center',color:'green'}}>{this.state.alertTab1}</p>
-                                <div className='py-3'>
+                                <div className='py-0 py-sm-3 pb-3'>
                                     <h4 className='py-3'>Особисті дані</h4>
-                                    <div col='12' className='d-inline-flex w-100 info-pain'>
-                                        <div className='p-3 col-3'>
+                                    <div col='12' className='d-inline-flex flex-wrap w-100 info-pain'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Ім'я</p>
-                                            <p><input onChange={this.changeInputHandler} name="name" value={user.name}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="name" value={user.name}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Прізвище</p>
-                                            <p><input onChange={this.changeInputHandler} name="last_name" value={user.last_name}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="last_name" value={user.last_name}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
-                                            <p></p>
-                                            <p></p>
-                                        </div>
-                                        <div className='col-2'>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Сохранить</button>
+                                        <div className='py-3 px-2 py-0 py-sm-0 px-sm-3 col-6 col-sm-3 d-block m-auto mr-0 float-right'>
+                                            <button onClick={this.saveUserData} className='d-block m-auto border-0 p-2 mt-2 mb-2 my-sm-5 w-100 rgba-grey-light white-ic'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='py-3'>
+                                <div className='py-0 py-sm-3 pb-3'>
                                     <h4 className='py-3'>Контактні дані</h4>
-                                    <div col='12' className='d-inline-flex  w-100 info-pain'>
-                                        <div className='p-3 col-3'>
+                                    <div col='12' className='d-inline-flex flex-wrap  w-100 info-pain'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Телефон</p>
-                                            <p><input onChange={this.changeInputHandler} name="phone" value={user.phone}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="phone" value={user.phone}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Email</p>
-                                            <p><input onChange={this.changeInputHandler} name="email" value={user.email}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="email" value={user.email}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
-                                            <p></p>
-                                            <p></p>
-                                        </div>
-                                        <div className='col-2'>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Зберегти</button>
+                                        <div className='py-3 px-2 py-0 py-sm-0 px-sm-3 col-6 col-sm-3 d-block m-auto float-right'>
+                                            <button onClick={this.saveUserData} className='d-block m-auto float-right border-0 p-2 mt-2 mb-2 my-sm-5 w-100 rgba-grey-light white-ic'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='py-3'>
+                                <div className='py-0 py-sm-3 pb-3'>
                                     <h4 className='py-3'>Адреса доставки</h4>
-                                    <div col='12' className='d-inline-flex  w-100 info-pain'>
-                                        <div className='p-3 col-3'>
+                                    <div col='12' className='d-inline-flex flex-wrap  w-100 info-pain'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Місто</p>
-                                            <p><input onChange={this.changeInputHandler} name="city" value={user.city}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="city" value={user.city}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Вулиця</p>
-                                            <p><input onChange={this.changeInputHandler} name="street" value={user.street}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="street" value={user.street}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Будинок</p>
-                                            <p><input onChange={this.changeInputHandler} name="house" value={user.house}/></p>
+                                            <p><input className='w-100' onChange={this.changeInputHandler} name="house" value={user.house}/></p>
                                         </div>
-                                        <div className='col-2'>
-                                            <button onClick={this.saveUserData} className='bg-transparent border-0 m-2 py-2'>Зберегти</button>
+                                        <div className='py-3 px-2 py-0 py-sm-0 px-sm-3 col-6 col-sm-3 d-block m-auto float-right'>
+                                            <button onClick={this.saveUserData} className='d-block m-auto float-right border-0 p-2 mt-2 mb-2 my-sm-5 w-100 rgba-grey-light white-ic'>Зберегти</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='py-3'>
-                                    <h4 className='py-3'>Изменение пароля</h4>
+                                <div className='py-0 py-sm-3 pb-3'>
+                                    <h4 className='py-3 m-0'>Изменение пароля</h4>
                                     <p style={{color:'red'}}>{this.state.changePasswordError}</p>
-                                    <div col='12' className='d-inline-flex  w-100 info-pain'>
-                                        <div className='p-3 col-3'>
-                                            <p>Старый пароль</p>
-                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="old" value={this.state.passwordInputs.old}/></p>
+                                    <div col='12' className='d-inline-flex flex-wrap w-100 info-pain'>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
+                                            <p>Старий пароль</p>
+                                            <p><input className='w-100'  type="password" onChange={this.changePasswordInputHandler} name="old" value={this.state.passwordInputs.old}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
-                                            <p>Новый пароль</p>
-                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="new" value={this.state.passwordInputs.new}/></p>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
+                                            <p>Новий пароль</p>
+                                            <p><input className='w-100' type="password" onChange={this.changePasswordInputHandler} name="new" value={this.state.passwordInputs.new}/></p>
                                         </div>
-                                        <div className='p-3 col-3'>
-                                            <p>Подтверждение нового пароля</p>
-                                            <p><input type="password" onChange={this.changePasswordInputHandler} name="confirm" value={this.state.passwordInputs.confirm}/></p>
+                                        <div className='p-2 p-sm-3 col-12 col-sm-3'>
+                                            <p>Новий пароль</p>
+                                            <p><input className='w-100' type="password" onChange={this.changePasswordInputHandler} name="confirm" value={this.state.passwordInputs.confirm}/></p>
                                         </div>
-                                        <div className='col-2'>
-                                            <button onClick={this.changePassword} className='bg-transparent border-0 m-2 py-2'>Змінити пароль</button>
+                                        <div className='py-3 px-2 py-0 py-sm-0 px-sm-3 col-6 col-sm-3 d-block m-auto float-right'>
+                                            <button onClick={this.saveUserData} className='d-block m-auto float-right border-0 p-2 mt-2 mb-2 my-sm-5 w-100 rgba-grey-light white-ic'>Змінити</button>
                                         </div>
                                     </div>
                                 </div>
@@ -262,26 +254,21 @@ class ShopAccount extends Component {
                                         <div className='py-3'>
                                             <h4 className='py-3'>Замовлені товари</h4>
                                             <div col='12' className='d-inline-flex w-100 info-pain'>
-                                                <div className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 w-responsive p-3">
-                                                    <MDBCol className='col-2 p-0 m-0'>
-                                                        <img src="./01_color_shampoo.jpg" className="img-fluid w-100 h-25" alt="Responsive" />
-                                                    </MDBCol>
-                                                    <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-5 p-1 py-1 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
-                                                        <p className='order-item p-2'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
-                                                    </MDBCol>
-                                                    <MDBCol className='col-1 p-1 py-3 mx-0'>
-                                                        <form>
-                                                            <input className='input-q' type='number' min='1' value='1'></input>
-                                                        </form>
-                                                    </MDBCol>
-                                                    <MDBCol className='col-2 px-3 py-1 mx-0'>
-                                                        <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-2 py-3'>1500<span>грн</span></p>
-                                                    </MDBCol>
-                                                    <MDBCol className='col-1 p-1 py-2'>
-                                                        <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                                            <i className="fas fa-times mr-2"></i>
+                                                <div className="form-input d-inline-flex w-100 py-4 w-responsive p-3">
+                                                    <div className="col-2 px-0">
+                                                        <img src="./01_color_shampoo.jpg" className="w-100 img-fluid" alt="Responsive" />
+                                                    </div>
+                                                    <div className="col-6 px-1">
+                                                        <p className='w-100 order-item px-sm-3 px-1 mb-0'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
+                                                    </div>
+                                                    <div className="col-3 px-1">
+                                                        <p className='w-100 m-0 px-sm-3 px-1'>1500<span>грн</span></p>
+                                                    </div>
+                                                    <div className="col-1 px-1">
+                                                        <button type="button" className="w-100 px-sm-3 px-1 py-0 btn m-0 text-center bg-transparent border-0 z-depth-0">
+                                                            <i className="fas fa-times px-0 justify-content-start"></i>
                                                         </button>
-                                                    </MDBCol>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -289,27 +276,22 @@ class ShopAccount extends Component {
                             <MDBTabPane tabId="3" className='p-2'>
                                 <div className='py-3'>
                                     <h4 className='py-3'>Товари, що сподобались</h4>
-                                    <div col='12' className='d-inline-flex w-100 info-pain'>
-                                        <div className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 w-responsive p-3">
-                                            <MDBCol className='col-2 p-0 m-0'>
-                                                <img src="./01_color_shampoo.jpg" className="img-fluid w-100 h-25" alt="Responsive" />
-                                            </MDBCol>
-                                            <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-5 p-1 py-1 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
-                                                <p className='order-item p-2'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
-                                            </MDBCol>
-                                            <MDBCol className='col-1 p-1 py-3 mx-0'>
-                                                <form>
-                                                    <input className='input-q' type='number' min='1' value='1'></input>
-                                                </form>
-                                            </MDBCol>
-                                            <MDBCol className='col-2 px-3 py-1 mx-0'>
-                                                <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-2 py-3'>1500<span>грн</span></p>
-                                            </MDBCol>
-                                            <MDBCol className='col-1 p-1 py-2'>
-                                                <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                                    <i className="fas fa-times mr-2"></i>
+                                    <div col='12' className=' w-100 info-pain'>
+                                        <div className="form-input d-inline-flex w-100 py-4 w-responsive p-3">
+                                            <div className="col-2 px-0">
+                                                <img src="./01_color_shampoo.jpg" className="w-100 img-fluid" alt="Responsive" />
+                                            </div>
+                                            <div className="col-6 px-1">
+                                                <p className='w-100 order-item px-sm-3 px-1 mb-0'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
+                                            </div>
+                                            <div className="col-3 px-1">
+                                                <p className='w-100 m-0 px-sm-3 px-1'>1500<span>грн</span></p>
+                                            </div>
+                                            <div className="col-1 px-1">
+                                                <button type="button" className="w-100 px-sm-3 px-1 py-0 btn m-0 text-center bg-transparent border-0 z-depth-0">
+                                                    <i className="fas fa-times px-0 justify-content-start"></i>
                                                 </button>
-                                            </MDBCol>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -318,26 +300,21 @@ class ShopAccount extends Component {
                                 <div className='py-3'>
                                     <h4 className='py-3'>Переглянуті товари</h4>
                                     <div col='12' className='d-inline-flex w-100 info-pain'>
-                                        <div className="form-input d-inline-flex flex-sm-wrap-reverse flex-wrap w-100 py-4 w-responsive p-3">
-                                            <MDBCol className='col-2 p-0 m-0'>
-                                                <img src="./01_color_shampoo.jpg" className="img-fluid w-100 h-25" alt="Responsive" />
-                                            </MDBCol>
-                                            <MDBCol className='mx-1 col-5 col-sm-5 col-md-6 col-lg-6 col-xl-5 p-1 py-1 font-smaller px-xl-3 px-lg-3 px-md-3 px-sm-3 px-1'>
-                                                <p className='order-item p-2'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
-                                            </MDBCol>
-                                            <MDBCol className='col-1 p-1 py-3 mx-0'>
-                                                <form>
-                                                    <input className='input-q' type='number' min='1' value='1'></input>
-                                                </form>
-                                            </MDBCol>
-                                            <MDBCol className='col-2 px-3 py-1 mx-0'>
-                                                <p className='px-lg-2 px-xl-2 px-md-2 px-sm-2 px-2 py-3'>1500<span>грн</span></p>
-                                            </MDBCol>
-                                            <MDBCol className='col-1 p-1 py-2'>
-                                                <button type="button" className="btn btn-m m-0 text-center bg-transparent border-0 z-depth-0">
-                                                    <i className="fas fa-times mr-2"></i>
+                                        <div className="form-input d-inline-flex w-100 py-4 w-responsive p-3">
+                                            <div className="col-2 px-0">
+                                                <img src="./01_color_shampoo.jpg" className="w-100 img-fluid" alt="Responsive" />
+                                            </div>
+                                            <div className="col-6 px-1">
+                                                <p className='w-100 order-item px-sm-3 px-1 mb-0'>Назва товару(Для 2х строк). Інформація із баз данних, яка потрапляє у це віконце</p>
+                                            </div>
+                                            <div className="col-3 px-1">
+                                                <p className='w-100 m-0 px-sm-3 px-1'>1500<span>грн</span></p>
+                                            </div>
+                                            <div className="col-1 px-1">
+                                                <button type="button" className="w-100 px-sm-3 px-1 py-0 btn m-0 text-center bg-transparent border-0 z-depth-0">
+                                                    <i className="fas fa-times px-0 justify-content-start"></i>
                                                 </button>
-                                            </MDBCol>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

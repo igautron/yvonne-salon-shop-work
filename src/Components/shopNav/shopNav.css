@@ -151,17 +151,17 @@ input.input-search {
 
 
 
-.profile-menu-block:hover .profile-menu{
+.profile-menu-block:hover .profile-menu-info{
     display: block !important;
     color: #fff;
     position: absolute !important;
-    background: purple;
+    background: #a74eb6;
     padding: 10px;
 }
 
-/*.profile-menu {*/
-/*  display: none;*/
-/*}*/
+.profile-menu-info {
+  display: none;
+}
 
 
 @media (max-width: 576px) {
@@ -264,7 +264,6 @@ input.input-search {
 
 
     .nav-block {
-        width: 150px;
         justify-content: space-between;
         display: flex;
         margin: auto;

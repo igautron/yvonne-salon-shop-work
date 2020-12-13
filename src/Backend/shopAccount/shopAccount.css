@@ -7,9 +7,13 @@
 }
 
 
+
+
+
 @media (max-width: 576px) {
     li.nav-item {
         font-size: 0.5rem !important;
+        border: 1px solid rgba(128, 128, 128, 0.51);
     }
 
 }

@@ -70,6 +70,7 @@ class ShopProducts extends Component  {
                 default: '1',
             },
             products: [],
+            navigation: false,
             filterTypes:{},
             filterBrands:{},
             filterSeries:{},
@@ -190,7 +191,13 @@ class ShopProducts extends Component  {
         }
         fetch(url)
           .then(response => response.json())
-          .then(data => this.setState({products: data.products}));
+          .then(data => {
+                if(data.products.data){
+                    this.setState({products: data.products.data, navigation: data.products})
+                }else{
+                    this.setState({products: data.products})
+                }
+          });
     }
 
     componentDidMount(props) {
@@ -203,7 +210,13 @@ class ShopProducts extends Component  {
         }else{
             fetch('http://yvonne-server.loc/api/products')
               .then(response => response.json())
-              .then(data => this.setState({products: data.products}));
+              .then(data => {
+                if(data.products.data){
+                    this.setState({products: data.products.data, navigation: data.products})
+                }else{
+                    this.setState({products: data.products})
+                }
+              });
         }
     }
 
@@ -222,7 +235,25 @@ class ShopProducts extends Component  {
         }
     }
 
+    goToPrevPage = () => {
+        
+    }
+
+    goToNextPage = () => {
+        if(!this.state.navigation) return;
+        fetch(this.state.navigation.next_page_url)
+          .then(response => response.json())
+          .then(data => {
+            if(data.products.data){
+                this.setState({products: data.products.data, navigation: data.products})
+            }else{
+                this.setState({products: data.products})
+            }
+          });
+    }
+
     render() {
+        // cl(this.state.products)
         return (
           <div>
             <div className='shop-products-block w-100'>
@@ -271,8 +302,8 @@ class ShopProducts extends Component  {
                             </MDBRow>
                         </div>
                         <MDBPagination color='purple'>
-                            <MDBPageItem disabled>
-                                <MDBPageNav aria-label='Previous'>
+                            <MDBPageItem>
+                                <MDBPageNav onClick={this.goToPrevPage} aria-label='Previous'>
                                     <span aria-hidden='true'>&laquo;</span>
                                     <span className='sr-only'>Previous</span>
                                 </MDBPageNav>
@@ -302,7 +333,7 @@ class ShopProducts extends Component  {
                                     5
                                 </MDBPageNav>
                             </MDBPageItem>
-                            <MDBPageItem>
+                            <MDBPageItem onClick={this.goToNextPage}>
                                 <MDBPageNav>
                                     &raquo;
                                 </MDBPageNav>

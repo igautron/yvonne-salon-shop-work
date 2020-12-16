@@ -89,18 +89,14 @@ class ShopTop extends Component {
     render() {
         return (
             <div className='shop-bg-nav'>
-                <div className='container m-auto justify-content-center px-2 '>
+                <div className='container m-auto justify-content-center px-0 '>
                     <div className='w-100 d-block h-100'>
 
-                        <div className='float-left py-3 py-sm-4'>
-                                <img
-                                    className='logo-flower'
-                                    src={require('../../img/slider/IMGBIN_pink-flowers-pink-flowers-watercolor-painting-png_STw63vwG.png')}
-                                    alt='fl1'
-                                />
+                        <div className='float-left py-1 py-sm-2'>
+
                                 <img
                                     className='logo-bordo'
-                                    src={require('../../img/catalogue/logo-bordo.png')}
+                                    src={require('../../img/catalogue/sirene-logo.png')}
                                     alt='fl1'
                                 />
                         </div>
@@ -141,12 +137,12 @@ class ShopTop extends Component {
                                         </MDBBtn>
                                     </MDBModalHeader>
                                     <MDBModalBody className='border-0 h-100 modal-body px-4 mx-md-5 mx-sm-5 py-sm-5 py-3'>
-                                        <ShopBin/>
+                                        <ShopBin appState={this.props.appState} setUserData={this.props.setUserData}/>
                                     </MDBModalBody>
                                     <MDBModalFooter className='mx-0 mx-sm-5 p-0'>
                                         <MDBCol className='my-2 text-left order-price w-auto pr-0 w-100'><span
                                             className='font-weight-small font-smaller'>Разом до сплати:  <span
-                                            className='font-weight-small'>  1564</span> грн</span></MDBCol>
+                                            className='font-weight-small'>{this.props.appState.cart.total_price}</span> грн</span></MDBCol>
                                         <div className='w-100 d-inline-flex flex-wrap m-0 justify-content-center'>
                                             <MDBBtn color="secondary" className='mb-2 mb-sm-0 mb-md-5 btn-pay'
                                                     onClick={this.cartModalToggle}>ЗАКРИТИ</MDBBtn>
@@ -159,7 +155,7 @@ class ShopTop extends Component {
              {/*сподобалось*/}
                                 <button onClick={this.cartLikeModalToggle}
                                         className='nav-block-btn  m-auto  black-text btn-bk m-1 p-1  bg-transparent border-0 p-0 font-weight-bold w-responsive w-100'>
-                                    <MDBIcon className='heart-icon' icon='heart'/>
+                                    <MDBIcon className='heart-icon pr-0' icon='heart'/>
                                 </button>
                                 <MDBModal isOpen={this.state.isCartLikeModalOpened} toggle={this.cartLikeModalToggle}
                                           className='pt-3 mx-auto justify-content-center'>

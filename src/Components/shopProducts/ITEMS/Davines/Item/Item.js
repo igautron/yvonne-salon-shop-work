@@ -10,7 +10,7 @@ class Item extends React.Component {
 
     addToCart = (event) => {
         event.preventDefault()
-        // cl(event.target.value)
+        cl(this.props.appState)
         let product_id = event.target.name
         let amount = 1;
         let cart_id = this.props.appState.cart.id
@@ -27,7 +27,11 @@ class Item extends React.Component {
             return response.json();
         }).then((data) => {
             if (data.success && data.success === 'ok') {
-
+                let cart = {...this.props.appState.cart}
+                cart.id = data.cart_id
+                cart.products = data.cart_products
+                cart.total_price = data.total_price
+                this.props.setUserData({cart})
             }else{
 
             }

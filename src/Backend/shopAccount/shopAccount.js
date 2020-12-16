@@ -175,9 +175,9 @@ class ShopAccount extends Component {
                         </MDBNav>
                         <MDBTabContent activeItem={tabIndex}>
                             <MDBTabPane tabId="1" className='p-2'>
-                                <p style={{textAlign:'center',color:'green'}}>{this.state.alertTab1}</p>
-                                <div className='py-0 py-sm-3 pb-3'>
-                                    <h4 className='py-3'>Особисті дані</h4>
+                                <p className='pt-3' style={{textAlign:'center',color:'green'}}>{this.state.alertTab1}</p>
+                                <div className='py-0 py-sm-0 pb-3'>
+                                    <h4 className='py-0'>Особисті дані</h4>
                                     <div col='12' className='d-inline-flex flex-wrap w-100 info-pain'>
                                         <div className='p-2 p-sm-3 col-12 col-sm-3'>
                                             <p>Ім'я</p>

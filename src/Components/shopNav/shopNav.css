@@ -1,3 +1,15 @@
+.profile-menu-info{
+    display: none;
+}
+
+.profile-menu{
+    background: #fff;
+    padding: 10px 15px;
+}
+.profile-icon:hover .profile-menu-info{
+    display: block;
+}
+
 .shop-nav-first {
     height: 56px !important;
 }
@@ -150,17 +162,33 @@ input.input-search {
 }
 
 
+.profile-menu-block {
+    width: 50px !important;
+}
 
-.profile-menu-block:hover .profile-menu-info{
+
+.profile-menu-block:hover .profile-menu-info {
     display: block !important;
-    color: #fff;
     position: absolute !important;
-    background: #a74eb6;
+    background: #a74eb6 !important;
+    width: 100px;
+}
+
+.profile-menu-block:hover .profile-menu {
+    display: block !important;
+    position: absolute !important;
+    background: #a74eb6 !important;
     padding: 10px;
+    z-index: 500;
 }
 
 .profile-menu-info {
   display: none;
+}
+
+.profile-menu {
+    display: none;
+
 }
 
 
@@ -330,7 +358,29 @@ input.input-search {
 
     .modal-autorization .modal-content {
         width: 300px !important;
+    }.profile-menu-block:hover .profile-menu-info {
+         display: block !important;
+         position: absolute !important;
+         background: #a74eb6 !important;
+         width: 100px;
+     }
+
+    .profile-menu-block:hover .profile-menu {
+        display: block !important;
+        position: absolute !important;
+        background: #a74eb6 !important;
+        padding: 10px;
     }
+
+    .profile-menu-info {
+        display: none;
+    }
+
+    .profile-menu {
+        display: none;
+    }
+
+
 
 }
 

@@ -313,20 +313,20 @@ class ShopProducts extends Component  {
                  </div>
 
                      {/*small-display */}
-                 <MDBHamburgerToggler color="black" id="hamburger1"  className='mx-3 left-side-toggle collapse-button' onClick={this.toggleCollapse('navbarCollapse1')} />
+                 <MDBHamburgerToggler color="black" id="hamburger1"  className='bg-transparent d-md-none mx-3 left-side-toggle collapse-button' onClick={this.toggleCollapse('navbarCollapse1')} />
                  <MDBCollapse
                      id='navbarCollapse1'
                      isOpen={this.state.collapseID}
                      navbar
-                     className='shop-nav-navbar'
+                     className='shop-nav-navbar bg-transparent'
                  >
-                         <div className='left-0 position-absolute bg-white shop-filters-block w-responsive pt-0 pb-5'>
+                         <div className='left-0 bg-transparent position-absolute bg-white shop-filters-block w-responsive pt-0 pb-5'>
                                 <ShopFilter
                                             setFilterTypes={this.setFilterTypes}
                                             setFilterBrands={this.setFilterBrands}
                                             setFilterSeries={this.setFilterSeries}
                                             setFilterAmount={this.setFilterAmount}
-                                            setFilterGender={this.setFilterGender}
+                                            setFilterGender={this.setFilterGender}ds
                                             setFilterHairtype = {this.setFilterHairtype}
                                             setFilterAppoinrments={this.setFilterAppoinrments}
                                             setFilterPrice={this.setFilterPrice}

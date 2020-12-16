@@ -101,7 +101,7 @@ class ShopNav extends Component  {
         if (where_to_go === 'authorization') {
             this.setState({modalTitle: 'Авторизація'})
         }else if(where_to_go === 'registration'){
-            this.setState({modalTitle: 'Регистрація'})
+            this.setState({modalTitle: 'Реєстрація'})
         }
     }
 
@@ -118,7 +118,7 @@ class ShopNav extends Component  {
                                      appState={this.props.appState}
                                      setUserData={this.props.setUserData} />
         }else if(this.state.modalBody === 'successRgistration'){
-            return <div>Вы успешно зарегистрированы!</div>
+            return <div>Ви успішно зареєструвалися!</div>
         }else{
             return <div>Error!</div>
         }
@@ -137,13 +137,13 @@ class ShopNav extends Component  {
         let user = this.props.appState.user
         if (user) { // если пользователь авторизован
             return (
-                <React.Fragment>{/*  */}
-                    <ul className="profile-menu p-0 ">
+                <React.Fragment>
+                    <ul className="profile-menu p-3">
                         <li><NavLink to="/shopAccount" className='white-ic'>Профіль</NavLink></li>
                         <li><NavLink to="/myOrders" className='white-ic'>Замовлення</NavLink></li>
                         <li><NavLink to="/thatLike" className='white-ic'>Сподобалось</NavLink></li>
                         <li><NavLink to="/haveSeen" className='white-ic'>Переглянуті</NavLink></li>
-                        <li onClick={this.logout} className='white-ic'>Выход</li>
+                        <li onClick={this.logout} className='white-ic'>Вихід</li>
                     </ul>
                 </React.Fragment>
                 )
@@ -162,7 +162,7 @@ class ShopNav extends Component  {
                 </React.Fragment>
             )
         }
-}
+    }
 
 
 
@@ -257,30 +257,34 @@ class ShopNav extends Component  {
                                     className='bg-transparent'
                                     onClick={this.toggleCollapse('navbarCollapse1')}
                                 />
-                                <MDBNavbarNav right className='nav-hidden d-inline-block px-xl-0 px-lg-3 px-md-0 '>
-                                        <a href='https://www.facebook.com/yvonnemultibrands' className='d-inline-flex pl-2 pr-2 pt-0 pb-0 pl-sm-2 pr-sm-3 pt-sm-2 pb-sm-2 pr-md-4 pl-md-2 white-text nav-icon'>
-                                            <MDBIcon fab icon='facebook-f' className=' fb-icon'/>
-                                        </a>
-                                        <a href='https://www.instagram.com/yvonnemultibrands/' className=' d-inline pl-2 pr-2 pt-0 pb-0  pl-sm-2 pr-sm-3 pt-sm-2 pb-sm-2 pr-md-4 pl-md-2 white-text nav-icon'>
-                                            <MDBIcon fab icon='instagram' className=' insta-icon'/>
-                                        </a>
-                                        <Link to='/writetous'>
-                                            <MDBIcon far icon='envelope' className='pt-2 pl-2 email-icon white-ic'/>
-                                        </Link>
-
+                                <MDBNavbarNav right className=' nav-hidden d-inline-block px-xl-0 px-lg-3 px-md-0 m-0'>
+                                            <a href='https://www.facebook.com/yvonnemultibrands' className='d-inline-flex pl-2 pr-2 pt-0 pb-0 pl-sm-2 pr-sm-3 pt-sm-2 pb-sm-2 pr-md-4 pl-md-2 white-text nav-icon'>
+                                                <MDBIcon fab icon='facebook-f' className=' fb-icon'/>
+                                            </a>
+                                            <a href='https://www.instagram.com/yvonnemultibrands/' className=' d-inline pl-2 pr-2 pt-0 pb-0  pl-sm-2 pr-sm-3 pt-sm-2 pb-sm-2 pr-md-4 pl-md-2 white-text nav-icon'>
+                                                <MDBIcon fab icon='instagram' className=' insta-icon'/>
+                                            </a>
+                                            <Link to='/writetous'>
+                                                <MDBIcon far icon='envelope' className='pt-2 pl-2 email-icon white-ic'/>
+                                            </Link>
                          {/*окно авторизации*/}
-                                    <button onClick={this.loginModalToggle} className='btn-circle bg-transparent d-inline  white-text'>
-                                          <MDBIcon icon='user-circle'  className=' border-left px-3 pt-0'/>
-                                    </button>
-                                    <ModalAutorization />
-                                    <MDBModal className='z-depth-0 w-100 py-5 modal-autorization justify-content-center mx-auto' isOpen={this.state.isLoginModalOpened} toggle={this. loginModalToggle} >
-                                        <MDBModalHeader className='text-center justify-content-center  my-0 my-sm-3'>{this.state.modalTitle}
-                                            <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary" onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
-                                        </MDBModalHeader>
-                                        <MDBModalBody className='h-100 modal-body z-depth-0 p-0'>
-                                            {this.modalBody()}
-                                        </MDBModalBody>
-                                    </MDBModal>
+                                             <div className='profile-menu-block m-0 d-inline'>
+                                                 <button onClick={this.loginModalToggle} className='btn-circle bg-transparent d-inline  white-text'>
+                                                     <MDBIcon icon='user-circle'  className=' border-left px-3 pt-0'/>
+                                                 </button>
+                                                 <ModalAutorization />
+                                                <MDBModal className='z-depth-0 w-100 py-5 modal-autorization justify-content-center mx-auto' isOpen={this.state.isLoginModalOpened} toggle={this. loginModalToggle} >
+                                                    <MDBModalHeader className='text-center justify-content-center  my-0 my-sm-3'>{this.state.modalTitle}
+                                                        <MDBBtn className='btn-aut m-2 p-2 border-0 position-absolute z-depth-0' color="secondary" onClick={this.loginModalToggle}><i className="fas fa-times mr-2"></i></MDBBtn>
+                                                    </MDBModalHeader>
+                                                    <MDBModalBody className='h-100 modal-body z-depth-0 p-0'>
+                                                        {this.modalBody()}
+                                                    </MDBModalBody>
+                                                </MDBModal>
+                                             </div>
+                                    <div className='position-absolute profile-menu-info'>
+                                    {this.profileMenu()}
+                                    </div>
                                 </MDBNavbarNav>
                                 <MDBCollapse
                                     id='navbarCollapse1'

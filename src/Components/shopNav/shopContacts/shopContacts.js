@@ -107,7 +107,7 @@ class ShopContacts extends Component {
                             <MDBCol className='col-12 m-0 p-0 contact-info d-block position-relative'>
                                 <MDBView waves className='z-depth-3 h-100'>
                                     <div className="text-center h-100 black-text p-3">
-                                        <ul className="text-lg-left list-unstyled ml-0 my-0">
+                                        <ul className="text-lg-left list-unstyled ml-0 my-0 py-4">
                                             <li>
                                                 <p className="text-center contact-text mb-0">
                                                     <MDBIcon icon="map-marker-alt" className="pr-3"/>

@@ -45,7 +45,7 @@ class ShopFooter extends Component  {
                             <MDBRow className='pb-5 mx-3 ml-sm-0 ml-md-0 ml-lg-0 ml-xl-0 mr-sm-0 mr-md-0 mr-lg-0 mr-xl-0'>
                                 <MDBCol sm="5" md="3" lg="3" className='col-5  w-responsive p-md-0 p-sm-0 p-0 pb-5'>
                                     <div className='w-100 pb-5 w-responsive'>
-                                       <img className='image-bordo w-100 w-responsive' src={require('./../../img/catalogue/logo-bordo.png')}/>
+                                       <img className='image-bordo w-100 w-responsive' src={require('./../../img/catalogue/sirene-logo.png')}/>
                                     </div>
                                     <p className="logo-text pr-1">Початкова краса - це те, як людина виглядає вранці, ледь встав з ліжка, тобто природно, але бездоганно.</p>
                                     <p className="logo-text-cr pb-1 mb-0 pr-1">Сьюзен Коллінз, "Голодні ігри"</p>
@@ -143,18 +143,18 @@ class ShopFooter extends Component  {
                                                 09:00 - 20:00 (без вихідних)
                                             </a>
                                         </li>
-                                        <MDBNavbarNav right inline className="footer-ic w-100 mb-0">
-                                            <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3'>
+                                        <MDBNavbarNav right inline className="border-0 footer-ic w-100 mb-0">
+                                            <MDBNavItem  className='border-0 col-4 d-inline pr-3 pt-2 pb-3'>
                                                 <a href='https://www.facebook.com/yvonnemultibrands'>
                                                      <MDBIcon fab icon="facebook-f"  className="footer-icons white-text"/>
                                                 </a>
                                             </MDBNavItem>
-                                            <MDBNavItem className='col-4 d-inline pr-3 pt-2 pb-3' >
+                                            <MDBNavItem className='border-0 col-4 d-inline pr-3 pt-2 pb-3' >
                                                 <a href='https://www.instagram.com/yvonnemultibrands/'>
                                                     <MDBIcon fab icon="instagram" className="footer-icons white-text"/>
                                                 </a>
                                             </MDBNavItem>
-                                            <MDBNavItem  className='col-4 d-inline pr-3 pt-2 pb-3' >
+                                            <MDBNavItem  className='border-0 col-4 d-inline pr-3 pt-2 pb-3' >
                                                 <Link to='/writetous'>
                                                      <MDBIcon far icon="envelope" className="footer-icons white-text"/>
                                                 </Link>

@@ -65,8 +65,8 @@ class App extends Component  {
     render(){
         return (
             <Router>
-                <ShopNav appState={this.state} setUserData={this.setUserData} />
-                <ShopTop />
+                <ShopNav appState={this.state} setUserData={this.setUserData}/>
+                <ShopTop appState={this.state} setUserData={this.setUserData}/>
                 <ShopSlider />
                 <Switch>
                     <Route path='/' exact>

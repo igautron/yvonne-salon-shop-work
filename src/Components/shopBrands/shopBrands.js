@@ -49,7 +49,7 @@ class ShopBrands extends Component  {
                     <div className='shop-nav-brand w-100 d-inline-flex'>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBNavLink to="/brand/farmavita" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'farmavita')} color='secondary' className='caret shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3 '>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'farmavita')} color='secondary' className='white-ic caret shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3 '>
                                     FarmaVita
                                 </button>
                             </MDBNavLink>
@@ -71,7 +71,7 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBNavLink to="/brand/davines" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'davines')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3'>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'davines')} color='secondary' className='white-ic  shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-3'>
                                     Davines
                                 </button>
                             </MDBNavLink>
@@ -86,7 +86,7 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBNavLink to="/brand/joico" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'joico')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  '>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'joico')} color='secondary' className='white-ic shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  '>
                                     Joico
                                 </button>
                             </MDBNavLink>
@@ -106,7 +106,7 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='m-0 col-2 p-0'>
                             <MDBNavLink to="/brand/profystyle" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'profistyle')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'profistyle')} color='secondary' className='white-ic shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     ProfyStyle
                                 </button>
                             </MDBNavLink>
@@ -129,7 +129,7 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='col-2 p-0'>
                             <MDBNavLink to="/brand/felps" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'felps')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'felps')} color='secondary' className='white-ic  shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     Felps
                                 </button>
                             </MDBNavLink>
@@ -141,7 +141,7 @@ class ShopBrands extends Component  {
                         </MDBDropdown>
                         <MDBDropdown className='col-2 p-0'>
                             <MDBNavLink to="/brand/schwarzkopf" className='p-0 text-center z-depth-3' >
-                                <button onClick={this.chooseMarkHandle.bind(null, 'schwarzkopf')} color='secondary' className='shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
+                                <button onClick={this.chooseMarkHandle.bind(null, 'schwarzkopf')} color='secondary' className='white-ic  shop-brands-item m-0 w-100 pl-1 pr-1 py-2 border-0  z-depth-5'>
                                     Schwarzkopf
                                 </button>
                             </MDBNavLink>

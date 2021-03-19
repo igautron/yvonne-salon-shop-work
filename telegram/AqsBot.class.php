@@ -1,11 +1,11 @@
 <?php
-define('YVONNESHOP_BOT_TOKEN', '1423414196:AAFLFG72BXpCl3imFXODBnN1N3nzRDptfp8');
+define('YVONNE_BOT_TOKEN', '1453390276:AAHSPCHRfZfLmrAw-Ga4JTC-tIkagmgE3Tw');
 /**
 * 
 */
 class AqsBot
 {
-	private static $bot_token = YVONNESHOP_BOT_TOKEN;
+	private static $bot_token = YVONNE_BOT_TOKEN;
 	private static $api_url = 'https://api.telegram.org/bot';
 	private static $chat_id = '278472749';
     private static $inst = null;

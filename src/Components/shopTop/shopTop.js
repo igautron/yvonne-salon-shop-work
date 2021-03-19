@@ -91,7 +91,7 @@ class ShopTop extends Component {
             <div className='shop-bg-nav'>
                 <div className='container m-auto justify-content-center px-0 '>
                     <div className='w-100 d-block h-100'>
-
+                      <div className='px-2 px-md-0'>
                         <div className='float-left py-1 py-sm-2'>
 
                                 <img
@@ -178,6 +178,7 @@ class ShopTop extends Component {
                                 </MDBModal>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
